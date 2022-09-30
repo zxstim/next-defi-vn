@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import ComponentList from "../components/ComponentList/ComponentList";
 import UpButton from "../components/UpButton/UpButton";
@@ -58,36 +59,48 @@ export default function Home(props) {
   }
 
   return (
-    <div className="App">
-      <div className="markdown-body">
-        <header className="App-header">
-          <h1 id="top"># Pyhash</h1>
-          <blockquote>👌 Yes, we have removed styling for lightning fast experience!</blockquote>
-        </header>
-        <h2>## Decode Finance</h2>
-        <ul>
-          <li><a href="https://buidl.defi.vn">🛠️ Read about BUIDL</a></li>
-          {/* <li><nav><Link to="/about">ℹ️ About Pyhash</Link></nav></li> */}
-          <li><a href="https://www.patreon.com/bePatron?u=69160974">🙏  Support us</a></li>
-        </ul>
-        <ComponentList data={props.data}/>
-        <UpButton />
-        <RefreshButton />
-        <h2>## FP1 - Futures Signals</h2>
-        <p>🚧 Updating soon</p>
-        <h2>## OP1 - Options Signals</h2>
-        <p>🚧 Updating soon</p>
-        <h2><a href="https://github.com/orgs/pyhashdotcom/projects/5">## 🛣️ Follow our roadmap on Github</a></h2>
-        <br />
-        <hr />
-        <h2># Footer</h2>
-        <p>📍 Pyhash LLC</p>
-        <p>📍 1007 N Orange St.</p>
-        <p>📍 4th Floor Suite # 956</p>
-        <p>📍 Wilmington, Delaware 19801, United States</p>
-        <p>📍 team@pyhash.com</p>
-        <br />
-        <br />
+    <div>
+      <Head>
+        <title>Defi.vn</title>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="../defi.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta
+          name="description"
+          content="defi.vn"
+        />
+      </Head>
+      <div className="App">
+        <div className="markdown-body">
+          <header className="App-header">
+            <h1 id="top"># Pyhash</h1>
+            <blockquote>👌 Yes, we have removed styling for lightning fast experience!</blockquote>
+          </header>
+          <h2>## Decode Finance</h2>
+          <ul>
+            <li><a href="https://buidl.defi.vn">🛠️ Read about BUIDL</a></li>
+            {/* <li><nav><Link to="/about">ℹ️ About Pyhash</Link></nav></li> */}
+            <li><a href="https://www.patreon.com/bePatron?u=69160974">🙏  Support us</a></li>
+          </ul>
+          <ComponentList data={props.data}/>
+          <UpButton />
+          <RefreshButton />
+          <h2>## FP1 - Futures Signals</h2>
+          <p>🚧 Updating soon</p>
+          <h2>## OP1 - Options Signals</h2>
+          <p>🚧 Updating soon</p>
+          <h2><a href="https://github.com/orgs/pyhashdotcom/projects/5">## 🛣️ Follow our roadmap on Github</a></h2>
+          <br />
+          <hr />
+          <h2># Footer</h2>
+          <p>📍 Pyhash LLC</p>
+          <p>📍 1007 N Orange St.</p>
+          <p>📍 4th Floor Suite # 956</p>
+          <p>📍 Wilmington, Delaware 19801, United States</p>
+          <p>📍 team@pyhash.com</p>
+          <br />
+          <br />
+        </div>
       </div>
     </div>
   );

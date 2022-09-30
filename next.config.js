@@ -5,7 +5,6 @@ const nextConfig = {
   experimental: { 
     images: {
       allowFutureImage: true,
-      unoptimized: true 
     } 
   }
 }

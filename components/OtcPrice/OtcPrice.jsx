@@ -1,7 +1,8 @@
+import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import commify from "../../utils/commify";
 import formatTimeStamp from "../../utils/formatTimestamp";
 import useTable from "../../hooks/useTable";
-import { useState } from "react";
 import TableFooter from "../TableFooter/TableFooter";
 
 function renderData(signal) {
@@ -81,6 +82,8 @@ function renderData(signal) {
   }
 
 export default function OtcPriceComponent({ data, rowsPerPage }) {
+  // eslint-disable-next-line
+  const { t, i18n } = useTranslation();
   const [query, setQuery] = useState("")
   const [page, setPage] = useState(1);
   const { slice, range } = useTable(data, page, rowsPerPage);
@@ -93,18 +96,18 @@ export default function OtcPriceComponent({ data, rowsPerPage }) {
     
     return (
       <>
-        <h2 id="otc">## OTC Price</h2>
+        <h2 id="otc">{t('otc')}</h2>
         <p>🔗 uid: otc</p>
-        <a href="https://buidl.defi.vn/explain-pyhash#heading-otc-price">🔑 Explain</a>
-        <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder=" Search pair..." onChange={event => setQuery(event.target.value)}/></div>
+        <a href="https://buidl.defi.vn/explain-pyhash#heading-otc-price">{t('explain')}</a>
+        <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder={t('otc-search')} onChange={event => setQuery(event.target.value)}/></div>
         <table>
           <thead>
             <tr>         
-              <th>Pair</th>
-              <th>Exchange</th>
-              <th>Max Bid</th>
-              <th>Min Ask</th>
-              <th>Timestamp</th>
+              <th>{t('otc-t-1')}</th>
+              <th>{t('otc-t-2')}</th>
+              <th>{t('otc-t-3')}</th>
+              <th>{t('otc-t-4')}</th>
+              <th>{t('otc-t-5')}</th>
             </tr>
           </thead>
           <tbody>

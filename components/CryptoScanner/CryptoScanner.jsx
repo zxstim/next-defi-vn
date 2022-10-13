@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function CryptoScanner() {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();
     const [query, setQuery] = useState("")  
     const mockData = {
         "iradar": [
@@ -66,19 +69,19 @@ export default function CryptoScanner() {
 
     return (
         <>
-            <h2 id="scanner">##  Crypto Scanner <button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
+            <h2 id="scanner">{t('scan')}<button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
             <p>🔗 uid: scanner</p>
-            <a href="https://buidl.defi.vn/explain-pyhash#heading-crypto-scanner">🔑 Explain</a>
-            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder=" Search crypto..." onChange={event => setQuery(event.target.value)}/></div>
+            <a href="https://buidl.defi.vn/explain-pyhash#heading-crypto-scanner">{t('explain')}</a>
+            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder={t('scan-search')} onChange={event => setQuery(event.target.value)}/></div>
             <table>
             <thead>
                 <tr>         
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Buy</th>
-                    <th>Sell</th>
-                    <th>Hold</th>
-                    <th>Timestamp</th>
+                    <th>{t('scan-t-1')}</th>
+                    <th>{t('scan-t-2')}</th>
+                    <th>{t('scan-t-3')}</th>
+                    <th>{t('scan-t-4')}</th>
+                    <th>{t('scan-t-5')}</th>
+                    <th>{t('scan-t-6')}</th>
                 </tr>
             </thead>
             <tbody>

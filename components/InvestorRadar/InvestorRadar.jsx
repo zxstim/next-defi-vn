@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function InvestorRadar() {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();
     const [query, setQuery] = useState("")  
     const mockData = {
         "iradar": [
@@ -31,20 +34,20 @@ export default function InvestorRadar() {
       
     return (
         <>
-            <h2 id="invest">##  Investor Radar <button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
+            <h2 id="invest">{t('inv')}<button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
             <p>🔗 uid: invest</p>
-            <a href="https://buidl.defi.vn/explain-pyhash#heading-investor-radar">🔑 Explain</a>
-            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder=" Search investor..." onChange={event => setQuery(event.target.value)}/></div>
+            <a href="https://buidl.defi.vn/explain-pyhash#heading-investor-radar">{t('explain')}</a>
+            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder={t('inv-search')} onChange={event => setQuery(event.target.value)}/></div>
             <table>
             <thead>
                 <tr>         
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Diamond Hands</th>
-                    <th>Value-add</th>
-                    <th>Brand Name</th>
-                    <th>Score</th>
-                    <th>Tier</th>
+                    <th>{t('inv-t-1')}</th>
+                    <th>{t('inv-t-2')}</th>
+                    <th>{t('inv-t-3')}</th>
+                    <th>{t('inv-t-4')}</th>
+                    <th>{t('inv-t-5')}</th>
+                    <th>{t('inv-t-6')}</th>
+                    <th>{t('inv-t-7')}</th>
                 </tr>
             </thead>
             <tbody>

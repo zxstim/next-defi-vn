@@ -1,115 +1,83 @@
-import Head from 'next/head'
-import Script from 'next/script'
-import Image from 'next/image'
-import ComponentList from "../components/ComponentList/ComponentList";
-import UpButton from "../components/UpButton/UpButton";
-import axios from "axios";
-
+import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import ForDevelopers from "../components/ForDevelopers/ForDevelopers";
+import ForInvestors from "../components/ForInvestors/ForInvestors";
 
 export default function Home(props) {
-  // const [iniData, setIniData] = useState(
-  //   {
-  //     "otcprice": [], 
-  //     "p1ethusdt": [],
-  //     "p1btcusdt": [],
-  //     "p1nearusdt": [],
-  //     "p1solusdt": [],
-  //     "p1bnbusdt": [],
-  //     "p1trxusdt": [],
-  //     "p1axsusdt": [],
-  //     "p1c98usdt": [],
-  //     "p1adausdt": [],
-  //     "p1shibusdt": [],
-  //     "sr1": [],
-  //     "projectradar": [],
-  //   }
-  // )
-
-  // useEffect(() => {
-  //   axios
-  //     .get("https://api3.pyhash.com/signal/all")
-  //     .then((res) => {
-  //       setIniData(res.data)
-  //     })
-  // }, [])
-
-  function RefreshButton() {
-    return (
-        <button
-            onClick={() => {
-              window.location.reload();
-              window.alert('Refreshed');
-            }}
-            style={{
-                position: 'fixed',
-                fontSize: '14px',
-                bottom: '70px',
-                right: '40px',
-                paddingTop: '5px',
-                paddingBottom: '5px',
-                borderRadius: '6px',
-                textAlign: 'center',
-                WebkitAppearance: 'none',
-                border: '1px solid var(--color-border-default)'
-            }}
-        >
-        🔄 Refresh
-        </button>
-    )
-  }
+  const { t } = useTranslation("common");
 
   return (
-    <div>
+    <>
       <Head>
         <title>Defi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta
-          name="description"
-          content="defi.vn"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="defi.vn" />
       </Head>
       <div className="App">
         <div className="markdown-body">
-          <header className="App-header">
-            <h1 id="top"># Pyhash</h1>
-            <blockquote>👌 Yes, we have removed styling for lightning fast experience!</blockquote>
-          </header>
-          <h2>## Decode Finance</h2>
-          <ul>
-            <li><a href="https://buidl.defi.vn">🛠️ Read about BUIDL</a></li>
-            {/* <li><nav><Link to="/about">ℹ️ About Pyhash</Link></nav></li> */}
-            <li><a href="https://www.patreon.com/bePatron?u=69160974">🙏  Support us</a></li>
-          </ul>
-          <ComponentList data={props.data}/>
-          <UpButton />
-          <RefreshButton />
-          <h2>## FP1 - Futures Signals</h2>
-          <p>🚧 Updating soon</p>
-          <h2>## OP1 - Options Signals</h2>
-          <p>🚧 Updating soon</p>
-          <h2><a href="https://github.com/orgs/pyhashdotcom/projects/5">## 🛣️ Follow our roadmap on Github</a></h2>
+          <h1 id="top">{t("title")}</h1>
+          <blockquote>{t("subtitle")}</blockquote>
+          <div style={{ display: "flex" }}>
+            <Link href="/" locale="en">
+              <a style={{ textDecoration: 'none' }}>
+                <p
+                  style={{
+                    backgroundColor: "#ebebeb",
+                    margin: "5px 5px 5px 0px",
+                    padding: "5px 5px 5px 5px",
+                    WebkitAppearance: "none",
+                    borderRadius: "6px",
+                    border: "2px solid var(--color-border-default)",
+                    fontSize: "20px",
+                    color: "var(--color-fg-default)"
+                  }}
+                >
+                  🇬🇧
+                </p>
+              </a>
+            </Link>
+            <Link href="/" locale="vi">
+              <a style={{ textDecoration: 'none' }}>
+                <p
+                  style={{
+                    backgroundColor: "#ebebeb",
+                    margin: "5px 5px 5px 0px",
+                    padding: "5px 5px 5px 5px",
+                    WebkitAppearance: "none",
+                    borderRadius: "6px",
+                    border: "2px solid var(--color-border-default)",
+                    fontSize: "20px",
+                    color: "var(--color-fg-default)"
+                  }}
+                >
+                  🇻🇳
+                </p>
+              </a>  
+            </Link>
+          </div>
+          <ForDevelopers />
+          <ForInvestors />
           <br />
           <hr />
-          <h2># Footer</h2>
-          <p>📍 Pyhash LLC</p>
-          <p>📍 1007 N Orange St.</p>
-          <p>📍 4th Floor Suite # 956</p>
-          <p>📍 Wilmington, Delaware 19801, United States</p>
-          <p>📍 team@pyhash.com</p>
-          <br />
-          <br />
+          <h3>
+            Ping me <a href="https://t.me/victoristocrat">@victoristocrat</a>
+          </h3>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await axios.get("https://api3.pyhash.com/signal/all");
-  // Pass data to the page via props
-  return { props: { data: res.data } }
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+      // Will be passed to the page component as props
+    },
+  };
 }

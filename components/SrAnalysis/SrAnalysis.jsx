@@ -1,11 +1,14 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import commify from "../../utils/commify";
 import formatTimeStamp from "../../utils/formatTimestamp";
 import useTable from "../../hooks/useTable";
-import { useState } from "react";
 import TableFooter from "../TableFooter/TableFooter";
 
 
 export default function Sr1AnalysisComponent({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [query, setQuery] = useState("")
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
@@ -18,18 +21,18 @@ export default function Sr1AnalysisComponent({ data, rowsPerPage }) {
 
     return (
     <>
-        <h2 id="sr1">## SR1 Analysis <button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
+        <h2 id="sr1">{t('sr1')}<button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
         <p>🔗 uid: sr1</p>
-        <a href="https://buidl.defi.vn/explain-pyhash#heading-sr-analysis">🔑 Explain</a>
-        <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder=" Search pair..." onChange={event => setQuery(event.target.value)}/></div>
+        <a href="https://buidl.defi.vn/explain-pyhash#heading-sr-analysis">{t('explain')}</a>
+        <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder={t('sr1-search')} onChange={event => setQuery(event.target.value)}/></div>
         <table>
         <thead>
             <tr>         
-                <th>Pair</th>
-                <th>Support</th>
-                <th>Resistance</th>
-                <th>Status</th>
-                <th>Timestamp</th>
+                <th>{t('sr1-t-1')}</th>
+                <th>{t('sr1-t-2')}</th>
+                <th>{t('sr1-t-3')}</th>
+                <th>{t('sr1-t-4')}</th>
+                <th>{t('sr1-t-5')}</th>
             </tr>
         </thead>
         <tbody>

@@ -1,43 +1,50 @@
+import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import commify from "../../utils/commify";
 import formatTimeStamp from "../../utils/formatTimestamp";
 import useTable from "../../hooks/useTable";
-import { useState } from "react";
 import TableFooter from "../TableFooter/TableFooter";
 
 function renderFinalPnl (p1Signals) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation(); 
     if (p1Signals.at(0) === undefined) {
-    return <p>💰  Final PnL: 0</p>
+    return <p>{t('f-pnl-4')}</p>
     } else {
         if (parseFloat(p1Signals.at(0).pnl) > 0) {
-            return <h4>💰  Final PnL: <span style={{color: "#0ecb81"}}>{p1Signals.at(0).pnl}</span></h4>
+            return <h4>{t('f-pnl-1')} <span style={{color: "#0ecb81"}}>{p1Signals.at(0).pnl}</span></h4>
         } else if (parseFloat(p1Signals.at(0).pnl) === 0) {
-            return <h4>🤷  Final PnL: <span>{p1Signals.at(0).pnl}</span></h4>
+            return <h4>{t('f-pnl-2')} <span>{p1Signals.at(0).pnl}</span></h4>
         } else {
-            return <h4>💸  Final PnL: <span style={{color: "#f6465d"}}>{p1Signals.at(0).pnl}</span></h4>
+            return <h4>{t('f-pnl-3')} <span style={{color: "#f6465d"}}>{p1Signals.at(0).pnl}</span></h4>
         }
     }
 }
 
+
 function P1S1Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();  
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
+
     return (
         <>
-            <h3 id="p1s1">### Pair: ETH-USDT | Binance</h3>
+            <h3 id="p1s1">{t('p1s1')}</h3>
             <p>🔗 uid: p1s1</p>
             {renderFinalPnl(p1Signals)} 
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -61,25 +68,27 @@ function P1S1Component({ data, rowsPerPage }) {
 }
 
 function P1S2Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s2">### Pair: BTC-USDT | Binance</h3>
+            <h3 id="p1s2">{t('p1s2')}</h3>
             <p>🔗 uid: p1s2</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -103,25 +112,27 @@ function P1S2Component({ data, rowsPerPage }) {
 }
 
 function P1S3Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s3">### Pair: NEAR-USDT | Binance</h3>
+            <h3 id="p1s3">{t('p1s3')}</h3>
             <p>🔗 uid: p1s3</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -145,25 +156,27 @@ function P1S3Component({ data, rowsPerPage }) {
 }
 
 function P1S4Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s4">### Pair: SOL-USDT | Binance</h3>
+            <h3 id="p1s4">{t('p1s4')}</h3>
             <p>🔗 uid: p1s4</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -187,25 +200,27 @@ function P1S4Component({ data, rowsPerPage }) {
 }
 
 function P1S5Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s5">### Pair: BNB-USDT | Binance</h3>
+            <h3 id="p1s5">{t('p1s5')}</h3>
             <p>🔗 uid: p1s5</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -229,25 +244,27 @@ function P1S5Component({ data, rowsPerPage }) {
 }
 
 function P1S6Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s6">### Pair: TRX-USDT | Binance</h3>
+            <h3 id="p1s6">{t('p1s6')}</h3>
             <p>🔗 uid: p1s6</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -271,25 +288,27 @@ function P1S6Component({ data, rowsPerPage }) {
 }
 
 function P1S7Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s7">### Pair: AXS-USDT | Binance</h3>
+            <h3 id="p1s7">{t('p1s7')}</h3>
             <p>🔗 uid: p1s7</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -313,25 +332,27 @@ function P1S7Component({ data, rowsPerPage }) {
 }
 
 function P1S8Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s8">### Pair: C98-USDT | Binance</h3>
+            <h3 id="p1s8">{t('p1s8')}</h3>
             <p>🔗 uid: p1s8</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -355,25 +376,27 @@ function P1S8Component({ data, rowsPerPage }) {
 }
 
 function P1S9Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s9">### Pair: ADA-USDT | Binance</h3>
+            <h3 id="p1s9">{t('p1s9')}</h3>
             <p>🔗 uid: p1s9</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -397,25 +420,27 @@ function P1S9Component({ data, rowsPerPage }) {
 }
 
 function P1S10Component({ data, rowsPerPage }) {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
 
     return (
         <>
-            <h3 id="p1s10">### Pair: SHIB-USDT | Binance</h3>
+            <h3 id="p1s10">{t('p1s10')}</h3>
             <p>🔗 uid: p1s10</p>
             {renderFinalPnl(p1Signals)}
             <table>
                 <thead>
                 <tr>
-                    <th>Pair</th>
-                    <th>Exchange</th>
-                    <th>Order</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>PnL</th>
-                    <th>Timestamp</th>
+                    <th>{t('p1-t-1')}</th>
+                    <th>{t('p1-t-2')}</th>
+                    <th>{t('p1-t-3')}</th>
+                    <th>{t('p1-t-4')}</th>
+                    <th>{t('p1-t-5')}</th>
+                    <th>{t('p1-t-6')}</th>
+                    <th>{t('p1-t-7')}</th>
                 </tr>
                 </thead>
                 <tbody>

@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function ExchangeRadar() {
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();
     const [query, setQuery] = useState("")  
     const mockData = {
         "iradar": [
@@ -25,18 +28,18 @@ export default function ExchangeRadar() {
       
     return (
         <>
-            <h2 id="exchange">##  Exchange Radar <button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
+            <h2 id="exchange">{t('exr')}<button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
             <p>🔗 uid: exchange</p>
-            <a href="https://buidl.defi.vn/explain-pyhash#heading-exchange-scanner">🔑 Explain</a>
-            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder=" Search exchange..." onChange={event => setQuery(event.target.value)}/></div>
+            <a href="https://buidl.defi.vn/explain-pyhash#heading-exchange-scanner">{t('explain')}</a>
+            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder={t('exr-search')} onChange={event => setQuery(event.target.value)}/></div>
             <table>
             <thead>
                 <tr>         
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Swole score</th>
-                    <th>Tier</th>
-                    <th>Timestamp</th>
+                    <th>{t('exr-t-1')}</th>
+                    <th>{t('exr-t-2')}</th>
+                    <th>{t('exr-t-3')}</th>
+                    <th>{t('exr-t-4')}</th>
+                    <th>{t('exr-t-5')}</th>
                 </tr>
             </thead>
             <tbody>

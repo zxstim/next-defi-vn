@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 
 
 export default function M1Predictions() {
-    
+    // eslint-disable-next-line
+    const { t, i18n } = useTranslation();     
     const data = [
         {
             m: 'M1',
@@ -70,9 +72,9 @@ export default function M1Predictions() {
 
     return (
         <>
-            <h2 id="m1">## M1 Predictions <button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
+            <h2 id="m1">{t('m1')}<button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
             <p>🔗 uid: m1</p>
-            <a href="https://buidl.defi.vn/explain-pyhash#heading-m1-predictions">🔑 Explain</a>
+            <a href="https://buidl.defi.vn/explain-pyhash#heading-m1-predictions">{t('explain')}</a>
             <div  style={{ 
             maxWidth: "100%",
             height: "350px",

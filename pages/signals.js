@@ -6,7 +6,7 @@ import UpButton from "../components/UpButton/UpButton";
 import BotComponentList from "../components/BotComponentList/BotComponentList";
 import axios from "axios";
 
-export default function Bot(props) {
+export default function Signals(props) {
   const { t } = useTranslation("common");
 
   function RefreshButton() {
@@ -40,7 +40,7 @@ export default function Bot(props) {
         <div className="markdown-body">
           <h1 id="top">{t("s2t4")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/bot" locale="en">
+            <Link href="/en/signals" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
@@ -58,7 +58,7 @@ export default function Bot(props) {
                 </p>
               </a>
             </Link>
-            <Link href="/bot" locale="vi">
+            <Link href="/signals" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
@@ -84,7 +84,8 @@ export default function Bot(props) {
           <br />
           <hr />
           <h3>
-            Ping me <a href="https://t.me/victoristocrat">@victoristocrat</a>
+            {t("footer")}
+            <a href="https://t.me/victoristocrat">@victoristocrat</a>
           </h3>
         </div>
       </div>

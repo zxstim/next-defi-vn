@@ -16,7 +16,7 @@ export default function Home(props) {
           <blockquote>{t("subtitle")}</blockquote>
           <div style={{ display: "flex" }}>
             <Link href="/" locale="en">
-              <a style={{ textDecoration: 'none' }}>
+              <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
                     backgroundColor: "#ebebeb",
@@ -26,7 +26,7 @@ export default function Home(props) {
                     borderRadius: "6px",
                     border: "2px solid var(--color-border-default)",
                     fontSize: "20px",
-                    color: "var(--color-fg-default)"
+                    color: "var(--color-fg-default)",
                   }}
                 >
                   🇬🇧
@@ -34,7 +34,7 @@ export default function Home(props) {
               </a>
             </Link>
             <Link href="/" locale="vi">
-              <a style={{ textDecoration: 'none' }}>
+              <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
                     backgroundColor: "#ebebeb",
@@ -44,12 +44,12 @@ export default function Home(props) {
                     borderRadius: "6px",
                     border: "2px solid var(--color-border-default)",
                     fontSize: "20px",
-                    color: "var(--color-fg-default)"
+                    color: "var(--color-fg-default)",
                   }}
                 >
                   🇻🇳
                 </p>
-              </a>  
+              </a>
             </Link>
           </div>
           <ForDevelopers />
@@ -57,7 +57,8 @@ export default function Home(props) {
           <br />
           <hr />
           <h3>
-            Ping me <a href="https://t.me/victoristocrat">@victoristocrat</a>
+            {t("footer")}
+            <a href="https://t.me/victoristocrat">@victoristocrat</a>
           </h3>
         </div>
       </div>

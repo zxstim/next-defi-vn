@@ -74,11 +74,11 @@ export default function ForInvestors() {
             </h3>
           </a>
         </Link>
-        <Link href="/testing">
+        <Link href="/signals">
         {/* <Link href="/signals"> */}
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s2t4")} <button style={tagStyle}>Testing</button>
+            <h3 style={buttonStyle}>
+              {t("s2t4")}
             </h3>
           </a>
         </Link>

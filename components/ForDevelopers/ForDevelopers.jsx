@@ -55,7 +55,7 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("s1t1")}</h3>
           </a>
         </Link>
-        <Link href="https://github.com/defivn/smart-contract-library">
+        <Link href="/opensource">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("s1t2")}</h3>
           </a>

@@ -9,9 +9,9 @@ export default function Home(props) {
     <>
       <div className="App">
         <div className="markdown-body">
-          <h1 id="top">Testing</h1>
+          <h1 id="top">{t("s1t2")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/testing" locale="en">
+            <Link href="/en/opensource" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
@@ -29,7 +29,7 @@ export default function Home(props) {
                 </p>
               </a>
             </Link>
-            <Link href="/vi/testing" locale="vi">
+            <Link href="/opensource" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
@@ -48,12 +48,16 @@ export default function Home(props) {
               </a>
             </Link>
           </div>
-          <p>{t("test")}</p>
           <Link href="/">{t("back")}</Link>
+          <h2>{t("os-sub1")}</h2>
+          <p>{t("test")}</p>
+          <h2>{t("os-sub2")}</h2>
+					<p>{t("test")}</p>
           <br />
           <hr />
           <h3>
-            {t("footer")}<a href="https://t.me/victoristocrat">@victoristocrat</a>
+            {t("footer")}
+            <a href="https://t.me/victoristocrat">@victoristocrat</a>
           </h3>
         </div>
       </div>

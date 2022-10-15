@@ -8,7 +8,7 @@ import SrAnalysisComponent from "../components/SrAnalysis/SrAnalysis";
 import axios from "axios";
 
 export default function Bot(props) {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("signals");
 
   function RefreshButton() {
     return (

@@ -1,12 +1,12 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 
 
 export default function M1Predictions() {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("signals");     
     const data = [
         {
             m: 'M1',

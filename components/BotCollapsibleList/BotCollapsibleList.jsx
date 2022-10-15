@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useTranslation } from "next-i18next";
 
-const Collapsible = ({ label }) => {
+const BotCollapsibleList = ({ label }) => {
   // eslint-disable-next-line
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation("signals");
   const [isOpen, setIsOpen] = useState(false)
   const hideContent = {
     font: 'inherit',
@@ -70,4 +70,4 @@ const Collapsible = ({ label }) => {
   );
 };
 
-export default Collapsible;
+export default BotCollapsibleList;

@@ -14,14 +14,14 @@ import {
   } from "../P1Signals/P1Signals";
 import CryptoScanner from "../CryptoScanner/CryptoScanner";
 import SrAnalysisComponent from "../SrAnalysis/SrAnalysis";
-import Collapsible from "../BotCollapsibleList/BotCollapsibleList";
+import BotCollapsibleList from "../BotCollapsibleList/BotCollapsibleList";
 // import PortfolioComp from "../PortfolioComp/PortfolioComp";
 import M1Predictions from "../M1Predictions/M1Predictions";
 
 
 function renderQueriedComponent(query, componentData) {
     // eslint-disable-next-line
-    const { t } = useTranslation("common");     
+    const { t } = useTranslation("signals");     
     if (query === '') {
         return (
             <>
@@ -101,14 +101,14 @@ function renderQueriedComponent(query, componentData) {
 
 export default function BotComponentList(props) {
     // eslint-disable-next-line
-    const { t } = useTranslation("common"); 
+    const { t } = useTranslation("signals"); 
     const [query, setQuery] = useState("")
     const componentData = props.data
     return (
         <>
             <h2>{t('app-search')}</h2>
             <div>🔎 <input placeholder={t('app-input')} onChange={event => setQuery(event.target.value)}/></div>
-            <Collapsible id="menu" label={t('menu')}/>
+            <BotCollapsibleList id="menu" label={t('menu')}/>
             {renderQueriedComponent(query.toLowerCase(), componentData)}
         </>
     )

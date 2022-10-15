@@ -6,21 +6,21 @@ import Script from "next/script";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <Script
-          strategy="lazyOnload"
-          src="https://www.googletagmanager.com/gtag/js?id=G-B3Z17PVC6F"
-        />
+      <Script
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=G-B3Z17PVC6F"
+      />
 
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
+      <Script id="google-analytics" strategy="lazyOnload">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-B3Z17PVC6F');
           `}
-        </Script>
+      </Script>
+      <Head>
         <title>Defi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />

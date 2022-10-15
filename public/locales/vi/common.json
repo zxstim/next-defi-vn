@@ -117,7 +117,7 @@
     "refresh-button": "🔄 Tải lại",
     "refreshed-alert": "👍 Đã tải lại",
     "about-defi": "Về Defi.vn",
-    "about-back": "⬅️ Quay về trang chủ",
+    "back": "⬅️ Quay về trang chủ",
     "about-why": "Mục tiêu của Defi.vn",
     "about-intro": "🇻🇳 Việt Nam có một hệ sinh thái sôi động của những dev tài năng. Tuy nhiên, hiện nay không có nhiều tài nguyên hỗ trợ cho những dev này để phát triển trên web3. Không có nhiều nguồn động lực thúc đẩy xây dựng trên web3. Vì thế Defi.vn muốn trở thành một dự án cộng đồng hỗ trợ web3 dev tại Việt Nam.",
     "about-list": "Danh sách tài nguyên",
@@ -130,5 +130,6 @@
     "about-paid-2": "Cố vấn hoặc phát triển smart contract",
     "about-paid-3": "Kiểm tra và audit smart contract",
     "about-paid-4": "Cá nhân hoá app trading",
-    "footer": "Nhắn mình " 
+    "footer": "Nhắn mình ",
+    "test": "🚧 Đang xây dựng"  
 }

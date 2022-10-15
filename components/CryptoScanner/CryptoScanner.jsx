@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "next-i18next";
 
 export default function CryptoScanner() {
     // eslint-disable-next-line

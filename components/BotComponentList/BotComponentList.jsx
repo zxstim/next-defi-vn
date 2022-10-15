@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "next-i18next";
 import {
     P1S1Component,
     P1S2Component,
@@ -99,7 +99,7 @@ function renderQueriedComponent(query, componentData) {
 }
 
 
-export default function ComponentList(props) {
+export default function BotComponentList(props) {
     // eslint-disable-next-line
     const { t, i18n } = useTranslation();
     const [query, setQuery] = useState("")

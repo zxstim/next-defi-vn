@@ -38,13 +38,6 @@ export default function Bot(props) {
 
   return (
     <>
-      <Head>
-        <title>Defi.vn</title>
-        <meta charSet="utf-8" />
-        <link rel="icon" href="../defi.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="defi.vn" />
-      </Head>
       <div className="App">
         <div className="markdown-body">
         <div style={{ display: "flex", marginBottom: "10px" }}>

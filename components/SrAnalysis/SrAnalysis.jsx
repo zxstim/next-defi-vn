@@ -8,7 +8,7 @@ import TableFooter from "../TableFooter/TableFooter";
 
 export default function Sr1AnalysisComponent({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");     
     const [query, setQuery] = useState("")
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);

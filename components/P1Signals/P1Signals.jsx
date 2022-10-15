@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import commify from "../../utils/commify";
 import formatTimeStamp from "../../utils/formatTimestamp";
 import useTable from "../../hooks/useTable";
@@ -7,7 +7,7 @@ import TableFooter from "../TableFooter/TableFooter";
 
 function renderFinalPnl (p1Signals) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation(); 
+    const { t } = useTranslation("common");  
     if (p1Signals.at(0) === undefined) {
     return <p>{t('f-pnl-4')}</p>
     } else {
@@ -24,7 +24,7 @@ function renderFinalPnl (p1Signals) {
 
 function P1S1Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();  
+    const { t } = useTranslation("common");   
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -69,7 +69,7 @@ function P1S1Component({ data, rowsPerPage }) {
 
 function P1S2Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -113,7 +113,7 @@ function P1S2Component({ data, rowsPerPage }) {
 
 function P1S3Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -157,7 +157,7 @@ function P1S3Component({ data, rowsPerPage }) {
 
 function P1S4Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -201,7 +201,7 @@ function P1S4Component({ data, rowsPerPage }) {
 
 function P1S5Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -245,7 +245,7 @@ function P1S5Component({ data, rowsPerPage }) {
 
 function P1S6Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -289,7 +289,7 @@ function P1S6Component({ data, rowsPerPage }) {
 
 function P1S7Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -333,7 +333,7 @@ function P1S7Component({ data, rowsPerPage }) {
 
 function P1S8Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -377,7 +377,7 @@ function P1S8Component({ data, rowsPerPage }) {
 
 function P1S9Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data
@@ -421,7 +421,7 @@ function P1S9Component({ data, rowsPerPage }) {
 
 function P1S10Component({ data, rowsPerPage }) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");      
     const [page, setPage] = useState(1);
     const { slice, range } = useTable(data, page, rowsPerPage);
     const p1Signals = data

@@ -21,7 +21,7 @@ import M1Predictions from "../M1Predictions/M1Predictions";
 
 function renderQueriedComponent(query, componentData) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();     
+    const { t } = useTranslation("common");     
     if (query === '') {
         return (
             <>
@@ -101,7 +101,7 @@ function renderQueriedComponent(query, componentData) {
 
 export default function BotComponentList(props) {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation("common"); 
     const [query, setQuery] = useState("")
     const componentData = props.data
     return (

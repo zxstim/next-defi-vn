@@ -37,7 +37,7 @@ export default function ForInvestors() {
     color: "#ffffff",
     borderRadius: "5px",
     height: "30px",
-    width: "60px",
+    width: "65px",
   };
 
   return (

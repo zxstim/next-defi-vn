@@ -60,6 +60,21 @@ export default function Home(props) {
             {t("footer")}
             <a href="https://t.me/victoristocrat">@victoristocrat</a>
           </h3>
+          <h3>
+            {t("donate")}
+          </h3>
+          <ul>
+            <li>
+              BTC: bc1q33f3fq37qstrptwd9xcrdgxemrxnkeqzrtjds8
+            </li>
+            <li>
+              ETH: 0x052F71E171b11bc037999B2341fCa73f4534D8A5
+            </li>
+            <li>
+              BSC: 0x052F71E171b11bc037999B2341fCa73f4534D8A5
+            </li>
+          </ul>
+          <br />
         </div>
       </div>
     </>

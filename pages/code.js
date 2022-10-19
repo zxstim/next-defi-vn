@@ -97,15 +97,12 @@ export default function Code(props) {
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps(context) {
-  // Fetch data from external API
-  const res = await axios.get("https://api3.pyhash.com/signal/all");
-  // Pass data to the page via props
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      data: res.data,
-      ...(await serverSideTranslations(context.locale, ["code"])),
+      ...(await serverSideTranslations(locale, ["code"])),
+      // Will be passed to the page component as props
     },
   };
 }
+

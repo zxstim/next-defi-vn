@@ -75,10 +75,10 @@ export default function ForDevelopers() {
             </h3>
           </a>
         </Link>
-        <Link href="/testing">
+        <Link href="/code">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s1t5")} <button style={tagStyle}>Testing</button>
+            <h3 style={buttonStyle}>
+              {t("s1t5")}
             </h3>
           </a>
         </Link>

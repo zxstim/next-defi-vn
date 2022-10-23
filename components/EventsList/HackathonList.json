@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Test event",
+        "web": "https://defi.vn/testing"
+    },
+    {
+        "id": 2,
+        "name": "Test event",
+        "web": "https://defi.vn/testing"
+    },
+    {
+        "id": 3,
+        "name": "Test event",
+        "web": "https://defi.vn/testing"
+    }
+]

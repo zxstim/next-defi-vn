@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 
 export default function CryptoScanner() {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation("signals");
     const [query, setQuery] = useState("")  
     const mockData = {
         "iradar": [

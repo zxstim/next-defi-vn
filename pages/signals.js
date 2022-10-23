@@ -5,9 +5,10 @@ import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import BotComponentList from "../components/BotComponentList/BotComponentList";
 import axios from "axios";
+import AppFooter from "../components/AppFooter/AppFooter";
 
 export default function Signals(props) {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("signals");
 
   function RefreshButton() {
     return (
@@ -83,10 +84,7 @@ export default function Signals(props) {
           <RefreshButton />
           <br />
           <hr />
-          <h3>
-            {t("footer")}
-            <a href="https://t.me/victoristocrat">@victoristocrat</a>
-          </h3>
+          <AppFooter />
         </div>
       </div>
     </>

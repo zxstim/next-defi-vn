@@ -3,17 +3,17 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import NeedHelp from "../components/NeedHelp/NeedHelp";
+import InvestorList from "../components/InvestorList/InvestorList";
 
-export default function NeedHelpList(props) {
-  const { t } = useTranslation("help");
+export default function Investors(props) {
+  const { t } = useTranslation("investors");
   return (
     <>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/help" locale="en">
+            <Link href="/en/investors" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
@@ -31,7 +31,7 @@ export default function NeedHelpList(props) {
                 </p>
               </a>
             </Link>
-            <Link href="/help" locale="vi">
+            <Link href="/investors" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p
                   style={{
@@ -52,7 +52,7 @@ export default function NeedHelpList(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <NeedHelp />
+          <InvestorList />
           <br />
           <hr />
           <AppFooter />
@@ -65,7 +65,7 @@ export default function NeedHelpList(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "help"])),
+      ...(await serverSideTranslations(locale, ["common", "investors"])),
       // Will be passed to the page component as props
     },
   };

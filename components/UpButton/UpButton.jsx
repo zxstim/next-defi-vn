@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "next-i18next";
 
 export default function UpButton() {
     // eslint-disable-next-line
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation("common");
     return (
         <button
             onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}

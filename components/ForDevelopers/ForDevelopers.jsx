@@ -62,31 +62,24 @@ export default function ForDevelopers() {
         </Link>
         <Link href="/testing">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
+            <h3 style={buttonStyle}>
               {t("s1t3")}
-              <button style={tagStyle}>Testing</button>
             </h3>
           </a>
         </Link>
-        <Link href="/testing">
+        <Link href="/events">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s1t4")} <button style={tagStyle}>Testing</button>
-            </h3>
+            <h3 style={buttonStyle}>{t("s1t4")}</h3>
           </a>
         </Link>
         <Link href="/code">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>
-              {t("s1t5")}
-            </h3>
+            <h3 style={buttonStyle}>{t("s1t5")}</h3>
           </a>
         </Link>
-        <Link href="/testing">
+        <Link href="/help">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s1t6")} <button style={tagStyle}>Testing</button>
-            </h3>
+            <h3 style={buttonStyle}>{t("s1t6")}</h3>
           </a>
         </Link>
       </div>

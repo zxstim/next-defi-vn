@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "FreeCodeCamp.org",
+      "web": "https://freecodecamp.org"
+    },
+    {
+      "id": 2,
+      "name": "Codecademy",
+      "web": "https://Codecademy.com"
+    },
+    {
+      "id": 3,
+      "name": "Datacamp",
+      "web": "https://datacamp.com"
+    }
+]

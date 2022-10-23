@@ -1,14 +1,8 @@
-import TestTable from "../components/InvestorRadar/InvestorRadar";
-
 export default function DefiStats() {
   return (
-    <>
-      <div className="App">
-        <div className="markdown-body">
-          <TestTable/>
-        </div>
-      </div>
-    </>
+    <p>
+    Testing
+    </p>
   )
 }
 

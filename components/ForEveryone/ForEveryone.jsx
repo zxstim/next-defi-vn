@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
-export default function ForInvestors() {
+export default function ForEveryone() {
   // eslint-disable-next-line
   const { t } = useTranslation("common");
 

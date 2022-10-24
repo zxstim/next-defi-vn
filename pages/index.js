@@ -3,7 +3,7 @@ import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import ForDevelopers from "../components/ForDevelopers/ForDevelopers";
-import ForInvestors from "../components/ForInvestors/ForInvestors";
+import ForEveryone from "../components/ForEveryone/ForEveryone";
 import AppFooter from "../components/AppFooter/AppFooter";
 
 export default function Home(props) {
@@ -54,7 +54,7 @@ export default function Home(props) {
             </Link>
           </div>
           <ForDevelopers />
-          <ForInvestors />
+          <ForEveryone />
           <br />
           <hr />
           <AppFooter />

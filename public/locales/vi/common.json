@@ -15,6 +15,7 @@
     "s2t3": "📈 Phân tích DeFi",
     "s2t4": "🔮 Tín hiệu",
     "s2t5": "🔎 Tìm hiểu về DeFi",
+    "s2t6": "🧑‍🚀 Nhà đầu tư",
     "learn-about-bot": "🤖 Trading bot",
     "os-sub1": "pyhashbot - App trading trên nền cloud",
     "os-sub2": "Thư viện Smart Contract",
@@ -43,5 +44,9 @@
     "about-paid-3": "Kiểm tra và audit smart contract",
     "about-paid-4": "Cá nhân hoá app trading",
     "footer": "Nhắn mình ",
-    "test": "🚧 Đang xây dựng"  
+    "test": "🚧 Đang xây dựng",
+    "page": "Trang ",
+    "gt-page": "| Tới trang:",
+    "show": "Hiện",
+    "of": "trong"  
 }

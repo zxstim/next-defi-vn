@@ -4,5 +4,9 @@
     "investors-list": "Investors list",
     "itable1": "No.",
     "itable2": "Name",
-    "itable3": "Contact"
+    "itable3": "Contact",
+    "page": "Page ",
+    "gt-page": "| Go to page:",
+    "show": "Show",
+    "of": "of"
 }

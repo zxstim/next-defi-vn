@@ -15,6 +15,7 @@
     "s2t3": "📈 DeFi analytics",
     "s2t4": "🔮 Signals",
     "s2t5": "🔎 Learn about DeFi",
+    "s2t6": "🧑‍🚀 Investors",
     "learn-about-bot": "🤖 Bot trading",
     "os-sub1": "pyhashbot - Cloud native trading app",
     "os-sub2": "Smart contract library",
@@ -43,5 +44,9 @@
     "about-paid-3": "Smart contract code audit",
     "about-paid-4": "Trading app customization",
     "footer": "Ping me ",
-    "test": "🚧 Under construction" 
+    "test": "🚧 Under construction",
+    "page": "Page ",
+    "gt-page": "| Go to page:",
+    "show": "Show",
+    "of": "of"    
 }

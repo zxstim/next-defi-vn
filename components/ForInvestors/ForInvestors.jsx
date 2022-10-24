@@ -50,43 +50,45 @@ export default function ForInvestors() {
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
         }}
       >
-        <Link href="/testing">
-        {/* <Link href="/crypto-ramp"> */}
+        <Link href="/buy">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s2t1")} <button style={tagStyle}>Testing</button>
+            <h3 style={buttonStyle}>
+              {t("s2t1")}
             </h3>
           </a>
         </Link>
-        <Link href="/testing">
-        {/* <Link href="/defi-stats"> */}
+        <Link href="/defi-stats">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s2t2")} <button style={tagStyle}>Testing</button>
+            <h3 style={buttonStyle}>
+              {t("s2t2")}
             </h3>
           </a>
         </Link>
-        <Link href="/testing">
-        {/* <Link href="/defi-analytics"> */}
+        <Link href="/defi-analytics">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s2t3")} <button style={tagStyle}>Testing</button>
+            <h3 style={buttonStyle}>
+              {t("s2t3")}
             </h3>
           </a>
         </Link>
         <Link href="/signals">
-        {/* <Link href="/signals"> */}
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>
               {t("s2t4")}
             </h3>
           </a>
         </Link>
-        <Link href="/testing">
-        {/* <Link href="/learn-defi"> */}
+        <Link href="/learn-defi">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonUnderTestingStyle}>
-              {t("s2t5")} <button style={tagStyle}>Testing</button>
+            <h3 style={buttonStyle}>
+              {t("s2t5")}
+            </h3>
+          </a>
+        </Link>
+        <Link href="/investors">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>
+              {t("s2t6")}
             </h3>
           </a>
         </Link>

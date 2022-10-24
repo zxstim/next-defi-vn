@@ -4,11 +4,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import OtcPriceComponent from "../components/OtcPrice/OtcPrice";
 import UpButton from "../components/UpButton/UpButton";
+import AppFooter from "../components/AppFooter/AppFooter";
 import axios from "axios";
 
 export default function BuyCrypto(props) {
 
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("buy");
   
   function RefreshButton() {
     return (
@@ -30,7 +31,7 @@ export default function BuyCrypto(props) {
                 border: '1px solid var(--color-border-default)'
             }}
         >
-        🔄 Refresh
+        {t("refresh-button")}
         </button>
     )
   }
@@ -39,8 +40,9 @@ export default function BuyCrypto(props) {
     <>
       <div className="App">
         <div className="markdown-body">
+        <h1 id="top">{t("title")}</h1>
         <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/crypto-ramp" locale="en">
+            <Link href="/en/buy" locale="en">
               <a style={{ textDecoration: 'none' }}>
                 <p
                   style={{
@@ -58,7 +60,7 @@ export default function BuyCrypto(props) {
                 </p>
               </a>
             </Link>
-            <Link href="/vi/crypto-ramp" locale="vi">
+            <Link href="/vi/buy" locale="vi">
               <a style={{ textDecoration: 'none' }}>
                 <p
                   style={{
@@ -78,14 +80,12 @@ export default function BuyCrypto(props) {
             </Link>
           </div>
           <Link href="/">{t('back')}</Link>
-          <OtcPriceComponent data={props.data} rowsPerPage={9}/>
+          <OtcPriceComponent data={props.data}/>
           <UpButton />
           <RefreshButton />
           <br />
           <hr />
-          <h3>
-            Ping me <a href="https://t.me/victoristocrat">@victoristocrat</a>
-          </h3>
+          <AppFooter />        
         </div>
       </div>  
     </>
@@ -96,11 +96,10 @@ export default function BuyCrypto(props) {
 export async function getServerSideProps(context) {
   // Fetch data from external API
   const res = await axios.get("https://api3.pyhash.com/signal/all/otcprice/");
-  const { locale } = context
   // Pass data to the page via props
   return { 
     props: { 
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(context.locale, ["common", "buy"])),
       data: res.data
     } 
   }

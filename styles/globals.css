@@ -1017,3 +1017,31 @@
 .markdown-body ::-webkit-calendar-picker-indicator {
   filter: invert(50%);
 }
+
+.table-button {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-appearance: none;
+  border: 1px solid var(--color-border-default);
+  width: 40px;
+}
+
+.table-filter-bar {
+  width: 100px;
+}
+
+.table-selector-bar {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-align: left;
+  border: 1px solid var(--color-border-default);
+  width: 100px;
+}

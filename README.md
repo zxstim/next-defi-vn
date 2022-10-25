@@ -1,3 +1,13 @@
+# Defi.vn website
+
+Created by [@victoristocrat](https://github.com/victoristocrat) at [Defi.vn](https://defi.vn)
+
+# Why open source?
+
+To provide a list of all development resources and educational content available so everyone can equip themselves with knowledge for their Web3 joruney [#WAGMI](https://twitter.com/victoristocrat)
+
+# How to build with [Next.js](https://nextjs.org/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -1,16 +1,17 @@
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import OpensourceList from "../components/OpensourceList/OpensourceList";
 import AppFooter from "../components/AppFooter/AppFooter";
 
 export default function Home(props) {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("opensource");
 
   return (
     <>
       <div className="App">
         <div className="markdown-body">
-          <h1 id="top">{t("s1t2")}</h1>
+          <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
             <Link href="/en/opensource" locale="en">
               <a style={{ textDecoration: "none" }}>
@@ -50,10 +51,7 @@ export default function Home(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <h2>{t("os-sub1")}</h2>
-          <p><a href="https://github.com/defivn/pyhashbot">pyhashbot</a></p>
-          <h2>{t("os-sub2")}</h2>
-					<p><a href="https://github.com/defivn/smart-contract-library">smart-contract-library</a></p>
+          <OpensourceList />
           <br />
           <hr />
           <AppFooter />
@@ -67,7 +65,7 @@ export default function Home(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["common", "opensource"])),
       // Will be passed to the page component as props
     },
   };

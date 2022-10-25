@@ -3,37 +3,13 @@ import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
+import RefreshButton from "../components/RefreshButton/RefreshButton";
 import BotComponentList from "../components/BotComponentList/BotComponentList";
 import axios from "axios";
 import AppFooter from "../components/AppFooter/AppFooter";
 
 export default function Signals(props) {
   const { t } = useTranslation("signals");
-
-  function RefreshButton() {
-    return (
-      <button
-        onClick={() => {
-          window.location.reload();
-          window.alert("Refreshed");
-        }}
-        style={{
-          position: "fixed",
-          fontSize: "14px",
-          bottom: "70px",
-          right: "40px",
-          paddingTop: "5px",
-          paddingBottom: "5px",
-          borderRadius: "6px",
-          textAlign: "center",
-          WebkitAppearance: "none",
-          border: "1px solid var(--color-border-default)",
-        }}
-      >
-        🔄 Refresh
-      </button>
-    );
-  }
 
   return (
     <>

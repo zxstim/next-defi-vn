@@ -3,6 +3,10 @@
     "back": "⬅️ Quay về trang chủ",
     "events-list": "Danh sách sự kiện",
     "hackathons-list": "Danh sách Hackathon",
-    "etable1": "STT",
-    "etable2": "Tên"
+    "etable1": "Tên",
+    "etable2": "Web",
+    "page": "Trang ",
+    "gt-page": "| Tới trang:",
+    "show": "Hiện",
+    "of": "trong"
 }

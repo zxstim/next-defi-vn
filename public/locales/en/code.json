@@ -5,5 +5,9 @@
     "ctable2": "Name",
     "footer": "Ping me ",
     "top-button": "⬆️ Top",
-    "refresh-button": "🔄 Refresh"
+    "refresh-button": "🔄 Refresh",
+    "page": "Page ",
+    "gt-page": "| Go to page:",
+    "show": "Show",
+    "of": "of"
 }

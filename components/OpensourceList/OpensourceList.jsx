@@ -13,22 +13,23 @@ import {
   flexRender,
   createColumnHelper,
 } from "@tanstack/react-table";
-import python from './Python.json';
+import opensourceList from './OpensourceList.json';
 
-export default function Python() {
-  const defaultData = python;
+
+export default function OpensourceList() {
+  const defaultData = opensourceList;
 
   const columnHelper = createColumnHelper();
 
   const columns = [
     columnHelper.accessor((row) => row.name, {
       id: "name",
-      header: () => <span>{t("ctable1")}</span>,
+      header: () => <span>{t("otable1")}</span>,
       cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
     }),
     columnHelper.accessor((row) => row.source, {
       id: "source",
-      header: () => <span>{t("ctable2")}</span>,
+      header: () => <span>{t("otable2")}</span>,
       cell: (info) => <a href={info.row.original.source}>{info.getValue()}</a>,
     }),
   ];
@@ -223,11 +224,11 @@ export default function Python() {
   }
   const [data, setData] = useState(() => [...defaultData]);
   const rerender = useReducer(() => ({}), {})[1];
-  const { t } = useTranslation("code");
+  const { t } = useTranslation("opensource");
 
   return (
     <>
-      <h2>Python</h2>
+      <h2>{t("os-list")}</h2>
       <Table
         {...{
           data,

@@ -3,6 +3,10 @@
     "back": "⬅️ Go back to home",
     "dev-list": "Dev list",
     "job-list": "Job list",
-    "htable1": "No.",
-    "htable2": "Name"
+    "htable1": "Name",
+    "htable2": "Web",
+    "page": "Page ",
+    "gt-page": "| Go to page:",
+    "show": "Show",
+    "of": "of"
 }

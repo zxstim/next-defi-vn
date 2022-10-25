@@ -3,6 +3,10 @@
     "back": "⬅️ Quay về trang chủ",
     "dev-list": "Danh sách Dev",
     "job-list": "Danh sách Job",
-    "htable1": "STT",
-    "htable2": "Tên"
+    "htable1": "Tên",
+    "htable2": "Web",
+    "page": "Trang ",
+    "gt-page": "| Tới trang:",
+    "show": "Hiện",
+    "of": "trong"
 }

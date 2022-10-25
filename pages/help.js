@@ -3,7 +3,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import NeedHelp from "../components/NeedHelp/NeedHelp";
+import DevsList from "../components/NeedHelp/DevsList";
+import JobsList from "../components/NeedHelp/JobsList";
 
 export default function NeedHelpList(props) {
   const { t } = useTranslation("help");
@@ -52,7 +53,8 @@ export default function NeedHelpList(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <NeedHelp />
+          <DevsList />
+          <JobsList />
           <br />
           <hr />
           <AppFooter />

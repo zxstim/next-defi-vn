@@ -60,7 +60,7 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("s1t2")}</h3>
           </a>
         </Link>
-        <Link href="/testing">
+        <Link href="/bot">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>
               {t("s1t3")}

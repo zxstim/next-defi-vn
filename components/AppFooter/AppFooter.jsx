@@ -7,7 +7,7 @@ export default function AppFooter() {
     <>
       <h3>
         {t("footer")}
-        <a href="https://t.me/victoristocrat">@victoristocrat</a>
+        <a href="https://t.me/zxstim">@zxstim</a>
       </h3>
       <h3>{t("donate")}</h3>
       <p>BTC: bc1q33f3fq37qstrptwd9xcrdgxemrxnkeqzrtjds8</p>

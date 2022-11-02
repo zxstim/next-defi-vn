@@ -3,43 +3,21 @@ import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
+import RefreshButton from "../components/RefreshButton/RefreshButton";
+import HowToBot from "../components/BotTrading/HowToBot/HowToBot";
 import CryptoScanner from "../components/CryptoScanner/CryptoScanner";
 import SrAnalysisComponent from "../components/SrAnalysis/SrAnalysis";
+import AppFooter from "../components/AppFooter/AppFooter";
 import axios from "axios";
 
 export default function Bot(props) {
-  const { t } = useTranslation("signals");
-
-  function RefreshButton() {
-    return (
-      <button
-        onClick={() => {
-          window.location.reload();
-          window.alert("Refreshed");
-        }}
-        style={{
-          position: "fixed",
-          fontSize: "14px",
-          bottom: "70px",
-          right: "40px",
-          paddingTop: "5px",
-          paddingBottom: "5px",
-          borderRadius: "6px",
-          textAlign: "center",
-          WebkitAppearance: "none",
-          border: "1px solid var(--color-border-default)",
-        }}
-      >
-        🔄 Refresh
-      </button>
-    );
-  }
+  const { t } = useTranslation("bot");
 
   return (
     <>
       <div className="App">
         <div className="markdown-body">
-          <h1 id="top">{t("s1t3")}</h1>
+          <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
             <Link href="/en/bot" locale="en">
               <a style={{ textDecoration: "none" }}>
@@ -79,14 +57,12 @@ export default function Bot(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <SrAnalysisComponent data={props.data} rowsPerPage={20} />
           <UpButton />
           <RefreshButton />
+          <HowToBot />
           <br />
           <hr />
-          <h3>
-            Ping me <a href="https://t.me/victoristocrat">@victoristocrat</a>
-          </h3>
+          <AppFooter />
         </div>
       </div>
     </>
@@ -101,7 +77,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       data: res.data,
-      ...(await serverSideTranslations(context.locale, ["common"])),
+      ...(await serverSideTranslations(context.locale, ["common", "bot"])),
     },
   };
 }

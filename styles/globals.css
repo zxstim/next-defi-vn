@@ -1086,3 +1086,16 @@
   font-size: 20px;
   color: var(--color-fg-default)
 }
+
+.subtitle {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-left: 10px solid #4db6fd;
+  border-radius: 0.25rem;
+  font-size: 20px
+}

@@ -15,7 +15,7 @@ export default function Home(props) {
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
-          <blockquote>{t("subtitle")}</blockquote>
+          <div className="subtitle">{t("subtitle")}</div>
           <div style={{ display: "flex" }}>
             <Link href="/" locale="en">
               <a style={{ textDecoration: "none" }}>

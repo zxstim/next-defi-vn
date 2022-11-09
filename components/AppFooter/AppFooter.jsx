@@ -25,18 +25,21 @@ export default function AppFooter() {
           <img src="/icons8-telegram.svg" alt="Telegram SVG" />
         </a>
       </span>
-      <span>
+      <h3>
         <Link href="/0xstim">
-          <a>
-            <img src="/icons8-info.svg" alt="Website PNG" />
-          </a>
+          <a>{t("about")}</a>
         </Link>
-      </span>
-      <h3><Link href="/disclaimer"><a>{t("disclaimer")}</a></Link></h3>
-      <h3>{t("donate")}</h3>
-      <p>BTC: bc1q33f3fq37qstrptwd9xcrdgxemrxnkeqzrtjds8</p>
-      <p>ETH: 0x052F71E171b11bc037999B2341fCa73f4534D8A5</p>
-      <p>BSC: 0x052F71E171b11bc037999B2341fCa73f4534D8A5</p>
+      </h3>
+      <h3>
+        <Link href="/disclaimer">
+          <a>{t("disclaimer")}</a>
+        </Link>
+      </h3>
+      <h3>
+        <Link href="/donate">
+          <a>{t("donate")}</a>
+        </Link>
+      </h3>
     </>
   );
 }

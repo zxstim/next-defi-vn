@@ -4,20 +4,20 @@ import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 
-export default function ZxStim(props) {
-  const { t } = useTranslation("zxstim");
+export default function Donate(props) {
+  const { t } = useTranslation("donate");
   return (
     <>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/0xstim" locale="en">
+            <Link href="/en/donate" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/0xstim" locale="vi">
+            <Link href="/donate" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
@@ -25,19 +25,10 @@ export default function ZxStim(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <h2>README.md</h2>
-          <p>👋 Hi, I’m 0xStim.</p>
-          <p>
-            👀 I’m a self-taught fullstack developer in Python and Javascript.
-          </p>
-          <p>
-            📖 Currently reading up a lot on Solidity for Ethereum development.
-          </p>
-          <p>
-            🤝 I’m looking to collaborate on Quantitative Analysis, Algorithmic
-            Trading, Backtesting and Smart Contract Development.
-          </p>
-          <p>✨ I want to contribute more to opensource repositories.</p>
+          <h2>{t("header1")}</h2>
+          <p>BTC: bc1q33f3fq37qstrptwd9xcrdgxemrxnkeqzrtjds8</p>
+          <p>ETH: 0x052F71E171b11bc037999B2341fCa73f4534D8A5</p>
+          <p>BSC: 0x052F71E171b11bc037999B2341fCa73f4534D8A5</p>
           <br />
           <hr />
           <AppFooter />
@@ -50,7 +41,7 @@ export default function ZxStim(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "zxstim"])),
+      ...(await serverSideTranslations(locale, ["common", "donate"])),
       // Will be passed to the page component as props
     },
   };

@@ -13,7 +13,7 @@ export default function Hiring(props) {
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/help" locale="en">
+            <Link href="/en/hiring" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button"
                 >
@@ -21,7 +21,7 @@ export default function Hiring(props) {
                 </p>
               </a>
             </Link>
-            <Link href="/help" locale="vi">
+            <Link href="/hiring" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button"
                 >

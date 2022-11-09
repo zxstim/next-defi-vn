@@ -1073,6 +1073,7 @@
 .badge-wrap {
   display: flex;
   flex-wrap: wrap;
+  width: 200px;
 }
 
 .i18n-button {

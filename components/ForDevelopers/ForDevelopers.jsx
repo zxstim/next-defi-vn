@@ -52,34 +52,32 @@ export default function ForDevelopers() {
       >
         <Link href="https://buidl.defi.vn/series/dev">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("s1t1")}</h3>
+            <h3 style={buttonStyle}>{t("title1")}</h3>
           </a>
         </Link>
         <Link href="/opensource">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("s1t2")}</h3>
+            <h3 style={buttonStyle}>{t("title2")}</h3>
           </a>
         </Link>
         <Link href="/bot">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>
-              {t("s1t3")}
-            </h3>
+            <h3 style={buttonStyle}>{t("title3")}</h3>
           </a>
         </Link>
         <Link href="/events">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("s1t4")}</h3>
+            <h3 style={buttonStyle}>{t("title4")}</h3>
           </a>
         </Link>
         <Link href="/code">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("s1t5")}</h3>
+            <h3 style={buttonStyle}>{t("title5")}</h3>
           </a>
         </Link>
-        <Link href="/help">
+        <Link href="/jobs">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("s1t6")}</h3>
+            <h3 style={buttonStyle}>{t("title16")}</h3>
           </a>
         </Link>
       </div>

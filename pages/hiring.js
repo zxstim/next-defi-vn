@@ -3,10 +3,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import DevsList from "../components/NeedHelp/DevsList";
-import JobsList from "../components/NeedHelp/JobsList";
+import DevsList from "../components/ForHire/DevsList";
 
-export default function NeedHelpList(props) {
+export default function Hiring(props) {
   const { t } = useTranslation("help");
   return (
     <>
@@ -16,17 +15,7 @@ export default function NeedHelpList(props) {
           <div style={{ display: "flex", marginBottom: "10px" }}>
             <Link href="/en/help" locale="en">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
+                <p className="i18n-button"
                 >
                   🇬🇧
                 </p>
@@ -34,17 +23,7 @@ export default function NeedHelpList(props) {
             </Link>
             <Link href="/help" locale="vi">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
+                <p className="i18n-button"
                 >
                   🇻🇳
                 </p>
@@ -54,7 +33,6 @@ export default function NeedHelpList(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <DevsList />
-          <JobsList />
           <br />
           <hr />
           <AppFooter />

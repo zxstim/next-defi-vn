@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import ForDevelopers from "../components/ForDevelopers/ForDevelopers";
 import ForEveryone from "../components/ForEveryone/ForEveryone";
+import ForProjects from "../components/ForProjects/ForProjects";
 import AppFooter from "../components/AppFooter/AppFooter";
 
 export default function Home(props) {
@@ -18,42 +19,17 @@ export default function Home(props) {
           <div style={{ display: "flex" }}>
             <Link href="/" locale="en">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
-                >
-                  🇬🇧
-                </p>
+                <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
             <Link href="/" locale="vi">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
-                >
-                  🇻🇳
-                </p>
+                <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>
           <ForDevelopers />
+          <ForProjects />
           <ForEveryone />
           <br />
           <hr />

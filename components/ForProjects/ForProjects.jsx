@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
-export default function ForEveryone() {
+export default function ForProjects() {
   // eslint-disable-next-line
   const { t } = useTranslation("common");
 
@@ -42,7 +42,7 @@ export default function ForEveryone() {
 
   return (
     <>
-      <h2>{t("section-2")}</h2>
+      <h2>{t("section-3")}</h2>
       <div
         style={{
           display: "grid",
@@ -50,33 +50,28 @@ export default function ForEveryone() {
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
         }}
       >
-        <Link href="/buy">
+        <Link href="/professionals">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title7")}</h3>
+            <h3 style={buttonStyle}>{t("title13")}</h3>
           </a>
         </Link>
-        <Link href="/defi-stats">
+        <Link href="/investors">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title8")}</h3>
+            <h3 style={buttonStyle}>{t("title12")}</h3>
           </a>
         </Link>
-        <Link href="/defi-analytics">
+        <Link href="/hiring">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title9")}</h3>
+            <h3 style={buttonStyle}>{t("title6")}</h3>
           </a>
         </Link>
-        {/* <Link href="/signals">
+        {/* <Link href="/regulations">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>
-              {t("s2t4")}
+              {t("s2t9")}
             </h3>
           </a>
         </Link> */}
-        <Link href="/learn-defi">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title11")}</h3>
-          </a>
-        </Link>
       </div>
     </>
   );

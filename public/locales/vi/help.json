@@ -1,12 +1,15 @@
 {
-    "title": "🙏 Cần giúp!",
+    "title": "📋 Dev cho thuê!",
     "back": "⬅️ Quay về trang chủ",
     "dev-list": "Danh sách Dev",
     "job-list": "Danh sách Job",
     "htable1": "Tên",
-    "htable2": "Web",
+    "htable2": "Loại",
+    "htable3": "Stack",
+    "htable4": "MXH",
     "page": "Trang ",
     "gt-page": "| Tới trang:",
     "show": "Hiện",
-    "of": "trong"
+    "of": "trong",
+    "search": "🔎 Tìm..."
 }

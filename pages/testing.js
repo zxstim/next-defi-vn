@@ -13,38 +13,12 @@ export default function Home(props) {
           <div style={{ display: "flex", marginBottom: "10px" }}>
             <Link href="/en/testing" locale="en">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
-                >
-                  🇬🇧
-                </p>
+                <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
             <Link href="/vi/testing" locale="vi">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
-                >
-                  🇻🇳
-                </p>
+                <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>
@@ -53,7 +27,8 @@ export default function Home(props) {
           <br />
           <hr />
           <h3>
-            {t("footer")}<a href="https://t.me/victoristocrat">@victoristocrat</a>
+            {t("footer")}
+            <a href="https://t.me/victoristocrat">@victoristocrat</a>
           </h3>
         </div>
       </div>

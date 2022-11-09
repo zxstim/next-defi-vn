@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "0xStim",
+        "devtype": ["Fullstack", "Blockchain"],
+        "stack": ["NextJS", "Django", "Solidity"],
+        "github": "https://github.com/0xstim",
+        "web": "https://defi.vn/about",
+        "telegram": "https://t.me/zxstim",
+        "twitter": "https://twitter.com/0xstim"
+    },
+    {
+        "id": 2,
+        "name": "Krugo D",
+        "devtype": ["Blockchain"],
+        "stack": ["Hardhat", "Solidity"],
+        "github": "https://github.com/Krugo-D",
+        "web": "#",
+        "telegram": "https://t.me/Krugo_D",
+        "twitter": "#"
+    },
+    {
+        "id": 3,
+        "name": "Tuấn Nguyễn",
+        "devtype": ["Fullstack"],
+        "stack": ["Django", "ReactJS"],
+        "github": "#",
+        "web": "#",
+        "telegram": "#",
+        "twitter": "#"
+    }
+]

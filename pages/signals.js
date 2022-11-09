@@ -19,38 +19,12 @@ export default function Signals(props) {
           <div style={{ display: "flex", marginBottom: "10px" }}>
             <Link href="/en/signals" locale="en">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
-                >
-                  🇬🇧
-                </p>
+                <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
             <Link href="/signals" locale="vi">
               <a style={{ textDecoration: "none" }}>
-                <p
-                  style={{
-                    backgroundColor: "#ebebeb",
-                    margin: "5px 5px 5px 0px",
-                    padding: "5px 5px 5px 5px",
-                    WebkitAppearance: "none",
-                    borderRadius: "6px",
-                    border: "2px solid var(--color-border-default)",
-                    fontSize: "20px",
-                    color: "var(--color-fg-default)",
-                  }}
-                >
-                  🇻🇳
-                </p>
+                <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>

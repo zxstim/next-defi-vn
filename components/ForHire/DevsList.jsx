@@ -13,23 +13,86 @@ import {
   flexRender,
   createColumnHelper,
 } from "@tanstack/react-table";
-import devs from './Devs.json';
+import devs from "./Devs.json";
 
 export default function DevsList() {
   const defaultData = devs;
 
   const columnHelper = createColumnHelper();
 
+  // Custom component to render Genres
+  const DevType = ({ values }) => {
+    // Loop through the array and create a badge-like component instead of a comma-separated string
+    return (
+      <div className="badge-wrap">
+        {values.map((devType, idx) => {
+          return (
+            <span key={idx} className="badge">
+              {devType}
+            </span>
+          );
+        })}
+      </div>
+    );
+  };
+
+  const StackType = ({ values }) => {
+    // Loop through the array and create a badge-like component instead of a comma-separated string
+    return (
+      <div className="badge-wrap">
+        {values.map((stackType, idx) => {
+          return (
+            <span key={idx} className="badge-stack">
+              {stackType}
+            </span>
+          );
+        })}
+      </div>
+    );
+  };
+
   const columns = [
     columnHelper.accessor((row) => row.name, {
       id: "name",
       header: () => <span>{t("htable1")}</span>,
-      cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
     }),
-    columnHelper.accessor((row) => row.web, {
-      id: "web",
+    columnHelper.accessor((row) => row.devtype, {
+      id: "devtype",
       header: () => <span>{t("htable2")}</span>,
-      cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
+      cell: (info) => <DevType values={info.getValue()} />,
+    }),
+    columnHelper.accessor((row) => row.stack, {
+      id: "stack",
+      header: () => <span>{t("htable3")}</span>,
+      cell: (info) => <StackType values={info.getValue()} />,
+    }),
+    columnHelper.accessor((row) => row.name, {
+      id: "social",
+      header: () => <span>{t("htable4")}</span>,
+      cell: (info) => (
+        <>
+          <span>
+            <a href={info.row.original.github}>
+              <img src="/icons8-github.svg" alt="Github SVG" />
+            </a>
+          </span>
+          <span>
+            <a href={info.row.original.twitter}>
+              <img src="/icons8-twitter.svg" alt="Twitter SVG" />
+            </a>
+          </span>
+          <span>
+            <a href={info.row.original.telegram}>
+              <img src="/icons8-telegram.svg" alt="Telegram SVG" />
+            </a>
+          </span>
+          <span>
+            <a href={info.row.original.web}>
+              <img src="/icons8-info.svg" alt="Website PNG" />
+            </a>
+          </span>
+        </>
+      ),
     }),
   ];
 
@@ -210,7 +273,7 @@ export default function DevsList() {
         type="text"
         value={columnFilterValue ?? ""}
         onChange={(e) => column.setFilterValue(e.target.value)}
-        placeholder={`Search...`}
+        placeholder={"🔎 ..."}
         style={{
           marginTop: "5px",
           marginBottom: "5px",

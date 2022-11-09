@@ -1045,3 +1045,43 @@
   border: 1px solid var(--color-border-default);
   width: 100px;
 }
+
+.badge {
+  background-color: #9ae6b4;
+  color: #22543d;
+  margin: 2px 4px 2px 2px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.badge-stack {
+  background-color: #ddbff5;
+  color: #332254;
+  margin: 2px 4px 2px 2px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.badge-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.i18n-button {
+  background-color: #ebebeb;
+  margin: 5px 5px 5px 0px;
+  padding: 5px 5px 5px 5px;
+  -webkit-appearance: none;
+  border-radius: 6px;
+  border: 2px solid var(--color-border-default);
+  font-size: 20px;
+  color: var(--color-fg-default)
+}

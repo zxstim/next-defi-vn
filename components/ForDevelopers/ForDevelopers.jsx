@@ -65,7 +65,7 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("title3")}</h3>
           </a>
         </Link>
-        <Link href="/events">
+        <Link href="/hackathons">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title4")}</h3>
           </a>
@@ -73,6 +73,11 @@ export default function ForDevelopers() {
         <Link href="/code">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title5")}</h3>
+          </a>
+        </Link>
+        <Link href="/devkit">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title17")}</h3>
           </a>
         </Link>
         <Link href="/jobs">

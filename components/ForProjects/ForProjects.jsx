@@ -50,7 +50,7 @@ export default function ForProjects() {
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
         }}
       >
-        <Link href="/professionals">
+        <Link href="/services">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title13")}</h3>
           </a>

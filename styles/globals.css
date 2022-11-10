@@ -1099,3 +1099,17 @@
   border-radius: 0.25rem;
   font-size: 20px
 }
+
+.text-box-wrap {
+  width: 150px;
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-box-wrap {
+  width: 75px;
+}

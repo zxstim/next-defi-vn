@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Consulting A",
+    "servicetype": "Marketing agency",
+    "description": "Defi.vn is a community effort to be",
+    "web": "https://defi.vn",
+    "telegram": "https://t.me/0xstim"
+  },
+  {
+    "id": 2,
+    "name": "Consulting A",
+    "servicetype": "Marketing agency",
+    "description": "Defi.vn is a community effort to be a resource hub helping everyone on their Web3 journey",
+    "web": "https://defi.vn",
+    "telegram": "https://t.me/0xstim"
+  },
+  {
+    "id": 3,
+    "name": "Consulting A",
+    "servicetype": "Marketing agency",
+    "description": "Defi.vn is a community effort to be a resource hub helping everyone on their Web3 journey",
+    "web": "https://defi.vn",
+    "telegram": "https://t.me/0xstim"
+  }
+]

@@ -25,21 +25,24 @@ export default function AppFooter() {
           <img src="/icons8-telegram.svg" alt="Telegram SVG" />
         </a>
       </span>
-      <h3>
+      <h4>
         <Link href="/0xstim">
           <a>{t("about")}</a>
         </Link>
-      </h3>
-      <h3>
+      </h4>
+      <h4>
+          <a href="https://github.com/0xstim/next-defi-vn">{t("edit")}</a>
+      </h4>
+      <h4>
         <Link href="/disclaimer">
           <a>{t("disclaimer")}</a>
         </Link>
-      </h3>
-      <h3>
+      </h4>
+      <h4>
         <Link href="/donate">
           <a>{t("donate")}</a>
         </Link>
-      </h3>
+      </h4>
     </>
   );
 }

@@ -65,16 +65,14 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title9")}</h3>
           </a>
         </Link>
-        {/* <Link href="/signals">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>
-              {t("s2t4")}
-            </h3>
-          </a>
-        </Link> */}
         <Link href="/learn-defi">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title11")}</h3>
+          </a>
+        </Link>
+        <Link href="/events">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title18")}</h3>
           </a>
         </Link>
       </div>

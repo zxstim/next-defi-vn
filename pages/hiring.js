@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import DevsList from "../components/ForHire/DevsList";
+import DevsList from "../components/DevsList/DevsList";
 
 export default function Hiring(props) {
   const { t } = useTranslation("help");

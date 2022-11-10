@@ -23,7 +23,11 @@ export default function HowToBot() {
   return (
     <>
       <h2>{t("header1")}</h2>
-      <p>Testing</p>
+      <ol>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </ol>
     </>
   );
 }

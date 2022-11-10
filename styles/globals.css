@@ -1032,7 +1032,20 @@
 }
 
 .table-filter-bar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #24292f;
+  font-weight: normal;
   width: 100px;
+}
+
+.table-min-max-filter-bar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 50px;
+  color: #24292f;
+  font-weight: normal;
 }
 
 .table-selector-bar {
@@ -1100,8 +1113,18 @@
   font-size: 20px
 }
 
-.text-box-wrap {
+.text-type-box-wrap {
   width: 150px;
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-box-wrap {
+  width: 200px;
   white-space: break-spaces;
   display: -webkit-box;
   -webkit-line-clamp: 3;

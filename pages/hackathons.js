@@ -1,37 +1,32 @@
-import Head from "next/head";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import OtcPriceComponent from "../components/OtcPrice/OtcPrice";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import RefreshButton from "../components/RefreshButton/RefreshButton";
-import axios from "axios";
+import HackathonsList from "../components/HackathonsList/HackathonsList";
 
-export default function BuyCrypto(props) {
-  const { t } = useTranslation("buy");
-
+export default function Events(props) {
+  const { t } = useTranslation("hackathons");
   return (
     <>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buy" locale="en">
+            <Link href="/en/hackathons" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/vi/buy" locale="vi">
+            <Link href="/hackathons" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <OtcPriceComponent data={props.data} />
           <UpButton />
-          <RefreshButton />
+          <HackathonsList />
           <br />
           <hr />
           <AppFooter />
@@ -41,15 +36,11 @@ export default function BuyCrypto(props) {
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps(context) {
-  // Fetch data from external API
-  const res = await axios.get("https://api3.pyhash.com/signal/all/otcprice/");
-  // Pass data to the page via props
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(context.locale, ["common", "buy"])),
-      data: res.data,
+      ...(await serverSideTranslations(locale, ["common", "hackathons"])),
+      // Will be passed to the page component as props
     },
   };
 }

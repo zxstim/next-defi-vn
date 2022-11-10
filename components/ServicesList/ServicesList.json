@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Consulting A",
-    "servicetype": "Marketing agency",
-    "description": "Defi.vn is a community effort to be",
-    "web": "https://defi.vn",
-    "telegram": "https://t.me/0xstim"
+    "name": "Lennard",
+    "servicetype": "Blockchain marketing & consultancy",
+    "description": "Contact me for web3 user acquisition or crypto consultancy",
+    "web": "https://oddin.ai/",
+    "telegram": "https://t.me/Krugo_D"
   },
   {
     "id": 2,
-    "name": "Consulting A",
-    "servicetype": "Marketing agency",
-    "description": "Defi.vn is a community effort to be a resource hub helping everyone on their Web3 journey",
-    "web": "https://defi.vn",
-    "telegram": "https://t.me/0xstim"
+    "name": "Ace Beaker",
+    "servicetype": "Media Agency",
+    "description": "Ace Beaker is a crypto focused media agency in SEA",
+    "web": "https://acebeaker.media",
+    "telegram": "https://t.me/yatoro777"
   },
   {
     "id": 3,
-    "name": "Consulting A",
-    "servicetype": "Marketing agency",
-    "description": "Defi.vn is a community effort to be a resource hub helping everyone on their Web3 journey",
-    "web": "https://defi.vn",
-    "telegram": "https://t.me/0xstim"
+    "name": "Ace Crypto News",
+    "servicetype": "Telegram channel",
+    "description": "We are a full-stack Crypto Media Agency with a team of marketing specialists to promote your business to the public.",
+    "web": "https://t.me/acebeakers",
+    "telegram": "https://t.me/yatoro777"
   }
 ]

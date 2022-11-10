@@ -180,14 +180,7 @@ export default function JobsList() {
             column.setFilterValue((old) => [e.target.value, old?.[1]])
           }
           placeholder={`Min`}
-          style={{
-            marginTop: "5px",
-            marginBottom: "5px",
-            marginRight: "5px",
-            width: "50px",
-            color: "#24292f",
-            fontWeight: "normal",
-          }}
+          className="table-min-max-filter-bar"
         />
         <input
           type="number"
@@ -196,13 +189,7 @@ export default function JobsList() {
             column.setFilterValue((old) => [old?.[0], e.target.value])
           }
           placeholder={`Max`}
-          style={{
-            marginTop: "5px",
-            marginBottom: "5px",
-            width: "50px",
-            color: "#24292f",
-            fontWeight: "normal",
-          }}
+          className="table-min-max-filter-bar"
         />
       </div>
     ) : (
@@ -210,14 +197,8 @@ export default function JobsList() {
         type="text"
         value={columnFilterValue ?? ""}
         onChange={(e) => column.setFilterValue(e.target.value)}
-        placeholder={`Search...`}
-        style={{
-          marginTop: "5px",
-          marginBottom: "5px",
-          color: "#24292f",
-          fontWeight: "normal",
-          width: "100px",
-        }}
+        placeholder={"🔎 ..."}
+        className="table-filter-bar"
       />
     );
   }

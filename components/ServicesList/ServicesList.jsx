@@ -29,7 +29,7 @@ export default function EventsList() {
     columnHelper.accessor((row) => row.servicetype, {
       id: "servicetype",
       header: () => <span>{t("table2")}</span>,
-      cell: (info) => <div className="text-box-wrap">{info.getValue()}</div>,
+      cell: (info) => <div className="text-type-box-wrap">{info.getValue()}</div>,
     }),
     columnHelper.accessor((row) => row.description, {
       id: "description",
@@ -203,14 +203,7 @@ export default function EventsList() {
             column.setFilterValue((old) => [e.target.value, old?.[1]])
           }
           placeholder={`Min`}
-          style={{
-            marginTop: "5px",
-            marginBottom: "5px",
-            marginRight: "5px",
-            width: "50px",
-            color: "#24292f",
-            fontWeight: "normal",
-          }}
+          className="table-min-max-filter-bar"
         />
         <input
           type="number"
@@ -219,13 +212,7 @@ export default function EventsList() {
             column.setFilterValue((old) => [old?.[0], e.target.value])
           }
           placeholder={`Max`}
-          style={{
-            marginTop: "5px",
-            marginBottom: "5px",
-            width: "50px",
-            color: "#24292f",
-            fontWeight: "normal",
-          }}
+          className="table-min-max-filter-bar"
         />
       </div>
     ) : (
@@ -233,14 +220,8 @@ export default function EventsList() {
         type="text"
         value={columnFilterValue ?? ""}
         onChange={(e) => column.setFilterValue(e.target.value)}
-        placeholder={`Search...`}
-        style={{
-          marginTop: "5px",
-          marginBottom: "5px",
-          color: "#24292f",
-          fontWeight: "normal",
-          width: "100px",
-        }}
+        placeholder={"🔎 ..."}
+        className="table-filter-bar"
       />
     );
   }

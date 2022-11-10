@@ -1,80 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
+    "name": "Eden Global Capital",
+    "servicetype": "Financial services",
+    "description": "Creating wealth by expanding markets, encouraging growth, and connecting investors to promising international opportunities.",
+    "web": "https://edenglobal.capital",
+    "telegram": "https://t.me/MikeBeda"
   },
   {
     "id": 2,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 3,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 4,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 5,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 6,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 7,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 8,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 9,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 10,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 11,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 12,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
-  },
-  {
-    "id": 13,
-    "name": "Capital",
-    "contact": "victor",
-    "web" : "https://defi.vn"
+    "name": "500 Global",
+    "servicetype": "Early stage VC",
+    "description": "Invested in 49 companies valued at $1B+ and 150+ companies valued at more than $100 million.",
+    "web": "https://500.co",
+    "telegram": "https://www.linkedin.com/in/adrianlatortue/"
   }
 ]

@@ -15,12 +15,12 @@ export default function AppFooter() {
           <img src="/icons8-github.svg" alt="Github SVG" />
         </a>
       </span>
-      <span>
+      <span style={{marginLeft: "5px"}}>
         <a href="https://twitter.com/0xstim">
           <img src="/icons8-twitter.svg" alt="Twitter SVG" />
         </a>
       </span>
-      <span>
+      <span style={{marginLeft: "5px"}}>
         <a href="https://t.me/zxstim">
           <img src="/icons8-telegram.svg" alt="Telegram SVG" />
         </a>
@@ -43,6 +43,8 @@ export default function AppFooter() {
           <a>{t("donate")}</a>
         </Link>
       </h4>
+      <br />
+      <br />
     </>
   );
 }

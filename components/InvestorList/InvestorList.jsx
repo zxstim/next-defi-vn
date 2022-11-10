@@ -23,13 +23,36 @@ export default function InvestorList() {
   const columns = [
     columnHelper.accessor((row) => row.name, {
       id: "name",
-      header: () => <span>Name</span>,
+      header: () => <span>{t("table1")}</span>,
       cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
     }),
-    columnHelper.accessor((row) => row.contact, {
+    columnHelper.accessor((row) => row.servicetype, {
+      id: "servicetype",
+      header: () => <span>{t("table2")}</span>,
+      cell: (info) => <div className="text-type-box-wrap">{info.getValue()}</div>,
+    }),
+    columnHelper.accessor((row) => row.description, {
+      id: "description",
+      header: () => <span>{t("table3")}</span>,
+      cell: (info) => <div className="text-box-wrap">{info.getValue()}</div>,
+    }),
+    columnHelper.accessor((row) => row.web, {
       id: "contact",
-      header: () => <span>Contact</span>,
-      cell: (info) => info.getValue(),
+      header: () => <span>{t("table4")}</span>,
+      cell: (info) => (
+        <>
+          <span>
+            <a href={info.row.original.telegram}>
+              <img src="/icons8-telegram.svg" alt="Telegram SVG" />
+            </a>
+          </span>
+          <span>
+            <a href={info.row.original.web}>
+              <img src="/icons8-info.svg" alt="Website SVG" />
+            </a>
+          </span>
+        </>
+      ),
     }),
   ];
 
@@ -208,7 +231,7 @@ export default function InvestorList() {
 
   return (
     <>
-      <h2>{t("investors-list")}</h2>
+      <h2>{t("subtitle")}</h2>
       <Table
         {...{
           data,

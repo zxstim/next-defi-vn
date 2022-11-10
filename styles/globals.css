@@ -292,7 +292,6 @@
   display: block;
   width: max-content;
   max-width: 100%;
-  overflow: auto;
 }
 
 .markdown-body td,
@@ -1124,7 +1123,7 @@
 }
 
 .text-box-wrap {
-  width: 200px;
+  width: 250px;
   white-space: break-spaces;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1133,6 +1132,20 @@
   text-overflow: ellipsis;
 }
 
+.text-box-wrap-no-hidden {
+  width: 250px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .contact-box-wrap {
   width: 75px;
+}
+
+.table-horizontal-wrap {
+  overflow-x: auto;
+}
+
+.table-button-nav-wrap {
+  margin-top: 15px;
 }

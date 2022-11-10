@@ -15,7 +15,7 @@ import {
 } from "@tanstack/react-table";
 import serviceslist from "./ServicesList.json";
 
-export default function EventsList() {
+export default function ServicesList() {
   const defaultData = serviceslist;
 
   const columnHelper = createColumnHelper();
@@ -24,7 +24,7 @@ export default function EventsList() {
     columnHelper.accessor((row) => row.name, {
       id: "name",
       header: () => <span>{t("table1")}</span>,
-      cell: (info) => info.getValue(),
+      cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
     }),
     columnHelper.accessor((row) => row.servicetype, {
       id: "servicetype",

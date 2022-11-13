@@ -5,7 +5,8 @@
     "servicetype": "Blockchain marketing & consultancy",
     "description": "Contact me for web3 user acquisition or crypto consultancy",
     "web": "https://oddin.ai/",
-    "telegram": "https://t.me/Krugo_D"
+    "telegram": "https://t.me/Krugo_D",
+    "email": "#"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "servicetype": "Media Agency",
     "description": "Ace Beaker is a crypto focused media agency in SEA",
     "web": "https://acebeaker.media",
-    "telegram": "https://t.me/yatoro777"
+    "telegram": "https://t.me/yatoro777",
+    "email": "#"
   },
   {
     "id": 3,
@@ -21,6 +23,25 @@
     "servicetype": "Telegram channel",
     "description": "We are a full-stack Crypto Media Agency with a team of marketing specialists to promote your business to the public.",
     "web": "https://t.me/acebeakers",
-    "telegram": "https://t.me/yatoro777"
+    "telegram": "https://t.me/yatoro777",
+    "email": "#"
+  },
+  {
+    "id": 4,
+    "name": "Crystal Blockchain",
+    "servicetype": "Blockchain analytics",
+    "description": "Reach out if you need help with Crypto Compliance, Crypto investigations or Compliance Audits",
+    "web": "https://crystalblockchain.com/",
+    "telegram": "https://t.me/sdubovskyi",
+    "email": "mailto:sviat@crystalblockchain.com"
+  },
+  {
+    "id": 5,
+    "name": "Omniscia",
+    "servicetype": "Blockchain security",
+    "description": "Helping startups and enterprises design, build and secure complex decentralized networks & applications.",
+    "web": "https://omniscia.io/",
+    "telegram": "https://t.me/omniscia_sec",
+    "email": "#"
   }
 ]

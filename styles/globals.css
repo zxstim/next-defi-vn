@@ -1113,7 +1113,7 @@
 }
 
 .text-type-box-wrap {
-  width: 150px;
+  width: 200px;
   white-space: break-spaces;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1123,7 +1123,7 @@
 }
 
 .text-box-wrap {
-  width: 250px;
+  width: 300px;
   white-space: break-spaces;
   display: -webkit-box;
   -webkit-line-clamp: 3;

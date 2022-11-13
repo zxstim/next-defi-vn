@@ -13,10 +13,10 @@ import {
   flexRender,
   createColumnHelper,
 } from "@tanstack/react-table";
-import serviceslist from "./ServicesList.json";
+import discoverlist from "./DiscoverList.json";
 
-export default function ServicesList() {
-  const defaultData = serviceslist;
+export default function DiscoverList() {
+  const defaultData = discoverlist;
 
   const columnHelper = createColumnHelper();
 
@@ -52,7 +52,7 @@ export default function ServicesList() {
             </a>
           </span>
           <span>
-            <a href={info.row.original.email}>
+            <a href={info.row.original.web}>
               <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
             </a>
           </span>
@@ -232,7 +232,7 @@ export default function ServicesList() {
   }
   const [data, setData] = useState(() => [...defaultData]);
   const rerender = useReducer(() => ({}), {})[1];
-  const { t } = useTranslation("services");
+  const { t } = useTranslation("discover");
 
   return (
     <>

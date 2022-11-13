@@ -48,7 +48,12 @@ export default function InvestorList() {
           </span>
           <span>
             <a href={info.row.original.web}>
-              <img src="/icons8-info.svg" alt="Website SVG" />
+              <img src="/icons8-webpage.svg" alt="Website SVG" />
+            </a>
+          </span>
+          <span>
+            <a href={info.row.original.web}>
+              <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
             </a>
           </span>
         </>

@@ -59,7 +59,7 @@ export default function EventsList() {
     columnHelper.accessor((row) => row.registration, {
       id: "registration",
       header: () => <span>{t("table8")}</span>,
-      cell: (info) => <a href={info.getValue()}>Click here</a>,
+      cell: (info) => <a href={info.row.original.registration}><img src="/icons8-new-ticket.svg" alt="Ticket SVG" /></a>,
     }),
     columnHelper.accessor((row) => row.status, {
       id: "status",
@@ -69,7 +69,25 @@ export default function EventsList() {
     columnHelper.accessor((row) => row.name, {
       id: "contact",
       header: () => <span>{t("table10")}</span>,
-      cell: (info) => <a href={info.row.original.web}>Click here</a>,
+      cell: (info) => (
+        <>
+        <span>
+          <a href={info.row.original.telegram}>
+            <img src="/icons8-telegram.svg" alt="Telegram SVG" />
+          </a>
+        </span>
+        <span>
+          <a href={info.row.original.web}>
+            <img src="/icons8-webpage.svg" alt="Website SVG" />
+          </a>
+        </span>
+        <span>
+          <a href={info.row.original.email}>
+            <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
+          </a>
+        </span>
+      </>
+      ),
     }),
   ];
 

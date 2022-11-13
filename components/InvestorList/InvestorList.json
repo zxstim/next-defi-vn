@@ -5,7 +5,8 @@
     "servicetype": "Financial services",
     "description": "Creating wealth by expanding markets, encouraging growth, and connecting investors to promising international opportunities.",
     "web": "https://edenglobal.capital",
-    "telegram": "https://t.me/MikeBeda"
+    "telegram": "https://t.me/MikeBeda",
+    "email": "#"
   },
   {
     "id": 2,
@@ -13,6 +14,7 @@
     "servicetype": "Early stage VC",
     "description": "Invested in 49 companies valued at $1B+ and 150+ companies valued at more than $100 million.",
     "web": "https://500.co",
-    "telegram": "https://www.linkedin.com/in/adrianlatortue/"
+    "telegram": "https://www.linkedin.com/in/adrianlatortue/",
+    "email": "#"
   }
 ]

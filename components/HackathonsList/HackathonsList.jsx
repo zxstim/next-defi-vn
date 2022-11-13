@@ -13,23 +13,81 @@ import {
   flexRender,
   createColumnHelper,
 } from "@tanstack/react-table";
-import hackthonslist from './HackathonsList.json';
+import hackathonslist from "./HackathonsList.json";
 
 export default function HackathonsList() {
-  const defaultData = hackthonslist;
+  const defaultData = hackathonslist;
 
   const columnHelper = createColumnHelper();
 
   const columns = [
     columnHelper.accessor((row) => row.name, {
       id: "name",
-      header: () => <span>{t("etable1")}</span>,
+      header: () => <span>{t("table1")}</span>,
       cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
     }),
-    columnHelper.accessor((row) => row.web, {
-      id: "web",
-      header: () => <span>{t("etable2")}</span>,
-      cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
+    columnHelper.accessor((row) => row.organizer, {
+      id: "organizer",
+      header: () => <span>{t("table2")}</span>,
+      cell: (info) => <a href={info.row.original.organizerweb}>{info.getValue()}</a>,
+    }),
+    columnHelper.accessor((row) => row.date, {
+      id: "date",
+      header: () => <span>{t("table3")}</span>,
+      cell: info => info.getValue(),
+    }),
+    columnHelper.accessor((row) => row.time, {
+      id: "time",
+      header: () => <span>{t("table4")}</span>,
+      cell: info => info.getValue(),
+    }),
+    columnHelper.accessor((row) => row.category, {
+      id: "category",
+      header: () => <span>{t("table5")}</span>,
+      cell: info => info.getValue(),
+    }),
+    columnHelper.accessor((row) => row.location, {
+      id: "location",
+      header: () => <span>{t("table6")}</span>,
+      cell: info => <div className="text-box-wrap-no-hidden">{info.getValue()}</div>,
+    }),
+    columnHelper.accessor((row) => row.price, {
+      id: "price",
+      header: () => <span>{t("table7")}</span>,
+      cell: info => info.getValue(),
+    }),
+    columnHelper.accessor((row) => row.registration, {
+      id: "registration",
+      header: () => <span>{t("table8")}</span>,
+      cell: (info) => <a href={info.row.original.registration}><img src="/icons8-new-ticket.svg" alt="Ticket SVG" /></a>,
+    }),
+    columnHelper.accessor((row) => row.status, {
+      id: "status",
+      header: () => <span>{t("table9")}</span>,
+      cell: info => info.getValue(),
+    }),
+    columnHelper.accessor((row) => row.name, {
+      id: "contact",
+      header: () => <span>{t("table10")}</span>,
+      cell: (info) => (
+        <>
+        <span>
+          <a href={info.row.original.telegram}>
+            <img src="/icons8-telegram.svg" alt="Telegram SVG" />
+          </a>
+        </span>
+        <span>
+          <a href={info.row.original.web}>
+            <img src="/icons8-webpage.svg" alt="Website SVG" />
+          </a>
+        </span>
+        <span>
+          <a href={info.row.original.email}>
+            <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
+          </a>
+        </span>
+      </>
+      ),
     }),
   ];
 
@@ -46,7 +104,7 @@ export default function HackathonsList() {
 
     return (
       <div>
-        <div />
+        <div className="table-horizontal-wrap">
         <table>
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -92,8 +150,8 @@ export default function HackathonsList() {
             })}
           </tbody>
         </table>
-        <div />
-        <div>
+        </div>
+        <div className="table-button-nav-wrap">
           <button
             className="table-button"
             onClick={() => table.setPageIndex(0)}
@@ -197,7 +255,7 @@ export default function HackathonsList() {
         type="text"
         value={columnFilterValue ?? ""}
         onChange={(e) => column.setFilterValue(e.target.value)}
-        placeholder={`Search...`}
+        placeholder={"🔎 ..."}
         className="table-filter-bar"
       />
     );
@@ -208,7 +266,7 @@ export default function HackathonsList() {
 
   return (
     <>
-      <h2>{t("hackathons-list")}</h2>
+      <h2>{t("events-list")}</h2>
       <Table
         {...{
           data,

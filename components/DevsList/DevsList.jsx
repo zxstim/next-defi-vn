@@ -88,7 +88,7 @@ export default function DevsList() {
           </span>
           <span>
             <a href={info.row.original.web}>
-              <img src="/icons8-info.svg" alt="Website PNG" />
+              <img src="/icons8-webpage.svg" alt="Website PNG" />
             </a>
           </span>
         </>

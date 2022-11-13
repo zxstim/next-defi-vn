@@ -29,7 +29,7 @@ export default function EventsList() {
     columnHelper.accessor((row) => row.organizer, {
       id: "organizer",
       header: () => <span>{t("table2")}</span>,
-      cell: (info) => <a href={info.row.original.organizerweb}>{info.getValue()}</a>,
+      cell: (info) => <div className="text-box-wrap-no-hidden"><a href={info.row.original.organizerweb}>{info.getValue()}</a></div>,
     }),
     columnHelper.accessor((row) => row.date, {
       id: "date",

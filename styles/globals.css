@@ -1063,7 +1063,7 @@
   color: #22543d;
   margin: 2px 4px 2px 2px;
   padding: 4px 8px;
-  border-radius: 12px;
+  border-radius: 5px;
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1075,7 +1075,7 @@
   color: #332254;
   margin: 2px 4px 2px 2px;
   padding: 4px 8px;
-  border-radius: 12px;
+  border-radius: 5px;
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1149,3 +1149,4 @@
 .table-button-nav-wrap {
   margin-top: 15px;
 }
+

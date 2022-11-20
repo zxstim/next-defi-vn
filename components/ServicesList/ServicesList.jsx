@@ -74,7 +74,7 @@ export default function ServicesList() {
 
     return (
       <div>
-        <div />
+        <div className="table-horizontal-wrap">
         <table>
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -120,8 +120,8 @@ export default function ServicesList() {
             })}
           </tbody>
         </table>
-        <div />
-        <div>
+        </div>
+        <div className="table-button-nav-wrap">
           <button
             className="table-button"
             onClick={() => table.setPageIndex(0)}

@@ -1,20 +1,22 @@
 [
   {
     "id": 1,
-    "name": "Eden Global Capital",
-    "servicetype": "Financial services",
-    "description": "Creating wealth by expanding markets, encouraging growth, and connecting investors to promising international opportunities.",
-    "web": "https://edenglobal.capital",
-    "telegram": "https://t.me/MikeBeda",
-    "email": "#"
-  },
-  {
-    "id": 2,
     "name": "500 Global",
     "servicetype": "Early stage VC",
     "description": "Invested in 49 companies valued at $1B+ and 150+ companies valued at more than $100 million.",
     "web": "https://500.co",
-    "telegram": "https://www.linkedin.com/in/adrianlatortue/",
+    "telegram": "#",
+    "twitter": "#",
+    "email": "#"
+  },
+  {
+    "id": 2,
+    "name": "Wagmi Ventures",
+    "servicetype": "Syndicate",
+    "description": "WAGMI Ventures is a global syndicate of 10,000+ strategic execs from some of the largest crypto companies giving founders distribution partners.",
+    "web": "https://www.wagmiventures.io/",
+    "telegram": "#",
+    "twitter": "https://twitter.com/wagmi_vc",
     "email": "#"
   }
 ]

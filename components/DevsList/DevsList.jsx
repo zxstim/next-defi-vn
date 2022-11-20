@@ -55,6 +55,7 @@ export default function DevsList() {
     columnHelper.accessor((row) => row.name, {
       id: "name",
       header: () => <span>{t("htable1")}</span>,
+      cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>
     }),
     columnHelper.accessor((row) => row.devtype, {
       id: "devtype",
@@ -88,7 +89,7 @@ export default function DevsList() {
           </span>
           <span>
             <a href={info.row.original.web}>
-              <img src="/icons8-webpage.svg" alt="Website PNG" />
+              <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
             </a>
           </span>
         </>
@@ -109,7 +110,7 @@ export default function DevsList() {
 
     return (
       <div>
-        <div />
+        <div className="table-horizontal-wrap">
         <table>
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -155,8 +156,8 @@ export default function DevsList() {
             })}
           </tbody>
         </table>
-        <div />
-        <div>
+        </div>
+        <div className="table-button-nav-wrap">
           <button
             className="table-button"
             onClick={() => table.setPageIndex(0)}

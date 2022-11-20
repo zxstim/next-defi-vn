@@ -26,8 +26,8 @@ export default function DiscoverList() {
       header: () => <span>{t("table1")}</span>,
       cell: (info) => <a href={info.row.original.web}>{info.getValue()}</a>,
     }),
-    columnHelper.accessor((row) => row.servicetype, {
-      id: "servicetype",
+    columnHelper.accessor((row) => row.projecttype, {
+      id: "projecttype",
       header: () => <span>{t("table2")}</span>,
       cell: (info) => <div className="text-type-box-wrap">{info.getValue()}</div>,
     }),
@@ -47,12 +47,17 @@ export default function DiscoverList() {
             </a>
           </span>
           <span>
-            <a href={info.row.original.web}>
-              <img src="/icons8-webpage.svg" alt="Website SVG" />
+            <a href={info.row.original.twitter}>
+              <img src="/icons8-twitter.svg" alt="Twitter SVG" />
             </a>
           </span>
           <span>
-            <a href={info.row.original.web}>
+            <a href={info.row.original.discord}>
+              <img src="/icons8-discord.svg" alt="Discord SVG" />
+            </a>
+          </span>
+          <span>
+            <a href={info.row.original.email}>
               <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
             </a>
           </span>
@@ -74,7 +79,7 @@ export default function DiscoverList() {
 
     return (
       <div>
-        <div />
+        <div className="table-horizontal-wrap">
         <table>
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -120,8 +125,8 @@ export default function DiscoverList() {
             })}
           </tbody>
         </table>
-        <div />
-        <div>
+        </div>
+        <div className="table-button-nav-wrap">
           <button
             className="table-button"
             onClick={() => table.setPageIndex(0)}

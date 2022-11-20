@@ -7,7 +7,8 @@
     "github": "https://github.com/0xstim",
     "web": "https://defi.vn/0xstim",
     "telegram": "https://t.me/zxstim",
-    "twitter": "https://twitter.com/0xstim"
+    "twitter": "https://twitter.com/0xstim",
+    "email": "mailto:zxstim@gmail.com"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "github": "https://github.com/Krugo-D",
     "web": "#",
     "telegram": "https://t.me/Krugo_D",
-    "twitter": "#"
+    "twitter": "#",
+    "email": "#"
   },
   {
     "id": 3,
@@ -27,6 +29,7 @@
     "github": "#",
     "web": "#",
     "telegram": "#",
-    "twitter": "#"
+    "twitter": "#",
+    "email": "#"
   }
 ]

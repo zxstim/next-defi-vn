@@ -47,8 +47,8 @@ export default function InvestorList() {
             </a>
           </span>
           <span>
-            <a href={info.row.original.web}>
-              <img src="/icons8-webpage.svg" alt="Website SVG" />
+            <a href={info.row.original.twitter}>
+              <img src="/icons8-twitter.svg" alt="Twitter SVG" />
             </a>
           </span>
           <span>
@@ -74,7 +74,7 @@ export default function InvestorList() {
 
     return (
       <div>
-        <div />
+        <div className="table-horizontal-wrap">
         <table>
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -120,8 +120,8 @@ export default function InvestorList() {
             })}
           </tbody>
         </table>
-        <div />
-        <div>
+        </div>
+        <div className="table-button-nav-wrap">
           <button
             className="table-button"
             onClick={() => table.setPageIndex(0)}

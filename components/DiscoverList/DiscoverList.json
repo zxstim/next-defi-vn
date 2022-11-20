@@ -2,11 +2,24 @@
     {
       "id": 1,
       "name": "Roboworld",
-      "servicetype": "Gamefi - card game - VR/AR",
+      "projecttype": "Gamefi - card game - VR/AR",
       "description": "The new strategy card game that’s easy to learn but impossible to put down",
       "web": "https://roboworld.io",
-      "telegram": "https://t.me/hunglephi",
-      "email": "#"
+      "telegram": "https://t.me/roboworldgames",
+      "twitter": "https://twitter.com/roboworldio",
+      "email": "#",
+      "discord": "#"
+    },
+    {
+      "id": 2,
+      "name": "Alphaday",
+      "projecttype": "Portfolio management tool",
+      "description": "The one tool you need to stay up to date and interact with crypto using easily customizable dashboards.",
+      "web": "https://alphaday.com/",
+      "telegram": "#",
+      "twitter": "https://twitter.com/AlphadayHQ",
+      "email": "#",
+      "discord": "https://discord.com/invite/8KSmPyT5k8"
     }
   ]
   

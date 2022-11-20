@@ -4,5 +4,11 @@
     "name": "Alphaday",
     "web": "https://alphaday.com",
     "howTo": "https://alphaday.com"
+  },
+  {
+    "id": 2,
+    "name": "DAOHQ",
+    "web": "https://www.daohq.co/",
+    "howTo": "https://www.daohq.co/"
   }
 ]

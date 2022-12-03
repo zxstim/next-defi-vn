@@ -22,7 +22,7 @@ export default function BuyCrypto(props) {
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/vi/buy" locale="vi">
+            <Link href="/buy" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>

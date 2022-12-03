@@ -182,8 +182,39 @@ function renderData(signal) {
   }
 }
 
-// const defaultData = investorlist;
+function formatCurrencyPair(currency) {
+  return (
+    <a
+      href={
+        "https://p2p.binance.com/en/trade/all-payments/" +
+        currency.row.original.pair.split("-")[0] +
+        "?fiat=" +
+        currency.row.original.pair.split("-")[1]
+      }
+    >
+      {currency.getValue()}
+    </a>
+  );
+}
 
+function formatCurrency(currency) {
+  switch (currency.row.original.pair.split("-")[1]) {
+    case "EUR":
+      return `€${commify(currency.getValue())}`;
+    case "RUB":
+      return `₽${commify(currency.getValue())}`;
+    case "CNY":
+      return `￥${commify(currency.getValue())}`;
+    case "THB":
+      return `฿${commify(currency.getValue())}`;
+    case "VND":
+      return `${commify(currency.getValue())}₫`;
+    default:
+      return `$${commify(currency.getValue())}`;
+  }
+}
+
+// const defaultData = investorlist;
 
 export default function OtcPriceComponent(props) {
   const columnHelper = createColumnHelper();
@@ -220,17 +251,17 @@ export default function OtcPriceComponent(props) {
   //   const [min, max] = React.useMemo(() => {
   //     let min = preFilteredRows.length ? new Date(preFilteredRows[0].values[id]) : new Date(0)
   //     let max = preFilteredRows.length ? new Date(preFilteredRows[0].values[id]) : new Date(0)
-  
+
   //     preFilteredRows.forEach(row => {
   //       const rowDate = new Date(row.values[id])
-  
+
   //       min = rowDate <= min ? rowDate : min
   //       max = rowDate >= max ? rowDate : max
   //     })
-  
+
   //     return [min, max]
   //   }, [id, preFilteredRows])
-  
+
   //   return (
   //     <div>
   //       <input
@@ -260,25 +291,24 @@ export default function OtcPriceComponent(props) {
     columnHelper.accessor((row) => row.pair, {
       id: "pair",
       header: () => <span>{t("otc-t-1")}</span>,
-      cell: (info) => info.getValue(),
+      cell: (info) => formatCurrencyPair(info),
     }),
     columnHelper.accessor((row) => row.exchange, {
       id: "exchange",
       header: () => <span>{t("otc-t-2")}</span>,
-      cell: (info) => info.getValue(),
+      cell: (info) => (
+        <a href="https://p2p.binance.com/en">{info.getValue()}</a>
+      ),
     }),
     columnHelper.accessor((row) => row.max_bids, {
       id: "max_bids",
       header: () => <span>{t("otc-t-3")}</span>,
-      cell: (info) =>
-        info.row.original.pair.split("-")[1] === "VND"
-          ? `${commify(info.getValue())}₫`
-          : `$${commify(info.getValue())}`,
+      cell: (info) => formatCurrency(info),
     }),
     columnHelper.accessor((row) => row.min_asks, {
       id: "min_asks",
       header: () => <span>{t("otc-t-4")}</span>,
-      cell: (info) => info.getValue(),
+      cell: (info) => formatCurrency(info),
     }),
     columnHelper.accessor((row) => row.created_at, {
       id: "created_at",

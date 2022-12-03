@@ -2,7 +2,7 @@ import { useState } from 'react';
 import useTable from "../../hooks/useTable";
 import TableFooter from "../TableFooter/TableFooter";
 import Image from 'next/future/image'
-import swoleDoge from './swole-doge.png';
+// import swoleDoge from './swole-doge.png';
 
 export default function ProjectRadar({ data, rowsPerPage }) {
     const [query, setQuery] = useState("")
@@ -23,10 +23,8 @@ export default function ProjectRadar({ data, rowsPerPage }) {
 
     return (
         <>
-            <h2 id="project">##  Project Radar <button style={{position: "relative", left: "10px", bottom: "4px"}}>beta</button></h2>
-            <p>🔗 uid: project</p>
-            <a href="https://buidl.defi.vn/explain-pyhash#heading-project-radar">🔑 Explain</a>
-            <div>🔎 <input style={{marginTop: "24px", marginBottom: "15px"}} placeholder=" Search project..." onChange={event => setQuery(event.target.value)}/></div>
+            <h2 id="project">Project Radar</h2>
+            <div>🔎 <input style={{marginBottom: "15px"}} placeholder=" Search project..." onChange={event => setQuery(event.target.value)}/></div>
             <table>
             <thead>
                 <tr>         
@@ -47,7 +45,7 @@ export default function ProjectRadar({ data, rowsPerPage }) {
                         }}).map((signal) => (
                             <tr key={signal.id}>
                                 <td><a href={signal.web_link}>{signal.name}</a></td>
-                                <td><Image src={swoleDoge} alt="Swole Doge" width="25" height="25" style={{paddingRight: "5px", position: "relative", top: "4px"}}/>{signal.total_score}</td>
+                                <td><img src="/swole-doge.svg" width="25" height="25" style={{paddingRight: "5px", position: "relative", top: "4px"}} alt="swole-doge SVG" />{signal.total_score}</td>
                                 <td>{signal.tier}</td>
                                 <td>{formatTimeStamp2(signal.updated_at)}</td>
                             </tr>

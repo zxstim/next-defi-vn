@@ -50,7 +50,7 @@ export default function ForDevelopers() {
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
         }}
       >
-        <Link href="https://buidl.defi.vn/series/dev">
+        <Link href="/buidl">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title1")}</h3>
           </a>

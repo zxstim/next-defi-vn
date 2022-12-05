@@ -90,6 +90,11 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title20")}</h3>
           </a>
         </Link>
+        <Link href="https://www.safecex.club/">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title22")}</h3>
+          </a>
+        </Link>
       </div>
     </>
   );

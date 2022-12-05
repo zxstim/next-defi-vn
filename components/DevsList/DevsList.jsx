@@ -88,7 +88,7 @@ export default function DevsList() {
             </a>
           </span>
           <span>
-            <a href={info.row.original.web}>
+            <a href={info.row.original.email}>
               <img src="/icons8-circled-envelope.svg" alt="Email SVG" />
             </a>
           </span>

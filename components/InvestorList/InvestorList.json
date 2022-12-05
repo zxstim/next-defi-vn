@@ -18,5 +18,35 @@
     "telegram": "#",
     "twitter": "https://twitter.com/wagmi_vc",
     "email": "#"
+  },
+  {
+    "id": 3,
+    "name": "ELEVATE",
+    "servicetype": "Early stage VC",
+    "description": "Elevate Ventures invests into the Web 3.0 industries.  We are the building blocks of the ecosystem.",
+    "web": "https://www.el8v.io/",
+    "telegram": "#",
+    "twitter": "https://twitter.com/ElevateWeb3",
+    "email": "#"
+  },
+  {
+    "id": 4,
+    "name": "WhaleGround",
+    "servicetype": "Accelerator and early stage angel",
+    "description": "Capturing the wave of Web 3.0 through accelerated tools & network.",
+    "web": "https://www.whaleground.com/",
+    "telegram": "#",
+    "twitter": "https://twitter.com/WhaleGround",
+    "email": "mailto:contact@whaleground.com"
+  },
+  {
+    "id": 5,
+    "name": "BlockBase",
+    "servicetype": "VC and venture builder",
+    "description": "Blockchain and Web3 continue to usher in a new dreamy era that will completely change the world in the future. It is in Blockbase's vision that we further inspire the entrepreneurship spirit and brave the new era of the world’s Internet.",
+    "web": "https://blockbase.co/",
+    "telegram": "https://t.me/blockbaseco",
+    "twitter": "https://twitter.com/blockbaseco",
+    "email": "mailto:business@blockbase.co"
   }
 ]

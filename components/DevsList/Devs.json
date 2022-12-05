@@ -31,5 +31,27 @@
     "telegram": "#",
     "twitter": "#",
     "email": "#"
+  },
+  {
+    "id": 4,
+    "name": "Peter Blockman",
+    "devtype": ["Blockchain"],
+    "stack": ["Solidity", "Cairo"],
+    "github": "https://github.com/peterblockman",
+    "web": "https://linktr.ee/peterblockman",
+    "telegram": "https://t.me/peterblockman",
+    "twitter": "https://twitter.com/peterblockman",
+    "email": "#"
+  },
+  {
+    "id": 5,
+    "name": "achille",
+    "devtype": ["Fullstack", "Blockchain"],
+    "stack": ["Vuejs","Laravel", "Symfony", "DAML"],
+    "github": "https://github.com/achillegley",
+    "web": "https://drive.google.com/file/d/1nQtfS22kIEzN97Ls2VU3G60qliEx-o0N/view?usp=share_link",
+    "telegram": "https://t.me/GleySoft",
+    "twitter": "https://twitter.com/achille_gley",
+    "email": "#"
   }
 ]

@@ -9,8 +9,8 @@ export default function ToolsList() {
     <ul>
         {
             toolslist.map((tool) => (
-                <li>
-                    <p><a href={tool.web}>{tool.name}</a> | <a href={tool.howTo}>{t("how-to")}</a></p>
+                <li key={tool.id}>
+                    <p><a href={tool.web}>{tool.name}</a> | <a href={tool.howToEn}>{t("how-to")}</a></p>
                 </li>
             ))
         }

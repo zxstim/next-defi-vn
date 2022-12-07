@@ -48,5 +48,15 @@
     "telegram": "https://t.me/blockbaseco",
     "twitter": "https://twitter.com/blockbaseco",
     "email": "mailto:business@blockbase.co"
+  },
+  {
+    "id": 6,
+    "name": "JST Capital",
+    "servicetype": "VC, market maker and financial services",
+    "description": "JST is a global financial services firm providing innovative solutions for digital asset investors.",
+    "web": "https://www.jstcap.com/",
+    "telegram": "#",
+    "twitter": "#",
+    "email": "#"
   }
 ]

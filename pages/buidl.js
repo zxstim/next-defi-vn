@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Head from "next/head";
+import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import Ethereum from "../components/Buidl/Ethereum";
 
 export default function Buidl(props) {
   const { t } = useTranslation("buidl");
@@ -45,6 +46,36 @@ export default function Buidl(props) {
 
   return (
     <>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-B3Z17PVC6F"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-B3Z17PVC6F');
+          `}
+      </Script>
+      <Head>
+        <title>BUIDL on Web3</title>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="../defi.svg" />
+        <meta name="description" content="BUIDL on Web3" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="BUIDL on Web3" />
+        <meta property="og:title" content="BUIDL on Web3" key="ogtitle" />
+        <meta
+          property="og:description"
+          content="BUIDL on Web3"
+          key="ogdesc"
+        />
+        <meta property="og:site_name" content="BUIDL on Web3" key="ogsitename" />
+        <meta property="og:url" content="https://defi.vn/buidl" key="ogurl" />
+      </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
@@ -62,7 +93,7 @@ export default function Buidl(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <h2>⛓️ Chains</h2>
+          <h2>{t("subtitle1")}</h2>
           <div
             style={{
               display: "grid",
@@ -103,6 +134,16 @@ export default function Buidl(props) {
             <Link href="/buidl/oasys">
               <a style={{ textDecoration: "none" }}>
                 <h3 style={buttonStyle}>Oasys</h3>
+              </a>
+            </Link>
+            <Link href="/buidl/klatyn">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Klatyn</h3>
+              </a>
+            </Link>
+            <Link href="/buidl/nym">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Nym</h3>
               </a>
             </Link>
           </div>

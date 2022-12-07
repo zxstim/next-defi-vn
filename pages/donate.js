@@ -1,4 +1,6 @@
+import Head from "next/head";
 import Link from "next/link";
+import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
@@ -8,6 +10,36 @@ export default function Donate(props) {
   const { t } = useTranslation("donate");
   return (
     <>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-B3Z17PVC6F"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-B3Z17PVC6F');
+          `}
+      </Script>
+      <Head>
+        <title>Donate</title>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="../defi.svg" />
+        <meta name="description" content="Donate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Donate" />
+        <meta property="og:title" content="Donate" key="ogtitle" />
+        <meta property="og:description" content="Donate" key="ogdesc" />
+        <meta property="og:site_name" content="Donate" key="ogsitename" />
+        <meta
+          property="og:url"
+          content="https://defi.vn/donate"
+          key="ogurl"
+        />
+      </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>

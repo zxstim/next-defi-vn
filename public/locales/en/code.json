@@ -1,13 +1,5 @@
 {
     "title": "💻 Learn to code",
     "back": "⬅️ Go back to home",
-    "ctable1": "No.",
-    "ctable2": "Name",
-    "footer": "Ping me ",
-    "top-button": "⬆️ Top",
-    "refresh-button": "🔄 Refresh",
-    "page": "Page ",
-    "gt-page": "| Go to page:",
-    "show": "Show",
-    "of": "of"
+    "subtitle1": "💾 Coding languages" 
 }

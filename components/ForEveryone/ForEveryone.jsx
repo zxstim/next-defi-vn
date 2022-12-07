@@ -65,7 +65,7 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title21")}</h3>
           </a>
         </Link>
-        <Link href="/defi-stats">
+        <Link href="/trading">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title8")}</h3>
           </a>

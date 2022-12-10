@@ -1,6 +1,10 @@
 {
     "title": "🔧 Tools",
     "top-button": "⬆️ Top",
-    "back": "⬅️ Go back to home",
-    "how-to": "Guide"
+    "back": "🏠 Go back to home",
+    "prev": "⬅️ Go back to previous page",
+    "how-to": "Guide",
+    "cta": "Learn more",
+    "load": "⏳ Loading...",
+    "end": "You've reached the end! 👋"
 }

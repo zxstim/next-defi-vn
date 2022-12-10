@@ -1,26 +1,27 @@
-// import { useTranslation } from "next-i18next";
-// import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { useRouter } from 'next/router'
+import Link from "next/link";
 import scamslist from "./ScamsList.json";
 
 export default function ScamsList() {
-  // eslint-disable-next-line
-//   const { t } = useTranslation("");
+  const router = useRouter()
+  const { t } = useTranslation("scams");
 
   return (
     <>
-        {
-            scamslist.map((scam) => (
-                <>
-                <h3><a href={scam.publications}>{scam.name}</a></h3>
-                <span className="scam-badge">💸 {scam.financialDamage} Loss</span> <span className="scam-badge">🪦 {scam.totalVictims} victims</span> <span className="scam-badge">📅 {scam.year}</span>
-                {/* <ul>
-                    {scam.publications.map((publication) => (
-                        <li key={publication}><a href={publication}>{publication}</a></li>
-                    ))}
-                </ul> */}
-                </>
-            ))
-        }
+      <h2>Scams List</h2>
+      <div className="tool-box">
+        {scamslist.map((scam) => (
+          <div className="tool-item">
+            <div className="scam-brand-name">{scam.name}</div>
+            <div className="scam-desc">{router.locale === "en" ? scam.descEn : scam.descVi}</div>
+            <div className="tool-guide">
+              Financial damage: {scam.financialDamage}
+            </div>
+            <div className="tool-guide">Total victims: {scam.totalVictims}</div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }

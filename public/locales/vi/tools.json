@@ -1,6 +1,10 @@
 {
     "title": "🔧 Công cụ",
     "top-button": "⬆️ Lên",
-    "back": "⬅️ Quay về trang chủ",
-    "how-to": "Hướng dẫn"
+    "back": "🏠 Quay về trang chủ",
+    "prev": "⬅️ Quay về trang trước",
+    "how-to": "Hướng dẫn",
+    "cta": "Tìm hiểu thêm",
+    "load": "⏳ Đang tải...",
+    "end": "Bạn đã xem hết danh sách! 👋"
 }

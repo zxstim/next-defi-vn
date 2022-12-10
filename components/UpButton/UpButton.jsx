@@ -16,7 +16,8 @@ export default function UpButton() {
                 borderRadius: '6px',
                 textAlign: 'center',
                 WebkitAppearance: 'none',
-                border: '1px solid var(--color-border-default)'
+                border: '1px solid var(--color-border-default)',
+                zIndex: '2'
             }}
         >
         {t('top-button')}

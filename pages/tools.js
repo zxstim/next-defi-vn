@@ -5,10 +5,21 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import ToolsList from "../components/ToolsList/ToolsList";
 
 export default function Tools(props) {
   const { t } = useTranslation("tools");
+
+  const buttonStyle = {
+    backgroundColor: "#ebebeb",
+    margin: "5px 5px 5px 0px",
+    padding: "15px 10px 15px 10px",
+    WebkitAppearance: "none",
+    borderRadius: "6px",
+    border: "2px solid var(--color-border-default)",
+    fontSize: "20px",
+    color: "var(--color-fg-default)",
+  };
+
   return (
     <>
       <Script
@@ -54,8 +65,14 @@ export default function Tools(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <h2>Tools list</h2>
-          <ToolsList />
+          <h2>Tool categories</h2>
+          <ul>
+            <li>
+              <Link href="/tools/portfolio-management-tools">
+                <a style={{ textDecoration: "none" }}>Portfolio management</a>
+              </Link>
+            </li>
+          </ul>
           <br />
           <hr />
           <AppFooter />

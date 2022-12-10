@@ -1265,21 +1265,117 @@ p.thick {
   color: var(--color-fg-default);
 } */
 
-
-.otp-group {
-  display: flex;
-  width: 100%;
-  max-width: 360px;
-  column-gap: 10px;
+.rec-box {
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
 }
 
-.otp-input {
-  width: 100%;
-  height: 60px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.rec-item {
+  border: 1px solid #1a1a1a;
+  margin: 5px 5px 5px 0px;
+  padding: 10px 10px 14px 10px
+}
+
+.align-right {
   text-align: center;
-  font-size: 32px;
+  border: 0;
+}
+
+.rec-desc {
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rec-cta {
+  border: 1px solid #1a1a1a;
+  background-color: #323232;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 16px 
+}
+
+.rec-name-box {
+  display: flex;
+}
+
+.rec-brand-name {
+  margin: 0px 0px 0px 10px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1;
+}
+
+.tool-box {
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+}
+
+.tool-item {
+  border: 1px solid #1a1a1a;
+  margin: 5px 5px 5px 0px;
+  padding: 10px 14px 14px 10px
+}
+
+.tool-desc {
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px
+}
+
+.tool-guide {
+  border-top: 1px dotted #1a1a1a;
+  font-size: 12px;
+  margin-bottom: 5px
+}
+
+.tool-cta {
+  border: 2px solid #0969da;
+  color: #0969da;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.tool-brand-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.scam-brand-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.align-buttons {
+  text-align: center;
+  border: 0;
+}
+
+.scam-desc {
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px
 }

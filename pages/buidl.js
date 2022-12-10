@@ -121,6 +121,11 @@ export default function Buidl(props) {
                 <h3 style={buttonStyle}>Starknet</h3>
               </a>
             </Link>
+            <Link href="/buidl/starknet">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Polygon</h3>
+              </a>
+            </Link>
             <Link href="/buidl/bnbchain">
               <a style={{ textDecoration: "none" }}>
                 <h3 style={buttonStyle}>BNB Chain</h3>
@@ -131,14 +136,19 @@ export default function Buidl(props) {
                 <h3 style={buttonStyle}>OKC</h3>
               </a>
             </Link>
+            <Link href="/buidl/starknet">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Solana</h3>
+              </a>
+            </Link>
             <Link href="/buidl/oasys">
               <a style={{ textDecoration: "none" }}>
                 <h3 style={buttonStyle}>Oasys</h3>
               </a>
             </Link>
-            <Link href="/buidl/klatyn">
+            <Link href="/buidl/klaytn">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Klatyn</h3>
+                <h3 style={buttonStyle}>Klaytn</h3>
               </a>
             </Link>
             <Link href="/buidl/nym">

@@ -5,9 +5,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import BNB Chain from "../../components/Buidl/BNB Chain/BNB Chain";
+import BnbChain from "../../components/Buidl/BnbChain/BnbChain";
 
-export default function BuidlEthereum(props) {
+export default function BuidlBnbChain(props) {
   const { t } = useTranslation("ethereum");
 
   return (

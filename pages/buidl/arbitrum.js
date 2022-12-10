@@ -7,7 +7,7 @@ import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import Arbitrum from "../../components/Buidl/Arbitrum/Arbitrum";
 
-export default function BuidlEthereum(props) {
+export default function BuidlArbitrum(props) {
   const { t } = useTranslation("ethereum");
 
   return (

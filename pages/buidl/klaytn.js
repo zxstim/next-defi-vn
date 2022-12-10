@@ -7,7 +7,7 @@ import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import Klaytn from "../../components/Buidl/Klaytn/Klaytn";
 
-export default function BuidlEthereum(props) {
+export default function BuidlKlaytn(props) {
   const { t } = useTranslation("ethereum");
 
   return (

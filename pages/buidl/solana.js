@@ -8,7 +8,7 @@ import AppFooter from "../../components/AppFooter/AppFooter";
 import Ethereum from "../../components/Buidl/Ethereum/Ethereum";
 import RecBox from "../../components/RecBox/RecBox";
 
-export default function BuidlEthereum(props) {
+export default function BuidlSolana(props) {
   const { t } = useTranslation("ethereum");
 
   return (

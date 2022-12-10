@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Ethereum() {
+export default function Starknet() {
   const [isActive, setIsActive] = useState(false);
 
   return (

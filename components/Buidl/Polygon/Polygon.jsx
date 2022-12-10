@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Ethereum() {
+export default function Polygon() {
   const [isActive, setIsActive] = useState(false);
 
   return (

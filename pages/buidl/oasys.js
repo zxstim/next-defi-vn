@@ -7,7 +7,7 @@ import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import Oasys from "../../components/Buidl/Oasys/Oasys";
 
-export default function BuidlEthereum(props) {
+export default function BuidlOasys(props) {
   const { t } = useTranslation("ethereum");
 
   return (

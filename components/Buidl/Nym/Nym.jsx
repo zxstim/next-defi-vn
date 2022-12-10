@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Ethereum() {
+export default function Nym() {
   const [isActive, setIsActive] = useState(false);
 
   return (

@@ -7,7 +7,7 @@ import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import Nym from "../../components/Buidl/Nym/Nym";
 
-export default function BuidlEthereum(props) {
+export default function BuidlNym(props) {
   const { t } = useTranslation("ethereum");
 
   return (

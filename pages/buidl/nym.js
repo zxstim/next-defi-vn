@@ -55,7 +55,6 @@ export default function BuidlNym(props) {
           <Link href="/buidl">{t("back")}</Link>
           <UpButton />
           <Nym />
-          <RecBox />
           <br />
           <hr />
           <AppFooter />

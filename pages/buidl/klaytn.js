@@ -55,7 +55,6 @@ export default function BuidlKlaytn(props) {
           <Link href="/buidl">{t("back")}</Link>
           <UpButton />
           <Klaytn />
-          <RecBox />
           <br />
           <hr />
           <AppFooter />

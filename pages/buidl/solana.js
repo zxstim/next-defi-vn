@@ -6,7 +6,6 @@ import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import Ethereum from "../../components/Buidl/Ethereum/Ethereum";
-import RecBox from "../../components/RecBox/RecBox";
 
 export default function BuidlSolana(props) {
   const { t } = useTranslation("ethereum");
@@ -56,7 +55,6 @@ export default function BuidlSolana(props) {
           <Link href="/buidl">{t("back")}</Link>
           <UpButton />
           <Ethereum />
-          <RecBox />
           <br />
           <hr />
           <AppFooter />

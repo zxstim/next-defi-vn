@@ -5,7 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import OKC from "../../components/Buidl/Okc/Okc";
+import Okc from "../../components/Buidl/Okc/Okc";
 
 export default function BuidlOasys(props) {
   const { t } = useTranslation("ethereum");
@@ -54,8 +54,7 @@ export default function BuidlOasys(props) {
           </div>
           <Link href="/buidl">{t("back")}</Link>
           <UpButton />
-          <OKC />
-          <RecBox />
+          <Okc />
           <br />
           <hr />
           <AppFooter />

@@ -54,7 +54,7 @@ export default function BuidlBnbChain(props) {
           </div>
           <Link href="/buidl">{t("back")}</Link>
           <UpButton />
-          <BNB Chain />
+          <BnbChain />
           <br />
           <hr />
           <AppFooter />

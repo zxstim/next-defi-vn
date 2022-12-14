@@ -10,5 +10,8 @@
     "page": "Page ",
     "gt-page": "| Go to page:",
     "show": "Show",
-    "of": "of"
+    "of": "of",
+    "cta": "Learn more",
+    "load": "⏳ Loading...",
+    "end": "You've reached the end! 👋"
 }

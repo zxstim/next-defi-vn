@@ -58,6 +58,7 @@ export default function Hiring(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
+          <h2>{t("subtitle")}</h2>
           <ServicesList />
           <br />
           <hr />

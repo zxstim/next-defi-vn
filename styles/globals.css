@@ -1332,7 +1332,7 @@ p.thick {
   text-overflow: ellipsis;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .tool-guide {
@@ -1378,4 +1378,52 @@ p.thick {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 14px
+}
+
+.service-box {
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+}
+
+.service-item {
+  border: 1px solid #1a1a1a;
+  margin: 5px 5px 5px 0px;
+  padding: 10px 14px 14px 10px
+}
+
+.service-desc {
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 90px
+}
+
+.service-guide {
+  border-top: 1px dotted #1a1a1a;
+  font-size: 12px;
+  margin-bottom: 5px
+}
+
+.service-cta {
+  border: 2px solid #0969da;
+  color: #0969da;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.service-brand-name {
+  font-size: 20px;
+  font-weight: bold;
 }

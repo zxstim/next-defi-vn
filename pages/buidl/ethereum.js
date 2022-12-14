@@ -59,8 +59,8 @@ export default function BuidlEthereum(props) {
           </div>
           <UpButton />
           <Ethereum />
-          <div id="oddin-tag" style={{width: "0", height: "0"}}></div>
-          <Script src={'//dev-web.oddin.ai/api/Campaign/otag.js?oid=74cc4707&h=500&cb=' + Date.now()}/>
+          {/* <div id="oddin-tag" style={{width: "0", height: "0"}}></div>
+          <Script src={'//dev-web.oddin.ai/api/Campaign/otag.js?oid=74cc4707&h=300&cb=' + Date.now()}/> */}
           <br />
           <hr />
           <AppFooter />

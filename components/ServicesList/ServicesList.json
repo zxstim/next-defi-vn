@@ -43,5 +43,14 @@
     "web": "https://omniscia.io/",
     "telegram": "https://t.me/omniscia_sec",
     "email": "#"
+  },
+  {
+    "id": 6,
+    "name": "Chainalysis",
+    "servicetype": "Blockchain analytics",
+    "description": "Blockchain intelligence for the web3 era. Review, investigate, and communicate complex smart contracts and DeFi transactions via simple visualizations.",
+    "web": "https://www.chainalysis.com/",
+    "telegram": "https://t.me/Vishnu_Veluri",
+    "email": "vishnu.veluri@chainalysis.com"
   }
 ]

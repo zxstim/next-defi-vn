@@ -6,7 +6,7 @@ import portfolioTools from "./PortfolioTools.json";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function PortfolioTools() {
-  const [index, setIndex] = useState(3);
+  const [index, setIndex] = useState(10);
   const [tools, setTools] = useState(portfolioTools.slice(0, index));
   const [hasMore, setHasMore] = useState(true);
   const router = useRouter();
@@ -17,8 +17,8 @@ export default function PortfolioTools() {
       return;
     }
     setTimeout(() => {
-      setTools(tools.concat(portfolioTools.slice(index, index + 3)));
-      setIndex(index + 3);
+      setTools(tools.concat(portfolioTools.slice(index, index + 10)));
+      setIndex(index + 10);
     }, 200);
   };
   return (
@@ -26,7 +26,7 @@ export default function PortfolioTools() {
       dataLength={tools.length} //This is important field to render the next data
       next={fetchData}
       hasMore={hasMore}
-      loader={<h4>Loading...</h4>}
+      loader={<h4>{t("load")}</h4>}
       endMessage={
         <p style={{ marginTop: "50px", fontSize: "25px", fontWeight: "bold", textAlign: "center" }}>
           {t("end")}

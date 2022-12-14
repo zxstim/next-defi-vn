@@ -26,10 +26,11 @@ export default function BuidlEthereum(props) {
             gtag('config', 'G-B3Z17PVC6F');
           `}
       </Script>
+      
       <Head>
         <title>Ethereum</title>
         <meta charSet="utf-8" />
-        <link rel="icon" href="../defi.svg" />
+        <link rel="icon" href="../../defi.svg" />
         <meta name="description" content="Ethereum" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Ethereum" key="ogtitle" />
@@ -52,9 +53,14 @@ export default function BuidlEthereum(props) {
               </a>
             </Link>
           </div>
-          <Link href="/buidl">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/buidl">{t("prev")}</Link>
+          </div>
           <UpButton />
           <Ethereum />
+          <div id="oddin-tag" style={{width: "0", height: "0"}}></div>
+          <Script src={'//dev-web.oddin.ai/api/Campaign/otag.js?oid=74cc4707&h=500&cb=' + Date.now()}/>
           <br />
           <hr />
           <AppFooter />

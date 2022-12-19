@@ -11,7 +11,7 @@ export default function EventsList() {
       <h2>{t("events-list")}</h2>
       {eventslist
         .sort(function (a, b) {
-          return new Date(b.date) - new Date(a.date);
+          return new Date(a.date) - new Date(b.date);
         })
         .map((event) => (
           <div

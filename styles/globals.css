@@ -1402,12 +1402,13 @@ p.thick {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 14px;
-  height: 90px
+  height: 105px
 }
 
 .service-guide {
   border-top: 1px dotted #1a1a1a;
   font-size: 12px;
+  padding-top: 10px;
   margin-bottom: 5px
 }
 
@@ -1426,4 +1427,70 @@ p.thick {
 .service-brand-name {
   font-size: 20px;
   font-weight: bold;
+}
+
+.service-badge {
+  background-color: #9ae6b4;
+  color: #22543d;
+  margin: 2px 4px 2px 2px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.event-list-container {
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+}
+
+.event-time-badge {
+  background-color: #9ae6b4;
+  color: #22543d;
+  margin: 2px 4px 2px 2px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 10px
+}
+
+.event-date-badge {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 2px 4px 2px 2px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.event-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.event-info-container {
+  display: grid;
+  grid-template-columns: max-content auto;
+  row-gap: 8px;
+  column-gap: 16px;
+}
+
+.event-book-badge {
+  background-color: #4633f1;
+  color: #ffffff;
+  margin-top: 16px;
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
 }

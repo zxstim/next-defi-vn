@@ -6,7 +6,6 @@ import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 import DiscoverList from "../components/DiscoverList/DiscoverList";
-import ProjectRadar from "../components/ProjectRadar/ProjectRadar";
 import axios from "axios";
 
 export default function Discover(props) {
@@ -59,9 +58,9 @@ export default function Discover(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
+          <h2>{t("subtitle")}</h2>
           <UpButton />
           <DiscoverList />
-          <ProjectRadar data={props.data} rowsPerPage={10} />
           <br />
           <hr />
           <AppFooter />

@@ -10,39 +10,25 @@ export default function LearnToCode(props) {
   const { t } = useTranslation("code");
 
   const buttonStyle = {
-    backgroundColor: "#ebebeb",
     margin: "5px 5px 5px 0px",
     padding: "15px 10px 15px 10px",
     WebkitAppearance: "none",
     borderRadius: "6px",
-    border: "2px solid var(--color-border-default)",
+    border: "2px solid var(--color-fg-default)",
     fontSize: "20px",
     color: "var(--color-fg-default)",
   };
 
-  const buttonUnderTestingStyle = {
-    backgroundColor: "#ebebeb",
-    margin: "5px 5px 5px 0px",
-    padding: "15px 10px 15px 10px",
-    WebkitAppearance: "none",
-    borderRadius: "6px",
-    border: "2px solid var(--color-border-default)",
-    fontSize: "20px",
-    color: "var(--color-fg-default)",
-    opacity: "0.5",
-  };
-
-  const tagStyle = {
-    backgroundColor: "#4094f7",
-    border: "1px solid var(--color-border-default)",
-    position: "relative",
-    bottom: "2px",
-    left: "10px",
-    color: "#ffffff",
-    borderRadius: "5px",
-    height: "30px",
-    width: "65px",
-  };
+  // const buttonStyle = {
+  //   backgroundColor: "#ebebeb",
+  //   margin: "5px 5px 5px 0px",
+  //   padding: "15px 10px 15px 10px",
+  //   WebkitAppearance: "none",
+  //   borderRadius: "6px",
+  //   border: "2px solid var(--color-border-default)",
+  //   fontSize: "20px",
+  //   color: "var(--color-fg-default)",
+  // };
 
   return (
     <>
@@ -94,6 +80,50 @@ export default function LearnToCode(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle1")}</h2>
+          <div
+            style={{
+              display: "grid",
+              gap: "15px 15px",
+              gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+            }}
+          >
+            <Link href="/code/frontend">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Frontend</h3>
+              </a>
+            </Link>
+            <Link href="/code/backend">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Backend</h3>
+              </a>
+            </Link>
+            <Link href="/code/blockchain">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Blockchain</h3>
+              </a>
+            </Link>
+            <Link href="/code/devops">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>DevOps</h3>
+              </a>
+            </Link>
+            <Link href="/code/android">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>Android</h3>
+              </a>
+            </Link>
+            <Link href="/code/dba">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>DBA</h3>
+              </a>
+            </Link>
+            <Link href="/code/qa">
+              <a style={{ textDecoration: "none" }}>
+                <h3 style={buttonStyle}>QA</h3>
+              </a>
+            </Link>
+          </div>
+          <h2>{t("subtitle2")}</h2>
           <div
             style={{
               display: "grid",

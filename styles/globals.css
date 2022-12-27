@@ -1441,12 +1441,6 @@ p.thick {
   display: inline-block;
 }
 
-.event-list-container {
-  display: grid;
-  gap: 15px 15px;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
-}
-
 .event-time-badge {
   background-color: #9ae6b4;
   color: #22543d;

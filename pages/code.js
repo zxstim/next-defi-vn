@@ -9,16 +9,6 @@ import AppFooter from "../components/AppFooter/AppFooter";
 export default function LearnToCode(props) {
   const { t } = useTranslation("code");
 
-  const buttonStyle = {
-    margin: "5px 5px 5px 0px",
-    padding: "15px 10px 15px 10px",
-    WebkitAppearance: "none",
-    borderRadius: "6px",
-    border: "2px solid var(--color-fg-default)",
-    fontSize: "20px",
-    color: "var(--color-fg-default)",
-  };
-
   // const buttonStyle = {
   //   backgroundColor: "#ebebeb",
   //   margin: "5px 5px 5px 0px",
@@ -80,90 +70,78 @@ export default function LearnToCode(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle1")}</h2>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px 15px",
-              gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-            }}
-          >
+          <div className="nav-menu-grid">
             <Link href="/code/frontend">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Frontend</h3>
+                <h3 className="nav-menu-button">Frontend</h3>
               </a>
             </Link>
             <Link href="/code/backend">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Backend</h3>
+                <h3 className="nav-menu-button">Backend</h3>
               </a>
             </Link>
             <Link href="/code/blockchain">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Blockchain</h3>
+                <h3 className="nav-menu-button">Blockchain</h3>
               </a>
             </Link>
             <Link href="/code/devops">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>DevOps</h3>
+                <h3 className="nav-menu-button">DevOps</h3>
               </a>
             </Link>
             <Link href="/code/android">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Android</h3>
+                <h3 className="nav-menu-button">Android</h3>
               </a>
             </Link>
             <Link href="/code/dba">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>DBA</h3>
+                <h3 className="nav-menu-button">DBA</h3>
               </a>
             </Link>
             <Link href="/code/qa">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>QA</h3>
+                <h3 className="nav-menu-button">QA</h3>
               </a>
             </Link>
           </div>
           <h2>{t("subtitle2")}</h2>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px 15px",
-              gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-            }}
-          >
+          <div className="nav-menu-grid">
             <Link href="/code/javascript">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Javascript</h3>
+                <h3 className="nav-menu-button">Javascript</h3>
               </a>
             </Link>
             <Link href="/code/python">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Python</h3>
+                <h3 className="nav-menu-button">Python</h3>
               </a>
             </Link>
             <Link href="/code/solidity">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Solidity</h3>
+                <h3 className="nav-menu-button">Solidity</h3>
               </a>
             </Link>
             <Link href="/code/cairo">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Cairo</h3>
+                <h3 className="nav-menu-button">Cairo</h3>
               </a>
             </Link>
             <Link href="/code/rust">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Rust</h3>
+                <h3 className="nav-menu-button">Rust</h3>
               </a>
             </Link>
             <Link href="/code/go">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Go</h3>
+                <h3 className="nav-menu-button">Go</h3>
               </a>
             </Link>
             <Link href="/code/move">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Move</h3>
+                <h3 className="nav-menu-button">Move</h3>
               </a>
             </Link>
           </div>

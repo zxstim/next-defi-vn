@@ -3,38 +3,38 @@ import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import servicesList from "./ServicesList.json";
+import communitiesList from "./CommunitiesList.json";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-export default function ServicesList() {
+export default function CommunitiesList() {
   const [index, setIndex] = useState(20);
-  const [services, setServices] = useState(servicesList.slice(0, index));
+  const [communities, setCommunities] = useState(communitiesList.slice(0, index));
   const [hasMore, setHasMore] = useState(true);
   const router = useRouter();
-  const { t } = useTranslation("services");
+  const { t } = useTranslation("communities");
   const fetchData = () => {
-    if (services.length >= servicesList.length) {
+    if (communities.length >= communitiesList.length) {
       setHasMore(false);
       return;
     }
     setTimeout(() => {
-      setServices(services.concat(servicesList.slice(index, index + 20)));
+      setServices(communities.concat(communitiesList.slice(index, index + 20)));
       setIndex(index + 20);
     }, 2000);
   };
 
   // a function to use drop down menu to filter services by tag
-  const filterServicesDropdown = (event) => {
-    let filteredServicesList = [];
-    filteredServicesList = servicesList.filter(
-      (service) => service.tag === event.target.value
+  const filterCommunitiesDropdown = (event) => {
+    let filteredCommunitiesList = [];
+    filteredCommunitiesList = communitiesList.filter(
+      (community) => community.tag === event.target.value
     );
-    setServices(filteredServicesList.slice(0, index));
+    setServices(filteredCommunitiesList.slice(0, index));
   };
 
   return (
     <InfiniteScroll
-      dataLength={services.length} //This is important field to render the next data
+      dataLength={communities.length} //This is important field to render the next data
       next={fetchData}
       hasMore={hasMore}
       loader={<h4>{t("load")}</h4>}
@@ -59,21 +59,21 @@ export default function ServicesList() {
         <option value="marketing">Marketing</option>
       </select> */}
       <div className="service-box">
-        {services.map((service) => (
-          <div key={service.id} className="service-item">
-            <div href={service.web} className="service-brand-name">
-              {service.name}
+        {communities.map((community) => (
+          <div key={community.id} className="service-item">
+            <div href={community.web} className="service-brand-name">
+              {community.name}
             </div>
             <div className="service-desc">
-              {router.locale === "en" ? service.desc : service.descVi}
+              {router.locale === "en" ? community.desc : community.descVi}
             </div>
             <div className="service-guide">
-              <div className="service-badge">{service.tag}</div>
+              <div className="service-badge">{community.tag}</div>
             </div>
             <div style={{ marginTop: "15px", display: "flex", flexDirection: "row", gap: "8px" }}>
-              {service.telegram ? (
+              {community.telegram ? (
                 <div>
-                  <a href={service.telegram}>
+                  <a href={community.telegram}>
                     <Image
                       src="/icons8-telegram.svg"
                       alt="Telegram icon"
@@ -83,9 +83,9 @@ export default function ServicesList() {
                   </a>
                 </div>
               ) : null}
-              {service.twitter ? (
+              {community.twitter ? (
                 <div>
-                  <a href={service.twitter}>
+                  <a href={community.twitter}>
                     <Image
                       src="/icons8-twitter.svg"
                       alt="Twitter icon"
@@ -95,9 +95,9 @@ export default function ServicesList() {
                   </a>
                 </div>
               ) : null}
-              {service.twitter ? (
+              {community.twitter ? (
                 <div>
-                  <a href={service.discord}>
+                  <a href={community.discord}>
                     <Image
                       src="/icons8-discord.svg"
                       alt="Discord icon"
@@ -107,9 +107,9 @@ export default function ServicesList() {
                   </a>
                 </div>
               ) : null}
-              {service.facebook ? (
+              {community.facebook ? (
                 <div>
-                  <a href={service.facebook}>
+                  <a href={community.facebook}>
                     <Image
                       src="/icons8-facebook.svg"
                       alt="Email icon"
@@ -119,9 +119,9 @@ export default function ServicesList() {
                   </a>
                 </div>
               ) : null}
-              {service.linkedin ? (
+              {community.linkedin ? (
                 <div>
-                  <a href={service.linkedin}>
+                  <a href={community.linkedin}>
                     <Image
                       src="/icons8-linkedin.svg"
                       alt="Linkedin icon"
@@ -131,21 +131,21 @@ export default function ServicesList() {
                   </a>
                 </div>
               ) : null}
-              {service.youtube ? (
+              {community.youtube ? (
                 <div>
-                  <a href={service.youtube}>
+                  <a href={community.youtube}>
                     <Image
                       src="/icons8-youtube.svg"
-                      alt="Linkedin icon"
+                      alt="Youtube icon"
                       width={30}
                       height={30}
                     />
                   </a>
                 </div>
               ) : null}
-              {service.email ? (
+              {community.email ? (
                 <span>
-                  <a href={service.email}>
+                  <a href={community.email}>
                     <Image
                       src="/icons8-circled-envelope.svg"
                       alt="Email icon"
@@ -156,7 +156,7 @@ export default function ServicesList() {
                 </span>
               ) : null}
             </div>
-            <Link href={service.web}>
+            <Link href={community.web}>
               <a style={{ textDecoration: "none", color: "#000000" }}>
                 <div className="service-cta">{t("cta")}</div>
               </a>

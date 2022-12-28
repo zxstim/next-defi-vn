@@ -50,6 +50,11 @@ export default function ForEveryone() {
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
         }}
       >
+        <Link href="/tools">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title21")}</h3>
+          </a>
+        </Link>
         <Link href="/buy">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title7")}</h3>
@@ -60,9 +65,9 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title19")}</h3>
           </a>
         </Link>
-        <Link href="/tools">
+        <Link href="/communities">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title21")}</h3>
+            <h3 style={buttonStyle}>{t("title23")}</h3>
           </a>
         </Link>
         <Link href="/trading">

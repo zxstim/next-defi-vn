@@ -94,66 +94,61 @@ export default function Buidl(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle1")}</h2>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px 15px",
-              gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-            }}
+          <div className="nav-menu-grid"
           >
             <Link href="/buidl/ethereum">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Ethereum</h3>
+                <h3 className="nav-menu-button">Ethereum</h3>
               </a>
             </Link>
             <Link href="/buidl/optimism">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Optimism</h3>
+                <h3 className="nav-menu-button">Optimism</h3>
               </a>
             </Link>
             <Link href="/buidl/arbitrum">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Arbitrum</h3>
+                <h3 className="nav-menu-button">Arbitrum</h3>
               </a>
             </Link>
             <Link href="/buidl/starknet">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Starknet</h3>
+                <h3 className="nav-menu-button">Starknet</h3>
               </a>
             </Link>
             <Link href="/buidl/starknet">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Polygon</h3>
+                <h3 className="nav-menu-button">Polygon</h3>
               </a>
             </Link>
             <Link href="/buidl/bnbchain">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>BNB Chain</h3>
+                <h3 className="nav-menu-button">BNB Chain</h3>
               </a>
             </Link>
             <Link href="/buidl/okc">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>OKC</h3>
+                <h3 className="nav-menu-button">OKC</h3>
               </a>
             </Link>
             <Link href="/buidl/starknet">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Solana</h3>
+                <h3 className="nav-menu-button">Solana</h3>
               </a>
             </Link>
             <Link href="/buidl/oasys">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Oasys</h3>
+                <h3 className="nav-menu-button">Oasys</h3>
               </a>
             </Link>
             <Link href="/buidl/klaytn">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Klaytn</h3>
+                <h3 className="nav-menu-button">Klaytn</h3>
               </a>
             </Link>
             <Link href="/buidl/nym">
               <a style={{ textDecoration: "none" }}>
-                <h3 style={buttonStyle}>Nym</h3>
+                <h3 className="nav-menu-button">Nym</h3>
               </a>
             </Link>
           </div>

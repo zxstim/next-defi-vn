@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Lennard",
+    "name": "Community 1",
     "servicetype": "Blockchain marketing & consultancy",
     "tag": "marketing",
     "desc": "Contact me for web3 user acquisition or crypto consultancy",
@@ -20,7 +20,7 @@
   },
   {
     "id": 2,
-    "name": "Ace Beaker",
+    "name": "Community 1",
     "servicetype": "Media Agency",
     "tag": "media",
     "desc": "Ace Beaker is a crypto focused media agency in SEA",
@@ -39,7 +39,7 @@
   },
   {
     "id": 3,
-    "name": "Ace Crypto News",
+    "name": "Community 1",
     "servicetype": "Telegram channel",
     "tag": "media",
     "desc": "We are a full-stack Crypto Media Agency with a team of marketing specialists to promote your business to the public.",
@@ -58,7 +58,7 @@
   },
   {
     "id": 4,
-    "name": "Crystal Blockchain",
+    "name": "Community 1",
     "servicetype": "Blockchain analytics",
     "tag": "analytics",
     "desc": "Reach out if you need help with Crypto Compliance, Crypto investigations or Compliance Audits",
@@ -77,7 +77,7 @@
   },
   {
     "id": 5,
-    "name": "Omniscia",
+    "name": "Community 1",
     "servicetype": "Blockchain security",
     "tag": "audit",
     "desc": "Helping startups and enterprises design, build and secure complex decentralized networks & applications.",
@@ -96,7 +96,7 @@
   },
   {
     "id": 6,
-    "name": "Chainalysis",
+    "name": "Community 1",
     "servicetype": "Blockchain analytics",
     "tag": "analytics",
     "desc": "Blockchain intelligence for the web3 era. Review, investigate, and communicate complex smart contracts and DeFi transactions via simple visualizations.",

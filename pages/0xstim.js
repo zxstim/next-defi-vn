@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -31,11 +32,7 @@ export default function ZxStim(props) {
         <meta name="description" content="0xStim" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="0xStim" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="0xStim"
-          key="ogdesc"
-        />
+        <meta property="og:description" content="0xStim" key="ogdesc" />
         <meta property="og:site_name" content="0xStim" key="ogsitename" />
         <meta property="og:url" content="https://defi.vn/0xstim" key="ogurl" />
       </Head>
@@ -57,18 +54,16 @@ export default function ZxStim(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>README.md</h2>
-          <p>👋 Hi, I’m 0xStim.</p>
           <p>
-            👀 I’m a self-taught fullstack developer in Python and Javascript.
+            👋 Hi, I’m 0xStim. I’m a self-taught fullstack developer in Python,
+            Javascript and Solidity. Currently reading up a lot on Go and Rust
+            for high performance systems
           </p>
-          <p>
-            📖 Currently reading up a lot on Solidity for Ethereum development.
-          </p>
-          <p>
-            🤝 I’m looking to collaborate on Quantitative Analysis, Algorithmic
-            Trading, Backtesting and Smart Contract Development.
-          </p>
-          <p>✨ I want to contribute more to opensource repositories.</p>
+          {/* <div className="stim-info-container">
+            <div className="stim-info">test 1</div>
+            <div className="stim-info">test 2</div>
+            <div className="stim-info">test 3</div>
+          </div> */}
           <br />
           <hr />
           <AppFooter />

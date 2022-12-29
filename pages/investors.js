@@ -58,6 +58,7 @@ export default function Investors(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
+          <h2>{t("subtitle")}</h2>
           <InvestorList />
           <br />
           <hr />

@@ -1418,6 +1418,7 @@ p.thick {
   border: 2px solid #1a1a1a;
   margin: 5px 5px 5px 0px;
   padding: 10px 14px 14px 10px;
+  box-shadow: 3px 3px black;
 }
 
 .service-desc {
@@ -1514,5 +1515,19 @@ p.thick {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.stim-info-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+
+.stim-info {
+  border: 2px solid #1a1a1a;
+  padding: 10px 14px 14px 10px;
+  box-shadow: 3px 3px black;
   text-align: center;
 }

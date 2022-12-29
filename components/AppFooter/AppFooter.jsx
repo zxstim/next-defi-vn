@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AppFooter() {
   const { t } = useTranslation("common");
@@ -12,17 +13,22 @@ export default function AppFooter() {
       </h3>
       <span>
         <a href="https://github.com/0xstim">
-          <img src="/icons8-github.svg" alt="Github SVG" />
+          <Image src="/icons8-github.svg" alt="Github icon" width={30} height={30} />
         </a>
       </span>
-      <span style={{marginLeft: "5px"}}>
+      <span style={{ marginLeft: "5px" }}>
         <a href="https://twitter.com/0xstim">
-          <img src="/icons8-twitter.svg" alt="Twitter SVG" />
+          <Image src="/icons8-twitter.svg" alt="Twitter icon" width={30} height={30} />
         </a>
       </span>
-      <span style={{marginLeft: "5px"}}>
+      <span style={{ marginLeft: "5px" }}>
         <a href="https://t.me/zxstim">
-          <img src="/icons8-telegram.svg" alt="Telegram SVG" />
+          <Image src="/icons8-telegram.svg" alt="Telegram icon" width={30} height={30} />
+        </a>
+      </span>
+      <span style={{ marginLeft: "5px" }}>
+        <a href="https://www.youtube.com/@0xstim">
+          <Image src="/icons8-youtube.svg" alt="Youtube icon" width={30} height={30} />
         </a>
       </span>
       <h4>

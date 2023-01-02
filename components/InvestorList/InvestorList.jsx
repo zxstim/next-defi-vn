@@ -65,7 +65,7 @@ export default function InvestorList() {
               {investor.name}
             </div>
             <div className="service-desc">
-              {router.locale === "en" ? investor.desc : investor.descVi}
+              {investor.desc}
             </div>
             <div className="service-guide">
               {investor.tags.map((tag) => (

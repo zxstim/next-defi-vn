@@ -54,11 +54,21 @@ export default function ZxStim(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>README.md</h2>
+          {/* center the below image */}
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}>
+            <Image
+              src="/0xstim-nouns.svg"
+              alt="0xStim pfp"
+              width={200}
+              height={200}
+            />
+          </div>
           <p>
-            👋 Hi, I’m 0xStim. I’m a self-taught fullstack developer in Python,
+            👋 Hi, I’m 0xStim. I’m a fullstack developer in Python,
             Javascript and Solidity. Currently reading up a lot on Go and Rust
-            for high performance systems
+            for high performance systems. I'm a supporter of DeFi, hence the creation of Defi.vn.
           </p>
+
           {/* <div className="stim-info-container">
             <div className="stim-info">test 1</div>
             <div className="stim-info">test 2</div>

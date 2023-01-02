@@ -65,7 +65,7 @@ export default function CommunitiesList() {
               {community.name}
             </div>
             <div className="service-desc">
-              {router.locale === "en" ? community.desc : community.descVi}
+              {community.desc}
             </div>
             <div className="service-guide">
               <div className="service-badge">{community.tag}</div>
@@ -100,7 +100,7 @@ export default function CommunitiesList() {
                   <a href={community.discord}>
                     <Image
                       src="/icons8-discord.svg"
-                      alt="Discord icon"
+                      alt="Twitter icon"
                       width={30}
                       height={30}
                     />
@@ -112,7 +112,7 @@ export default function CommunitiesList() {
                   <a href={community.facebook}>
                     <Image
                       src="/icons8-facebook.svg"
-                      alt="Email icon"
+                      alt="Facebook icon"
                       width={30}
                       height={30}
                     />

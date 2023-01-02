@@ -65,7 +65,7 @@ export default function ServicesList() {
               {service.name}
             </div>
             <div className="service-desc">
-              {router.locale === "en" ? service.desc : service.descVi}
+              {service.desc}
             </div>
             <div className="service-guide">
               <div className="service-badge">{service.tag}</div>

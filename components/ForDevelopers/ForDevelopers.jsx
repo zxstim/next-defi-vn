@@ -32,11 +32,11 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("title1")}</h3>
           </a>
         </Link>
-        <Link href="/opensource">
+        {/* <Link href="/opensource">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title2")}</h3>
           </a>
-        </Link>
+        </Link> */}
         <Link href="/bot">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title3")}</h3>

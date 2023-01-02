@@ -7,6 +7,7 @@ import UpButton from "../components/UpButton/UpButton";
 import RefreshButton from "../components/RefreshButton/RefreshButton";
 import HowToBot from "../components/BotTrading/HowToBot/HowToBot";
 import CryptoScanner from "../components/CryptoScanner/CryptoScanner";
+import LangSelector from "../components/LangSelector/LangSelector";
 import SrAnalysisComponent from "../components/SrAnalysis/SrAnalysis";
 import AppFooter from "../components/AppFooter/AppFooter";
 import axios from "axios";
@@ -70,14 +71,11 @@ export default function Bot(props) {
 }
 
 // This gets called on every request
-export async function getServerSideProps(context) {
-  // Fetch data from external API
-  const res = await axios.get("https://api3.pyhash.com/signal/all/sr1/");
-  // Pass data to the page via props
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      data: res.data,
-      ...(await serverSideTranslations(context.locale, ["common", "bot"])),
+      ...(await serverSideTranslations(locale, ["common", "bot"])),
+      // Will be passed to the page component as props
     },
   };
 }

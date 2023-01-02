@@ -17,9 +17,10 @@ export default function EventsList() {
           <div
             key={event.id}
             style={{
-              border: "1px solid #1a1a1a",
+              border: "2px solid #1a1a1a",
               marginBottom: "20px",
               padding: "8px 8px 8px 8px",
+              boxShadow: "3px 3px black"
             }}
           >
             <div>

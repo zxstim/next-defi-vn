@@ -9,17 +9,6 @@ import AppFooter from "../components/AppFooter/AppFooter";
 export default function LearnToCode(props) {
   const { t } = useTranslation("code");
 
-  // const buttonStyle = {
-  //   backgroundColor: "#ebebeb",
-  //   margin: "5px 5px 5px 0px",
-  //   padding: "15px 10px 15px 10px",
-  //   WebkitAppearance: "none",
-  //   borderRadius: "6px",
-  //   border: "2px solid var(--color-border-default)",
-  //   fontSize: "20px",
-  //   color: "var(--color-fg-default)",
-  // };
-
   return (
     <>
       <Script

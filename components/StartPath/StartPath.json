@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Hodler",
+        "web": "hodler",
+        "desc": "You want to achieve enlightenment, the diamond hands status. If you treasure your sanity, pick this path. Don't be shy! This is the most popular path.",
+        "descVi": "Thử nghiệm",
+        "imgPath": "/hodl.svg"
+    },
+    {
+        "id": 2,
+        "name": "Pro",
+        "web": "pro",
+        "desc": "You want to reach higher, take advantage of all possible yield opportunities, and make the most of your crypto. This is the path for you.",
+        "descVi": "Thử nghiệm",
+        "imgPath": "/hodl.svg"
+    },
+    {
+        "id": 3,
+        "name": "Buidler",
+        "web": "buidler",
+        "desc": "You are ambitious, you want to build your own crypto project, you want to shape the market and the future of the industry. Pain is temporary, glory is forever. Join the revolution comrades!",
+        "descVi": "Thử nghiệm",
+        "imgPath": "/hodl.svg"
+    },
+    {
+        "id": 4,
+        "name": "Degen",
+        "web": "degen",
+        "desc": "You are a natural born dare devil, you want to take risks, you want to make money fast. You want the lambo, the gold chains, bottle service at the club. You are a true degenerate. Welcome to the dark side!",
+        "descVi": "Thử nghiệm",
+        "imgPath": "/hodl.svg"
+    },
+    {
+        "id": 5,
+        "name": "Quant Bro",
+        "web": "quant-bro",
+        "desc": "You are a math geek. You want to find the perfect arbitrage opportunities. The term MEV turns you on like nothing else. All you want to talk about is TA, yield farming, liquidity mining, and the latest DeFi protocols. Read on my friend, read on.",
+        "descVi": "Thử nghiệm",
+        "imgPath": "/hodl.svg"
+    },
+    {
+        "id": 5,
+        "name": "Meme Lord",
+        "web": "meme-lord",
+        "desc": "You want to gain clout on Crypto Twitter. You want to create the most legendary shit posts. You want your work to be featured on knowyourmeme. One tweet and the market moves the way you want it to. Please enter the meme zone, milord.",
+        "descVi": "Thử nghiệm",
+        "imgPath": "/hodl.svg"
+    }
+]

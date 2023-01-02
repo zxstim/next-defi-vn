@@ -4,17 +4,11 @@ import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
-import RefreshButton from "../components/RefreshButton/RefreshButton";
-import HowToBot from "../components/BotTrading/HowToBot/HowToBot";
-import CryptoScanner from "../components/CryptoScanner/CryptoScanner";
-import LangSelector from "../components/LangSelector/LangSelector";
-import SrAnalysisComponent from "../components/SrAnalysis/SrAnalysis";
 import AppFooter from "../components/AppFooter/AppFooter";
-import axios from "axios";
+import StartPath from "../components/StartPath/StartPath";
 
-export default function Bot(props) {
-  const { t } = useTranslation("bot");
-
+export default function Start(props) {
+  const { t } = useTranslation("start");
   return (
     <>
       <Script
@@ -32,26 +26,31 @@ export default function Bot(props) {
           `}
       </Script>
       <Head>
-        <title>Bot</title>
+        <title>Start here!</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Bot trading" />
+        <meta name="description" content="Start here!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Bot trading" key="ogtitle" />
-        <meta property="og:description" content="Bot trading" key="ogdesc" />
-        <meta property="og:site_name" content="Bot trading" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/bot" key="ogurl" />
+        <meta name="description" content="Start here!" />
+        <meta property="og:title" content="Start here!" key="ogtitle" />
+        <meta property="og:description" content="Start here!" key="ogdesc" />
+        <meta property="og:site_name" content="Start here!" key="ogsitename" />
+        <meta
+          property="og:url"
+          content="https://defi.vn/start"
+          key="ogurl"
+        />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/bot" locale="en">
+            <Link href="/en/start" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/bot" locale="vi">
+            <Link href="/start" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
@@ -59,8 +58,8 @@ export default function Bot(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <RefreshButton />
-          <HowToBot />
+          <h2>{t("subtitle")}</h2>
+          <StartPath />
           <br />
           <hr />
           <AppFooter />
@@ -70,11 +69,10 @@ export default function Bot(props) {
   );
 }
 
-// This gets called on every request
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "bot"])),
+      ...(await serverSideTranslations(locale, ["common", "start"])),
       // Will be passed to the page component as props
     },
   };

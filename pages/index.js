@@ -48,7 +48,7 @@ export default function Home(props) {
           <h1 id="top">{t("title")}</h1>
           <div className="subtitle">{t("subtitle")}</div>
           <div style={{ display: "flex" }}>
-            <Link href="/en" locale="en">
+            <Link href="/" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

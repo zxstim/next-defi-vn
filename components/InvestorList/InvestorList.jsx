@@ -61,7 +61,7 @@ export default function InvestorList() {
       <div className="service-box">
         {investors.map((investor) => (
           <div key={investor.id} className="service-item">
-            <div href={investor.web} className="service-brand-name">
+            <div className="service-brand-name">
               {investor.name}
             </div>
             <div className="service-desc">

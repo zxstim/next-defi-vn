@@ -60,7 +60,8 @@ export default function BuyCrypto(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <OtcPriceComponent data={props.data} />
+          <h2>Buy crypto</h2>
+          <p>Coming soon!</p>
           {/* <Link href="https://xsilver.com/refer/lennard">Buy crypto</Link> */}
           <UpButton />
           <RefreshButton />
@@ -74,14 +75,11 @@ export default function BuyCrypto(props) {
 }
 
 // This gets called on every request
-export async function getServerSideProps(context) {
-  // Fetch data from external API
-  const res = await axios.get("https://api3.pyhash.com/signal/all/otcprice/");
-  // Pass data to the page via props
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(context.locale, ["common", "buy"])),
-      data: res.data,
+      ...(await serverSideTranslations(locale, ["common", "buy"])),
+      // Will be passed to the page component as props
     },
   };
 }

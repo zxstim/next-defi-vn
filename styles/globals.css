@@ -1546,8 +1546,6 @@ p.thick {
 .start-path-desc {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 14px;
-  height: 60px;
 }
 
 .start-path-item {
@@ -1555,5 +1553,4 @@ p.thick {
   margin: 5px 5px 5px 0px;
   padding: 10px 14px 14px 10px;
   box-shadow: 3px 3px black;
-  height: 450px
 }

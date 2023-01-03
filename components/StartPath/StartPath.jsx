@@ -6,6 +6,8 @@ import { useTranslation } from "next-i18next";
 import startPaths from "./StartPath.json";
 
 export default function StartPath() {
+  const router = useRouter();
+  
   return (
     <div className="start-path-container">
       {startPaths.map((startPath) => (
@@ -27,7 +29,8 @@ export default function StartPath() {
                 />
               </div>
               <div className="start-path-name">{startPath.name}</div>
-              <div className="start-path-desc">{startPath.desc}</div>
+              <div className="start-path-desc">{router.locale === "en" ? startPath.desc : startPath.descVi}</div>
+              
             </div>
           </Link>
         </div>

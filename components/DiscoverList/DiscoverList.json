@@ -93,6 +93,25 @@
       "discord": "https://discord.com/invite/gR2sPFnJEc",
       "github": false,
       "tiktok": "https://www.tiktok.com/@zomland_official"
+    },
+    {
+      "id": 5,
+      "name": "Holdstation",
+      "projecttype": "crypto wallet",
+      "tag": "wallet",
+      "desc": "Crypto Wallet: Built For Web3 And Decentralized-Holics",
+      "descVi": "Crypto Wallet: Built For Web3 And Decentralized-Holics",
+      "web": "https://holdstation.com/",
+      "telegram": "https://t.me/HoldstationWallet",
+      "twitter": "https://twitter.com/HoldstationW",
+      "email": false,
+      "linkedin": false,
+      "facebook": "https://www.facebook.com/Holdstation/",
+      "instagram": "https://www.instagram.com/hold.station/",
+      "youtube": false,
+      "discord": "https://discord.com/invite/holdstation",
+      "github": false,
+      "tiktok": false
     }
   ]
   

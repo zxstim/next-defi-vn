@@ -3,9 +3,9 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../components/UpButton/UpButton";
-import AppFooter from "../components/AppFooter/AppFooter";
-import StartPath from "../components/StartPath/StartPath";
+import UpButton from "../../components/UpButton/UpButton";
+import AppFooter from "../../components/AppFooter/AppFooter";
+import StartPath from "../../components/StartPath/StartPath";
 
 export default function QuantBro(props) {
   const { t } = useTranslation("start");
@@ -59,7 +59,7 @@ export default function QuantBro(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle")}</h2>
-          <StartPath />
+          Work in progress
           <br />
           <hr />
           <AppFooter />

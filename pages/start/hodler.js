@@ -7,7 +7,7 @@ import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 import StartPath from "../components/StartPath/StartPath";
 
-export default function Buidler(props) {
+export default function Hodler(props) {
   const { t } = useTranslation("start");
   return (
     <>

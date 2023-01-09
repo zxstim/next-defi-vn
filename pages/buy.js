@@ -6,7 +6,6 @@ import { useTranslation } from "next-i18next";
 import OtcPriceComponent from "../components/OtcPrice/OtcPrice";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-import RefreshButton from "../components/RefreshButton/RefreshButton";
 import RampProviders from "../components/RampProviders/RampProviders";
 
 

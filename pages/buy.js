@@ -65,7 +65,6 @@ export default function BuyCrypto(props) {
           <RampProviders />
           {/* <Link href="https://xsilver.com/refer/lennard">Buy crypto</Link> */}
           <UpButton />
-          <RefreshButton />
           <br />
           <hr />
           <AppFooter />

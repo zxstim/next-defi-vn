@@ -15,22 +15,20 @@ export default function BuyCryptoProviders() {
         >
           <div className="buy-menu-button">
             <div className="buy-menu-items">
-              <div>
-                <div className="buy-item-content">
-                  <Image
-                    style={{ marginTop: "0px" }}
-                    src={provider.logo}
-                    alt="xsilver"
-                    width={30}
-                    height={30}
-                  />
-                  <div className="buy-item-name">{provider.name}</div>
-                  {provider.tag ? (
-                    <div className="buy-rec-badge">{provider.tag}</div>
-                  ) : null}
-                </div>
-                <div className="buy-item-desc">{provider.desc}</div>
+              <div className="buy-item-content">
+                <Image
+                  style={{ marginTop: "0px" }}
+                  src={provider.logo}
+                  alt="xsilver"
+                  width={30}
+                  height={30}
+                />
+                <div className="buy-item-name">{provider.name}</div>
+                {provider.tag ? (
+                  <div className="buy-rec-badge">{provider.tag}</div>
+                ) : null}
               </div>
+              <div className="buy-item-desc">{provider.desc}</div>
             </div>
           </div>
         </a>

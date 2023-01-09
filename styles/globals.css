@@ -1646,18 +1646,19 @@ p.thick {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.buy-menu-items {
+/* .buy-menu-items {
   display: flex;
   gap: 12px;
-}
+} */
 
 .buy-item-content {
   display: flex;
+  flex-direction: row;
   gap: 8px;
 }
 
 .buy-item-name {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -1674,10 +1675,13 @@ p.thick {
 }
 
 .buy-rec-badge {
+  display: flex;
+  align-items: center;
   background-color: #9ae6b4;
   color: #22543d;
-  margin: 2px 2px 2px 2px;
-  padding: 2px 4px 0px 4px;
+  margin-top: 8px;
+  height: 20px;
+  padding: 2px 4px 2px 4px;
   border-radius: 5px;
   font-size: 12px;
 }

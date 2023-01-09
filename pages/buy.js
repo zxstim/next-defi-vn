@@ -61,7 +61,7 @@ export default function BuyCrypto(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <h2>Buy crypto</h2>
+          <h2>{t("subtitle")}</h2>
           <RampProviders />
           {/* <Link href="https://xsilver.com/refer/lennard">Buy crypto</Link> */}
           <UpButton />

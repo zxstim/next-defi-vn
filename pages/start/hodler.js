@@ -5,7 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import StartPath from "../../components/StartPath/StartPath";
+import HodlerPath from "../../components/StartPath/HodlerPath/HodlerPath";
 
 export default function Hodler(props) {
   const { t } = useTranslation("start");
@@ -26,18 +26,18 @@ export default function Hodler(props) {
           `}
       </Script>
       <Head>
-        <title>Start here!</title>
+        <title>Hodler path</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Start here!" />
+        <meta name="description" content="Hodler path" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Start here!" />
-        <meta property="og:title" content="Start here!" key="ogtitle" />
-        <meta property="og:description" content="Start here!" key="ogdesc" />
-        <meta property="og:site_name" content="Start here!" key="ogsitename" />
+        <meta name="description" content="Hodler path" />
+        <meta property="og:title" content="Hodler path" key="ogtitle" />
+        <meta property="og:description" content="Hodler path" key="ogdesc" />
+        <meta property="og:site_name" content="Hodler path" key="ogsitename" />
         <meta
           property="og:url"
-          content="https://defi.vn/start"
+          content="https://defi.vn/start/hodler"
           key="ogurl"
         />
       </Head>
@@ -59,7 +59,7 @@ export default function Hodler(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle")}</h2>
-          Work in progress
+          <HodlerPath />
           <br />
           <hr />
           <AppFooter />

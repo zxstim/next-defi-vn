@@ -7,13 +7,13 @@ import startPaths from "./StartPath.json";
 
 export default function StartPath() {
   const router = useRouter();
-  
+
   return (
     <div className="start-path-container">
       {startPaths.map((startPath) => (
         <div key={startPath.id} className="start-path-item">
           <Link href={`start/${startPath.web}`}>
-            <div style={{ cursor: "pointer" }}>
+            <a style={{ textDecoration: "none", color: "#000000" }}>
               <div
                 style={{
                   display: "flex",
@@ -29,9 +29,10 @@ export default function StartPath() {
                 />
               </div>
               <div className="start-path-name">{startPath.name}</div>
-              <div className="start-path-desc">{router.locale === "en" ? startPath.desc : startPath.descVi}</div>
-              
-            </div>
+              <div className="start-path-desc">
+                {router.locale === "en" ? startPath.desc : startPath.descVi}
+              </div>
+            </a>
           </Link>
         </div>
       ))}

@@ -1,0 +1,889 @@
+[
+    {
+        "id": 1,
+        "title": "Internet",
+        "desc": "The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols. Visit the following resources to learn more:",
+        "resources": [
+            {
+                "id": 1,
+                "name": "The Internet Explained",
+                "url": "https://www.vox.com/2014/6/16/18076282/the-internet"
+            },
+            {
+                "id": 2,
+                "name": "How Does the Internet Work?",
+                "url": "http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm"
+            },
+            {
+                "id": 3,
+                "name": "Learn How the Web Works",
+                "url": "https://internetfundamentals.com/"
+            },
+            {
+                "id": 4,
+                "name": "How does the Internet work?",
+                "url": "https://www.youtube.com/watch?v=x3c1ih2NJEg"
+            },
+            {
+                "id": 5,
+                "name": "How the Internet Works in 5 Minutes",
+                "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+            }
+        ],
+        "subtitles": [
+            {
+                "id": 1,
+                "title": "How does the internet work?",
+                "desc": "The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "The Internet Explained",
+                        "url": "https://www.vox.com/2014/6/16/18076282/the-internet"
+                    },
+                    {
+                        "id": 2,
+                        "name": "How Does the Internet Work?",
+                        "url": "http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Learn How the Web Works",
+                        "url": "https://internetfundamentals.com/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "How does the Internet work?",
+                        "url": "https://www.youtube.com/watch?v=x3c1ih2NJEg"
+                    },
+                    {
+                        "id": 5,
+                        "name": "How the Internet Works in 5 Minutes",
+                        "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "What is HTTP?",
+                "desc": "HTTP is the TCP/IP based application layer communication protocol which standardizes how the client and server communicate with each other. HTTP follows a classical 'Client-Server model' with a client opening a connection request, then waiting until it receives a response. HTTP is a stateless protocol, that means that the server does not keep any data (state) between two requests. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "What is HTTP?",
+                        "url": "https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "How HTTPS Works ...in a comic!",
+                        "url": "https://howhttps.works/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "An overview of HTTP",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Journey to HTTP/2",
+                        "url": "https://kamranahmed.info/blog/2016/08/13/http-in-depth"
+                    },
+                    {
+                        "id": 5,
+                        "name": "HTTP/3 From A To Z: Core Concepts",
+                        "url": "https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/"
+                    },
+                    {
+                        "id": 6,
+                        "name": "HTTP/3 Is Now a Standard: Why Use It and How to Get Started",
+                        "url": "https://thenewstack.io/http-3-is-now-a-standard-why-use-it-and-how-to-get-started/"
+                    },
+                    {
+                        "id": 7,
+                        "name": "HTTP Crash Course & Exploration",
+                        "url": "https://www.youtube.com/watch?v=iYM2zFP3Zn0"
+                    }
+                    
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Browsers and how they work?",
+                "desc": "A web browser is a software application that enables a user to access and display web pages or other online content through its graphical user interface. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "How Browsers Work",
+                        "url": "https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Role of Rendering Engine in Browsers",
+                        "url": "https://www.browserstack.com/guide/browser-rendering-engine"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Populating the Page: How Browsers Work",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work"
+                    },
+                    {
+                        "id": 4,
+                        "name": "How Do Web Browsers Work?",
+                        "url": "https://www.youtube.com/watch?v=WjDrMKZWCt0"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "DNS and how it works?",
+                "desc": "The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like nytimes.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "What is DNS?",
+                        "url": "https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Mess with DNS - DNS Playground",
+                        "url": "https://messwithdns.net/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "How DNS works (comic)",
+                        "url": "https://howdns.works/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "DNS and How does it Work?",
+                        "url": "https://www.youtube.com/watch?v=Wj0od2ag5sk"
+                    },
+                    {
+                        "id": 5,
+                        "name": "DNS Records",
+                        "url": "https://www.youtube.com/watch?v=7lxgpKh_fRY"
+                    },
+                    {
+                        "id": 6,
+                        "name": "When to add glue records to DNS settings",
+                        "url": "https://www.youtube.com/watch?v=e48AyJOA9W8"
+                    },
+                    {
+                        "id": 7,
+                        "name": "When to add glue records to DNS settings",
+                        "url": "https://www.youtube.com/watch?v=YV5tkQYcvfg"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "title": "What is Domain Name?",
+                "desc": "A domain name is a unique, easy-to-remember address used to access websites, such as ‘google.com’, and ‘facebook.com’. Users can connect to websites using domain names thanks to the Domain Name System (DNS). Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "What is a Domain Name?",
+                        "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name"
+                    },
+                    {
+                        "id": 2,
+                        "name": "What is a Domain Name? | Domain name vs. URL",
+                        "url": "https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "A Beginners Guide to How Domain Names Work",
+                        "url": "https://www.youtube.com/watch?v=Y4cRx19nhJk"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "title": "What is hosting?",
+                "desc": "Web hosting is an online service that allows you to publish your website files onto the internet. So, anyone who has access to the internet has access to your website. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "What Is Web Hosting? Explained",
+                        "url": "https://www.youtube.com/watch?v=htbY9-yggB0"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Different Types of Web Hosting Explained",
+                        "url": "https://www.youtube.com/watch?v=AXVZYzw8geg"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Where to Host a Fullstack Project on a Budget",
+                        "url": "https://www.youtube.com/watch?v=Kx_1NYYJS7Q"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "HTML",
+        "desc": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript. Visit the following resources to learn more:",
+        "resources": [
+            {
+                "id": 1,
+                "name": "W3Schools: Learn HTML",
+                "url": "https://www.w3schools.com/html/html_intro.asp"
+            },
+            {
+                "id": 2,
+                "name": "htmlreference.io: All HTML elements at a glance",
+                "url": "https://htmlreference.io/"
+            },
+            {
+                "id": 3,
+                "name": "HTML For Beginners The Easy Way",
+                "url": "https://html.com/"
+            },
+            {
+                "id": 4,
+                "name": "Web Development Basics",
+                "url": "https://www.internetingishard.com/html-and-css/"
+            },
+            {
+                "id": 5,
+                "name": "Codecademy - Learn HTML",
+                "url": "https://www.codecademy.com/learn/learn-html"
+            },
+            {
+                "id": 6,
+                "name": "Interactive HTML Course",
+                "url": "https://github.com/denysdovhan/learnyouhtml"
+            },
+            {
+                "id": 7,
+                "name": "HTML Full Course for Beginners | Complete All-in-One Tutorial",
+                "url": "https://youtu.be/mJgBOIoGihA"
+            },
+            {
+                "id": 8,
+                "name": "HTML Full Course - Build a Website Tutorial",
+                "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg"
+            },
+            {
+                "id": 9,
+                "name": "HTML Tutorial for Beginners: HTML Crash Course",
+                "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
+            }
+        ],
+        "subtitles": [
+            {
+                "id": 1,
+                "title": "HTML basics",
+                "desc": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "The Internet Explained",
+                        "url": "https://www.vox.com/2014/6/16/18076282/the-internet"
+                    },
+                    {
+                        "id": 2,
+                        "name": "How Does the Internet Work?",
+                        "url": "http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Learn How the Web Works",
+                        "url": "https://internetfundamentals.com/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "How does the Internet work?",
+                        "url": "https://www.youtube.com/watch?v=x3c1ih2NJEg"
+                    },
+                    {
+                        "id": 5,
+                        "name": "How the Internet Works in 5 Minutes",
+                        "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Writing Semantic HTML",
+                "desc": "Semantic element clearly describes its meaning to both the browser and the developer. In HTML, semantic element are the type of elements that can be used to define different parts of a web page such as <form>, <table>, <article>, <header>, <footer>, etc. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Semantics - MDN Web Docs Glossary: Definitions of Web-related terms | MDN",
+                        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+                    },
+                    {
+                        "id": 2,
+                        "name": "W3Schools: Semantic HTML",
+                        "url": "https://www.w3schools.com/html/html5_semantic_elements.asp"
+                    },
+                    {
+                        "id": 3,
+                        "name": "How To Write Semantic HTML",
+                        "url": "https://hackernoon.com/how-to-write-semantic-html-dkq3ulo"
+                    },
+                    {
+                        "id": 4,
+                        "name": "HTML Best Practices – How to Build a Better HTML-Based Website",
+                        "url": "https://www.freecodecamp.org/news/html-best-practices/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Semantic HTML: What It Is and How It Improves Your Site",
+                        "url": "https://blog.hubspot.com/website/semantic-html"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Semantic Markup",
+                        "url": "https://html.com/semantic-markup"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Forms and Validations",
+                "desc": "Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "MDN Web Docs: Client-side form validation",
+                        "url": "https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Learn Forms by web.dev",
+                        "url": "https://web.dev/learn/forms/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "W3Schools: JavaScript Form Validation",
+                        "url": "https://www.w3schools.com/js/js_validation.asp"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Conventions and Best practices",
+                "desc": "Learn to follow the best practices for writing maintainable and scalable HTML documents. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "HTML Best Practices",
+                        "url": "https://github.com/hail2u/html-best-practices"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Accessibility",
+                "desc": "Web accessibility means that websites, tools, and technologies are designed and developed in such a way that people with disabilities can use them easily. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Developing for Web Accessibility by W3C WAI",
+                        "url": "https://www.w3.org/WAI/tips/developing/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Accessibility Tutorial",
+                        "url": "https://www.w3schools.com/accessibility/index.php"
+                    },
+                    {
+                        "id": 3,
+                        "name": "A Complete Guide To Accessible Front-End Components",
+                        "url": "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Complete Playlist on Accessibility",
+                        "url": "https://youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"
+                    },
+                    {
+                        "id": 5,
+                        "name": "MDN Accessibility",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Accessibility for Developers by Google",
+                        "url": "https://web.dev/accessibility"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Web Accessibility by Udacity",
+                        "url": "https://www.udacity.com/course/web-accessibility--ud891"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Accessibility as an Essential Part of the Inclusive Developer Experience",
+                        "url": "https://thenewstack.io/accessibility-as-an-essential-part-of-the-inclusive-developer-experience/"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "title": "SEO Basics",
+                "desc": "SEO or Search Engine Optimization is the technique used to optimize your website for better rankings on search engines such as Google, Bing etc. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Google Search Central — SEO Docs",
+                        "url": "https://developers.google.com/search/docs"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SEO Guide",
+                        "url": "https://github.com/seo/guide"
+                    },
+                    {
+                        "id": 3,
+                        "name": "8 Must-Know SEO Best Practices For Developers",
+                        "url": "https://neilpatel.com/blog/seo-developers/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "SEO for Developers",
+                        "url": "https://medium.com/welldone-software/seo-for-developers-a-quick-overview-5b5b7ce34679"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Complete SEO Course for Beginners",
+                        "url": "https://www.youtube.com/watch?v=xsVTqzratPs"
+                    },
+                    {
+                        "id": 6,
+                        "name": "SEO Expert Course",
+                        "url": "https://www.youtube.com/watch?v=SnxeXZpZkI0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "CSS",
+        "desc": "CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. Visit the following resources to learn more:",
+        "resources": [
+            {
+                "id": 1,
+                "name": "The Odin Project",
+                "url": "https://www.theodinproject.com/"
+            },
+            {
+                "id": 2,
+                "name": "What The Flexbox!",
+                "url": "https://flexbox.io/"
+            }
+        ],
+        "subtitles": [
+            {
+                "id": 1,
+                "title": "Learn the basics",
+                "desc": "CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "W3Schools — Learn CSS",
+                        "url": "https://www.w3schools.com/css/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "web.dev — Learn CSS",
+                        "url": "https://web.dev/learn/css/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "freeCodeCamp — Responsive Web Design",
+                        "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Learn to Code HTML & CSS",
+                        "url": "https://learn.shayhowe.com/html-css/building-your-first-web-page/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "CSS Crash Course For Absolute Beginners",
+                        "url": "https://www.youtube.com/watch?v=yfoY53QXEnI"
+                    },
+                    {
+                        "id": 6,
+                        "name": "HTML and CSS Tutorial",
+                        "url": "https://www.youtube.com/watch?v=D-h8L5hgW-w"
+                    },
+                    {
+                        "id": 7,
+                        "name": "CSS Masterclass - Tutorial & Course for Beginners",
+                        "url": "https://www.youtube.com/watch?v=FqmB-Zj2-PA"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Making layouts",
+                "desc": "Float, grid, flexbox, positioning, display and box model are some of the key topics that are used for making layouts. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Learn and Practice Flexbox",
+                        "url": "https://flexboxfroggy.com/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Game for learning CSS Grid",
+                        "url": "https://cssgridgarden.com/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "All about Floats",
+                        "url": "https://css-tricks.com/all-about-floats/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Positioning Types: How Do They Differ?",
+                        "url": "https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "The Box Model",
+                        "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+                    },
+                    {
+                        "id": 6,
+                        "name": "The CSS Display Property",
+                        "url": "https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/"
+                    },
+                    {
+                        "id": 7,
+                        "name": "A Complete Guide to Flexbox",
+                        "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox"
+                    },
+                    {
+                        "id": 8,
+                        "name": "A Complete Guide to Grid",
+                        "url": "https://css-tricks.com/snippets/css/complete-guide-grid"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Learn CSS Grid - Course",
+                        "url": "https://cssgrid.io/"
+                    },
+                    {
+                        "id": 10,
+                        "name": "Learn CSS Grid for free",
+                        "url": "https://scrimba.com/learn/cssgrid"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Get on the Grid at Last with the CSS Grid Layout Module",
+                        "url": "https://thenewstack.io/get-grid-last-css-grid-template-markup/"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Responsive design and Media queries",
+                "desc": "Responsive Web Designing is the technique to make your webpages look good on all screen sizes. There are certain techniques used to achieve that e.g. CSS media queries, percentage widths, min or max widths heights etc. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Responsive Web Design",
+                        "url": "https://www.w3schools.com/css/css_rwd_intro.asp"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Learn Responsive Design",
+                        "url": "https://web.dev/learn/design/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "The Beginner’s Guide to Responsive Web Design",
+                        "url": "https://kinsta.com/blog/responsive-web-design/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "The guide to responsive web design in 2022",
+                        "url": "https://webflow.com/blog/responsive-web-design"
+                    },
+                    {
+                        "id": 5,
+                        "name": "5 simple tips to making responsive layouts the easy way",
+                        "url": "https://www.youtube.com/watch?v=VQraviuwbzU"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Introduction To Responsive Web Design",
+                        "url": "https://www.youtube.com/watch?v=srvUrASNj0s"
+                    }
+                ]
+            }
+        ]    
+    },
+    {
+        "id": 4,
+        "title": "JavaScript",
+        "desc": "avaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Visit the following resources to learn more:",
+        "resources": [
+            {
+                "id": 1,
+                "name": "Visit Dedicated JavaScript Roadmap",
+                "url": "https://roadmap.sh/javascript/"
+            },
+            {
+                "id": 2,
+                "name": "W3Schools – JavaScript Tutorial",
+                "url": "https://www.w3schools.com/js//"
+            },
+            {
+                "id": 3,
+                "name": "The Modern JavaScript Tutorial",
+                "url": "https://javascript.info/"
+            },
+            {
+                "id": 4,
+                "name": "Learn JavaScript: Covered many topics",
+                "url": "https://www.javascripttutorial.net/"
+            },
+            {
+                "id": 5,
+                "name": "Eloquent JavaScript textbook",
+                "url": "https://eloquentjavascript.net/"
+            },
+            {
+                "id": 6,
+                "name": "You Dont Know JS Yet (book series)",
+                "url": "https://github.com/getify/You-Dont-Know-JS"
+            },
+            {
+                "id": 7,
+                "name": "JavaScript Crash Course for Beginners",
+                "url": "https://youtu.be/hdI2bqOjy3c?t=2"
+            },
+            {
+                "id": 8,
+                "name": "Build a Netflix Landing Page Clone with HTML, CSS & JS",
+                "url": "https://youtu.be/P7t13SGytRk?t=22"
+            },
+            {
+                "id": 9,
+                "name": "Build 30 Javascript projects in 30 days",
+                "url": "https://javascript30.com/"
+            },
+            {
+                "id": 10,
+                "name": "Learn the basics of JavaScript",
+                "url": "https://github.com/workshopper/javascripting"
+            },
+            {
+                "id": 11,
+                "name": "JavaScript for Beginners",
+                "url": "https://www.scaler.com/topics/course/javascript-beginners"
+            }
+        ],
+        "subtitles": [
+            {
+                "id": 1,
+                "title": "Syntax and Basic constructs",
+                "desc": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Visit Dedicated JavaScript Roadmap",
+                        "url": "https://roadmap.sh/javascript/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "W3Schools – JavaScript Tutorial",
+                        "url": "https://www.w3schools.com/js//"
+                    },
+                    {
+                        "id": 3,
+                        "name": "The Modern JavaScript Tutorial",
+                        "url": "https://javascript.info/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Learn JavaScript: Covered many topics",
+                        "url": "https://www.javascripttutorial.net/"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Learn DOM manipulation",
+                "desc": "The Document Object Model (DOM) is a programming interface built for HTML and XML documents. It represents the page that allows programs and scripts to dynamically update the document structure, content, and style. With DOM, we can easily access and manipulate tags, IDs, classes, attributes, etc. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "DOM Tree",
+                        "url": "https://javascript.info/dom-nodes"
+                    },
+                    {
+                        "id": 2,
+                        "name": "GeeksForGeeks - DOM (Document Object Model)",
+                        "url": "https://www.geeksforgeeks.org/dom-document-object-model/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "What is the DOM?",
+                        "url": "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Eloquent JavaScript, 3rd Edition: The Document Object Model",
+                        "url": "https://eloquentjavascript.net/14_dom.html"
+                    },
+                    {
+                        "id": 5,
+                        "name": "JavaScript HTML DOM",
+                        "url": "https://www.w3schools.com/js/js_htmldom.asp"
+                    },
+                    {
+                        "id": 6,
+                        "name": "JavaScript DOM",
+                        "url": "https://www.javascripttutorial.net/javascript-dom/"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Learn the HTML DOM with Exercises - CodeGuage",
+                        "url": "https://www.codeguage.com/courses/js/html-dom-introduction"
+                    },
+                    {
+                        "id": 8,
+                        "name": "What is DOM, Shadow DOM and Virtual DOM?",
+                        "url": "https://www.youtube.com/watch?v=7Tok22qxPzQ"
+                    },
+                    {
+                        "id": 9,
+                        "name": "JavaScript DOM Crash Course",
+                        "url": "https://www.youtube.com/watch?v=0ik6X4DJKCc"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Learn Fetch API / Ajax (XHR)",
+                "desc": "Ajax is the technique that lets us send and receive the data asynchronously from the servers e.g. updating the user profile or asynchronously fetching the list of searched products without reloading the page. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Fetch API MDN Docs",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+                    },
+                    {
+                        "id": 2,
+                        "name": "A Simple Guide to JavaScript Fetch API",
+                        "url": "https://www.javascripttutorial.net/javascript-fetch-api/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Introduction to Fetch",
+                        "url": "https://web.dev/introduction-to-fetch/"
+                    },
+                    {
+                        "id": 4,
+                        "name": "JavaScript Fetch API",
+                        "url": "https://www.youtube.com/watch?v=-ZI0ea5O2oA"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "ES6+ and modular JavaScript",
+                "desc": "ECMAScript 2015 or ES2015 is a significant update to the JavaScript programming language. It is the first major update to the language since ES5 which was standardized in 2009. You should look at the features introduced with ES6 and onwards. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "ES6 Tutorial",
+                        "url": "https://www.javascripttutorial.net/es6/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "W3Schools: Javascript ES6",
+                        "url": "https://www.w3schools.com/js/js_es6.asp"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Learn Modern JavaScript in 1 Hour",
+                        "url": "https://www.youtube.com/watch?v=NCwa_xi0Uuc"
+                    },
+                    {
+                        "id": 4,
+                        "name": "JavaScript ES6, ES7, ES8",
+                        "url": "https://www.youtube.com/watch?v=nZ1DMMsyVyI"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Build 15 JavaScript Projects - Vanilla JavaScript",
+                        "url": "https://www.youtube.com/watch?v=3PHXvlpOkf4"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Modern JavaScript ES6, ES7 & ES8",
+                        "url": "https://codeloop.org/learn-modern-javascript-es6-es7-es8"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Easy ES6 Goodies for Busy JavaScript Developers",
+                        "url": "https://thenewstack.io/fat-arrow-points-way-easy-es6-goodies-busy-js-devs/"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Understand JavaScript concepts",
+                "desc": "Learn and understand the concepts such as Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM and strict. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "JavaScript Hoisting",
+                        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Event Bubbling and Capturing",
+                        "url": "https://javascript.info/bubbling-and-capturing"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Scope in JavaScript",
+                        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Scope"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Var, Let and Const — Whats the difference?",
+                        "url": "https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Inheritance and Prototype Chain",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
+                    },
+                    {
+                        "id": 6,
+                        "name": "JavaScript Strict Mode",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"
+                    },
+                    {
+                        "id": 7,
+                        "name": "JavaScript Visualized (7 Part Series)",
+                        "url": "https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif"
+                    },
+                    {
+                        "id": 8,
+                        "name": "DOM vs Shadow DOM vs Virtual DOM",
+                        "url": "https://www.youtube.com/watch?v=7Tok22qxPzQ"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Demystifying JavaScript Promises",
+                        "url": "https://blog.greenroots.info/series/javascript-promises"
+                    }
+                ]
+            }
+        ]    
+    }
+]

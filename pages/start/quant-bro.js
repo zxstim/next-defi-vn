@@ -26,18 +26,18 @@ export default function QuantBro(props) {
           `}
       </Script>
       <Head>
-        <title>Start here!</title>
+        <title>Quant bro</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Start here!" />
+        <meta name="description" content="Quant bro" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Start here!" />
-        <meta property="og:title" content="Start here!" key="ogtitle" />
-        <meta property="og:description" content="Start here!" key="ogdesc" />
-        <meta property="og:site_name" content="Start here!" key="ogsitename" />
+        <meta name="description" content="Quant bro" />
+        <meta property="og:title" content="Quant bro" key="ogtitle" />
+        <meta property="og:description" content="Quant bro" key="ogdesc" />
+        <meta property="og:site_name" content="Quant bro" key="ogsitename" />
         <meta
           property="og:url"
-          content="https://defi.vn/start"
+          content="https://defi.vn/start/quant-bro"
           key="ogurl"
         />
       </Head>

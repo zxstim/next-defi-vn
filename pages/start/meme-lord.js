@@ -26,18 +26,18 @@ export default function MemeLord(props) {
           `}
       </Script>
       <Head>
-        <title>Start here!</title>
+        <title>Meme lord path</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Start here!" />
+        <meta name="description" content="Meme lord path" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Start here!" />
-        <meta property="og:title" content="Start here!" key="ogtitle" />
-        <meta property="og:description" content="Start here!" key="ogdesc" />
-        <meta property="og:site_name" content="Start here!" key="ogsitename" />
+        <meta name="description" content="Meme lord path" />
+        <meta property="og:title" content="Meme lord path" key="ogtitle" />
+        <meta property="og:description" content="Meme lord path" key="ogdesc" />
+        <meta property="og:site_name" content="Meme lord path" key="ogsitename" />
         <meta
           property="og:url"
-          content="https://defi.vn/start"
+          content="https://defi.vn/start/meme-lord"
           key="ogurl"
         />
       </Head>

@@ -7,7 +7,8 @@ import OtcPriceComponent from "../components/OtcPrice/OtcPrice";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 import RefreshButton from "../components/RefreshButton/RefreshButton";
-import axios from "axios";
+import RampProviders from "../components/RampProviders/RampProviders";
+
 
 export default function BuyCrypto(props) {
   const { t } = useTranslation("buy");
@@ -61,7 +62,7 @@ export default function BuyCrypto(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <h2>Buy crypto</h2>
-          <p>Coming soon!</p>
+          <RampProviders />
           {/* <Link href="https://xsilver.com/refer/lennard">Buy crypto</Link> */}
           <UpButton />
           <RefreshButton />

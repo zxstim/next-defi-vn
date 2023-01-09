@@ -1589,15 +1589,20 @@ p.thick {
   z-index: 1;
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
+  position: fixed;
+  right: 0;
+  z-index: 2;
   background-color: #fefefe;
   margin: 0 0 0 auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  width: 80vw;
   height: 100vh;
 }
 

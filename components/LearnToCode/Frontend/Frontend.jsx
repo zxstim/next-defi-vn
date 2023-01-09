@@ -7,7 +7,6 @@ import TitleModal from "../../TitleModal/TitleModal";
 import SubtitleModal from "../../SubtitleModal/SubtitleModal";
 
 export default function Frontend() {
-  const router = useRouter();
 
   return (
     <>
@@ -16,14 +15,13 @@ export default function Frontend() {
           <TitleModal key={content.id} data={content} />
           <ul>
             {content.subtitles.map((subtitle) => (
-              <li key={subtitle.id}><SubtitleModal key={subtitle.id} data={subtitle} /></li>
+              <li key={subtitle.id}>
+                <SubtitleModal key={subtitle.id} data={subtitle} />
+              </li>
             ))}
           </ul>
         </div>
       ))}
-      {/* <h3 onClick={showModal}>Internet</h3>
-      {show ? <ContentModal data={content} /> : null} */}
-      {/* <button onClick={showModal}>Learn More</button> */}
     </>
   );
 }

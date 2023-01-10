@@ -1640,6 +1640,14 @@ p.thick {
   background-color:rgb(255, 229, 153);
 }
 
+.credit-note {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px;
+  border: 2px solid #1a1a1a;
+  background-color: #ffffff
+}
+
 .buy-menu-grid {
   display: grid;
   gap: 15px 15px;

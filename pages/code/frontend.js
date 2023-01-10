@@ -59,6 +59,9 @@ export default function CodeFrontend(props) {
           <UpButton />
           <h2>👇 Start from here!</h2>
           <Frontend />
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div className="credit-note">{t("credit")}</div>
+          </div>
           <br />
           <hr />
           <AppFooter />

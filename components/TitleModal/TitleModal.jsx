@@ -28,11 +28,11 @@ export default function TitleModal(content) {
             <h2>{content.data.title}</h2>
             <p>{content.data.desc}</p>
             <ul>
-              {content.data.resources.map((resource) => (
+              {content.data.resources ? content.data.resources.map((resource) => (
                 <li key={resource.id}>
-                  <a href={resource.url}>{resource.name}</a>
+                  <a href={resource.url} target="_blank">{resource.name}</a>
                 </li>
-              ))}
+              )) : null}
             </ul>
           </div>
         </div>

@@ -5,10 +5,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import Frontend from "../../components/LearnToCode/Frontend/Frontend";
+import Blockchain from "../../components/LearnToCode/Blockchain/Blockchain";
 
 export default function CodeFrontend(props) {
-  const { t } = useTranslation("frontend");
+  const { t } = useTranslation("blockchain");
 
   return (
     <>
@@ -27,26 +27,26 @@ export default function CodeFrontend(props) {
           `}
       </Script>
       <Head>
-        <title>Frontend</title>
+        <title>Blockchain</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../../defi.svg" />
-        <meta name="description" content="Frontend" />
+        <meta name="description" content="Blockchain" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Frontend" key="ogtitle" />
-        <meta property="og:description" content="Frontend" key="ogdesc" />
-        <meta property="og:site_name" content="Frontend" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/code/frontend" key="ogurl" />
+        <meta property="og:title" content="Blockchain" key="ogtitle" />
+        <meta property="og:description" content="Blockchain" key="ogdesc" />
+        <meta property="og:site_name" content="Blockchain" key="ogsitename" />
+        <meta property="og:url" content="https://defi.vn/code/blockchain" key="ogurl" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/code/frontend" locale="en">
+            <Link href="/en/code/blockchain" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/code/frontend" locale="vi">
+            <Link href="/code/blockchain" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
@@ -58,7 +58,7 @@ export default function CodeFrontend(props) {
           </div>
           <UpButton />
           <h2>{t("subtitle")}</h2>
-          <Frontend />
+          <Blockchain />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div className="credit-note">{t("credit")}</div>
           </div>
@@ -74,7 +74,7 @@ export default function CodeFrontend(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "frontend"])),
+      ...(await serverSideTranslations(locale, ["common", "blockchain"])),
       // Will be passed to the page component as props
     },
   };

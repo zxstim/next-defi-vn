@@ -25,16 +25,16 @@ export default function EventsList() {
           >
             <div>
               <span className="event-date-badge">{event.date}</span>
-              <span className="event-time-badge">{event.time}</span>
+              {event.time ? <span className="event-time-badge">{event.time}</span> : <span className="event-time-badge">-</span>}
             </div>
             <div className="event-title">{event.name}</div>
             <div className="event-info-container">
               <div>🎟️</div>
-              <div>{event.organizer}</div>
+              {event.organizer ? <div>{event.organizer}</div> : <div>-</div>}
               <div>📍</div>
-              <div>{event.location}</div>
+              {event.location ? <div>{event.location}</div> : <div>-</div>}
               <div>💵</div>
-              <div>{event.price}</div>
+              {event.price ? <div>{event.price}</div> : <div>-</div>}
             </div>
             <div className="event-book-container">
               <Link href={event.registration}>

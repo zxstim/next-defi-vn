@@ -8,31 +8,50 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function InvestorList() {
   const [index, setIndex] = useState(20);
+  const [latestInvestorList, setLatestInvestorList] = useState(investorList)
   const [investors, setInvestors] = useState(investorList.slice(0, index));
   const [hasMore, setHasMore] = useState(true);
   const router = useRouter();
   const { t } = useTranslation("investors");
   const fetchData = () => {
-    if (investors.length >= investorList.length) {
+    if (investors.length >= latestInvestorList.length) {
       setHasMore(false);
       return;
     }
     setTimeout(() => {
-      setServices(investors.concat(investorList.slice(index, index + 20)));
+      setInvestors(investors.concat(latestInvestorList.slice(index, index + 20)));
       setIndex(index + 20);
-    }, 2000);
+    }, 500);
   };
+
 
   // a function to use drop down menu to filter services by tag
   const filterInvestorsDropdown = (event) => {
+    if (event.target.value === "") {
+      setInvestors(investorList.slice(0, index));
+      setLatestInvestorList(investorList)
+      return;
+    }
     let filteredInvestorsList = [];
     filteredInvestorsList = investorList.filter(
-      (investor) => investor.tag === event.target.value
+      investor => investor.tags.includes(event.target.value) === true
     );
+    setLatestInvestorList(filteredInvestorsList)
     setInvestors(filteredInvestorsList.slice(0, index));
   };
 
   return (
+    <>
+    <select className="filter-tag" name="investors" id="investors" onChange={filterInvestorsDropdown}>
+      <option value="">All</option>
+      <option value="vc">Venture capital</option>
+      <option value="mm">Market maker</option>
+      <option value="seed">Seed</option>
+      <option value="vb">Venture builder</option>
+      <option value="angel">Angel</option>
+      <option value="finance">Financial services</option>
+    </select>
+
     <InfiniteScroll
       dataLength={investors.length} //This is important field to render the next data
       next={fetchData}
@@ -51,13 +70,6 @@ export default function InvestorList() {
         </p>
       }
     >
-      {/* <label>Choose a tag:</label>
-      <select name="services" id="services" onChange={filterServicesDropdown}>
-        <option value="media">None</option>
-        <option value="media">Media</option>
-        <option value="analytics">Analytics</option>
-        <option value="marketing">Marketing</option>
-      </select> */}
       <div className="service-box">
         {investors.map((investor) => (
           <div key={investor.id} className="service-item">
@@ -69,7 +81,7 @@ export default function InvestorList() {
             </div>
             <div className="service-guide">
               {investor.tags.map((tag) => (
-                <div className="service-badge">{tag}</div>
+                <div key={tag} className="service-badge">{tag}</div>
               ))}
             </div>
             <div
@@ -165,14 +177,13 @@ export default function InvestorList() {
                 </span>
               ) : null}
             </div>
-            <Link href={investor.web}>
-              <a style={{ textDecoration: "none", color: "#000000" }}>
-                <div className="service-cta">{t("cta")}</div>
-              </a>
-            </Link>
+            <a href={investor.web} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
+              <div className="service-cta">{t("cta")}</div>
+            </a>
           </div>
         ))}
       </div>
     </InfiniteScroll>
+    </>
   );
 }

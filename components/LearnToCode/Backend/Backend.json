@@ -3024,7 +3024,7 @@
         ]    
     },
     {
-        "id": 26,
+        "id": 28,
         "title": "Continue with DevOps roadmap",
         "desc": "It is not required to complete the bonus content, it just expands on the topics covered in the roadmap and has the items which were missed in the roadmap. Go through them if you want.",
         "resources": [
@@ -3037,7 +3037,7 @@
         "subtitles": false
     },
     {
-        "id": 27,
+        "id": 29,
         "title": "Keep Learning!",
         "desc": "This is the end of this guide but it is not the end of your learning journey. Keep learning and keep growing.",
         "resources": [

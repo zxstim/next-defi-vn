@@ -51,7 +51,8 @@
                         "name": "What Is a Blockchain? | Blockchain Basics for Developers",
                         "url": "https://youtu.be/4ff9esY_4aU"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -68,7 +69,8 @@
                         "name": "What is Decentralization in Blockchain?",
                         "url": "https://www.blockchain-council.org/blockchain/what-is-decentralization-in-blockchain/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -95,7 +97,8 @@
                         "name": "Why is Blockchain Important and Why Does it Matter",
                         "url": "https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -122,7 +125,8 @@
                         "name": "Blockchain Basics | Coursera",
                         "url": "https://www.coursera.org/lecture/blockchain-basics/blockchain-structure-5rj9Z"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 5,
@@ -149,7 +153,8 @@
                         "name": "Blockchain Basics | Coursera",
                         "url": "https://www.coursera.org/lecture/blockchain-basics/basic-operations-OxILB"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 6,
@@ -176,7 +181,8 @@
                         "name": "E34 Blockchain Applications and Real-World Use Cases Disrupting the Status Quo",
                         "url": "https://builtin.com/blockchain/blockchain-applications"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]
     },
@@ -227,7 +233,8 @@
                         "name": "Learn Cryptography",
                         "url": "https://www.youtube.com/watch?v=trHox1bN5es"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -249,7 +256,8 @@
                         "name": "What Is a Consensus Mechanism?",
                         "url": "https://www.coindesk.com/learn/what-is-a-consensus-mechanism/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -271,7 +279,8 @@
                         "name": "How IPFS works",
                         "url": "https://docs.ipfs.tech/concepts/how-ipfs-works/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -293,7 +302,8 @@
                         "name": "Solana Staking Rewards",
                         "url": "https://docs.solana.com/implemented-proposals/staking-rewards"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 5,
@@ -315,7 +325,8 @@
                         "name": "The Superiority of Cryptographic Truth",
                         "url": "https://youtu.be/AEtBPbmIRKQ"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 6,
@@ -337,7 +348,8 @@
                         "name": "What Is a Hard Fork?",
                         "url": "https://www.investopedia.com/terms/h/hard-fork.asp"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 7,
@@ -359,7 +371,8 @@
                         "name": "How Cryptocurrency actually works.",
                         "url": "https://youtu.be/rYQgy8QDEBI"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 8,
@@ -376,7 +389,8 @@
                         "name": "What is a Crypto Wallet? A Beginner’s Guide",
                         "url": "https://crypto.com/university/crypto-wallets"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 9,
@@ -398,7 +412,8 @@
                         "name": "Blockchain Interoperability – Understanding Cross-Chain Technology",
                         "url": "https://www.blockchain-council.org/blockchain/blockchain-interoperability/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]
     },
@@ -439,7 +454,8 @@
                         "name": "A gentle introduction to Ethereum",
                         "url": "https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -456,7 +472,8 @@
                         "name": "Introduction to Polygon",
                         "url": "https://wiki.polygon.technology/docs/develop/getting-started"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -473,7 +490,8 @@
                         "name": "BNB Chain overview",
                         "url": "https://www.binance.com/en/blog/all/bnb-chain-blockchain-for-exchanging-the-world-304219301536473088"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -490,7 +508,8 @@
                         "name": "Developer docs",
                         "url": "https://okchain-devdocs.readthedocs.io/zh_CN/doc-en/okchain/overview.html"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 5,
@@ -507,7 +526,8 @@
                         "name": "Gnosis overview",
                         "url": "https://developers.gnosischain.com/#gnosis-chain"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 6,
@@ -524,7 +544,8 @@
                         "name": "Introduction to HECO Chain",
                         "url": "https://docs.hecochain.com/#/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 7,
@@ -541,7 +562,8 @@
                         "name": "Developer docs",
                         "url": "https://okchain-devdocs.readthedocs.io/zh_CN/doc-en/okchain/overview.html"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 8,
@@ -558,7 +580,8 @@
                         "name": "Fantom overview",
                         "url": "https://docs.fantom.foundation/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 9,
@@ -575,7 +598,8 @@
                         "name": "Moonbeam Vision",
                         "url": "https://docs.moonbeam.network/learn/platform/vision/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 10,
@@ -592,7 +616,8 @@
                         "name": "Inside Arbitrum",
                         "url": "https://developer.offchainlabs.com/docs/Inside_Arbitrum"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 11,
@@ -609,7 +634,8 @@
                         "name": "Starknet developer docs",
                         "url": "https://starknet.io/building-on-starknet/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 12,
@@ -641,7 +667,8 @@
                         "name": "Start Building Solana!",
                         "url": "https://beta.solpg.io/?utm_source=solana.com"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 13,
@@ -668,7 +695,8 @@
                         "name": "Blockchain analysis",
                         "url": "https://ton.org/analysis"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -704,7 +732,8 @@
                         "name": "A complete guide to understand hybrid smart contracts",
                         "url": "https://www.leewayhertz.com/hybrid-smart-contracts/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -721,7 +750,8 @@
                         "name": "What Is Chainlink in 5 Minutes",
                         "url": "https://www.gemini.com/cryptopedia/what-is-chainlink-and-how-does-it-work"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -743,7 +773,8 @@
                         "name": "Understanding Oracle Networks",
                         "url": "https://coinmetro.com/blog/understanding-oracle-networks/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -799,7 +830,8 @@
                         "name": "Learn Blockchain, Solidity, and Full Stack Web3 Development",
                         "url": "https://youtu.be/gyMwXuJrbJQ"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -816,7 +848,8 @@
                         "name": "How to write and deploy a smart contract in Rust",
                         "url": "https://learn.figment.io/tutorials/write-and-deploy-a-smart-contract-on-near"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -863,7 +896,8 @@
                         "name": "Smart Contract Code Coverage In Hardhat",
                         "url": "https://medium.com/coinmonks/smart-contract-code-coverage-in-hardhat-d4a5ff6c9ba6"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -880,7 +914,8 @@
                         "name": "Deploying and interacting with smart contracts",
                         "url": "https://docs.openzeppelin.com/learn/deploying-and-interacting"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 5,
@@ -892,7 +927,8 @@
                         "name": "Monitoring Smart Contracts",
                         "url": "https://consensys.github.io/smart-contract-best-practices/development-recommendations/solidity-specific/event-monitoring/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 6,
@@ -919,7 +955,8 @@
                         "name": "Upgrading your Smart Contracts | A Tutorial & Introduction",
                         "url": "https://youtu.be/bdXJmWajZRY"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 7,
@@ -946,7 +983,8 @@
                         "name": "ERC-1155 Token Standard (Multi-Token)",
                         "url": "https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 8,
@@ -963,7 +1001,8 @@
                         "name": "What is a Crypto Wallet? A Beginner’s Guide",
                         "url": "https://crypto.com/university/crypto-wallets"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 9,
@@ -980,7 +1019,8 @@
                         "name": "Remix - Ethereum IDE & community",
                         "url": "https://remix-project.org/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 10,
@@ -1014,7 +1054,8 @@
                         "name": "Decentralized Storage",
                         "url": "https://ethereum.org/en/developers/docs/storage/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1055,7 +1096,8 @@
                         "name": "Build and Deploy Smart Contracts using Hardhat",
                         "url": "https://youtu.be/GBc3lBrXEBo"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1072,7 +1114,8 @@
                         "name": "Python and Blockchain: Deploy Smart Contracts using Brownie",
                         "url": "https://youtu.be/QfFO22lwSw4"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1089,7 +1132,8 @@
                         "name": "Truffle Tutorial for Beginners | Compile, Test & Deploy Smart contracts to any EVM Blockchain",
                         "url": "https://youtu.be/62f757RVEvU"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1140,7 +1184,8 @@
                         "name": "Smart contract Fuzzing",
                         "url": "https://youtu.be/LRyyNzrqgOc"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1162,7 +1207,8 @@
                         "name": "Blockchain Attack Vectors: Vulnerabilities of the Most Secure Technology",
                         "url": "https://www.apriorit.com/dev-blog/578-blockchain-attack-vectors"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1174,7 +1220,8 @@
                         "name": "Smart Contract Randomness or ReplicatedLogic Attack",
                         "url": "https://blog.finxter.com/randomness-or-replicatedlogic-attack-on-smart-contracts/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1194,7 +1241,8 @@
                         "name": "Slither, the Solidity source analyzer",
                         "url": "https://github.com/crytic/slither/blob/master/README.md"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1206,7 +1254,8 @@
                         "name": "Manticore Docs",
                         "url": "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1223,7 +1272,8 @@
                         "name": "MythX Documentation",
                         "url": "https://docs.mythx.io/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -1235,7 +1285,8 @@
                         "name": "Echidna: A Fast Smart Contract Fuzzer",
                         "url": "https://github.com/crytic/echidna/blob/master/README.md"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1255,7 +1306,8 @@
                         "name": "OpenZeppelin Contracts",
                         "url": "https://docs.openzeppelin.com/contracts/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1326,7 +1378,8 @@
                         "name": "Tutorial: Git for Absolutely Everyone",
                         "url": "https://thenewstack.io/tutorial-git-for-absolutely-everyone/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1387,7 +1440,8 @@
                         "name": "Git and GitHub - CS50 Beyond 2019",
                         "url": "https://www.youtube.com/watch?v=eulnSXkhE7I"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1409,7 +1463,8 @@
                         "name": "Development: Connect git to GitLab for Small Projects",
                         "url": "https://thenewstack.io/development-connect-git-to-gitlab-for-small-projects/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1426,7 +1481,8 @@
                         "name": "BitBucket Website",
                         "url": "https://bitbucket.com/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1492,7 +1548,8 @@
                         "name": "Understanding Reacts UI Rendering Process",
                         "url": "https://www.youtube.com/watch?v=i793Qm6kv3U"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1514,7 +1571,8 @@
                         "name": "Angular for Beginners Course [Full Front End Tutorial with TypeScript]",
                         "url": "https://www.youtube.com/watch?v=3qBXWUpoPHo"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1551,7 +1609,8 @@
                         "name": "Meet Vue.js, the Flexible JavaScript Framework",
                         "url": "https://thenewstack.io/meet-vue-js-flexible-javascript-framework/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1592,7 +1651,8 @@
                         "name": "The real-world use cases for blockchain technology",
                         "url": "https://roboticsandautomationnews.com/2022/05/20/the-real-world-use-cases-for-blockchain-technology/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1614,7 +1674,8 @@
                         "name": "How to test dApps (decentralized applications)",
                         "url": "https://rhian-is.medium.com/how-to-test-dapps-decentralized-applications-4662cf61db90"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1631,7 +1692,8 @@
                         "name": "Build and Deploy a Modern Web 3.0 Blockchain App",
                         "url": "https://youtu.be/Wn_Kb3MR_cU"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -1659,7 +1721,8 @@
                         "name": "Blockchain Development: Dapp Architecture",
                         "url": "https://youtu.be/KBSq8-LnUDI?t=286"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 6,
@@ -1681,7 +1744,8 @@
                         "name": "dApp Security:All You Need to Know",
                         "url": "https://www.immunebytes.com/blog/dapp-security/#Benefits_of_DApps_Security"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1711,7 +1775,8 @@
                         "name": "What is DeFi? (Decentralized Finance Animated)",
                         "url": "https://www.youtube.com/watch?v=17QRFlml4pA"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1728,7 +1793,8 @@
                         "name": "Decentralized Autonomous Organization (DAO)",
                         "url": "https://www.investopedia.com/tech/what-dao/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1750,7 +1816,8 @@
                         "name": "NFT Explained In 5 Minutes | What Is NFT? - Non Fungible Token",
                         "url": "https://youtu.be/NNQLJcJEzv0"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -1767,7 +1834,8 @@
                         "name": "Smart Contract Use Cases - Payments",
                         "url": "https://blog.chain.link/smart-contract-use-cases/#external-payments"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 5,
@@ -1784,7 +1852,8 @@
                         "name": "Top 7 Use Cases of Blockchain in the Insurance Industry",
                         "url": "https://imaginovation.net/blog/blockchain-insurance-industry-examples/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1804,7 +1873,8 @@
                         "name": "Ethers.js Documentation",
                         "url": "https://docs.ethers.io/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1816,7 +1886,8 @@
                         "name": "web3.js Documentation",
                         "url": "https://web3js.readthedocs.io/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1828,7 +1899,8 @@
                         "name": "Moralis SDK",
                         "url": "https://github.com/MoralisWeb3/Moralis-JS-SDK/blob/main/README.md"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -1848,7 +1920,8 @@
                         "name": "Geth Documentation",
                         "url": "https://geth.ethereum.org/docs/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1860,7 +1933,8 @@
                         "name": "Besu Ethereum Client",
                         "url": "https://github.com/hyperledger/besu"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1872,7 +1946,8 @@
                         "name": "Nethermind Documentation",
                         "url": "https://docs.nethermind.io/nethermind/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -1884,7 +1959,8 @@
                         "name": "Substrate Documentation",
                         "url": "https://docs.substrate.io/quick-start/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]
     },
@@ -1915,7 +1991,8 @@
                         "name": "Alchemy official site",
                         "url": "https://www.alchemy.com/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -1927,7 +2004,8 @@
                         "name": "Infura official site",
                         "url": "https://infura.io/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -1939,7 +2017,8 @@
                         "name": "Moralis official site",
                         "url": "https://moralis.io/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -1951,7 +2030,8 @@
                         "name": "Quicknode official site",
                         "url": "https://www.quicknode.com/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]    
     },
@@ -2021,7 +2101,8 @@
                         "name": "JavaScript for Beginners",
                         "url": "https://www.scaler.com/topics/course/javascript-beginners"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -2063,7 +2144,8 @@
                         "name": "Codecademy - Learn Python 2",
                         "url": "https://www.codecademy.com/learn/learn-python"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -2100,7 +2182,8 @@
                         "name": "W3Schools Go Tutorial",
                         "url": "https://www.w3schools.com/go/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }   
         ]    
     },
@@ -2125,7 +2208,8 @@
                         "name": "State Channels: An Introduction to Off-chain Transactions",
                         "url": "https://www.talentica.com/blogs/state-channels-an-introduction-to-off-chain-transactions/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 2,
@@ -2137,7 +2221,8 @@
                         "name": "How Do Optimistic Rollups Work (The Complete Guide)",
                         "url": "https://www.alchemy.com/overviews/optimistic-rollups"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 3,
@@ -2149,7 +2234,8 @@
                         "name": "Zero-Knowledge Rollups - Ethereum",
                         "url": "https://ethereum.org/en/developers/docs/scaling/zk-rollups"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 4,
@@ -2161,7 +2247,8 @@
                         "name": "Validium - Ethereum",
                         "url": "https://ethereum.org/en/developers/docs/scaling/validium/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 5,
@@ -2173,7 +2260,8 @@
                         "name": "Plasma Chains - Ethereum",
                         "url": "https://ethereum.org/en/developers/docs/scaling/plasma/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 6,
@@ -2190,7 +2278,8 @@
                         "name": "An Introduction to Sidechains",
                         "url": "https://www.coindesk.com/learn/an-introduction-to-sidechains"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 7,
@@ -2207,7 +2296,8 @@
                         "name": "What Is Ethereum 2.0? Understanding The Merge",
                         "url": "https://www.forbes.com/advisor/investing/cryptocurrency/ethereum-2/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             },
             {
                 "id": 8,
@@ -2219,7 +2309,8 @@
                         "name": "Scaling - Ethereum",
                         "url": "https://ethereum.org/en/developers/docs/scaling/"
                     }
-                ]
+                ],
+                "subsubtitles": false
             }
         ]
     },    

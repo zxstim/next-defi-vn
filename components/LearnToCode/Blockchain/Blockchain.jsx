@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import contents from "./Blockchain.json";
 import TitleModal from "../../TitleModal/TitleModal";
 import SubtitleModal from "../../SubtitleModal/SubtitleModal";
+import SubSubtitleModal from "../../SubSubtitleModal/SubSubtitleModal";
 
 export default function Blockchain() {
 
@@ -16,6 +17,13 @@ export default function Blockchain() {
             {content.subtitles ? content.subtitles.map((subtitle) => (
               <li key={subtitle.id}>
                 <SubtitleModal key={subtitle.id} data={subtitle} />
+                <ul>
+                  {subtitle.subsubtitles ? subtitle.subsubtitles.map((subsubtitle) => (
+                    <li key={subsubtitle.id}>
+                      <SubSubtitleModal key={subsubtitle.id} data={subsubtitle} />
+                    </li> 
+                  )) : null}
+                </ul>
               </li>
             )) : null}
           </ul>

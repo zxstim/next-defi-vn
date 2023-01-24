@@ -65,7 +65,7 @@ export default function DiscoverList() {
               {discovery.name}
             </div>
             <div className="service-desc">
-              {router.locale === "en" ? discovery.desc : discovery.descVi}
+              {discovery.desc}
             </div>
             <div className="service-guide">
               <div className="service-badge">{discovery.tag}</div>

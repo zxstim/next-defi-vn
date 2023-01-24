@@ -4,8 +4,8 @@ import { useState } from "react";
 // import { useRouter } from "next/router";
 // import { useTranslation } from "next-i18next";
 
-export default function SubtitleModal(content) {
-  // const router = useRouter();
+export default function SubSubtitleModal(content) {
+//   const router = useRouter();
   const [show, setShow] = useState(false);
   // function that shows modal
   const showModal = () => {
@@ -37,7 +37,7 @@ export default function SubtitleModal(content) {
           </div>
         </div>
       ) : null}
-      <div className="subtitle-modal" onClick={showModal}>
+      <div className="subsubtitle-modal" onClick={showModal}>
         {content.data.title}
       </div>
     </>

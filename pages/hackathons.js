@@ -54,6 +54,7 @@ export default function Hackathons(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
+          <h2>{t("hackathons-list")}</h2>
           <HackathonsList />
           <br />
           <hr />

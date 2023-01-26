@@ -1,20 +1,9 @@
 {
     "title": "💻 Hackathons",
     "back": "🏠 Go back to home",
-    "events-list": "Events List",
     "hackathons-list": "Hackathons List",
-    "table1": "Name",
-    "table2": "Organizer",
-    "table3": "Date",
-    "table4": "Time",
-    "table5": "Category",
-    "table6": "Location",
-    "table7": "Price",
-    "table8": "Registration",
-    "table9": "Status",
-    "table10": "Contact",
-    "page": "Page ",
-    "gt-page": "| Go to page:",
-    "show": "Show",
-    "of": "of"
+    "register": "Register",
+    "date-filter": "Date filter:",
+    "month-filter": "Month filter:",
+    "reset": "Reset"
 }

@@ -52,7 +52,7 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("title5")}</h3>
           </a>
         </Link>
-        <Link href="/devkit">
+        <Link href="/devtools">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title17")}</h3>
           </a>

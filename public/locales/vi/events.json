@@ -2,19 +2,8 @@
     "title": "🎟️ Sự kiện",
     "back": "🏠 Quay về trang chủ",
     "events-list": "Danh sách sự kiện",
-    "hackathons-list": "Danh sách Hackathon",
-    "table1": "Tên",
-    "table2": "Ban tổ chức",
-    "table3": "Ngày",
-    "table4": "Thời gian",
-    "table5": "Loại",
-    "table6": "Địa điểm",
-    "table7": "Phí vào",
-    "table8": "Đăng ký",
-    "table9": "Tình trạng",
-    "table10": "Liên hệ",
-    "page": "Trang ",
-    "gt-page": "| Tới trang:",
-    "show": "Hiện",
-    "of": "trong"
+    "register": "Đăng ký",
+    "date-filter": "Lọc ngày tháng:",
+    "month-filter": "Lọc tháng:",
+    "reset": "Xoá"
 }

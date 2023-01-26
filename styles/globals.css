@@ -1485,6 +1485,13 @@ p.thick {
   margin-left: 10px;
 }
 
+.event-datetime-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+}
+
 .event-date-badge {
   background-color: #000000;
   color: #ffffff;
@@ -1723,4 +1730,30 @@ p.thick {
   padding: 4px 4px 4px 4px;
   box-shadow: 3px 3px black;
   font-size: 16px;
+}
+
+.events-filter {
+  border: 2px solid var(--color-fg-default) !important;
+  color: var(--color-fg-default) !important;
+  margin: 8px 0px 16px 8px !important;
+  padding: 4px 4px 4px 4px !important;
+  box-shadow: 3px 3px black !important;
+  font-size: 16px !important;
+  max-width: 125px !important;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.events-filter-clear {
+  border: 2px solid var(--color-fg-default) !important;
+  color: var(--color-fg-default) !important;
+  margin: 8px 0px 16px 16px !important;
+  padding: 8px 8px 8px 8px !important;
+  box-shadow: 3px 3px black !important;
+  font-size: 16px !important;
 }

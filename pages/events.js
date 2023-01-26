@@ -54,6 +54,7 @@ export default function Events(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
+          <h2>{t("events-list")}</h2>
           <EventsList />
           <br />
           <hr />

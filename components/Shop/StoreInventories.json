@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Cold wallet",
+        "nameVi": "Ví lạnh",
+        "price": 5000000
+    },
+    {
+        "id": 2,
+        "name": "Coffee",
+        "nameVi": "Cà phê",
+        "price": 50000
+    },
+    {
+        "id": 3,
+        "name": "Tea",
+        "nameVi": "Trà",
+        "price": 50000
+    },
+    {
+        "id": 4,
+        "name": "T-shirt",
+        "nameVi": "Áo thun",
+        "price": 50000
+    },
+    {
+        "id": 5,
+        "name": "Hat",
+        "nameVi": "Mũ",
+        "price": 50000
+    },
+    {
+        "id": 6,
+        "name": "Pants",
+        "nameVi": "Quần",
+        "price": 50000
+    },
+    {
+        "id": 7,
+        "name": "Shoes",
+        "nameVi": "Giầy",
+        "price": 50000
+    },
+    {
+        "id": 8,
+        "name": "Backpack",
+        "nameVi": "Ba lô",
+        "price": 50000
+    },
+    {
+        "id": 9,
+        "name": "Mouse",
+        "nameVi": "Chuột",
+        "price": 50000
+    }
+]

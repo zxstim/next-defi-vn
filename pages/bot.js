@@ -55,7 +55,6 @@ export default function Bot(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <RefreshButton />
           <HowToBot />
           <br />
           <hr />

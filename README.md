@@ -4,7 +4,7 @@ Created by [@0xstim](https://github.com/0xstim) at [Defi.vn](https://defi.vn)
 
 # Why open source?
 
-To provide a list of all development resources and educational content available so everyone can equip themselves with knowledge for their Web3 joruney [#WAGMI](https://twitter.com/0xStim)
+To provide a list of all development resources and educational content available so everyone can equip themselves with knowledge for their Web3 journey [#WAGMI](https://twitter.com/0xStim)
 
 # How to build with [Next.js](https://nextjs.org/)
 

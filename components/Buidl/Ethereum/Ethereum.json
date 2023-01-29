@@ -419,897 +419,726 @@
     },
     {
         "id": 3,
-        "title": "Blockchains",
-        "desc": "Blockchain systems vary considerably in their design, particularly with regard to the consensus mechanisms used to perform the essential task of verifying network data. Visit the following resources to learn more:",
+        "title": "Ethereum",
+        "desc": "Ethereum is a technology for building apps and organizations, holding assets, transacting and communicating without being controlled by a central authority. There is no need to hand over all your personal details to use Ethereum - you keep control of your own data and what is being shared. Ethereum has its own cryptocurrency, Ether, which is used to pay for certain activities on the Ethereum network. Visit the following resources to learn more:",
         "resources": [
             {
                 "id": 1,
-                "name": "Types of Blockchains: PoW, PoS, and Private",
-                "url": "https://www.gemini.com/cryptopedia/blockchain-types-pow-pos-private"
+                "name": "What is Ethereum?",
+                "url": "https://ethereum.org/en/what-is-ethereum/"
             },
             {
                 "id": 2,
-                "name": "Types of Blockchain",
-                "url": "https://www.geeksforgeeks.org/types-of-blockchain/"
+                "name": "What Is Ethereum and How Does It Work?",
+                "url": "https://www.investopedia.com/terms/e/ethereum.asp"
             }
         ],
         "subtitles": [
             {
                 "id": 1,
-                "title": "Ethereum (EVM-based)",
-                "desc": "Ethereum is a programmable blockchain platform with the capacity to support smart contracts, dapps (decentralized apps), and other DeFi projects. The Ethereum native token is the Ether (ETH), and it’s used to fuel operations on the blockchain. The Ethereum platform launched in 2015, and it’s now the second largest form of crypto next to Bitcoin (BTC). Visit the following resources to learn more:",
+                "title": "Introduction to Ether",
+                "desc": "Ether (ETH) is the cryptocurrency used for many things on the Ethereum network. Fundamentally, it is the only acceptable form of payment for transaction fees, and after The Merge, ether is required to validate and propose blocks on Mainnet. Ether is also used as a primary form of collateral in the DeFi lending markets, as a unit of account in NFT marketplaces, as payment earned for performing services or selling real-world goods, and more. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "Ethereum whitepaper",
-                        "url": "https://ethereum.org/en/whitepaper/"
+                        "name": "What is Ether (ETH)?",
+                        "url": "https://ethereum.org/en/eth/"
                     },
                     {
                         "id": 2,
-                        "name": "Intro to Ethereum",
-                        "url": "https://ethereum.org/en/developers/docs/intro-to-ethereum/"
-                    },
-                    {
-                        "id": 3,
-                        "name": "A gentle introduction to Ethereum",
-                        "url": "https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/"
+                        "name": "What is Ether (ETH)?",
+                        "url": "https://www.investopedia.com/terms/e/ethereum.asp"
                     }
                 ],
                 "subsubtitles": false
             },
             {
                 "id": 2,
-                "title": "Polygon (EVM-based)",
-                "desc": "Polygon, formerly known as the Matic Network, is a scaling solution that aims to provide multiple tools to improve the speed and reduce the cost and complexities of transactions on the Ethereum blockchain. Visit the following resources to learn more:",
+                "title": "Understanding Ethereum Accounts",
+                "desc": "An Ethereum account is an entity with an ether (ETH) balance that can send transactions on Ethereum. Accounts can be user-controlled or deployed as smart contracts. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "Polygon whitepaper",
-                        "url": "https://polygon.technology/lightpaper-polygon.pdf"
+                        "name": "Ethereum Accounts - Ethereum Foundation?",
+                        "url": "https://ethereum.org/en/developers/docs/accounts/"
                     },
                     {
                         "id": 2,
-                        "name": "Introduction to Polygon",
-                        "url": "https://wiki.polygon.technology/docs/develop/getting-started"
+                        "name": "Understanding Ethereum Accounts",
+                        "url": "https://info.etherscan.com/understanding-ethereum-accounts/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Comparing Bitcoin & Ethereum: UTXO vs Account Based Transaction Models?",
+                        "url": "https://blockonomi.com/utxo-vs-account-based-transaction-models/"
                     }
                 ],
                 "subsubtitles": false
             },
             {
                 "id": 3,
-                "title": "Binance Smart Chain (EVM-based)",
-                "desc": "Binance Smart Chain (also known as BNB Chain) is a blockchain project initiated by Binance as a central piece of their cryptocurrency exchange, which is the largest exchange in the world in terms of daily trading volume of cryptocurrencies. Visit the following resources to learn more:",
+                "title": "Transactions",
+                "desc": "Transactions are cryptographically signed instructions from accounts. An account will initiate a transaction to update the state of the Ethereum network. The simplest transaction is transferring ETH from one account to another. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "Binance whitepaper",
-                        "url": "https://www.exodus.com/assets/docs/binance-coin-whitepaper.pdf"
+                        "name": "Transactions - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/transactions/"
                     },
                     {
                         "id": 2,
-                        "name": "BNB Chain overview",
-                        "url": "https://www.binance.com/en/blog/all/bnb-chain-blockchain-for-exchanging-the-world-304219301536473088"
+                        "name": "What are Ethereum Transactions?",
+                        "url": "https://www.quicknode.com/guides/ethereum-development/what-are-ethereum-transactions"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Ethereum Transaction - CoinMarketCap",
+                        "url": "https://coinmarketcap.com/alexandria/glossary/ethereum-transaction"
                     }
                 ],
                 "subsubtitles": false
             },
             {
                 "id": 4,
-                "title": "OK Chain (EVM-based)",
-                "desc": "OKC is a L1 blockchain network built on Cosmos that aims for optimal interoperability and performance. Visit the following resources to learn more:",
+                "title": "Ethereum Virtual Machine (EVM)",
+                "desc": "The EVM’s physical instantiation can’t be described in the same way that one might point to a cloud or an ocean wave, but it does exist as one single entity maintained by thousands of connected computers running an Ethereum client. The Ethereum protocol itself exists solely for the purpose of keeping the continuous, uninterrupted, and immutable operation of this special state machine. It's the environment in which all Ethereum accounts and smart contracts live. At any given block in the chain, Ethereum has one and only one 'canonical' state, and the EVM is what defines the rules for computing a new valid state from block to block. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "OK Chain",
-                        "url": "https://www.okx.com/okc"
+                        "name": "Ethereum Virtual Machine (EVM) - Ethereum Foundation",
+                        "url": "https://ethereum.org/vi/developers/docs/evm/"
                     },
                     {
                         "id": 2,
-                        "name": "Developer docs",
-                        "url": "https://okchain-devdocs.readthedocs.io/zh_CN/doc-en/okchain/overview.html"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 5,
-                "title": "Gnosis Chain (EVM-based)",
-                "desc": "Gnosis is a blockchain based on Ethereum, which changed the consensus model to PoS to solve major issues on the Ethereum mainnet. While the platform solves problems surrounding transaction fees and speed, it also means that the Gnosis chain is less decentralized, as it is somewhat reliant on the Ethereum chain. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Gnosis whitepaper",
-                        "url": "https://blockchainlab.com/pdf/gnosis_whitepaper.pdf"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Gnosis overview",
-                        "url": "https://developers.gnosischain.com/#gnosis-chain"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 6,
-                "title": "Huobi Eco Chain (EVM-based)",
-                "desc": "Huobi's ECO Chain (also known as HECO) is a public blockchain that provides developers with a low-cost onchain environment for running decentralized apps (dApps) of smart contracts and storing digital assets. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Huobi Eco Chain whitepaper",
-                        "url": "https://www.hecochain.com/developer.133bd45.pdf"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Introduction to HECO Chain",
-                        "url": "https://docs.hecochain.com/#/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 7,
-                "title": "Avalanche (EVM-based)",
-                "desc": "OKC is a L1 blockchain network built on Cosmos that aims for optimal interoperability and performance. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "OK Chain",
-                        "url": "https://www.okx.com/okc"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Developer docs",
-                        "url": "https://okchain-devdocs.readthedocs.io/zh_CN/doc-en/okchain/overview.html"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 8,
-                "title": "Fantom (EVM-based)",
-                "desc": "Fantom is a decentralized, open-source smart contract platform that supports decentralized applications (dApps) and digital assets. It's one of many blockchain networks built as a faster, more efficient alternative to Ethereum, it uses the proof-of-stake consensus mechanism. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Fantom whitepaper",
-                        "url": "https://arxiv.org/pdf/1810.10360.pdf"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Fantom overview",
-                        "url": "https://docs.fantom.foundation/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 9,
-                "title": "Moonbeam / Moonriver (EVM-based)",
-                "desc": "Moonbeam is a Polkadot network parachain that promises cross-chain interoperability between the Ethereum and Polkadot . More specifically, Moonbeam is a smart contract platform that enables developers to move dApps between the two networks without having to rewrite code or redeploy infrastructure. Moonriver is an incentivized testnet. It enables developers to create, test, and adjust their protocols prior to launching on Moonbeam. Moonbeam is the mainnet of the ecosystem. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "About Moonbream",
-                        "url": "https://docs.moonbeam.network/learn/platform/networks/moonbeam/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Moonbeam Vision",
-                        "url": "https://docs.moonbeam.network/learn/platform/vision/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 10,
-                "title": "Arbitrum (ZK L2)",
-                "desc": "Arbitrum aims to reduce transaction fees and congestion by moving as much computation and data storage off of Ethereum's main blockchain (layer 1) as it can. Storing data off of Ethereum's blockchain is known as Layer 2 scaling solutions. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Arbitrum whitepaper",
-                        "url": "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Inside Arbitrum",
-                        "url": "https://developer.offchainlabs.com/docs/Inside_Arbitrum"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 11,
-                "title": "Starknet (ZK L2)",
-                "desc": "Starknet aims to reduce transaction fees and congestion by moving as much computation and data storage off of Ethereum's main blockchain (layer 1) as it can. Storing data off of Ethereum's blockchain is known as Layer 2 scaling solutions. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Starknet overview",
-                        "url": "https://starknet.io/what-is-starknet/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Starknet developer docs",
-                        "url": "https://starknet.io/building-on-starknet/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 12,
-                "title": "Solana",
-                "desc": "Solana is a public blockchain platform with smart contract functionality. Its native cryptocurrency is SOL. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "What is Solana, and how does it work?",
-                        "url": "https://cointelegraph.com/news/what-is-solana-and-how-does-it-work"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Beginners Guide To Solana",
-                        "url": "https://solana.com/news/getting-started-with-solana-development"
+                        "name": "What Is an Ethereum Virtual Machine (EVM)? - CoinMarketCap",
+                        "url": "https://coinmarketcap.com/alexandria/glossary/ethereum-virtual-machine-evm"
                     },
                     {
                         "id": 3,
-                        "name": "Solana Introduction",
-                        "url": "https://docs.solana.com/introduction"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Solana Architecture",
-                        "url": "https://docs.solana.com/cluster/overview"
-                    },
-                    {
-                        "id": 5,
-                        "name": "Start Building Solana!",
-                        "url": "https://beta.solpg.io/?utm_source=solana.com"
+                        "name": "What is the Ethereum Virtual Machine (EVM)? - Alchemy",
+                        "url": "https://www.alchemy.com/overviews/what-is-the-ethereum-virtual-machine-evm"
                     }
                 ],
-                "subsubtitles": false
-            },
-            {
-                "id": 13,
-                "title": "TON (The Open Network)",
-                "desc": "TON is a fully decentralized layer-1 blockchain designed by Telegram to onboard billions of users. It boasts ultra-fast transactions, tiny fees, easy-to-use apps, and is environmentally friendly. Visit the following resources to learn more:",
-                "resources": [
+                "subsubtitles": [
                     {
                         "id": 1,
-                        "name": "TON Telegram integration highlights synergy of blockchain community",
-                        "url": "https://cointelegraph.com/news/ton-telegram-integration-highlights-synergy-of-blockchain-community"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Start building on The Open Network",
-                        "url": "https://ton.org/dev"
-                    },
-                    {
-                        "id": 3,
-                        "name": "TON Introduction",
-                        "url": "https://ton.org/docs/learn/introduction"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Blockchain analysis",
-                        "url": "https://ton.org/analysis"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
-    },
-    {
-        "id": 4,
-        "title": "Blockchain Oracles",
-        "desc": "A blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in from the world, but also the reverse. Information from the world encapsulates multiple sources so that decentralised knowledge is obtained. Visit the following resources to learn more:",
-        "resources": [
-            {
-                "id": 1,
-                "name": "Blockchain Oracle",
-                "url": "https://en.wikipedia.org/wiki/Blockchain_oracle"
-            },
-            {
-                "id": 2,
-                "name": "What Is a Blockchain Oracle?",
-                "url": "https://chain.link/education/blockchain-oracles"
-            }
-        ],
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Hybrid Smart Contracts",
-                "desc": "Hybrid smart contracts combine code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain) provided by Decentralized Oracle Networks. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Hybrid Smart Contracts Explained",
-                        "url": "https://blog.chain.link/hybrid-smart-contracts-explained/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "A complete guide to understand hybrid smart contracts",
-                        "url": "https://www.leewayhertz.com/hybrid-smart-contracts/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Chainlink",
-                "desc": "Chainlink is a decentralized network of oracles that enables smart contracts to securely interact with real-world data and services that exist outside of blockchain networks. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "What Is Chainlink? A Beginner’s Guide",
-                        "url": "https://blog.chain.link/what-is-chainlink/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "What Is Chainlink in 5 Minutes",
-                        "url": "https://www.gemini.com/cryptopedia/what-is-chainlink-and-how-does-it-work"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Oracle Networks",
-                "desc": "By leveraging many different data sources, and implementing an oracle system that isn’t controlled by a single entity, decentralized oracle networks provide an increased level of security and fairness to smart contracts. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Decentralized Oracle Networks",
-                        "url": "https://medium.com/coinmonks/decentralized-oracle-networks-9fead28f5fe5"
-                    },
-                    {
-                        "id": 2,
-                        "name": "A Beginner’s Guide To The Evolution Of Decentralized Oracle Networks",
-                        "url": "https://chainlinktoday.com/a-beginners-guide-to-the-evolution-of-decentralized-oracle-networks/"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Understanding Oracle Networks",
-                        "url": "https://coinmetro.com/blog/understanding-oracle-networks/"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
-    },
-    {
-        "id": 5,
-        "title": "Smart Contracts",
-        "desc": "A smart contract is a computer program or a transaction protocol that is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement. Visit the following resources to learn more:",
-        "resources": [
-            {
-                "id": 1,
-                "name": "Smart Contracts Introduction",
-                "url": "https://www.blockchain.education/blockchain101/smart-contracts"
-            },
-            {
-                "id": 2,
-                "name": "What Is a Smart Contract?",
-                "url": "https://chain.link/education/smart-contracts"
-            },
-            {
-                "id": 3,
-                "name": "Smart contracts - Simply Explained",
-                "url": "https://youtu.be/ZE2HxTmxfrI"
-            }
-        ],
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Solidity",
-                "desc": "Solidity is an object-oriented programming language created specifically by Ethereum Network team for constructing smart contracts on various blockchain platforms, most notably, Ethereum. It's used to create smart contracts that implements business logic and generate a chain of transaction records in the blochain system. It acts as a tool for creating machine-level code and compilling it on the Ethereum Vitural Machine (EVM). Like any other programming languages, Solidity also has variables, functions, classes, arithmetic operations, string manipulation, and many more. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Solidity Programming Language",
-                        "url": "https://soliditylang.org/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Solidity Tutorial",
-                        "url": "https://www.tutorialspoint.com/solidity/index.htm"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Solidity Course by FreeCodeCamp",
-                        "url": "https://www.youtube.com/watch?v=ipwxYa-F1uY"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Solidity Course by Dapp University",
-                        "url": "https://www.youtube.com/watch?v=EhPeHeoKF88"
-                    },
-                    {
-                        "id": 5,
-                        "name": "Learn Blockchain, Solidity, and Full Stack Web3 Development",
-                        "url": "https://youtu.be/gyMwXuJrbJQ"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Rust",
-                "desc": "Rust is a multi-paradigm, general-purpose programming language. Rust emphasizes performance, type safety, and concurrency. It is popular on smart contract chains Solana and Polkadot. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Rust Programming Language",
-                        "url": "https://www.rust-lang.org/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "How to write and deploy a smart contract in Rust",
-                        "url": "https://learn.figment.io/tutorials/write-and-deploy-a-smart-contract-on-near"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Testing",
-                "desc": "Testing smart contracts is one of the most important measures for improving smart contract security. Unlike traditional software, smart contracts cannot typically be updated after launching, making it imperative to test rigorously before deploying contracts onto mainnet. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Testing Smart Contracts",
-                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/testing/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "How to Test Ethereum Smart Contracts",
-                        "url": "https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Writing automated smart contract tests",
-                        "url": "https://docs.openzeppelin.com/learn/writing-automated-tests"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Smart Contracts Unit Testing",
-                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/testing/#unit-testing"
-                    },
-                    {
-                        "id": 5,
-                        "name": "Tips for Unit Testing Ethereum Smart Contracts in Solidity",
-                        "url": "https://betterprogramming.pub/a-few-tips-for-unit-testing-ethereum-smart-contract-in-solidity-d804062068fb"
-                    },
-                    {
-                        "id": 6,
-                        "name": "Unit tests vs integration tests | Smart contract testing course",
-                        "url": "https://youtu.be/GxnX9k8i0zM"
-                    },
-                    {
-                        "id": 7,
-                        "name": "Testing Smart Contracts",
-                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/testing/"
-                    },
-                    {
-                        "id": 8,
-                        "name": "Smart Contract Code Coverage In Hardhat",
-                        "url": "https://medium.com/coinmonks/smart-contract-code-coverage-in-hardhat-d4a5ff6c9ba6"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 4,
-                "title": "Deployment",
-                "desc": "Unlike other software, smart contracts don’t run on a local computer or a remote server: they live on the blockchain. Thus, interacting with them is different from more traditional applications. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Deploying Smart Contracts",
-                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/deploying/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Deploying and interacting with smart contracts",
-                        "url": "https://docs.openzeppelin.com/learn/deploying-and-interacting"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 5,
-                "title": "Monitoring",
-                "desc": "Monitoring smart contracts allow their authors to view its activity and interactions based on generated transactions and events, allowing verification of the contract's intended purpose and functionality. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Monitoring Smart Contracts",
-                        "url": "https://consensys.github.io/smart-contract-best-practices/development-recommendations/solidity-specific/event-monitoring/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 6,
-                "title": "Upgrades",
-                "desc": "Smart contracts are immutable by default. Once they are created there is no way to alter them, effectively acting as an unbreakable contract among participants. However, for some scenarios, it is desirable to be able to modify them. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Upgrading Ethereum contracts",
-                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/upgrading/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Upgrading smart contracts",
-                        "url": "https://docs.openzeppelin.com/learn/upgrading-smart-contracts"
-                    },
-                    {
-                        "id": 3,
-                        "name": "What are Upgradable Smart Contracts? Full Guide",
-                        "url": "https://moralis.io/what-are-upgradable-smart-contracts-full-guide/"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Upgrading your Smart Contracts | A Tutorial & Introduction",
-                        "url": "https://youtu.be/bdXJmWajZRY"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 7,
-                "title": "ERC Tokens",
-                "desc": "An ‘Ethereum Request for Comments’ (ERC) is a document that programmers use to write smart contracts on Ethereum Blockchain. They describe rules in these documents that Ethereum-based tokens must comply with. While there are several Ethereum standards. These ERC Ethereum standards are the most well-known and popular: ERC-20, ERC-721, ERC-1155, and ERC-777. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "What are Ethereum request for comments (ERC) Standards",
-                        "url": "https://dev.to/envoy_/ks-what-are-ethereum-request-for-comments-erc-standards-5f80"
-                    },
-                    {
-                        "id": 2,
-                        "name": "ERC-20 Token Standard",
-                        "url": "https://ethereum.org/en/developers/docs/standards/tokens/erc-20/"
-                    },
-                    {
-                        "id": 3,
-                        "name": "ERC-721 Token Standard (NFTs)",
-                        "url": "https://decrypt.co/resources/erc-721-ethereum-nft-token-standard"
-                    },
-                    {
-                        "id": 4,
-                        "name": "ERC-1155 Token Standard (Multi-Token)",
-                        "url": "https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 8,
-                "title": "Crypto Wallets",
-                "desc": "A cryptocurrency wallet is a device, physical medium, program, or service which stores the public and/or private keys for cryptocurrency transactions. In addition to this basic function of storing the keys, a cryptocurrency wallet more often also offers the functionality of encrypting and/or signing information. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "What is a crypto wallet?",
-                        "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet"
-                    },
-                    {
-                        "id": 2,
-                        "name": "What is a Crypto Wallet? A Beginner’s Guide",
-                        "url": "https://crypto.com/university/crypto-wallets"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 9,
-                "title": "IDEs",
-                "desc": "An integrated development environment is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools and a debugger. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Integrated Development Environments",
-                        "url": "https://ethereum.org/en/developers/docs/ides/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Remix - Ethereum IDE & community",
-                        "url": "https://remix-project.org/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 10,
-                "title": "Crypto Faucets",
-                "desc": "A crypto faucet lets users earn small crypto rewards by completing simple tasks. The metaphor is based on how even one drop of water from a leaky faucet could eventually fill up a cup. There are various kinds of crypto faucets, including bitcoin (BTC), Ethereum (ETH), and BNB faucets. Faucets are common in development environments where developers obtain testnet crypto in order develop and test their application prior to mainnet deployment. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "What Is A Crypto Faucet?",
-                        "url": "https://academy.binance.com/en/articles/what-is-a-crypto-faucet"
-                    },
-                    {
-                        "id": 2,
-                        "name": "What are crypto faucets and how do they work?",
-                        "url": "https://cointelegraph.com/news/what-are-crypto-faucets-and-how-do-they-work"
+                        "title": "Opcodes",
+                        "desc": "In computing, an opcode (abbreviated from operation code, also known as instruction machine code, instruction code, instruction syllable, instruction parcel or opstring) is the portion of a machine language instruction that specifies the operation to be performed. Beside the opcode itself, most instructions also specify the data they will process, in the form of operands. For Ethereum EVM, Opcodes are the instructions that the EVM executes. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "OPCODES FOR THE EVM - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/opcodes/"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Ethereum Opcodes - Ethereum Wiki",
+                                "url": "https://eth.wiki/en/fundamentals/ethereum-opcodes"
+                            }
+                        ],
+                        "titlethrees": false
                     }
                 ]
             },
             {
-                "id": 11,
-                "title": "Decentralized Storage",
-                "desc": "Decentralized storage is where data is stored on a decentralized network across multiple locations by users or groups who are incentivized to join, store, and keep data accessible. The servers used are hosted by people, rather than a single company. Anyone is free to join, they are kept honest due to smart contracts, and they are incentivized to participate via tokens. Visit the following resources to learn more:",
+                "id": 5,
+                "title": "Gas and Fees",
+                "desc": "Gas is essential to the Ethereum network. It is the fuel that allows it to operate, in the same way that a car needs gasoline to run. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "What Is Decentralized Storage?",
-                        "url": "https://medium.com/@ppio/what-is-decentralized-storage-9c4b761942e2"
+                        "name": "Gas - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/gas/"
                     },
                     {
                         "id": 2,
-                        "name": "Decentralized Storage",
-                        "url": "https://ethereum.org/en/developers/docs/storage/"
+                        "name": "What Are Ethereum Gas Fees?",
+                        "url": "https://www.coindesk.com/learn/what-are-ethereum-gas-fees/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Gas (Ethereum): How Gas Fees Work on the Ethereum Blockchain",
+                        "url": "https://www.investopedia.com/terms/g/gas-ethereum.asp#:~:text=Investopedia%20%2F%20Madelyn%20Goodnight-,What%20Is%20Gas%20(Ethereum)%3F,(10%2D9%20ETH)."
                     }
                 ],
                 "subsubtitles": false
+            },
+            {
+                "id": 6,
+                "title": "Nodes and Clients",
+                "desc": "Ethereum is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software application, known as a client, must be run on your computer to turn it into an Ethereum node. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Nodes and clients - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Ethereum nodes explained",
+                        "url": "https://101blockchains.com/ethereum-nodes-explained/"
+                    },
+                    {
+                        "id": 3,
+                        "name": "What is an Ethereum node?",
+                        "url": "https://www.alchemy.com/overviews/what-is-an-ethereum-node"
+                    }
+                ],
+                "subsubtitles": [
+                    {
+                        "id": 1,
+                        "title": "Run a node",
+                        "desc": "Running your own node provides you various benefits, opens new possibilities, and helps to support the ecosystem. This page will guide you through spinning up your own node and taking part in validating Ethereum transactions. Note that after The Merge, two clients are required to run an Ethereum node; an execution layer (EL) client and a consensus layer (CL) client. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Run a node - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 2,
+                        "title": "Client options",
+                        "desc": "The behavior of an Ethereum node is controlled by the client software it runs. There are several production-level Ethereum clients, each one developed and maintained in different languages by separate teams. The clients are built to a common spec that ensures the clients seamlessly communicate with each other and have the same functionality and provide an equivalent user experience. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Client diversity - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/client-diversity/"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Ethereum Mainnet Statistics",
+                                "url": "https://ethernodes.org/"
+                            },
+                            {
+                                "id": 3,
+                                "name": "Ethereum Clients Comparison: Which One Is the Best?",
+                                "url": "https://getblock.io/blog/ethereum-clients-comparison-which-one-is-the-best/"
+                            },
+                            {
+                                "id": 4,
+                                "name": "Comparing Ethereum nodes and clients",
+                                "url": "https://blog.logrocket.com/comparing-ethereum-nodes-clients/"
+                            },
+                            {
+                                "id": 5,
+                                "name": "Choosing your ETH Clients",
+                                "url": "https://docs.rocketpool.net/guides/node/eth-clients.html"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 3,
+                        "title": "Nodes-as-a-Service (NaaS)",
+                        "desc": "Running your own Ethereum node can be challenging, especially when getting started or while scaling fast. There are a number of services that run optimized node infrastructures for you, so you can focus on developing your application or product instead. We'll explain how node services work, the pros and cons for using them and list providers if you are interested in getting started. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Nodes as a service - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 4,
+                        "title": "Node architecture",
+                        "desc": "Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Node architecture - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/node-architecture/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 5,
+                        "title": "Bootnodes",
+                        "desc": "When a new node joins the Ethereum network it needs to connect to nodes that are already on the network in order to then discover new peers. These entry points into the Ethereum network are called bootnodes. Clients usually have a list of bootnodes hardcoded into them. These bootnodes are typically run by the Ethereum Foundation's devops team or client teams themselves. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Introduction to Ethereum Bootnodes - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/bootnodes/"
+                            }
+                        ],
+                        "titlethrees": false
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "title": "Networks",
+                "desc": "Networks are different Ethereum environments you can access for development, testing, or production use cases. Since Ethereum is a protocol, there can be multiple independent 'networks' that conform to the protocol without interacting with each other. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Networks - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/networks/"
+                    }
+                ],
+                "subsubtitles": [
+                    {
+                        "id": 1,
+                        "title": "Mainnet",
+                        "desc": "Mainnet is the Ethereum network that is live and open to the public. It is the network that is used to interact with the Ethereum blockchain. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Mainnet - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/networks/#mainnet"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 2,
+                        "title": "Testnets",
+                        "desc": "Testnets are Ethereum networks that are used for testing purposes. They are often used to test new features and applications before they are deployed to the mainnet. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Testnets - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/networks/#testnets"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 3,
+                        "title": "Private networks",
+                        "desc": "Private networks are Ethereum networks that are only accessible to a select group of people. They are often used to test new features and applications before they are deployed to the mainnet. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Private networks - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/networks/#private-networks"
+                            }
+                        ],
+                        "titlethrees": false
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "title": "Consensus mechanisms",
+                "desc": "The term 'consensus mechanism' is often used colloquially to refer to 'proof-of-stake', 'proof-of-work' or 'proof-of-authority' protocols. However, these are just components in consensus mechanisms that protect against Sybil attacks. Consensus mechanisms are the complete stack of ideas, protocols and incentives that enable a distributed set of nodes to agree on the state of a blockchain. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Consensus mechanisms - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/"
+                    }
+                ],
+                "subsubtitles": [
+                    {
+                        "id": 1,
+                        "title": "Proof-of-work",
+                        "desc": "Proof-of-work is a consensus mechanism that requires a lot of computational power to solve a mathematical puzzle. The first node to solve the puzzle is rewarded with a block reward. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Proof-of-work - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/"
+                            }
+                        ],
+                        "titlethrees": [
+                            {
+                                "id": 1,
+                                "title": "Mining",
+                                "desc": "Mining is the process of solving a mathematical puzzle to create a new block. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Mining - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "title": "Proof-of-stake",
+                        "desc": "Proof-of-stake is a consensus mechanism that requires a lot of computational power to solve a mathematical puzzle. The first node to solve the puzzle is rewarded with a block reward. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Proof-of-stake - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 3,
+                        "title": "Proof-of-authority",
+                        "desc": "Proof-of-authority is a consensus mechanism that requires a lot of computational power to solve a mathematical puzzle. The first node to solve the puzzle is rewarded with a block reward. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Proof-of-authority - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/poa/"
+                            }
+                        ],
+                        "titlethrees": false
+                    }
+                ]
             }
-        ]    
+        ]
     },
     {
-        "id": 6,
-        "title": "Smart Contract Frameworks",
-        "desc": "Building a full-fledged dapp requires different pieces of technology. Software frameworks include many of the needed features or provide easy plugin systems to pick the tools you desire. Visit the following resources to learn more:",
+        "id": 4,
+        "title": "Ethereum Development",
+        "desc": "Like any software stack, the complete 'Ethereum stack' will vary from project to project depending on your goals. There are, however, core components of Ethereum that help provide a mental model for how software applications interact with the Ethereum blockchain. Understanding the layers of the stack will help you understand the different ways that Ethereum can be integrated into software projects. Visit the following resources to learn more:",
         "resources": [
             {
                 "id": 1,
-                "name": "dApp Development Frameworks",
-                "url": "https://ethereum.org/en/developers/docs/frameworks/"
-            },
-            {
-                "id": 2,
-                "name": "A Definitive List of Ethereum Developer Tools - Frameworks",
-                "url": "https://media.consensys.net/an-definitive-list-of-ethereum-developer-tools-2159ce865974#frameworks"
-            },
-            {
-                "id": 3,
-                "name": "Top 10 Smart Contract Developer Tools You Need for 2022",
-                "url": "https://medium.com/better-programming/top-10-smart-contract-developer-tools-you-need-for-2022-b763f5df689a"
+                "name": "Introduction to the Ethereum Stack",
+                "url": "https://ethereum.org/en/developers/docs/ethereum-stack/"
             }
         ],
         "subtitles": [
             {
                 "id": 1,
-                "title": "Hardhat",
-                "desc": "Hardhat is an Ethereum development environment. It allows users to compile contracts and run them on a development network. Get Solidity stack traces, console.log and more. Visit the following resources to learn more:",
+                "title": "Ethereum Smart Contracts",
+                "desc": "A 'smart contract' is simply a program that runs on the Ethereum blockchain. It's a collection of code (its functions) and data (its state) that resides at a specific address on the Ethereum blockchain. Smart contracts are a type of Ethereum account. This means they have a balance and can be the target of transactions. However they're not controlled by a user, instead they are deployed to the network and run as programmed. User accounts can then interact with a smart contract by submitting transactions that execute a function defined on the smart contract. Smart contracts can define rules, like a regular contract, and automatically enforce them via the code. Smart contracts cannot be deleted by default, and interactions with them are irreversible. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "Hardhat Overview",
-                        "url": "https://hardhat.org/hardhat-runner/docs/getting-started#overview"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Build and Deploy Smart Contracts using Hardhat",
-                        "url": "https://youtu.be/GBc3lBrXEBo"
+                        "name": "Introduction to smart contracts - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/"
                     }
                 ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Brownie",
-                "desc": "Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine. Visit the following resources to learn more:",
-                "resources": [
+                "subsubtitles": [
                     {
                         "id": 1,
-                        "name": "Brownie Overview",
-                        "url": "https://eth-brownie.readthedocs.io/"
+                        "title": "Development languages",
+                        "desc": "Smart contracts are written in a high-level programming language that compiles to EVM bytecode. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Smart contract languages - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/languages/"
+                            }
+                        ],
+                        "titlethrees": [
+                            {
+                                "id": 1,
+                                "title": "Solidity",
+                                "desc": "Solidity is an object-oriented, high-level language for implementing smart contracts. It is designed to target the Ethereum Virtual Machine (EVM). Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Solidity - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/languages/solidity/"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "title": "Vyper",
+                                "desc": "Vyper is a contract-oriented, pythonic programming language that targets the Ethereum Virtual Machine (EVM). Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Vyper - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/languages/vyper/"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "title": "Yul and Yul+",
+                                "desc": "If you're new to Ethereum and haven't done any coding with smart contract languages yet, we recommend getting started with Solidity or Vyper. Only look into Yul or Yul+ once you're familiar with smart contract security best practices and the specifics of working with the EVM. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Yul and Yul+ - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/languages/#yul"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "title": "Fe",
+                                "desc": "Statically typed language for the Ethereum Virtual Machine (EVM) inspired by Python Rust. Fe aims to be easy to learn -- even for developers who are new to the Ethereum ecosystem. Fe is still in its early stage. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Fe",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/languages/#fe"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id": 2,
-                        "name": "Python and Blockchain: Deploy Smart Contracts using Brownie",
-                        "url": "https://youtu.be/QfFO22lwSw4"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Truffle",
-                "desc": "A development environment, testing framework, and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Truffle Overview",
-                        "url": "https://trufflesuite.com/docs/truffle/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Truffle Tutorial for Beginners | Compile, Test & Deploy Smart contracts to any EVM Blockchain",
-                        "url": "https://youtu.be/62f757RVEvU"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
-    },
-    {
-        "id": 7,
-        "title": "Security practices",
-        "desc": "Smart contracts are extremely flexible, capable of both holding large quantities of tokens (often in excess of $1B) and running immutable logic based on previously deployed smart contract code. While this has created a vibrant and creative ecosystem of trustless, interconnected smart contracts, it is also the perfect ecosystem to attract attackers looking to profit by exploiting vulnerabilities. Smart contract programming requires a different engineering mindset. The cost of failure can be high, and change can be difficult. Visit the following resources to learn more:",
-        "resources": [
-            {
-                "id": 1,
-                "name": "Smart Contract Security",
-                "url": "https://ethereum.org/en/developers/docs/smart-contracts/security/"
-            },
-            {
-                "id": 2,
-                "name": "Ethereum Smart Contract Security Recommendations",
-                "url": "https://consensys.net/blog/developers/ethereum-smart-contract-security-recommendations/"
-            },
-            {
-                "id": 3,
-                "name": "Ethereum Smart Contract Security Best Practices",
-                "url": "https://consensys.github.io/smart-contract-best-practices/"
-            },
-            {
-                "id": 4,
-                "name": "Smart Contract Security and Auditing 101",
-                "url": "https://youtu.be/0aJfCug1zTM"
-            }
-        ],
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Fuzz Testing and Static Analysis",
-                "desc": "Fuzzing or fuzz testing is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a smart contract. Static analysis is the analysis of smart contracts performed without executing them. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Getting Started with Smart Contract Fuzzing",
-                        "url": "https://www.immunebytes.com/blog/getting-started-with-smart-contract-fuzzing/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Solidity smart contract Static Code Analysis",
-                        "url": "https://lightrains.com/blogs/solidity-static-analysis-tools/#static-code-analysis"
+                        "title": "Anatomy",
+                        "desc": "Smart contracts are written in a high-level programming language that compiles to EVM bytecode. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Smart contract anatomy - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/anatomy/"
+                            }
+                        ],
+                        "titlethrees": [
+                            {
+                                "id": 1,
+                                "title": "State variables",
+                                "desc": "State variables are permanently stored in contract storage. The EVM executes the code of a smart contract to make changes to the state. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "State variables - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/anatomy/#state-variables"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "title": "Functions",
+                                "desc": "Functions are the executable units of code within a smart contract. They are the primary way in which you interact with the contract and its data. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Functions - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/anatomy/#functions"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "title": "Events",
+                                "desc": "Events are a way for your contract to communicate that something happened on the blockchain to your app front-end, which can be 'listening' for certain events and take action when they happen. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Events - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/anatomy/#events"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "title": "Modifiers",
+                                "desc": "Modifiers are a way to modify the behavior of a function. They are used to change the way a function behaves, or to execute code before or after a function call. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Modifiers - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/anatomy/#modifiers"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 5,
+                                "title": "Structs",
+                                "desc": "Structs are a way to create a custom data type that can be used to group related data together. Visit the following resources to learn more:",
+                                "resources": [
+                                    {
+                                        "id": 1,
+                                        "name": "Structs - Ethereum Foundation",
+                                        "url": "https://ethereum.org/en/developers/docs/smart-contracts/anatomy/#structs"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id": 3,
-                        "name": "Smart contract Fuzzing",
-                        "url": "https://youtu.be/LRyyNzrqgOc"
+                        "title": "Libraries",
+                        "desc": "Smart contracts can be written in a high-level programming language that compiles to EVM bytecode. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Smart contract libraries - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/libraries/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 4,
+                        "title": "Testing",
+                        "desc": "Testing is an important part of the development process. It helps you find and fix bugs before they are deployed to the mainnet. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Testing - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/testing/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 5,
+                        "title": "Compiling",
+                        "desc": "Compiling is the process of converting source code into bytecode. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Compiling - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/compiling/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 6,
+                        "title": "Deploying",
+                        "desc": "You need to deploy your smart contract for it to be available to users of an Ethereum network. To deploy a smart contract, you merely send an Ethereum transaction containing the compiled code of the smart contract without specifying any recipient. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Deploying - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/deploying/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 7,
+                        "title": "Verifying",
+                        "desc": "Verifying is the process of proving that a smart contract is the same as the source code that was used to compile it. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Verifying - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/verifying/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 8,
+                        "title": "Upgrading",
+                        "desc": "Upgrading is the process of replacing a smart contract with a new version of the same contract. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Upgrading - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/upgrading/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 9,
+                        "title": "Security",
+                        "desc": "Security is a critical part of smart contract development. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Security - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/security/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 10,
+                        "title": "Formal verification",
+                        "desc": "Formal verification is a way to prove that a smart contract is correct. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Formal verification - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/formal-verification/"
+                            }
+                        ],
+                        "titlethrees": false
+                    },
+                    {
+                        "id": 11,
+                        "title": "Composability",
+                        "desc": "Composability is the ability to combine multiple smart contracts to create more complex smart contracts. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Composability - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/smart-contracts/composability/"
+                            }
+                        ],
+                        "titlethrees": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Development networks",
+                "desc": "When building an Ethereum application with smart contracts, you'll want to run it on a local network to see how it works before deploying it. Visit the following resources to learn more:",
+                "resources": [
+                    {
+                        "id": 1,
+                        "name": "Development networks - Ethereum Foundation",
+                        "url": "https://ethereum.org/en/developers/docs/development-networks/"
                     }
                 ],
                 "subsubtitles": false
             },
             {
-                "id": 2,
-                "title": "Common Threat Vectors",
-                "desc": "Smart contract audits enable developers to provide a thorough analysis of smart contract sets. The main goal of a smart contract audit is to detect and eliminate vulnerabilities, starting with the most common threat vectors. Visit the following resources to learn more:",
+                "id": 3,
+                "title": "Development frameworks",
+                "desc": "Building a full-fledged dapp requires different pieces of technology. Software frameworks include many of the needed features or provide easy plugin systems to pick the tools you desire. Visit the following resources to learn more:",
                 "resources": [
                     {
                         "id": 1,
-                        "name": "Smart Contract Attack Vectors",
-                        "url": "https://github.com/kadenzipfel/smart-contract-attack-vectors"
+                        "name": "DApp development frameworks",
+                        "url": "https://ethereum.org/en/developers/docs/frameworks/"
+                    }
+                ],
+                "subsubtitles": [
+                    {
+                        "id": 1,
+                        "title": "Truffle",
+                        "desc": "Truffle is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Truffle - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/frameworks/truffle/"
+                            }
+                        ],
+                        "titlethrees": false
                     },
                     {
                         "id": 2,
-                        "name": "Solidity Security: Comprehensive list of known attack vectors and common anti-patterns",
-                        "url": "https://blog.sigmaprime.io/solidity-security.html"
+                        "title": "Hardhat",
+                        "desc": "Hardhat is a development environment for Ethereum software. It consists of different components for editing, compiling, debugging and deploying your smart contracts and dApps, all of which work together to create a complete development environment. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Hardhat - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/frameworks/hardhat/"
+                            }
+                        ],
+                        "titlethrees": false
                     },
                     {
                         "id": 3,
-                        "name": "Blockchain Attack Vectors: Vulnerabilities of the Most Secure Technology",
-                        "url": "https://www.apriorit.com/dev-blog/578-blockchain-attack-vectors"
+                        "title": "Brownie",
+                        "desc": "Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine. Visit the following resources to learn more:",
+                        "resources": [
+                            {
+                                "id": 1,
+                                "name": "Brownie - Ethereum Foundation",
+                                "url": "https://ethereum.org/en/developers/docs/frameworks/brownie/"
+                            }
+                        ],
+                        "titlethrees": false
                     }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Source of Randomness Attacks",
-                "desc": "The security of cryptographic systems depends on some secret data that is known to authorized persons but unknown and unpredictable to others. To achieve this unpredictability, some randomization is typically employed. Modern cryptographic protocols often require frequent generation of random quantities. Cryptographic attacks that subvert or exploit weaknesses in this process are known as randomness attacks. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Smart Contract Randomness or ReplicatedLogic Attack",
-                        "url": "https://blog.finxter.com/randomness-or-replicatedlogic-attack-on-smart-contracts/"
-                    }
-                ],
-                "subsubtitles": false
+                ]
             }
-        ]    
-    },
-    {
-        "id": 8,
-        "title": "Security tools",
-        "desc": "Blockchain and smart contract technology is faily new, therefore, you should expect constant changes in the security landscape, as new bugs and security risks are discovered, and new best practices are developed. Keeping track of this constantly moving landscape proves difficult, so using tools to aid this mission is important. The cost of failing to property secure smart contracts can be high, and because change can be difficult, we must make use of these tools.",
-        "resources": false,
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Slither",
-                "desc": "Slither is a Solidity static analysis framework written in Python 3. It runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Slither, the Solidity source analyzer",
-                        "url": "https://github.com/crytic/slither/blob/master/README.md"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Manticore",
-                "desc": "Manticore is a symbolic execution tool for analysis of smart contracts and binaries. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Manticore Docs",
-                        "url": "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Mythx",
-                "desc": "MythX is a comprehensive smart contract security analysis tools developed by Consensys. It allows users to detect security vulnerabilities in Ethereum smart contracts throughout the development life cycle as well as analyze Solidity dapps for security holes and known smart contract vulnerabilities. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "MythX Official Site",
-                        "url": "https://mythx.io/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "MythX Documentation",
-                        "url": "https://docs.mythx.io/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 4,
-                "title": "Echidna",
-                "desc": "Echidna is a Haskell program designed for fuzzing/property-based testing of Ethereum smarts contracts. It uses sophisticated grammar-based fuzzing campaigns based on a contract ABI to falsify user-defined predicates or Solidity assertions. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Echidna: A Fast Smart Contract Fuzzer",
-                        "url": "https://github.com/crytic/echidna/blob/master/README.md"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
-    },
-    {
-        "id": 9,
-        "title": "Management Platforms",
-        "desc": "Managing smart contracts in a production environment (mainnet) can prove difficult as users must keep track of different versions, blockchains, deployments, etc. Using a tool for this process eliminates a lot of the risk that comes with manual tracking.",
-        "resources": false,
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "OpenZeppelin",
-                "desc": "OpenZeppelin Contracts helps you minimize risk by using battle-tested libraries of smart contracts for Ethereum and other blockchains. It includes the most used implementations of ERC standards. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "OpenZeppelin Contracts",
-                        "url": "https://docs.openzeppelin.com/contracts/"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
+        ]
     },
     {
         "id": 10,
@@ -1381,7 +1210,7 @@
                 ],
                 "subsubtitles": false
             }
-        ]    
+        ]
     },
     {
         "id": 11,
@@ -1484,135 +1313,7 @@
                 ],
                 "subsubtitles": false
             }
-        ]    
-    },
-    {
-        "id": 12,
-        "title": "Pick a Framework",
-        "desc": "Web frameworks are designed to write web applications. Frameworks are collections of libraries that aid in the development of a software product or website. Frameworks for web application development are collections of various tools. Frameworks vary in their capabilities and functions, depending on the tasks set. They define the structure, establish the rules, and provide the development tools required. Visit the following resources to learn more:",
-        "resources": [
-            {
-                "id": 1,
-                "name": "What is the difference between a framework and a library?",
-                "url": "https://www.youtube.com/watch?v=D_MO9vIRBcA"
-            },
-            {
-                "id": 2,
-                "name": "Which JS Framework is best?",
-                "url": "https://www.youtube.com/watch?v=cuHDQhDhvPE"
-            }
-        ],
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "React",
-                "desc": "React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Visit Dedicated React Roadmap",
-                        "url": "https://roadmap.sh/react/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "React Website",
-                        "url": "https://reactjs.org/"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Official Getting Started",
-                        "url": "https://reactjs.org/tutorial/tutorial.html"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Beta React Docs",
-                        "url": "https://beta.reactjs.org/"
-                    },
-                    {
-                        "id": 5,
-                        "name": "The Beginners Guide to React",
-                        "url": "https://egghead.io/courses/the-beginner-s-guide-to-react"
-                    },
-                    {
-                        "id": 6,
-                        "name": "React JS Course for Beginners",
-                        "url": "https://www.youtube.com/watch?v=nTeuhbP7wdE"
-                    },
-                    {
-                        "id": 7,
-                        "name": "React Course - Beginners Tutorial for React JavaScript Library [2022]",
-                        "url": "https://www.youtube.com/watch?v=bMknfKXIFA8"
-                    },
-                    {
-                        "id": 8,
-                        "name": "Understanding Reacts UI Rendering Process",
-                        "url": "https://www.youtube.com/watch?v=i793Qm6kv3U"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Angular",
-                "desc": "Angular is a component based front-end development framework built on TypeScript which includes a collection of well-integrated libraries that include features like routing, forms management, client-server communication, and more. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Visit Dedicated Angular Roadmap",
-                        "url": "https://roadmap.sh/angular/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Official - Getting started with Angular",
-                        "url": "https://angular.io/start"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Angular for Beginners Course [Full Front End Tutorial with TypeScript]",
-                        "url": "https://www.youtube.com/watch?v=3qBXWUpoPHo"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Vue.js",
-                "desc": "Vue.js is an open-source JavaScript framework for building user interfaces and single-page applications. It is mainly focused on front end development. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Visit Dedicated Vue Roadmap",
-                        "url": "https://roadmap.sh/vue/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Vue.js Website",
-                        "url": "https://vuejs.org/"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Official Getting Started",
-                        "url": "https://vuejs.org/guide/introduction.html"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Vue.js Course for Beginners",
-                        "url": "https://www.youtube.com/watch?v=FXpIoQ_rT_c"
-                    },
-                    {
-                        "id": 5,
-                        "name": "Vue.js Crash Course",
-                        "url": "https://www.youtube.com/watch?v=qZXt1Aom3Cs"
-                    },
-                    {
-                        "id": 6,
-                        "name": "Meet Vue.js, the Flexible JavaScript Framework",
-                        "url": "https://thenewstack.io/meet-vue-js-flexible-javascript-framework/"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
+        ]
     },
     {
         "id": 13,
@@ -1747,7 +1448,7 @@
                 ],
                 "subsubtitles": false
             }
-        ]    
+        ]
     },
     {
         "id": 14,
@@ -1855,185 +1556,7 @@
                 ],
                 "subsubtitles": false
             }
-        ]    
-    },
-    {
-        "id": 15,
-        "title": "Client libraries",
-        "desc": "You don't need to write every smart contract in your project from scratch. There are many open source smart contract libraries available that provide reusable building blocks for your project that can save you from having to reinvent the wheel.",
-        "resources": false,
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Ethers.js",
-                "desc": "The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem. It was originally designed for use with ethers.io and has since expanded into a more general-purpose library. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Ethers.js Documentation",
-                        "url": "https://docs.ethers.io/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Web3.js",
-                "desc": "web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "web3.js Documentation",
-                        "url": "https://web3js.readthedocs.io/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Moralis SDK",
-                "desc": "A library that gives you access to the powerful Moralis Server backend from your JavaScript app. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Moralis SDK",
-                        "url": "https://github.com/MoralisWeb3/Moralis-JS-SDK/blob/main/README.md"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
-    },
-    {
-        "id": 16,
-        "title": "Client Nodes",
-        "desc": "A blockchain is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software application, known as a client, must be run on your computer to turn it into a blockchain node.",
-        "resources": false,
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Geth",
-                "desc": "Go Ethereum (Geth) is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Geth Documentation",
-                        "url": "https://geth.ethereum.org/docs/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Besu",
-                "desc": "Besu is an Apache 2.0 licensed, MainNet compatible, Ethereum client written in Java. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Besu Ethereum Client",
-                        "url": "https://github.com/hyperledger/besu"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Nethermind",
-                "desc": "Nethermind is a high-performance, highly configurable full Ethereum protocol client built on .NET that runs on Linux, Windows, and macOS, and supports Clique, Aura, Ethash, and Proof-of-Stake consensus algorithms. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Nethermind Documentation",
-                        "url": "https://docs.nethermind.io/nethermind/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 4,
-                "title": "Substrate",
-                "desc": "Substrate is a Software Development Kit (SDK) specifically designed to provide you with all of the fundamental components s blockchain requires so you can focus on crafting the logic that makes your chain unique and innovative. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Substrate Documentation",
-                        "url": "https://docs.substrate.io/quick-start/"
-                    }
-                ],
-                "subsubtitles": false
-            }
         ]
-    },
-    {
-        "id": 17,
-        "title": "Node as a Service (NaaS)",
-        "desc": "Running your own blockchain node can be challenging, especially when getting started or while scaling fast. There are a number of services that run optimized node infrastructures for you, so you can focus on developing your application or product instead. Visit the following resources to learn more:",
-        "resources": [
-            {
-                "id": 1,
-                "name": "Blockchain Node Providers and How They Work",
-                "url": "https://www.infoq.com/articles/blockchain-as-a-service-get-block/"
-            },
-            {
-                "id": 2,
-                "name": "Node as a Service - Ethereum",
-                "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/"
-            }
-        ],
-        "subtitles": [
-            {
-                "id": 1,
-                "title": "Alchemy",
-                "desc": "Alchemy is a developer platform that empowers companies to build scalable and reliable decentralized applications without the hassle of managing blockchain infrastructure in-house. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Alchemy official site",
-                        "url": "https://www.alchemy.com/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 2,
-                "title": "Infura",
-                "desc": "Infura provides the tools and infrastructure that allow developers to easily take their blockchain application from testing to scaled deployment - with simple, reliable access to Ethereum and IPFS. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Infura official site",
-                        "url": "https://infura.io/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 3,
-                "title": "Moralis",
-                "desc": "Moralis provides a single workflow for building high performance dapps. Fully compatible with your favorite web3 tools and services. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Moralis official site",
-                        "url": "https://moralis.io/"
-                    }
-                ],
-                "subsubtitles": false
-            },
-            {
-                "id": 4,
-                "title": "Quicknode",
-                "desc": "QuickNode is a Web3 developer platform used to build and scale blockchain applications. Visit the following resources to learn more:",
-                "resources": [
-                    {
-                        "id": 1,
-                        "name": "Quicknode official site",
-                        "url": "https://www.quicknode.com/"
-                    }
-                ],
-                "subsubtitles": false
-            }
-        ]    
     },
     {
         "id": 18,
@@ -2184,8 +1707,8 @@
                     }
                 ],
                 "subsubtitles": false
-            }   
-        ]    
+            }
+        ]
     },
     {
         "id": 19,
@@ -2313,7 +1836,7 @@
                 "subsubtitles": false
             }
         ]
-    },    
+    },
     {
         "id": 20,
         "title": "Keep Learning!",

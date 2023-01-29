@@ -1624,7 +1624,7 @@ p.thick {
 
 .title-modal {
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding: 8px;
   /* margin-top: 16px; */
@@ -1638,7 +1638,7 @@ p.thick {
 
 .subtitle-modal {
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   padding: 8px;
   margin-top: 8px;
   margin-bottom: 4px;
@@ -1650,7 +1650,7 @@ p.thick {
 
 .subsubtitle-modal {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   padding: 8px;
   margin-top: 8px;
   border: 2px solid #1a1a1a;
@@ -1784,7 +1784,6 @@ p.thick {
 
 .shop-item-price {
   font-size: 22px;
-  font-weight: ;
   align-self: flex-start;
 }
 
@@ -2025,4 +2024,15 @@ input.cart-subtotal-discount-code::placeholder { /* Chrome, Firefox, Opera, Safa
 input.payment-card-info::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgb(170, 170, 170);
   opacity: 1; /* Firefox */
+}
+
+.title-three-modal {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px;
+  margin-top: 8px;
+  border: 2px solid #1a1a1a;
+  /* width: 100%; */
+  cursor: pointer;
+  background-color:rgb(228, 212, 250);
 }

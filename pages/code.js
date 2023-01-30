@@ -26,26 +26,21 @@ export default function LearnToCode(props) {
           `}
       </Script>
       <Head>
-        <title>Learn to code</title>
+        <title>Learn to code | Học lập trình - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Learn to code" />
+        <meta name="description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Learn to code" />
-        <meta property="og:title" content="Learn to code" key="ogtitle" />
-        <meta property="og:description" content="Learn to code" key="ogdesc" />
-        <meta
-          property="og:site_name"
-          content="Learn to code"
-          key="ogsitename"
-        />
+        <meta property="og:title" content="Learn to code | Học lập trình - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/code" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/code" locale="en">
+            <Link href="/code" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

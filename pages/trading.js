@@ -34,13 +34,13 @@ export default function Trading(props) {
         <meta property="og:title" content="Tools" key="ogtitle" />
         <meta property="og:description" content="Tools" key="ogdesc" />
         <meta property="og:site_name" content="Tools" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/tools" key="ogurl" />
+        <meta property="og:url" content="https://defi.vn/trading" key="ogurl" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/trading" locale="en">
+            <Link href="/trading" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

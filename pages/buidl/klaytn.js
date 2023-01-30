@@ -8,7 +8,7 @@ import AppFooter from "../../components/AppFooter/AppFooter";
 import Klaytn from "../../components/Buidl/Klaytn/Klaytn";
 
 export default function BuidlKlaytn(props) {
-  const { t } = useTranslation("ethereum");
+  const { t } = useTranslation("klaytn");
 
   return (
     <>
@@ -27,21 +27,21 @@ export default function BuidlKlaytn(props) {
           `}
       </Script>
       <Head>
-        <title>Klaytn</title>
+        <title>Klaytn BUIDL resources | Tài liệu BUIDL trên Klaytn - DeFi.vn</title>
         <meta charSet="utf-8" />
-        <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Klaytn" />
+        <link rel="icon" href="../../defi.svg" />
+        <meta name="description" content="Check out the roadmap to become Klaytn developers and all the resources for you to learn." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Klaytn" key="ogtitle" />
-        <meta property="og:description" content="Klaytn" key="ogdesc" />
-        <meta property="og:site_name" content="Klaytn" key="ogsitename" />
+        <meta property="og:title" content="Klaytn BUIDL resources | Tài liệu BUIDL trên Klaytn - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Check out the roadmap to become Klaytn developers and all the resources for you to learn." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/buidl/klaytn" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buidl/ethereum" locale="en">
+            <Link href="/buidl/ethereum" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
@@ -52,8 +52,12 @@ export default function BuidlKlaytn(props) {
               </a>
             </Link>
           </div>
-          <Link href="/buidl">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/buidl">{t("prev")}</Link>
+          </div>
           <UpButton />
+          <h2>👇 Start from here!</h2>
           <Klaytn />
           <br />
           <hr />
@@ -67,7 +71,7 @@ export default function BuidlKlaytn(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "ethereum"])),
+      ...(await serverSideTranslations(locale, ["common", "klaytn"])),
       // Will be passed to the page component as props
     },
   };

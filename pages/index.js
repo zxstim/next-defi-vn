@@ -28,20 +28,15 @@ export default function Home(props) {
           `}
       </Script>
       <Head>
-        <title>Defi.vn</title>
+        <title>DeFi.vn - DeFi Vietnam | DeFi Việt Nam</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Defi.vn" />
+        <meta name="description" content="Defi.vn is a community project aiming to be an open resource hub for everyone." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Defi.vn" />
-        <meta property="og:title" content="Defi.vn" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="Cộng đồng Web3 - Web3 Community"
-          key="ogdesc"
-        />
-        <meta property="og:site_name" content="Defi.vn" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/" key="ogurl" />
+        <meta property="og:title" content="DeFi.vn - DeFi Vietnam | DeFi Việt Nam" key="ogtitle" />
+        <meta property="og:description" content="Defi.vn is a community project aiming to be an open resource hub for everyone." key="ogdesc" />
+        <meta property="og:url" content="https://defi.vn" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">

@@ -27,26 +27,21 @@ export default function Discover(props) {
           `}
       </Script>
       <Head>
-        <title>Discover</title>
+        <title>Discover crypto projects | Khám phá các dự án crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Discover" />
+        <meta name="description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Discover" />
-        <meta property="og:title" content="Discover" key="ogtitle" />
-        <meta property="og:description" content="Discover" key="ogdesc" />
-        <meta property="og:site_name" content="Discover" key="ogsitename" />
-        <meta
-          property="og:url"
-          content="https://defi.vn/discover"
-          key="ogurl"
-        />
+        <meta property="og:title" content="Discover crypto projects | Khám phá các dự án crypto - DeFi.vn - DeFi.vn" />
+        <meta property="og:description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." key="ogdesc" />
+        <meta property="og:url" content="https://defi.vn/discover" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/discover" locale="en">
+            <Link href="/discover" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

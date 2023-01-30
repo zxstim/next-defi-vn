@@ -198,7 +198,7 @@ export default function Checkout() {
               <div className="cart-item-info">
                 <div className="cart-item-name">{inventory.name}</div>
                 <div className="cart-item-price">
-                  {commifyViet(inventory.price)} ₫
+                  {commifyViet(inventory.price * countDuplicate(cartView, inventory))} ₫
                 </div>
               </div>
               <div className="cart-item-quantity">

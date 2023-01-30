@@ -26,26 +26,21 @@ export default function Investors(props) {
           `}
       </Script>
       <Head>
-        <title>Investors</title>
+        <title>Global investors list | Danh sách những nhà đầu tư - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Investors" />
+        <meta name="description" content="Find out about different types of investor categories and their contact information." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Investors" />
-        <meta property="og:title" content="Investors" key="ogtitle" />
-        <meta property="og:description" content="Investors" key="ogdesc" />
-        <meta property="og:site_name" content="Investors" key="ogsitename" />
-        <meta
-          property="og:url"
-          content="https://defi.vn/investors"
-          key="ogurl"
-        />
+        <meta property="og:title" content="Global investors list | Danh sách những nhà đầu tư - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Find out about different types of investor categories and their contact information." key="ogdesc" />
+        <meta property="og:url" content="https://defi.vn/investors" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/investors" locale="en">
+            <Link href="/investors" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

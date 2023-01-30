@@ -26,22 +26,21 @@ export default function Events(props) {
           `}
       </Script>
       <Head>
-        <title>Events</title>
+        <title>Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Events" />
+        <meta name="description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Events" />
-        <meta property="og:title" content="Events" key="ogtitle" />
-        <meta property="og:description" content="Events" key="ogdesc" />
-        <meta property="og:site_name" content="Events" key="ogsitename" />
+        <meta property="og:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
+        <meta property="og:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/events" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/events" locale="en">
+            <Link href="/events" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

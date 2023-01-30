@@ -28,15 +28,15 @@ export default function Bot(props) {
           `}
       </Script>
       <Head>
-        <title>Bot</title>
+        <title>Learn how to setup trading bot | Học cách thiết lập bot trade - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Bot trading" />
+        <meta name="description" content="Learn how to setup trading bot, from coding languages, server setup, recommendations to open source options." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Bot trading" key="ogtitle" />
-        <meta property="og:description" content="Bot trading" key="ogdesc" />
-        <meta property="og:site_name" content="Bot trading" key="ogsitename" />
+        <meta property="og:title" content="DeFi.vn - Learn how to setup trading bot | Học cách thiết lập bot trade" key="ogtitle" />
+        <meta property="og:description" content="Learn how to setup trading bot, from coding languages, server setup, recommendations to open source options." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/bot" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam Hub" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">

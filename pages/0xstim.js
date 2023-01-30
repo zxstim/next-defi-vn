@@ -26,21 +26,22 @@ export default function ZxStim(props) {
           `}
       </Script>
       <Head>
-        <title>0xStim</title>
+        <title>Information about 0xStim | Thông tin về 0xStim - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="0xStim" />
+        <meta name="description" content="Learn more about 0xStim, DeFi.vn lead builder. See the website progress, what's next, how can you help." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="0xStim" key="ogtitle" />
-        <meta property="og:description" content="0xStim" key="ogdesc" />
-        <meta property="og:site_name" content="0xStim" key="ogsitename" />
+        <meta property="og:title" content="DeFi.vn - Information about 0xStim | Thông tin về 0xStim" key="ogtitle" />
+        <meta property="og:description" content="Learn more about 0xStim, DeFi.vn lead builder. See the website progress, what's next, how can you help." key="ogdesc" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://defi.vn/0xstim" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam Hub" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/0xstim" locale="en">
+            <Link href="/0xstim" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

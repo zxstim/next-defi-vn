@@ -29,26 +29,21 @@ export default function BuyCrypto(props) {
           `}
       </Script>
       <Head>
-        <title>Buy crypto</title>
+      <title>Buy and Sell crypto | Mua và Bán crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Buy crypto" />
+        <meta name="description" content="Buy and Sell crypto with the following ramp providers in different regions around the world." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Buy crypto" />
-        <meta property="og:title" content="Buy crypto" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="Buy crypto"
-          key="ogdesc"
-        />
-        <meta property="og:site_name" content="Buy crypto" key="ogsitename" />
+        <meta property="og:title" content="Buy and Sell crypto | Mua và Bán crypto - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Buy and Sell crypto with the following ramp providers in different regions around the world." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/buy" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buy" locale="en">
+            <Link href="/buy" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

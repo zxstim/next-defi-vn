@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import contents from "./Klaytn.json";
+import contents from "./Gnosis.json";
 import TitleModal from "../../TitleModal/TitleModal";
 import SubtitleModal from "../../SubtitleModal/SubtitleModal";
 import SubSubtitleModal from "../../SubSubtitleModal/SubSubtitleModal";
 import TitleThreeModal from "../../TitleThreeModal/TitleThreeModal";
 
-export default function Klaytn() {
+export default function Gnosis() {
 
   return (
     <>

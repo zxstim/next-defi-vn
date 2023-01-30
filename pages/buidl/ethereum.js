@@ -28,21 +28,21 @@ export default function BuidlEthereum(props) {
       </Script>
       
       <Head>
-        <title>Ethereum</title>
+        <title>Ethereum BUIDL resources | Tài liệu BUIDL trên Ethereum - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../../defi.svg" />
-        <meta name="description" content="Ethereum" />
+        <meta name="description" content="Check out the roadmap to become Ethereum developers and all the resources for you to learn." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Ethereum" key="ogtitle" />
-        <meta property="og:description" content="Ethereum" key="ogdesc" />
-        <meta property="og:site_name" content="Ethereum" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/ethereum" key="ogurl" />
+        <meta property="og:title" content="Ethereum BUIDL resources | Tài liệu BUIDL trên Ethereum - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Check out the roadmap to become Ethereum developers and all the resources for you to learn." key="ogdesc" />
+        <meta property="og:url" content="https://defi.vn/buidl/ethereum" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buidl/ethereum" locale="en">
+            <Link href="/buidl/ethereum" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

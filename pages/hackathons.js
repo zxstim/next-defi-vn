@@ -26,22 +26,21 @@ export default function Hackathons(props) {
           `}
       </Script>
       <Head>
-        <title>Hackathons</title>
+        <title>Find your crypto hackathons | Tìm sự kiện hackathon yêu thích - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Hackathons" />
+        <meta name="description" content="Check out a global list of crypto hackathons around the world, find out about the dates, locations and how to register." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Hackathons" />
-        <meta property="og:title" content="Hackathons" key="ogtitle" />
-        <meta property="og:description" content="Hackathons" key="ogdesc" />
-        <meta property="og:site_name" content="Hackathons" key="ogsitename" />
+        <meta property="og:title" content="Find your crypto hackathons | Tìm sự kiện hackathon yêu thích - DeFi.vn" />
+        <meta property="og:description" content="Check out a global list of crypto hackathons around the world, find out about the dates, locations and how to register." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/hackathons" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/hackathons" locale="en">
+            <Link href="/hackathons" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

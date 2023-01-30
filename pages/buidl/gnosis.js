@@ -3,12 +3,12 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../components/UpButton/UpButton";
-import AppFooter from "../components/AppFooter/AppFooter";
-import StoreInventories from "../components/Shop/StoreInventories";
+import UpButton from "../../components/UpButton/UpButton";
+import AppFooter from "../../components/AppFooter/AppFooter";
+import Gnosis from "../../components/Buidl/Gnosis/Gnosis";
 
-export default function Shop(props) {
-  const { t } = useTranslation("shop");
+export default function BuidlGnosis(props) {
+  const { t } = useTranslation("gnosis");
 
   return (
     <>
@@ -27,35 +27,38 @@ export default function Shop(props) {
           `}
       </Script>
       <Head>
-        <title>DeFi Shop | Cửa hàng DeFi - DeFi.vn</title>
+        <title>Gnosis Chain BUIDL resources | Tài liệu BUIDL trên Gnosis Chain - DeFi.vn</title>
         <meta charSet="utf-8" />
-        <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Check out the latest crypto cold wallets, merchandises and daily necessities." />
+        <link rel="icon" href="../../defi.svg" />
+        <meta name="description" content="Check out the roadmap to become Gnosis Chain developers and all the resources for you to learn." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="DeFi Shop | Cửa hàng DeFi - DeFi.vn" key="ogtitle" />
-        <meta property="og:description" content="Check out the latest crypto cold wallets, merchandises and daily necessities." key="ogdesc" />
-        <meta property="og:url" content="https://defi.vn/shop" key="ogurl" />
+        <meta property="og:title" content="Gnosis Chain BUIDL resources | Tài liệu BUIDL trên Gnosis Chain - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Check out the roadmap to become Gnosis Chain developers and all the resources for you to learn." key="ogdesc" />
+        <meta property="og:url" content="https://defi.vn/buidl/gnosis" key="ogurl" />
         <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/shop" locale="en">
+            <Link href="/buidl/gnosis" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/shop" locale="vi">
+            <Link href="/buidl/gnosis" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>
-          <Link href="/">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/buidl">{t("prev")}</Link>
+          </div>
           <UpButton />
-          <h2>{t("subtitle")}</h2>
-          <StoreInventories />
+          <h2>👇 Start from here!</h2>
+          <Gnosis />
           <br />
           <hr />
           <AppFooter />
@@ -65,11 +68,10 @@ export default function Shop(props) {
   );
 }
 
-// This gets called on every request
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "shop"])),
+      ...(await serverSideTranslations(locale, ["common", "gnosis"])),
       // Will be passed to the page component as props
     },
   };

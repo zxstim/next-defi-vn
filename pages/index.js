@@ -37,13 +37,13 @@ export default function Home(props) {
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="DeFi.vn - DeFi Vietnam | DeFi Việt Nam" />
         <meta property="og:description" content="Defi.vn is a community project aiming to be an open resource hub for everyone." />
-        <meta property="og:image" content="/defi-website-thumbnail.jpg" />
+        <meta property="og:image" content="https://dev.defi.vn/defi-website-thumbnail.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="defi.vn" />
         <meta property="twitter:url" content="https://www.defi.vn" />
         <meta name="twitter:title" content="DeFi.vn - DeFi Vietnam | DeFi Việt Nam" />
         <meta name="twitter:description" content="Defi.vn is a community project aiming to be an open resource hub for everyone." />
-        <meta name="twitter:image" content="/defi-website-thumbnail.jpg" />
+        <meta name="twitter:image" content="https://dev.defi.vn/defi-website-thumbnail.jpg" />
       </Head>
       <div className="App">
         <div className="markdown-body">

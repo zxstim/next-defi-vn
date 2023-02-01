@@ -33,7 +33,7 @@ export default function Discover(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Learn to code | Học lập trình - DeFi.vn" />
+        <meta property="og:title" content="Discover crypto projects | Khám phá các dự án crypto - DeFi.vn" />
         <meta property="og:description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." />
         <meta property="og:url" content="https://defi.vn/discover" />
         <meta property="og:type" content="website"/>

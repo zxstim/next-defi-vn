@@ -29,15 +29,21 @@ export default function Governance(props) {
           `}
       </Script>
       <Head>
-      <title>Governance for DeFi.vn | Quản trị DeFi.vn - DeFi.vn</title>
+        <title>Governance for DeFi.vn | Quản trị DeFi.vn - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Propose, discuss and govern how DeFi.vn will grow. Contribute to an open hub and help shape the Web3 industry." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Governance for DeFi.vn | Quản trị DeFi.vn - DeFi.vn" key="ogtitle" />
-        <meta property="og:description" content="Propose, discuss and govern how DeFi.vn will grow. Contribute to an open hub and help shape the Web3 industry." key="ogdesc" />
-        <meta property="og:url" content="https://defi.vn/governance" key="ogurl" />
-        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
+        <meta property="og:title" content="Governance for DeFi.vn | Quản trị DeFi.vn - DeFi.vn" />
+        <meta property="og:description" content="Propose, discuss and govern how DeFi.vn will grow. Contribute to an open hub and help shape the Web3 industry." />
+        <meta property="og:url" content="https://defi.vn/governance" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/0ad78fdf-55c6-4b61-81b2-26e51dde2f00/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/governance" />
+        <meta name="twitter:title" content="Governance for DeFi.vn | Quản trị DeFi.vn - DeFi.vn" />
+        <meta name="twitter:description" content="Propose, discuss and govern how DeFi.vn will grow. Contribute to an open hub and help shape the Web3 industry." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/0ad78fdf-55c6-4b61-81b2-26e51dde2f00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

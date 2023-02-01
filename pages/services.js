@@ -26,20 +26,23 @@ export default function Services(props) {
           `}
       </Script>
       <Head>
-        <title>Services</title>
+        <title>Find your a crypto service provider | Tìm một nhà cung cấp dịch vụ crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Services" />
-        <meta property="og:title" content="Services" key="ogtitle" />
-        <meta property="og:description" content="Services" key="ogdesc" />
-        <meta property="og:site_name" content="Services" key="ogsitename" />
-        <meta
-          property="og:url"
-          content="https://defi.vn/services"
-          key="ogurl"
-        />
+        <meta name="description" content="Find your crypto service provider in our comprehensive list" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Find your a crypto service provider | Tìm một nhà cung cấp dịch vụ crypto - DeFi.vn" />
+        <meta property="og:description" content="Find your crypto service provider in our comprehensive list" />
+        <meta property="og:url" content="https://defi.vn/services" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/9cf26e72-dc40-4d93-823b-da167198ae00/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/services" />
+        <meta name="twitter:title" content="Find your a crypto service provider | Tìm một nhà cung cấp dịch vụ crypto - DeFi.vn" />
+        <meta name="twitter:description" content="Find your crypto service provider in our comprehensive list" />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/9cf26e72-dc40-4d93-823b-da167198ae00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

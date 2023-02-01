@@ -1459,6 +1459,12 @@ p.thick {
 .service-brand-name {
   font-size: 20px;
   font-weight: bold;
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .service-badge {
@@ -1471,6 +1477,26 @@ p.thick {
   font-weight: 500;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.service-load-more-button {
+  background-color: whitesmoke;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  box-shadow: 3px 3px #1a1a1a;
+  cursor: pointer;
+}
+
+.service-load-more-button:active {
+  box-shadow: 0 0 #1a1a1a;
+  transform: translate(3px, 3px);
 }
 
 .event-time-badge {
@@ -1518,8 +1544,9 @@ p.thick {
 }
 
 .event-book-badge {
-  background-color: #4633f1;
-  color: #ffffff;
+  background-color: whitesmoke;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
   margin-top: 16px;
   padding: 8px 16px 8px 16px;
   font-size: 16px;
@@ -2070,20 +2097,20 @@ input.payment-card-info::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ *
   justify-self: end;
 }
 
-.proposal-status-cancelled {
-  border: 2px solid #0969da;
+.proposal-status-canceled {
+  border: 2px solid #5e5e5e;
   padding: 4px 8px 4px 8px;
-  color: #0969da;
+  color: #5e5e5e;
   text-align: center;
   width: 100px;
   height: fit-content;
   justify-self: end;
 }
 
-.proposal-status-excuted {
-  border: 2px solid #0969da;
+.proposal-status-executed {
+  border: 2px solid #3fb267;
   padding: 4px 8px 4px 8px;
-  color: #0969da;
+  color: #3fb267;
   text-align: center;
   width: 100px;
   height: fit-content;
@@ -2091,9 +2118,9 @@ input.payment-card-info::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ *
 }
 
 .proposal-status-defeated {
-  border: 2px solid #0969da;
+  border: 2px solid #da0921;
   padding: 4px 8px 4px 8px;
-  color: #0969da;
+  color: #da0921;
   text-align: center;
   width: 100px;
   height: fit-content;
@@ -2102,11 +2129,19 @@ input.payment-card-info::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ *
 
 .proposal-create-button {
   background-color: whitesmoke;
+  color: #1a1a1a;
   border: 2px solid #1a1a1a;
+  font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
   padding: 8px 16px 8px 16px;
   text-align: center;
   margin-bottom: 24px;
   box-shadow: 3px 3px black;
   width: fit-content;
+}
+
+.proposal-create-button:active {
+  box-shadow: 0 0 #1a1a1a;
+  transform: translate(3px, 3px);
 }

@@ -29,7 +29,7 @@ export default function BuyCrypto(props) {
           `}
       </Script>
       <Head>
-      <title>Buy and Sell crypto | Mua và Bán crypto - DeFi.vn</title>
+        <title>Buy and Sell crypto | Mua và Bán crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

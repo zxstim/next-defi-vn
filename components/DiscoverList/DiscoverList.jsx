@@ -102,7 +102,7 @@ export default function DiscoverList() {
                   </a>
                 </div>
               ) : null}
-              {discovery.twitter ? (
+              {discovery.discord ? (
                 <div>
                   <a href={discovery.discord}>
                     <Image

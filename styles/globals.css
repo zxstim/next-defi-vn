@@ -2036,3 +2036,77 @@ input.payment-card-info::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ *
   cursor: pointer;
   background-color:rgb(228, 212, 250);
 }
+
+.proposal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proposal-box {
+  display: grid;
+  grid-template-columns: 25px 4fr 1fr;
+  column-gap: 16px;
+  border: 2px solid #1a1a1a;
+  box-shadow: 3px 3px black;
+  padding: 8px 8px 8px 8px;
+}
+
+.proposal-id {
+  font-weight: bold;
+}
+
+.proposal-title {
+  font-weight: normal;
+}
+
+.proposal-status-active {
+  border: 2px solid #0969da;
+  padding: 4px 8px 4px 8px;
+  color: #0969da;
+  text-align: center;
+  width: 100px;
+  height: fit-content;
+  justify-self: end;
+}
+
+.proposal-status-cancelled {
+  border: 2px solid #0969da;
+  padding: 4px 8px 4px 8px;
+  color: #0969da;
+  text-align: center;
+  width: 100px;
+  height: fit-content;
+  justify-self: end;
+}
+
+.proposal-status-excuted {
+  border: 2px solid #0969da;
+  padding: 4px 8px 4px 8px;
+  color: #0969da;
+  text-align: center;
+  width: 100px;
+  height: fit-content;
+  justify-self: end;
+}
+
+.proposal-status-defeated {
+  border: 2px solid #0969da;
+  padding: 4px 8px 4px 8px;
+  color: #0969da;
+  text-align: center;
+  width: 100px;
+  height: fit-content;
+  justify-self: end;
+}
+
+.proposal-create-button {
+  background-color: whitesmoke;
+  border: 2px solid #1a1a1a;
+  cursor: pointer;
+  padding: 8px 16px 8px 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 3px 3px black;
+  width: fit-content;
+}

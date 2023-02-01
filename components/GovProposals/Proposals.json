@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "Deploy Opensource Stimbot V2.0 within Q2 of 2023",
+        "status": "Active"
+    },
+    {
+        "id": "2",
+        "title": "Deploy DeFi Playground within Q2 of 2023",
+        "status": "Cancelled"
+    },
+    {
+        "id": "3",
+        "title": "Complete all development roadmaps for different technical roles and coding languages",
+        "status": "Executed"
+    },
+    {
+        "id": "4",
+        "title": "Create Discord server and Telegram group",
+        "status": "Defeated"
+    }
+]

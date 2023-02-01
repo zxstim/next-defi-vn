@@ -29,12 +29,20 @@ export default function Events(props) {
         <title>Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
-        <meta property="og:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." key="ogdesc" />
-        <meta property="og:url" content="https://defi.vn/events" key="ogurl" />
-        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
+        <meta property="og:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta property="og:url" content="https://defi.vn/events" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/855f74a3-487f-470e-a86c-36bdc9f85a00/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/events" />
+        <meta name="twitter:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
+        <meta name="twitter:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/855f74a3-487f-470e-a86c-36bdc9f85a00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

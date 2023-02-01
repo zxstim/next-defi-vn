@@ -30,12 +30,20 @@ export default function Discover(props) {
         <title>Discover crypto projects | Khám phá các dự án crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Discover crypto projects | Khám phá các dự án crypto - DeFi.vn" />
-        <meta property="og:description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." key="ogdesc" />
-        <meta property="og:url" content="https://defi.vn/discover" key="ogurl" />
-        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
+        <meta property="og:title" content="Learn to code | Học lập trình - DeFi.vn" />
+        <meta property="og:description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." />
+        <meta property="og:url" content="https://defi.vn/discover" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/d12cce69-5439-4bd1-3fda-c7ed7519a600/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/discover" />
+        <meta name="twitter:title" content="Discover crypto projects | Khám phá các dự án crypto - DeFi.vn" />
+        <meta name="twitter:description" content="Find your next favourite crypto projects, explore the ecosystem that they are in, check out their socials, see their metrics." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/d12cce69-5439-4bd1-3fda-c7ed7519a600/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

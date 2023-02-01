@@ -29,12 +29,20 @@ export default function LearnToCode(props) {
         <title>Learn to code | Học lập trình - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Learn to code | Học lập trình - DeFi.vn" key="ogtitle" />
-        <meta property="og:description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." key="ogdesc" />
-        <meta property="og:url" content="https://defi.vn/code" key="ogurl" />
-        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
+        <meta property="og:title" content="Learn to code | Học lập trình - DeFi.vn" />
+        <meta property="og:description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
+        <meta property="og:url" content="https://defi.vn/code" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/1f40f51c-7491-4f22-a1d6-8b41a1bb3300/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/code" />
+        <meta name="twitter:title" content="Learn to code | Học lập trình - DeFi.vn" />
+        <meta name="twitter:description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/1f40f51c-7491-4f22-a1d6-8b41a1bb3300/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

@@ -100,6 +100,23 @@
       "discord": "https://discord.com/invite/holdstation",
       "github": false,
       "tiktok": false
+    },
+    {
+      "id": 7,
+      "name": "We Are All Alike",
+      "tag": "NFT",
+      "desc": "WAAA is a profile picture (PFP) NFT project created by Cryptory, a member of Creatory. The WAAA is short for 'We Are All Alike' as we believe everyone has their own hidden talents that should be awakened.",
+      "web": "https://waaa.xyz/",
+      "telegram": "https://t.me/WAAA_Official",
+      "twitter": "https://twitter.com/WAAAOfficial",
+      "email": false,
+      "linkedin": false,
+      "facebook": false,
+      "instagram": false,
+      "youtube": false,
+      "discord": "https://discord.com/invite/9eFnbVaav2",
+      "github": false,
+      "tiktok": false
     }
   ]
   

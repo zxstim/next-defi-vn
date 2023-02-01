@@ -30,12 +30,20 @@ export default function Shop(props) {
         <title>DeFi Shop | Cửa hàng DeFi - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Check out the latest crypto cold wallets, merchandises and daily necessities." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="DeFi Shop | Cửa hàng DeFi - DeFi.vn" key="ogtitle" />
-        <meta property="og:description" content="Check out the latest crypto cold wallets, merchandises and daily necessities." key="ogdesc" />
-        <meta property="og:url" content="https://defi.vn/shop" key="ogurl" />
-        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
+        <meta property="og:title" content="DeFi Shop | Cửa hàng DeFi - DeFi.vn" />
+        <meta property="og:description" content="Check out the latest crypto cold wallets, merchandises and daily necessities." />
+        <meta property="og:url" content="https://defi.vn/shop" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/1cf7e68c-4f01-47ce-c119-ff147700df00/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/shop" />
+        <meta name="twitter:title" content="DeFi Shop | Cửa hàng DeFi - DeFi.vn" />
+        <meta name="twitter:description" content="Check out the latest crypto cold wallets, merchandises and daily necessities." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/1cf7e68c-4f01-47ce-c119-ff147700df00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

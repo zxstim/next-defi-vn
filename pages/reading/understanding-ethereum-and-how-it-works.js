@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import UpButton from "../../../components/UpButton/UpButton";
-import AppFooter from "../../../components/AppFooter/AppFooter";
+import UpButton from "../../components/UpButton/UpButton";
+import AppFooter from "../../components/AppFooter/AppFooter";
 
 export default function Post1(props) {
   

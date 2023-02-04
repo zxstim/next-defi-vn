@@ -13,8 +13,8 @@
   {
     "id": 2,
     "name": "Krugo D",
-    "devtype": ["Blockchain"],
-    "stack": ["Hardhat", "Solidity"],
+    "devtype": ["Frontend", "Blockchain"],
+    "stack": ["React", "NextJS", "Hardhat", "Solidity"],
     "github": "https://github.com/Krugo-D",
     "web": "#",
     "telegram": "https://t.me/Krugo_D",

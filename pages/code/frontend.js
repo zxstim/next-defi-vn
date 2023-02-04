@@ -27,21 +27,21 @@ export default function CodeFrontend(props) {
           `}
       </Script>
       <Head>
-        <title>Frontend</title>
+        <title>Frontend roadmap and resources | Hành trình học Frontend và tài liệu - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../../defi.svg" />
-        <meta name="description" content="Frontend" />
+        <meta name="description" content="Check out the roadmap to become Frontend developers and all the resources for you to learn." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Frontend" key="ogtitle" />
-        <meta property="og:description" content="Frontend" key="ogdesc" />
-        <meta property="og:site_name" content="Frontend" key="ogsitename" />
+        <meta property="og:title" content="Frontend roadmap and resources | Hành trình học Frontend và tài liệu - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Check out the roadmap to become Frontend developers and all the resources for you to learn." key="ogdesc" />
         <meta property="og:url" content="https://defi.vn/code/frontend" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/code/frontend" locale="en">
+            <Link href="/code/frontend" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

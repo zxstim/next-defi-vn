@@ -1,30 +1,43 @@
+import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
+import contents from "./Klaytn.json";
+import TitleModal from "../../TitleModal/TitleModal";
+import SubtitleModal from "../../SubtitleModal/SubtitleModal";
+import SubSubtitleModal from "../../SubSubtitleModal/SubSubtitleModal";
+import TitleThreeModal from "../../TitleThreeModal/TitleThreeModal";
 
 export default function Klaytn() {
-  const [isActive, setIsActive] = useState(false);
 
   return (
     <>
-      <h2>Ethereum</h2>
-      <ul>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae finibus mauris. Donec ante arcu, pretium at hendrerit vel, venenatis vel arcu. Nulla facilisi. Etiam consectetur orci ex, quis scelerisque risus lacinia id. Maecenas tempor eros semper ex consequat interdum. Curabitur pharetra erat eget quam condimentum, vitae varius massa rhoncus. Aliquam ante justo, semper quis fringilla vitae, dapibus in est. Quisque porttitor libero quis blandit facilisis. Nulla in euismod mi, at gravida magna. Proin porta molestie tellus, vitae mattis magna molestie vel.</p>
-      <ul>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-        <li>Link 1</li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae finibus mauris. Donec ante arcu, pretium at hendrerit vel, venenatis vel arcu. Nulla facilisi. Etiam consectetur orci ex, quis scelerisque risus lacinia id. Maecenas tempor eros semper ex consequat interdum. Curabitur pharetra erat eget quam condimentum, vitae varius massa rhoncus. Aliquam ante justo, semper quis fringilla vitae, dapibus in est. Quisque porttitor libero quis blandit facilisis. Nulla in euismod mi, at gravida magna. Proin porta molestie tellus, vitae mattis magna molestie vel.</p>
+      {contents.map((content) => (
+        <div key={content.id}>
+          <TitleModal key={content.id} data={content} />
+          <ul>
+            {content.subtitles ? content.subtitles.map((subtitle) => (
+              <li key={subtitle.id}>
+                <SubtitleModal key={subtitle.id} data={subtitle} />
+                <ul>
+                  {subtitle.subsubtitles ? subtitle.subsubtitles.map((subsubtitle) => (
+                    <li key={subsubtitle.id}>
+                      <SubSubtitleModal key={subsubtitle.id} data={subsubtitle} />
+                      <ul>
+                        {subsubtitle.titlethrees ? subsubtitle.titlethrees.map((titlethree) => (
+                          <li key={titlethree.id}>
+                            <TitleThreeModal key={titlethree.id} data={titlethree} />
+                          </li>
+                        )) : null}
+                      </ul>
+                    </li> 
+                  )) : null}
+                </ul>
+              </li>
+            )) : null}
+          </ul>
+        </div>
+      ))}
     </>
-
   );
 }
+

@@ -26,26 +26,29 @@ export default function LearnToCode(props) {
           `}
       </Script>
       <Head>
-        <title>Learn to code</title>
+        <title>Learn to code | Học lập trình - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Learn to code" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Learn to code" />
-        <meta property="og:title" content="Learn to code" key="ogtitle" />
-        <meta property="og:description" content="Learn to code" key="ogdesc" />
-        <meta
-          property="og:site_name"
-          content="Learn to code"
-          key="ogsitename"
-        />
-        <meta property="og:url" content="https://defi.vn/code" key="ogurl" />
+        <meta name="description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Learn to code | Học lập trình - DeFi.vn" />
+        <meta property="og:description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
+        <meta property="og:url" content="https://defi.vn/code" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/1f40f51c-7491-4f22-a1d6-8b41a1bb3300/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/code" />
+        <meta name="twitter:title" content="Learn to code | Học lập trình - DeFi.vn" />
+        <meta name="twitter:description" content="Learn about roadmaps to become many different tech roles and how to code in different languages." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/1f40f51c-7491-4f22-a1d6-8b41a1bb3300/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/code" locale="en">
+            <Link href="/code" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

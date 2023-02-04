@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import discoverlist from "./DiscoverList.json";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function DiscoverList() {
   const [index, setIndex] = useState(20);
@@ -17,10 +16,8 @@ export default function DiscoverList() {
       setHasMore(false);
       return;
     }
-    setTimeout(() => {
-      setServices(discoveries.concat(discoverlist.slice(index, index + 20)));
-      setIndex(index + 20);
-    }, 2000);
+    setDiscoveries(discoveries.concat(discoverlist.slice(index, index + 20)));
+    setIndex(index + 20);
   };
 
   // a function to use drop down menu to filter services by tag
@@ -33,40 +30,14 @@ export default function DiscoverList() {
   };
 
   return (
-    <InfiniteScroll
-      dataLength={discoveries.length} //This is important field to render the next data
-      next={fetchData}
-      hasMore={hasMore}
-      loader={<h4>{t("load")}</h4>}
-      endMessage={
-        <p
-          style={{
-            marginTop: "50px",
-            fontSize: "25px",
-            fontWeight: "bold",
-            textAlign: "center",
-          }}
-        >
-          {t("end")}
-        </p>
-      }
-    >
-      {/* <label>Choose a tag:</label>
-      <select name="services" id="services" onChange={filterServicesDropdown}>
-        <option value="media">None</option>
-        <option value="media">Media</option>
-        <option value="analytics">Analytics</option>
-        <option value="marketing">Marketing</option>
-      </select> */}
+    <>
       <div className="service-box">
         {discoveries.map((discovery) => (
           <div key={discovery.id} className="service-item">
             <div href={discovery.web} className="service-brand-name">
               {discovery.name}
             </div>
-            <div className="service-desc">
-              {discovery.desc}
-            </div>
+            <div className="service-desc">{discovery.desc}</div>
             <div className="service-guide">
               <div className="service-badge">{discovery.tag}</div>
             </div>
@@ -102,7 +73,7 @@ export default function DiscoverList() {
                   </a>
                 </div>
               ) : null}
-              {discovery.twitter ? (
+              {discovery.discord ? (
                 <div>
                   <a href={discovery.discord}>
                     <Image
@@ -171,6 +142,21 @@ export default function DiscoverList() {
           </div>
         ))}
       </div>
-    </InfiniteScroll>
+      {hasMore ? null : (
+        <p
+          style={{
+            marginTop: "50px",
+            fontSize: "25px",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}
+        >
+          {t("end")}
+        </p>
+      )}
+      <button className="service-load-more-button" onClick={fetchData}>
+        {t("load-more")}
+      </button>
+    </>
   );
 }

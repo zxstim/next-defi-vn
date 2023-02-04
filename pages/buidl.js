@@ -37,26 +37,28 @@ export default function Buidl(props) {
           `}
       </Script>
       <Head>
-        <title>BUIDL on Web3</title>
+        <title>BUIDL on Web3 | BUIDL trên Web3 - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="BUIDL on Web3" />
+        <meta name="description" content="Explore Web3 ecosystems, roadmaps on how to become builders, resources for you to become a great builder." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="BUIDL on Web3" />
-        <meta property="og:title" content="BUIDL on Web3" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="BUIDL on Web3"
-          key="ogdesc"
-        />
-        <meta property="og:site_name" content="BUIDL on Web3" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/buidl" key="ogurl" />
+        <meta property="og:url" content="https://defi.vn/buidl" />
+        <meta property="og:title" content="BUIDL on Web3 | BUIDL trên Web3 - DeFi.vn" />
+        <meta property="og:description" content="Explore Web3 ecosystems, roadmaps on how to become builders, resources for you to become a great builder." />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/b29f135c-9a23-4085-4f57-b7390ddf5400/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/buidl" />
+        <meta name="twitter:title" content="BUIDL on Web3 | BUIDL trên Web3 - DeFi.vn" />
+        <meta name="twitter:description" content="Explore Web3 ecosystems, roadmaps on how to become builders, resources for you to become a great builder." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/b29f135c-9a23-4085-4f57-b7390ddf5400/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buidl" locale="en">
+            <Link href="/buidl" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
@@ -92,7 +94,17 @@ export default function Buidl(props) {
                 <h3 className="nav-menu-button">Starknet</h3>
               </a>
             </Link>
-            <Link href="/buidl/starknet">
+            <Link href="/buidl/klaytn">
+              <a style={{ textDecoration: "none" }}>
+                <h3 className="nav-menu-button">Klaytn</h3>
+              </a>
+            </Link>
+            <Link href="/buidl/gnosis">
+              <a style={{ textDecoration: "none" }}>
+                <h3 className="nav-menu-button">Gnosis Chain</h3>
+              </a>
+            </Link>
+            <Link href="/buidl/polygon">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">Polygon</h3>
               </a>
@@ -115,11 +127,6 @@ export default function Buidl(props) {
             <Link href="/buidl/oasys">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">Oasys</h3>
-              </a>
-            </Link>
-            <Link href="/buidl/klaytn">
-              <a style={{ textDecoration: "none" }}>
-                <h3 className="nav-menu-button">Klaytn</h3>
               </a>
             </Link>
             <Link href="/buidl/nym">

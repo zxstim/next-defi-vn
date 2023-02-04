@@ -4,13 +4,9 @@ import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
-import RefreshButton from "../components/RefreshButton/RefreshButton";
 import HowToBot from "../components/BotTrading/HowToBot/HowToBot";
-import CryptoScanner from "../components/CryptoScanner/CryptoScanner";
-import LangSelector from "../components/LangSelector/LangSelector";
-import SrAnalysisComponent from "../components/SrAnalysis/SrAnalysis";
 import AppFooter from "../components/AppFooter/AppFooter";
-import axios from "axios";
+
 
 export default function Bot(props) {
   const { t } = useTranslation("bot");
@@ -32,15 +28,21 @@ export default function Bot(props) {
           `}
       </Script>
       <Head>
-        <title>Bot</title>
+        <title>Learn how to setup trading bot | Học cách thiết lập bot trade - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Bot trading" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Bot trading" key="ogtitle" />
-        <meta property="og:description" content="Bot trading" key="ogdesc" />
-        <meta property="og:site_name" content="Bot trading" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/bot" key="ogurl" />
+        <meta property="og:title" content="Learn how to setup trading bot | Học cách thiết lập bot trade - DeFi.vn" />
+        <meta property="og:description" content="Learn how to setup trading bot, from coding languages, server setup, recommendations to open source options." />
+        <meta property="og:url" content="https://defi.vn/bot" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/a6d25640-36ed-4985-a8bd-0f8e1c170b00/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/bot" />
+        <meta name="twitter:title" content="Learn how to setup trading bot | Học cách thiết lập bot trade - DeFi.vn" />
+        <meta name="twitter:description" content="Learn how to setup trading bot, from coding languages, server setup, recommendations to open source options." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/a6d25640-36ed-4985-a8bd-0f8e1c170b00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
@@ -59,7 +61,6 @@ export default function Bot(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          <RefreshButton />
           <HowToBot />
           <br />
           <hr />

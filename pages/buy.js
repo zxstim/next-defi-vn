@@ -29,26 +29,28 @@ export default function BuyCrypto(props) {
           `}
       </Script>
       <Head>
-        <title>Buy crypto</title>
+        <title>Buy and Sell crypto | Mua và Bán crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Buy crypto" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Buy crypto" />
-        <meta property="og:title" content="Buy crypto" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="Buy crypto"
-          key="ogdesc"
-        />
-        <meta property="og:site_name" content="Buy crypto" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/buy" key="ogurl" />
+        <meta name="description" content="Buy and Sell crypto with the following ramp providers in different regions around the world." />
+        <meta property="og:title" content="Buy and Sell crypto | Mua và Bán crypto - DeFi.vn" />
+        <meta property="og:description" content="Buy and Sell crypto with the following ramp providers in different regions around the world." />
+        <meta property="og:url" content="https://defi.vn/buy" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/a81ca87b-7138-4dd1-4a8c-e9fdcdbaa500/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/buy" />
+        <meta name="twitter:title" content="Buy and Sell crypto | Mua và Bán crypto - DeFi.vn" />
+        <meta name="twitter:description" content="Buy and Sell crypto with the following ramp providers in different regions around the world." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/a81ca87b-7138-4dd1-4a8c-e9fdcdbaa500/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buy" locale="en">
+            <Link href="/buy" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

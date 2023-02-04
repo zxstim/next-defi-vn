@@ -26,26 +26,21 @@ export default function Hiring(props) {
           `}
       </Script>
       <Head>
-        <title>Hiring</title>
+        <title>Hire crypto professionals | Tuyển dụng nhân viên crypto - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Hiring" />
+        <meta name="description" content="Find your next crypto employees, freelancers, whether they are developers, sales person or marketer." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Hiring" />
-        <meta property="og:title" content="Hiring" key="ogtitle" />
-        <meta property="og:description" content="Hiring" key="ogdesc" />
-        <meta property="og:site_name" content="Hiring" key="ogsitename" />
-        <meta
-          property="og:url"
-          content="https://defi.vn/hiring"
-          key="ogurl"
-        />
+        <meta property="og:title" content="Hire crypto professionals | Tuyển dụng nhân viên crypto - DeFi.vn" key="ogtitle" />
+        <meta property="og:description" content="Find your next crypto employees, freelancers, whether they are developers, sales person or marketer." key="ogdesc" />
+        <meta property="og:url" content="https://defi.vn/hiring" key="ogurl" />
+        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam" key="ogsitename" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/hiring" locale="en">
+            <Link href="/hiring" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>

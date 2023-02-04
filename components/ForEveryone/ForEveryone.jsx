@@ -36,6 +36,11 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title7")}</h3>
           </a>
         </Link>
+        <Link href="/shop">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title24")}</h3>
+          </a>
+        </Link>
         <Link href="/discover">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title19")}</h3>
@@ -48,7 +53,17 @@ export default function ForEveryone() {
         </Link>
         <Link href="/playground">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title24")}</h3>
+            <h3 style={buttonStyle}>{t("title27")}</h3>
+          </a>
+        </Link>
+        <Link href="/reading">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title25")}</h3>
+          </a>
+        </Link>
+        <Link href="/governance">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title26")}</h3>
           </a>
         </Link>
         <Link href="/trading">

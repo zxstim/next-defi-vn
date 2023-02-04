@@ -5,8 +5,19 @@ import Script from "next/script";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooterBlogVi from "../../components/AppFooter/AppFooterBlogVi";
 import styles from '../../styles/Blog.module.css'
+import formatArticleTimeStampVi from "../../utils/formatArticleTimeStampVi";
+
 
 export default function Post2(props) {
+  const ARTICLE_TAG = ["wiki", "defi"]
+  const ARTICLE_INFO = {
+    author: "0xStim",
+    authorPfp: "/0xstim-nouns.svg",
+    authorProfile: "/0xStim",
+    timestamp: "2023-02-01T01:23:00.000Z"
+  }
+
+
 
   return (
     <>
@@ -33,13 +44,13 @@ export default function Post2(props) {
         <meta property="og:description" content="Tại sao DeFi đã và đang tiếp tục thay đổi thế giới? Hãy cùng DeFi.vn phân tích lịch sử, công dụng và đúc kết ra đáp án nhé." />
         <meta property="og:url" content="https://defi.vn/reading/defi-la-gi" />
         <meta property="og:type" content="article"/>
-        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/ec66fb40-b466-48a1-ab10-5a9a1c7ec700/defiblog" />
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/21d656d0-ada0-4115-5e3b-e752d478eb00/defiblog" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="defi.vn" />
         <meta property="twitter:url" content="https://www.defi.vn/reading/defi-la-gi" />
         <meta name="twitter:title" content="DeFi là gì và tầm quan trọng của nó - DeFi.vn" />
         <meta name="twitter:description" content="ại sao DeFi đã và đang tiếp tục thay đổi thế giới? Hãy cùng DeFi.vn phân tích lịch sử, công dụng và đúc kết ra đáp án nhé." />
-        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/ec66fb40-b466-48a1-ab10-5a9a1c7ec700/defiblog" />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/21d656d0-ada0-4115-5e3b-e752d478eb00/defiblog" />
       </Head>
       <div className="App">
         <div className="markdown-body">
@@ -49,11 +60,17 @@ export default function Post2(props) {
             <Link href="/">🏠 Quay về trang chủ</Link>
             <Link href="/reading">⬅️ Quay về trang trước</Link>
           </div>
-          <div>Wiki</div>
-          <div>DeFi</div>
+          <div className={styles.article_info_container}>
+            <Image src={ARTICLE_INFO.authorPfp} alt="0xStim" width={50} height={50} />
+            <Link href={ARTICLE_INFO.authorProfile}>{ARTICLE_INFO.author}</Link>
+          </div>
+          <div>🗓️ {formatArticleTimeStampVi(ARTICLE_INFO.timestamp)}</div>
+          <div className={styles.article_tag_container}>
+            {ARTICLE_TAG.map((tag) => (<div className={styles.article_tag}>{tag}</div>))}
+          </div>
           <div className={styles.thumbnail_image_container}>
             <Image
-              src="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/ec66fb40-b466-48a1-ab10-5a9a1c7ec700/defiblog"
+              src="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/21d656d0-ada0-4115-5e3b-e752d478eb00/defiblog"
               alt="defi là gì thumbnail"
               width={1600}
               height={840}
@@ -206,8 +223,6 @@ export default function Post2(props) {
           </ol>
           <h2>Phát triển ứng dụng trên DeFi</h2>
           <p>DeFi là một phong trào mã nguồn mở. Tất cả các giao thức và ứng dụng DeFi đều mở để bạn kiểm tra, phân nhánh và đổi mới. Do ngăn xếp phân lớp này (tất cả chúng đều chia sẻ cùng một blockchain và tài sản cơ sở), các giao thức có thể được kết hợp và khớp để mở khóa các cơ hội kết hợp độc đáo.</p>
-          
-          
           <br />
           <hr />
           <AppFooterBlogVi />

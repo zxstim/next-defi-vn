@@ -5,29 +5,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
-// import SyntaxHighlighter from 'react-syntax-highlighter';
-// import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import ReadingList from "../components/ReadingList/ReadingList";
 
 
 export default function Reading(props) {
   const { t } = useTranslation("reading");
-  // const codeString = `
-  // export function getPost(slug) {
-  //   // get md file path
-  //   const dir = join(process.cwd(), "content/posts");
-  //   const path = join(dir, \`$\{slug}.md\`);
-  
-  //   // read the file
-  //   const { metadata, content } = readMdFile(path);
-  
-  //   // return post object
-  //   return {
-  //     metadata,
-  //     html: mdToHtml(content),
-  //   };
-  // }
-  // `;
-
 
   return (
     <>
@@ -74,10 +56,7 @@ export default function Reading(props) {
           <Link href="/">{t("back")}</Link>
           <h2>{t("subtitle")}</h2>
           <UpButton />
-          <p>Testing</p>
-          {/* <SyntaxHighlighter language="javascript" style={docco} showLineNumbers="true">
-            {codeString}
-          </SyntaxHighlighter> */}
+          <ReadingList />
           <br />
           <hr />
           <AppFooter />

@@ -1,0 +1,51 @@
+.thumbnail_image_container {
+    margin: 24px 0 24px 0;
+    position: relative;
+    object-fit: contain
+}
+
+.page_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.blog_grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 8px;
+}
+
+.ul_good {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.ul_good li {
+    position: relative;
+    padding-left: 2em;
+}
+
+.ul_good li:before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+
+.ul_bad {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.ul_bad li {
+    position: relative;
+    padding-left: 2em;
+}
+
+.ul_bad li:before {
+    content: "❌";
+    position: absolute;
+    left: 0;
+}
+
+

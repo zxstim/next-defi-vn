@@ -19,5 +19,8 @@ module.exports = {
       allowFutureImage: true,
     } 
   },
+  images: {
+    domains: ['imagedelivery.net'],
+  },
   i18n
 }

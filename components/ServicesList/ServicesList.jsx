@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import servicesList from "./ServicesList.json";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function ServicesList() {
   const [index, setIndex] = useState(20);

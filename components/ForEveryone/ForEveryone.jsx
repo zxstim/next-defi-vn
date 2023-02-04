@@ -14,7 +14,7 @@ export default function ForEveryone() {
     border: "2px solid var(--color-fg-default)",
     fontSize: "20px",
     color: "var(--color-fg-default)",
-    boxShadow: "3px 3px black"
+    boxShadow: "3px 3px black",
   };
 
   return (
@@ -25,8 +25,7 @@ export default function ForEveryone() {
           display: "grid",
           gap: "15px 15px",
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-        }}
-      >
+        }}>
         <Link href="/start">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title21")}</h3>
@@ -50,6 +49,11 @@ export default function ForEveryone() {
         <Link href="/communities">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title23")}</h3>
+          </a>
+        </Link>
+        <Link href="/playground">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title27")}</h3>
           </a>
         </Link>
         <Link href="/reading">

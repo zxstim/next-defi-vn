@@ -78,14 +78,21 @@ export default function ReadingList() {
                     </div>
                   </div>
                   <div className={styles.article_details_container}>
-                    <div className={styles.article_title}>{article.title}</div>
-                    <div className={styles.article_description}>
-                      {article.desc}
+                    <div>
+                      <div className={styles.article_title}>{article.title}</div>
+                      <div className={styles.article_description}>
+                        {article.desc}
+                      </div>
                     </div>
-                    <div className={styles.article_timestamp}>
-                      {router.locale === "vi"
-                        ? formatArticleTimeStampVi(article.timestamp)
-                        : formatArticleTimeStampEn(article.timestamp)}
+                    <div className={styles.article_author_info}>
+                      <div className={styles.article_timestamp}>
+                        {router.locale === "vi"
+                          ? formatArticleTimeStampVi(article.timestamp)
+                          : formatArticleTimeStampEn(article.timestamp)}
+                      </div>
+                      <div className={styles.article_author_pfp}>
+                        <Image style={{ borderRadius: "50%" }} src={article.authorPfp} alt="0xStim" width={30} height={30} />
+                      </div>
                     </div>
                   </div>
                 </div>

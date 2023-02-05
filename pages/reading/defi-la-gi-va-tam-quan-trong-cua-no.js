@@ -66,7 +66,7 @@ export default function Post2(props) {
           </div>
           <div>🗓️ {formatArticleTimeStampVi(ARTICLE_INFO.timestamp)}</div>
           <div className={styles.article_tag_container}>
-            {ARTICLE_TAG.map((tag) => (<div className={styles.article_tag}>{tag}</div>))}
+            {ARTICLE_TAG.map((tag, index) => (<div key={index} className={styles.article_tag}>{tag}</div>))}
           </div>
           <div className={styles.thumbnail_image_container}>
             <Image

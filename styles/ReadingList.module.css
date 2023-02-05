@@ -36,21 +36,23 @@
 .article_details_container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* last item goes to the bottom */
+    justify-content: space-between;
 }
 
 .article_title {
     font-size: 16px;
     font-weight: bold;
-    white-space: break-spaces;
+    /* white-space: break-spaces;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 }
 
 .article_description {
+    margin: 16px 0 16px 0;
     white-space: break-spaces;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -71,5 +73,19 @@
 .article_timestamp {
     font-size: 12px;
     color: #909090;
+}
+
+.article_author_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article_author_pfp {
+    border: 1px solid #1a1a1a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: auto;
 }
 

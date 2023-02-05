@@ -57,6 +57,11 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title27")}</h3>
           </a>
         </Link>
+        <Link href="/wallets">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title28")}</h3>
+          </a>
+        </Link>
         <Link href="/reading">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title25")}</h3>

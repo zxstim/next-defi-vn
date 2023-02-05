@@ -10,8 +10,8 @@
     gap: 16px;
     flex-direction: column;
     padding: 16px 16px 16px 16px;
-    border: 2px solid #1a1a1a;
-    box-shadow: 3px 3px #1a1a1a;
+    border: 1px solid #1a1a1a;
+    /* box-shadow: 3px 3px #1a1a1a; */
     cursor: pointer;
 }
 
@@ -58,7 +58,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 14px;
-    color: #7a7a7a;
+    color: #666666;
 }
 
 .article_language {
@@ -73,10 +73,3 @@
     color: #909090;
 }
 
-/* .article_info_container {
-    width: 100%;
-}
-
-.article_image_container {
-    width: 100%;
-} */

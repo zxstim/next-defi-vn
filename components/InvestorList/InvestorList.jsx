@@ -11,6 +11,7 @@ export default function InvestorList() {
   const [latestInvestorList, setLatestInvestorList] = useState(investorList)
   const [investors, setInvestors] = useState(investorList.slice(0, index));
   const [hasMore, setHasMore] = useState(true);
+
   const router = useRouter();
   const { t } = useTranslation("investors");
   const fetchData = () => {
@@ -18,10 +19,8 @@ export default function InvestorList() {
       setHasMore(false);
       return;
     }
-    setTimeout(() => {
-      setInvestors(investors.concat(latestInvestorList.slice(index, index + 20)));
-      setIndex(index + 20);
-    }, 500);
+    setInvestors(investors.concat(latestInvestorList.slice(index, index + 20)));
+    setIndex(index + 20);
   };
 
 
@@ -51,25 +50,6 @@ export default function InvestorList() {
       <option value="angel">Angel</option>
       <option value="finance">Financial services</option>
     </select>
-
-    <InfiniteScroll
-      dataLength={investors.length} //This is important field to render the next data
-      next={fetchData}
-      hasMore={hasMore}
-      loader={<h4>{t("load")}</h4>}
-      endMessage={
-        <p
-          style={{
-            marginTop: "50px",
-            fontSize: "25px",
-            fontWeight: "bold",
-            textAlign: "center",
-          }}
-        >
-          {t("end")}
-        </p>
-      }
-    >
       <div className="service-box">
         {investors.map((investor) => (
           <div key={investor.id} className="service-item">
@@ -183,7 +163,21 @@ export default function InvestorList() {
           </div>
         ))}
       </div>
-    </InfiniteScroll>
+      {hasMore ? null : (
+        <p
+          style={{
+            marginTop: "50px",
+            fontSize: "25px",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}
+        >
+          {t("end")}
+        </p>
+      )}
+      <button className="service-load-more-button" onClick={fetchData}>
+        {t("load-more")}
+      </button>
     </>
   );
 }

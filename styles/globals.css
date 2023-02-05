@@ -1445,15 +1445,15 @@ p.thick {
 }
 
 .service-cta {
-  border: 2px solid #0969da;
-  color: #0969da;
+  background-color: whitesmoke;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
   font-size: 14px;
   text-align: center;
   margin-top: 15px;
-  font-weight: bold;
 }
 
 .service-brand-name {
@@ -1783,6 +1783,15 @@ p.thick {
   padding: 8px 8px 8px 8px !important;
   box-shadow: 3px 3px black !important;
   font-size: 16px !important;
+}
+
+.events-location-filter {
+  border: 2px solid var(--color-fg-default);
+  color: var(--color-fg-default);
+  margin: 8px 0px 16px 8px;
+  padding: 4px 4px 4px 4px;
+  box-shadow: 3px 3px black;
+  font-size: 16px;
 }
 
 .shop-container {

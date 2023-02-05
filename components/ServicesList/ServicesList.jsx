@@ -16,10 +16,8 @@ export default function ServicesList() {
       setHasMore(false);
       return;
     }
-    setTimeout(() => {
-      setServices(services.concat(servicesList.slice(index, index + 20)));
-      setIndex(index + 20);
-    }, 2000);
+    setServices(services.concat(servicesList.slice(index, index + 20)));
+    setIndex(index + 20);
   };
 
   // a function to use drop down menu to filter services by tag

@@ -7,6 +7,16 @@ import eventslist from "./EventsList.json";
 export default function EventsList() {
   const { t } = useTranslation("events");
   const [eventsList, setEventsList] = useState(eventslist);
+  const [location, setLocation] = useState(() => {
+    let locations = [];
+    eventslist.forEach((event) => {
+      if (!locations.includes(event.location)) {
+        locations.push(event.location);
+      }
+    });
+    return locations;
+  });
+
 
   // function to filter events by date from datepicker
   const filterEventsByDate = (event) => {
@@ -34,18 +44,39 @@ export default function EventsList() {
     setEventsList(filteredEventsList);
   };
 
+  // function to filter events by location
+  const filterEventsByLocation = (event) => {
+    let filteredEventsList = [];
+    if (event.target.value === "") {
+      setEventsList(eventslist);
+      return;
+    }
+    filteredEventsList = eventslist.filter(
+      (evnt) => evnt.location === event.target.value
+    );
+    setEventsList(filteredEventsList);
+  };
+
+
   return (
     <>
     <div className="filter-container">
       <div>
-        <label for="events-date-filter">{t("date-filter")}</label>
+        <label>{t("date-filter")}</label>
         <input className="events-filter" type="date" id="events-date-filter" name="events-date-filter" onChange={filterEventsByDate} />
         <button className="events-filter-clear" onClick={() => setEventsList(eventslist)}>{t("reset")}</button>
       </div>
       <div>
-        <label for="events-month-filter">{t("month-filter")}</label>
+        <label>{t("month-filter")}</label>
         <input className="events-filter" type="month" id="events-month-filter" name="events-month-filter" onChange={filterEventsByMonth} />
         <button className="events-filter-clear" onClick={() => setEventsList(eventslist)}>{t("reset")}</button>
+      </div>
+      <div>
+        <label>{t("location-filter")}</label>
+        <select className="events-location-filter" name="events-location-selector" id="events-location-selector" onChange={filterEventsByLocation}>
+          <option value="">All</option>
+          {location.map((loc, index) => (<option key={index} value={loc}>{loc}</option>))}
+        </select>
       </div>
     </div>
       {eventsList

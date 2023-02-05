@@ -5,5 +5,6 @@
     "register": "Register",
     "date-filter": "Date filter:",
     "month-filter": "Month filter:",
+    "location-filter": "Location filter:",
     "reset": "Reset"
 }

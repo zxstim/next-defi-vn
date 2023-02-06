@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "500 Global",
-    "tags": ["vc", "seed"],
+    "tags": ["VC", "seed"],
     "desc": "Invested in 49 companies valued at $1B+ and 150+ companies valued at more than $100 million.",
     "web": "https://500.co",
     "telegram": false,
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "name": "ELEVATE",
-    "tags": ["vc", "seed"],
+    "tags": ["VC", "seed"],
     "desc": "Elevate Ventures invests into the Web 3.0 industries.  We are the building blocks of the ecosystem.",
     "web": "https://www.el8v.io/",
     "telegram": false,
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "name": "BlockBase",
-    "tags": ["vc", "vb", "seed"],
+    "tags": ["VC", "VB", "seed"],
     "desc": "Blockchain and Web3 continue to usher in a new dreamy era that will completely change the world in the future. It is in Blockbase's vision that we further inspire the entrepreneurship spirit and brave the new era of the world’s Internet.",
     "web": "https://blockbase.co/",
     "telegram": "https://t.me/blockbaseco",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "name": "JST Capital",
-    "tags": ["vc", "mm", "finance"],
+    "tags": ["VC", "MM", "finance"],
     "desc": "JST is a global financial services firm providing innovative solutions for digital asset investors.",
     "web": "https://www.jstcap.com/",
     "telegram": false,
@@ -104,7 +104,7 @@
   {
     "id": 7,
     "name": "Paradigm",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "Paradigm backs disruptive crypto/Web3 companies and protocols with as little as $1M and as much as $100M+.",
     "web": "https://www.paradigm.xyz/",
     "telegram": false,
@@ -121,7 +121,7 @@
   {
     "id": 8,
     "name": "a16z",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "We back bold entrepreneurs building the next internet.",
     "web": "https://a16zcrypto.com/",
     "telegram": false,
@@ -138,7 +138,7 @@
   {
     "id": 9,
     "name": "Multicoin Capital",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "We’re thesis driven investors that make long-term, high-conviction investments in category defining crypto companies and protocols across public and private markets.",
     "web": "https://multicoin.capital/",
     "telegram": false,
@@ -155,7 +155,7 @@
   {
     "id": 10,
     "name": "Sequoia",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "We help the daring build legendary companies.",
     "web": "https://www.sequoiacap.com/",
     "telegram": false,
@@ -172,7 +172,7 @@
   {
     "id": 11,
     "name": "Delphi Digital",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "Thesis-driven, high-conviction funds that allocate across core themes that we believe will dramatically shape the world.",
     "web": "https://delphiventures.io/",
     "telegram": "https://t.me/DelphiDigitalAlerts",
@@ -189,7 +189,7 @@
     {
     "id": 12,
     "name": "Animoca Brands",
-    "tags": ["vc", "nft"],
+    "tags": ["VC", "NFT"],
     "desc": "We help the daring build legendary companies.",
     "web": "https://www.animocabrands.com/",
     "telegram": false,
@@ -206,7 +206,7 @@
   {
     "id": 13,
     "name": "Coinbase Ventures",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "Coinbase Ventures invests in exceptional founders who share Coinbase’s mission of creating more economic freedom for the world.",
     "web": "https://www.coinbase.com/ventures",
     "telegram": false,
@@ -223,7 +223,7 @@
   {
     "id": 14,
     "name": "Blockchain Capital",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "Blockchain Capital is a leading venture firm in the blockchain industry. In the last 9 years we have made over 160 investments in companies and protocols in the sector, across different stages, geographies and asset types.",
     "web": "https://blockchain.capital/",
     "telegram": false,
@@ -240,7 +240,7 @@
   {
     "id": 15,
     "name": "mgnr",
-    "tags": ["mm"],
+    "tags": ["MM"],
     "desc": "mgnr is a systematic proprietary trading firm that uses innovative quantitative research and rigorous engineering to capture trading opportunities around the globe 24/7/365.",
     "web": "https://mgnr.io/",
     "telegram": false,
@@ -257,7 +257,7 @@
   {
     "id": 16,
     "name": "Polychain",
-    "tags": ["vc"],
+    "tags": ["VC"],
     "desc": "Polychain is an investment firm committed to exceptional returns for investors through actively managed portfolios of these blockchain assets.",
     "web": "https://polychain.capital/",
     "telegram": false,
@@ -274,7 +274,7 @@
   {
     "id": 17,
     "name": "Binance Labs",
-    "tags": ["vc", "seed"],
+    "tags": ["VC", "seed"],
     "desc": "Binance Labs identifies, invests, and empowers viable blockchain entrepreneurs, startups, and communities, providing financing to industry projects that help grow the wider blockchain ecosystem.",
     "web": "https://labs.binance.com/",
     "telegram": false,
@@ -291,7 +291,7 @@
   {
     "id": 18,
     "name": "Hashed",
-    "tags": ["vc", "seed"],
+    "tags": ["VC", "seed"],
     "desc": "Hashed is a team of blockchain experts and builders based in Seoul and Silicon Valley. We believe that decentralization has the power to transform not only the global economy, but the very fabric of the internet.",
     "web": "https://www.hashed.com/",
     "telegram": false,
@@ -308,7 +308,7 @@
   {
     "id": 19,
     "name": "Galaxy Digital",
-    "tags": ["vc", "finance"],
+    "tags": ["VC", "finance"],
     "desc": "Galaxy is a digital asset and blockchain leader helping institutions, startups, and qualified individuals shape a changing economy. We provide platform solutions custom-made for a digitally native ecosystem.",
     "web": "https://www.galaxy.com/",
     "telegram": false,

@@ -1753,10 +1753,11 @@ p.thick {
 .filter-tag {
   border: 2px solid var(--color-fg-default);
   color: var(--color-fg-default);
-  margin: 8px 0px 16px 0px;
+  margin: 8px 0px 16px 8px;
   padding: 4px 4px 4px 4px;
   box-shadow: 3px 3px black;
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 .events-filter {

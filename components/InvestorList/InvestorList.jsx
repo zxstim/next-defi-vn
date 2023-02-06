@@ -8,6 +8,17 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function InvestorList() {
   const [index, setIndex] = useState(20);
+  const [investorCategories, setInvestorCategories] = useState(() => {
+    let investorTags = [];
+    investorList.forEach((investor) => {
+      investor.tags.forEach((tag) => {
+        if (!investorTags.includes(tag)) {
+          investorTags.push(tag);
+        }
+      });
+    });
+    return investorTags;
+  });
   const [latestInvestorList, setLatestInvestorList] = useState(investorList)
   const [investors, setInvestors] = useState(investorList.slice(0, index));
   const [hasMore, setHasMore] = useState(true);
@@ -39,17 +50,14 @@ export default function InvestorList() {
     setInvestors(filteredInvestorsList.slice(0, index));
   };
 
+
   return (
     <>
-    <select className="filter-tag" name="investors" id="investors" onChange={filterInvestorsDropdown}>
-      <option value="">All</option>
-      <option value="vc">Venture capital</option>
-      <option value="mm">Market maker</option>
-      <option value="seed">Seed</option>
-      <option value="vb">Venture builder</option>
-      <option value="angel">Angel</option>
-      <option value="finance">Financial services</option>
-    </select>
+      <label>{t("investor-filter")}</label>
+      <select className="filter-tag" name="investors" id="investors" onChange={filterInvestorsDropdown}>
+        <option value="">All</option>
+        {investorCategories.map((category, index) => (<option key={index} value={category}>{category}</option>))}
+      </select>
       <div className="service-box">
         {investors.map((investor) => (
           <div key={investor.id} className="service-item">

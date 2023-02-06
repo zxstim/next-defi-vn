@@ -2,17 +2,6 @@
     "title": "🧑‍🚀 Investors",
     "back": "🏠 Go back to home",
     "subtitle": "Investors list",
-    "hackathons-list": "Hackathons List",
-    "table1": "Name",
-    "table2": "Type",
-    "table3": "Description",
-    "table4": "Contact",
-    "page": "Page ",
-    "gt-page": "| Go to page:",
-    "show": "Show",
-    "of": "of",
-    "cta": "Learn more",
-    "load": "⏳ Loading...",
-    "end": "You've reached the end! 👋",
+    "investor-filter": "Investor filter:",
     "load-more": "Load more"
 }

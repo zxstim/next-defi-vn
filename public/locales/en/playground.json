@@ -3,5 +3,7 @@
   "back": "🏠 Go back to home",
   "subtitle": "A place for fun and learning",
   "load": "⏳ Loading...",
-  "connect": "Connect your wallet"
+  "create": "Create a wallet",
+  "mint": "Mint 100 tokens",
+  "burn": "Burn 100 tokens"
 }

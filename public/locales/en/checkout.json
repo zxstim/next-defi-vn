@@ -1,0 +1,17 @@
+{
+    "title": "💵 Checkout",
+    "subtitle": "👇 Complete checkout below!",
+    "back": "🏠 Go back to home",
+    "prev": "⬅️ Go back to previous page",
+    "return-shop": "Continue shopping",
+    "pay-title": "Pay with",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "total": "Total",
+    "card-name": "Name on card",
+    "card-number": "Card number",
+    "card-expiry": "Expiry date",
+    "card-cvc": "CVC",
+    "contact-email": "Contact Email",
+    "pay": "Pay"
+}

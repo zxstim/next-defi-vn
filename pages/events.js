@@ -26,22 +26,29 @@ export default function Events(props) {
           `}
       </Script>
       <Head>
-        <title>Events</title>
+        <title>Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Events" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Events" />
-        <meta property="og:title" content="Events" key="ogtitle" />
-        <meta property="og:description" content="Events" key="ogdesc" />
-        <meta property="og:site_name" content="Events" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/events" key="ogurl" />
+        <meta name="description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
+        <meta property="og:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta property="og:url" content="https://defi.vn/events" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/855f74a3-487f-470e-a86c-36bdc9f85a00/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/events" />
+        <meta name="twitter:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
+        <meta name="twitter:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/855f74a3-487f-470e-a86c-36bdc9f85a00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/events" locale="en">
+            <Link href="/events" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
@@ -54,6 +61,7 @@ export default function Events(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
+          <h2>{t("events-list")}</h2>
           <EventsList />
           <br />
           <hr />

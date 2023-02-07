@@ -26,22 +26,29 @@ export default function Hackathons(props) {
           `}
       </Script>
       <Head>
-        <title>Hackathons</title>
+        <title>Find your crypto hackathons | Tìm sự kiện hackathon yêu thích - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Hackathons" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Hackathons" />
-        <meta property="og:title" content="Hackathons" key="ogtitle" />
-        <meta property="og:description" content="Hackathons" key="ogdesc" />
-        <meta property="og:site_name" content="Hackathons" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/hackathons" key="ogurl" />
+        <meta name="description" content="Check out a global list of crypto hackathons around the world, find out about the dates, locations and how to register." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Find your crypto hackathons | Tìm sự kiện hackathon yêu thích - DeFi.vn" />
+        <meta property="og:description" content="Check out a global list of crypto hackathons around the world, find out about the dates, locations and how to register." />
+        <meta property="og:url" content="https://defi.vn/hackathons" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/b394a9c7-6daa-46f2-5165-e3c336e93900/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/hackathons" />
+        <meta name="twitter:title" content="Find your crypto hackathons | Tìm sự kiện hackathon yêu thích - DeFi.vn" />
+        <meta name="twitter:description" content="Check out a global list of crypto hackathons around the world, find out about the dates, locations and how to register." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/b394a9c7-6daa-46f2-5165-e3c336e93900/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/hackathons" locale="en">
+            <Link href="/hackathons" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
@@ -54,6 +61,7 @@ export default function Hackathons(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
+          <h2>{t("hackathons-list")}</h2>
           <HackathonsList />
           <br />
           <hr />

@@ -28,20 +28,22 @@ export default function Home(props) {
           `}
       </Script>
       <Head>
-        <title>Defi.vn</title>
+        <title>DeFi.vn - DeFi Vietnam | DeFi Việt Nam</title>
+        <meta name="description" content="Defi.vn is a community project aiming to be an open resource hub for everyone."/>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Defi.vn" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Defi.vn" />
-        <meta property="og:title" content="Defi.vn" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="Cộng đồng Web3 - Web3 Community"
-          key="ogdesc"
-        />
-        <meta property="og:site_name" content="Defi.vn" key="ogsitename" />
-        <meta property="og:url" content="https://defi.vn/" key="ogurl" />
+        <meta property="og:url" content="https://www.defi.vn" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="DeFi.vn - DeFi Vietnam | DeFi Việt Nam" />
+        <meta property="og:description" content="Defi.vn is a community project aiming to be an open resource hub for everyone." />
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/8d6a2d48-99bc-485c-4afc-239196f02200/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn" />
+        <meta name="twitter:title" content="DeFi.vn - DeFi Vietnam | DeFi Việt Nam" />
+        <meta name="twitter:description" content="Defi.vn is a community project aiming to be an open resource hub for everyone." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/8d6a2d48-99bc-485c-4afc-239196f02200/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">

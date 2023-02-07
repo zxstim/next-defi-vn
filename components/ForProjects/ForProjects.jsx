@@ -42,13 +42,6 @@ export default function ForProjects() {
             <h3 style={buttonStyle}>{t("title6")}</h3>
           </a>
         </Link>
-        {/* <Link href="/regulations">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>
-              {t("s2t9")}
-            </h3>
-          </a>
-        </Link> */}
       </div>
     </>
   );

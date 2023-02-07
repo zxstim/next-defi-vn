@@ -5,11 +5,35 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
+import TokenStats from "../components/TokenStats/TokenStats";
+import ABI from "../utils/ShibaShekelAbi.json";
+import { ethers } from "ethers";
+import { useEffect, useState } from "react";
+
+const INFURA_KEY = process.env.NEXT_PUBLIC_INFURA_KEY;
+const provider = new ethers.InfuraProvider("goerli", INFURA_KEY);
+const contractAddress = "0x99BF32EcF78896F3adc2809f0011Bb15bAF8fB11";
 
 export default function Playground(props) {
+  const [totalSupply, setTotalSupply] = useState(0);
+  const [totalBurned, setTotalBurned] = useState(0);
+  const [balance, setBalance] = useState(0);
   const { t } = useTranslation("playground");
-  console.log(props);
-  console.log(t("title"));
+
+  useEffect(() => {
+    const contract = new ethers.Contract(contractAddress, ABI, provider);
+    const getTotalSupply = async () => {
+      let totalSupply = await contract.totalSupply();
+      setTotalSupply(ethers.formatEther(totalSupply));
+    };
+    getTotalSupply();
+    const getTotalBurned = async () => {
+      let totalBurned = await contract.totalBurned();
+      setTotalBurned(ethers.formatEther(totalBurned));
+    };
+    getTotalBurned();
+  });
+
   return (
     <>
       <Script
@@ -60,6 +84,11 @@ export default function Playground(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle")}</h2>
+          <TokenStats
+            contractAddress={contractAddress}
+            totalSupply={totalSupply}
+            totalBurned={totalBurned}
+          />
           <br />
           <hr />
           <AppFooter />

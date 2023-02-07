@@ -12,6 +12,7 @@
     "@tanstack/react-table": "^8.5.15",
     "axios": "^0.27.2",
     "d3-color": "^3.1.0",
+    "ethers": "^6.0.2",
     "next": "12.2.5",
     "next-i18next": "^12.1.0",
     "nprogress": "^0.2.0",

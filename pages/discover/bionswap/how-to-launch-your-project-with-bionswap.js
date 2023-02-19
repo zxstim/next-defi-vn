@@ -2,10 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import UpButton from "../../components/UpButton/UpButton";
-import AppFooterBlogVi from "../../components/AppFooter/AppFooterBlogVi";
-import styles from '../../styles/Blog.module.css'
-import formatArticleTimeStampEn from "../../utils/formatArticleTimeStampEn";
+import UpButton from "../../../components/UpButton/UpButton";
+import AppFooterBlogVi from "../../../components/AppFooter/AppFooterBlogVi";
+import styles from '../../../styles/Blog.module.css'
+import formatArticleTimeStampEn from "../../../utils/formatArticleTimeStampEn";
 
 
 export default function Post3Page() {

@@ -1,6 +1,6 @@
 {
-    "title": "🔑 Web3 wallets",
-    "subtitle": "Wallets list",
+    "title": "🧰 Dev Tools",
+    "subtitle": "Dev tools list",
     "back": "🏠 Go back to home",
     "cta": "Learn more",
     "load": "⏳ Loading...",
@@ -8,5 +8,4 @@
     "load-more": "Load more",
     "chain-filter": "Filter by Chains:",
     "tech-filter": "Filter by Type:"
-
 }

@@ -52,19 +52,24 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title23")}</h3>
           </a>
         </Link>
-        <Link href="/playground">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title27")}</h3>
-          </a>
-        </Link>
         <Link href="/wallets">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title28")}</h3>
           </a>
         </Link>
+        <Link href="/playground">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title27")}</h3>
+          </a>
+        </Link>
         <Link href="/reading">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title25")}</h3>
+          </a>
+        </Link>
+        <Link href="/events">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title18")}</h3>
           </a>
         </Link>
         <Link href="/governance">
@@ -87,16 +92,11 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title11")}</h3>
           </a>
         </Link> */}
-        <Link href="/events">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title18")}</h3>
-          </a>
-        </Link>
-        <Link href="/rekt">
+        {/* <Link href="/rekt">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title20")}</h3>
           </a>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

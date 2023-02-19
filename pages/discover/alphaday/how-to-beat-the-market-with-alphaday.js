@@ -2,13 +2,14 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import UpButton from "../../components/UpButton/UpButton";
-import AppFooterBlogVi from "../../components/AppFooter/AppFooterBlogVi";
-import styles from '../../styles/Blog.module.css'
-import formatArticleTimeStampEn from "../../utils/formatArticleTimeStampEn";
+import UpButton from "../../../components/UpButton/UpButton";
+import AppFooterBlogEn from "../../../components/AppFooter/AppFooterBlogEn";
+import styles from '../../../styles/Post1.module.css'
+import formatArticleTimeStampEn from "../../../utils/formatArticleTimeStampEn";
+import Post2 from "../../../components/Posts/Post2";
 
 
-export default function Post2(props) {
+export default function Post2Page() {
   const ARTICLE_TAG = ["wiki", "defi"]
   const ARTICLE_INFO = {
     author: "0xStim",
@@ -66,20 +67,10 @@ export default function Post2(props) {
           <div className={styles.article_tag_container}>
             {ARTICLE_TAG.map((tag) => (<div className={styles.article_tag}>{tag}</div>))}
           </div>
-          <div className={styles.thumbnail_image_container}>
-            <Image
-              src="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/ec66fb40-b466-48a1-ab10-5a9a1c7ec700/defiblog"
-              alt="defi là gì thumbnail"
-              width={1600}
-              height={840}
-            />
-          </div>
-          <p>DeFi là một hệ thống tài chính mở và toàn cầu được xây dựng cho thời đại internet - một giải pháp thay thế cho thể chế tài chính hiện tại, một thể chế tài chính với nhiều bí ẩn, kiểm duyệt chặt chẽ với cơ sở hạ tầng có từ những thập niên trước. DeFi cung cấp cho bạn quyền kiểm soát và khả năng theo dõi tiền của bạn. Nó cho phép bạn tiếp xúc với các thị trường quốc tế và các lựa chọn thay thế cho nội tệ hoặc ngân hàng của bạn. Các sản phẩm của DeFi cho phép bất kỳ ai có kết nối internet tiếp cận tới dịch vụ tài chính; những sản phẩm này phần lớn do người dùng sở hữu và duy trì. Cho đến nay, hàng chục tỷ đô la tiền điện tử đã chảy qua các ứng dụng DeFi và vẫn tiếp tục tăng lên hằng ngày.</p>
-          <h2>DeFi là gì?</h2>
-
+          <Post2 />
           <br />
           <hr />
-          <AppFooterBlogVi />
+          <AppFooterBlogEn />
         </div>
       </div>
     </>

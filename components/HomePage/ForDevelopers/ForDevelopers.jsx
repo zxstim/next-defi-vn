@@ -32,11 +32,16 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("title1")}</h3>
           </a>
         </Link>
-        {/* <Link href="/opensource">
+        <Link href="/code">
           <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title2")}</h3>
+            <h3 style={buttonStyle}>{t("title5")}</h3>
           </a>
-        </Link> */}
+        </Link>
+        <Link href="/dev-tools">
+          <a style={{ textDecoration: "none" }}>
+            <h3 style={buttonStyle}>{t("title17")}</h3>
+          </a>
+        </Link>
         <Link href="/bot">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title3")}</h3>
@@ -47,17 +52,7 @@ export default function ForDevelopers() {
             <h3 style={buttonStyle}>{t("title4")}</h3>
           </a>
         </Link>
-        <Link href="/code">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title5")}</h3>
-          </a>
-        </Link>
-        <Link href="/devtools">
-          <a style={{ textDecoration: "none" }}>
-            <h3 style={buttonStyle}>{t("title17")}</h3>
-          </a>
-        </Link>
-        <Link href="/jobs">
+        <Link href="/dev-guides">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title16")}</h3>
           </a>

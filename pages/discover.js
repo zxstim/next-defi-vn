@@ -65,6 +65,9 @@ export default function Discover(props) {
           <UpButton />
           <DiscoverList />
           <br />
+          <br />
+          <br />
+          <blockquote>{t("disclosure")}</blockquote>
           <hr />
           <AppFooter />
         </div>

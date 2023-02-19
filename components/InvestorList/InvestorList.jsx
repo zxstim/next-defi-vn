@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import investorList from "./InvestorList.json";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function InvestorList() {
   const [index, setIndex] = useState(20);

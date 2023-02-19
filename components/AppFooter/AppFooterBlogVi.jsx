@@ -6,8 +6,7 @@ export default function AppFooterBlogVi() {
   return (
     <>
       <h3>
-        Nhắn mình 
-        <a href="https://t.me/zxstim">@zxstim</a>
+        Nhắn mình <a href="https://t.me/zxstim">@zxstim</a>
       </h3>
       <span>
         <a href="https://github.com/0xstim">

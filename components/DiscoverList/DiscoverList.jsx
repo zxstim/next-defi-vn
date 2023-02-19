@@ -26,7 +26,7 @@ export default function DiscoverList() {
     filteredServicesList = discoverlist.filter(
       (service) => service.tag === event.target.value
     );
-    setServices(filteredServicesList.slice(0, index));
+    setDiscoveries(filteredServicesList.slice(0, index));
   };
 
   return (

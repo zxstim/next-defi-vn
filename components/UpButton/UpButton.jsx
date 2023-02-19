@@ -9,7 +9,7 @@ export default function UpButton() {
             style={{
                 position: 'fixed',
                 fontSize: '14px',
-                bottom: '120px',
+                bottom: '80px',
                 right: '40px',
                 paddingTop: '5px',
                 paddingBottom: '5px',

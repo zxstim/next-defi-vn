@@ -1,15 +1,12 @@
-import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function AppFooter() {
-  const { t } = useTranslation("common");
+export default function AppFooterBlogEn() {
 
   return (
     <>
       <h3>
-        {t("footer")}
-        <a href="https://t.me/zxstim">@zxstim</a>
+        Ping me <a href="https://t.me/zxstim">@zxstim</a>
       </h3>
       <span>
         <a href="https://github.com/0xstim">
@@ -53,25 +50,20 @@ export default function AppFooter() {
       </span>
       <h4>
         <Link href="/0xstim">
-          <a>{t("about")}</a>
+          <a>🥷 About 0xStim</a>
         </Link>
       </h4>
       <h4>
-        <a href="https://github.com/0xstim/next-defi-vn">{t("edit")}</a>
+        <a href="https://github.com/0xstim/next-defi-vn">✏️ Edit this site on Github</a>
       </h4>
       <h4>
         <Link href="/disclaimer">
-          <a>{t("disclaimer")}</a>
-        </Link>
-      </h4>
-      <h4>
-        <Link href="/contributors">
-          <a>{t("contributors")}</a>
+          <a>ℹ️ Disclaimer</a>
         </Link>
       </h4>
       <h4>
         <Link href="/donate">
-          <a>{t("donate")}</a>
+          <a>🙏 Support me</a>
         </Link>
       </h4>
       <br />

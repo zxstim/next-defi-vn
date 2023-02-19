@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "LYNC",
+        "chains": ["Ethereum", "BNB Chain", "Polygon", "Avalanche", "Arbitrum", "Fantom", "Optimism"],
+        "tech": ["SDK"],
+        "desc": "We are a one-stop solution for game developers to push their game on-chain with powerful SDKs. Let's LYNC!",
+        "web": "https://www.lync.world/",
+        "page": "https://www.defi.vn/dev-tools/lync",
+        "telegram": false,
+        "twitter": "https://twitter.com/Lyncworld",
+        "email": false,
+        "linkedin": "https://www.linkedin.com/company/lync-world/",
+        "facebook": false,
+        "instagram": false,
+        "youtube": false,
+        "discord": false,
+        "github": false,
+        "tiktok": false
+    }
+]

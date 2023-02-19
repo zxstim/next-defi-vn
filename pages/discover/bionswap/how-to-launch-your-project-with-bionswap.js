@@ -4,7 +4,7 @@ import Image from "next/image";
 import Script from "next/script";
 import UpButton from "../../../components/UpButton/UpButton";
 import AppFooterBlogVi from "../../../components/AppFooter/AppFooterBlogVi";
-import styles from '../../../styles/Blog.module.css'
+import styles from '../../../styles/Post1.module.css'
 import formatArticleTimeStampEn from "../../../utils/formatArticleTimeStampEn";
 
 

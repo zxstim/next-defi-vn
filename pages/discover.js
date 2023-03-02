@@ -63,7 +63,19 @@ export default function Discover(props) {
           <Link href="/">{t("back")}</Link>
           <h2>{t("subtitle")}</h2>
           <UpButton />
-          <DiscoverList />
+          <div className="nav-menu-grid">
+            <Link href="/discover/wallets">
+              <a style={{ textDecoration: "none" }}>
+                <h3 className="nav-menu-button">{t("title1")}</h3>
+              </a>
+            </Link>
+            <Link href="/discover/communities">
+              <a style={{ textDecoration: "none" }}>
+                <h3 className="nav-menu-button">{t("title2")}</h3>
+              </a>
+            </Link>
+          </div>
+          {/* <DiscoverList /> */}
           <br />
           <br />
           <br />

@@ -47,7 +47,7 @@ export default function ForEveryone() {
             <h3 style={buttonStyle}>{t("title19")}</h3>
           </a>
         </Link>
-        <Link href="/communities">
+        {/* <Link href="/communities">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title23")}</h3>
           </a>
@@ -56,7 +56,7 @@ export default function ForEveryone() {
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title28")}</h3>
           </a>
-        </Link>
+        </Link> */}
         <Link href="/playground">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title27")}</h3>

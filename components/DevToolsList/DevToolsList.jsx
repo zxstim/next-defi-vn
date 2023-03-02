@@ -119,24 +119,24 @@ export default function DevToolsList() {
               </div>
               <div className={styles.devtools_item_tech_container}>
                 <div className={styles.devtools_item_tech_label}>Type</div>
-                {/* <div className={styles.devtools_item_tech_badge_container}>
-                  {wallet.tech.map((tec) => (
+                <div className={styles.devtools_item_tech_badge_container}>
+                  {devtool.tech.map((tec) => (
                     <div key={tec} className={styles.devtools_item_tech}>
                       {tec}
                     </div>
                   ))}
-                </div> */}
+                </div>
               </div>
               <div className={styles.devtools_item_desc}>{devtool.desc}</div>
               <div className={styles.devtools_item_chains_container}>
                 <div className={styles.devtools_item_chains_label}>Chains</div>
-                {/* <div className={styles.devtools_item_badge_container}>
-                  {wallet.chains.map((chain) => (
+                <div className={styles.devtools_item_badge_container}>
+                  {devtool.chains.map((chain) => (
                     <div key={chain} className={styles.devtools_item_chain}>
                       {chain}
                     </div>
                   ))}
-                </div> */}
+                </div>
               </div>
             </div>
             <div className={styles.devtools_cta_container}>
@@ -225,17 +225,33 @@ export default function DevToolsList() {
                     </a>
                   </span>
                 ) : null}
+                {devtool.web ? (
+                  <span>
+                    <a href={devtool.web}>
+                      <Image
+                        src="/icons8-webpage.svg"
+                        alt="Web icon"
+                        width={32}
+                        height={32}
+                      />
+                    </a>
+                  </span>
+                ) : null}
               </div>
               <Link href={devtool.page}>
                 <a style={{ textDecoration: "none", color: "#000000" }}>
-                  <div className={styles.devtools_item_cta}>{t("cta")}</div>
+                  <div className={styles.devtools_item_cta_learn_more}>{t("cta")}</div>
                 </a>
               </Link>
             </div>
           </div>
         ))}
       </div>
-      {hasMore ? null : (
+      {hasMore 
+      ? <button className={styles.devtools_load_more_button} onClick={fetchData}>
+          {t("load-more")}
+        </button>
+      : (
         <p
           style={{
             marginTop: "50px",
@@ -247,9 +263,6 @@ export default function DevToolsList() {
           {t("end")}
         </p>
       )}
-      <button className={styles.devtools_load_more_button} onClick={fetchData}>
-        {t("load-more")}
-      </button>
     </>
   );
 }

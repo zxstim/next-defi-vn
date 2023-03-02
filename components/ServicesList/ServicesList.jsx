@@ -7,7 +7,7 @@ import servicesList from "./ServicesList.json";
 
 export default function ServicesList() {
   const [index, setIndex] = useState(20);
-  const [services, setServices] = useState(servicesList.slice(0, index));
+  const [services, setServices] = useState(servicesList.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' })).slice(0, index).slice(0, index));
   const [hasMore, setHasMore] = useState(true);
   const router = useRouter();
   const { t } = useTranslation("services");
@@ -142,7 +142,11 @@ export default function ServicesList() {
           </div>
         ))}
       </div>
-      {hasMore ? null : (
+      {hasMore 
+        ? <button className="service-load-more-button" onClick={fetchData}>
+            {t("load-more")}
+          </button> 
+        : (
         <p
           style={{
             marginTop: "50px",
@@ -154,9 +158,7 @@ export default function ServicesList() {
           {t("end")}
         </p>
       )}
-      <button className="service-load-more-button" onClick={fetchData}>
-        {t("load-more")}
-      </button>
+
     </>
   );
 }

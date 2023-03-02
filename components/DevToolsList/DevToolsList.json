@@ -17,5 +17,24 @@
         "discord": false,
         "github": false,
         "tiktok": false
+    },
+    {
+        "id": 2,
+        "name": "Alchemy",
+        "chains": ["Ethereum", "Polygon", "Solana", "Arbitrum", "Optimism", "Astar", "Starknet"],
+        "tech": ["Node", "SDK"],
+        "desc": "The web3 development platform. The most powerful set of web3 development tools to build and scale your dApp with ease.",
+        "web": "https://www.alchemy.com/",
+        "page": "https://www.defi.vn/dev-tools/alchemy",
+        "telegram": false,
+        "twitter": "https://twitter.com/Lyncworld",
+        "email": false,
+        "linkedin": "https://www.linkedin.com/company/lync-world/",
+        "facebook": false,
+        "instagram": false,
+        "youtube": false,
+        "discord": false,
+        "github": false,
+        "tiktok": false
     }
 ]

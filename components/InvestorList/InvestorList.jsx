@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import investorList from "./InvestorList.json";
+import styles from "./InvestorList.module.css";
 
 export default function InvestorList() {
   const [index, setIndex] = useState(20);
@@ -19,7 +20,7 @@ export default function InvestorList() {
     return investorTags;
   });
   const [latestInvestorList, setLatestInvestorList] = useState(investorList)
-  const [investors, setInvestors] = useState(investorList.slice(0, index));
+  const [investors, setInvestors] = useState(investorList.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' })).slice(0, index));
   const [hasMore, setHasMore] = useState(true);
 
   const router = useRouter();
@@ -53,23 +54,25 @@ export default function InvestorList() {
   return (
     <>
       <label>{t("investor-filter")}</label>
-      <select className="filter-tag" name="investors" id="investors" onChange={filterInvestorsDropdown}>
+      <select className={styles.investors_filter_select} name="investors" id="investors" onChange={filterInvestorsDropdown}>
         <option value="">All</option>
         {investorCategories.map((category, index) => (<option key={index} value={category}>{category}</option>))}
       </select>
-      <div className="service-box">
+      <div className={styles.investors_list_container}>
         {investors.map((investor) => (
-          <div key={investor.id} className="service-item">
-            <div className="service-brand-name">
+          <div key={investor.id} className={styles.investors_item}>
+            <div className={styles.investors_item_name}>
               {investor.name}
             </div>
-            <div className="service-desc">
+            <div className={styles.investors_item_desc}>
               {investor.desc}
             </div>
-            <div className="service-guide">
-              {investor.tags.map((tag) => (
-                <div key={tag} className="service-badge">{tag}</div>
-              ))}
+            <div className={styles.investors_item_guide}>
+              {investor.tags ? (
+                investor.tags.map((tag) => (
+                  <div key={tag} className={styles.investors_item_tags}>{tag}</div>
+                ))
+              ) : null}
             </div>
             <div
               style={{
@@ -151,6 +154,54 @@ export default function InvestorList() {
                   </a>
                 </div>
               ) : null}
+              {investor.github ? (
+                <div>
+                  <a href={investor.github}>
+                    <Image
+                      src="/icons8-github.svg"
+                      alt="Youtube icon"
+                      width={30}
+                      height={30}
+                    />
+                  </a>
+                </div>
+              ) : null}
+              {investor.tiktok ? (
+                <div>
+                  <a href={investor.tiktok}>
+                    <Image
+                      src="/icons8-tiktok.svg"
+                      alt="Youtube icon"
+                      width={30}
+                      height={30}
+                    />
+                  </a>
+                </div>
+              ) : null}
+              {investor.medium ? (
+                <div>
+                  <a href={investor.medium}>
+                    <Image
+                      src="/icons8-medium.svg"
+                      alt="Youtube icon"
+                      width={30}
+                      height={30}
+                    />
+                  </a>
+                </div>
+              ) : null}
+              {investor.reddit ? (
+                <div>
+                  <a href={investor.reddit}>
+                    <Image
+                      src="/icons8-reddit.svg"
+                      alt="Youtube icon"
+                      width={30}
+                      height={30}
+                    />
+                  </a>
+                </div>
+              ) : null}
               {investor.email ? (
                 <span>
                   <a href={investor.email}>
@@ -165,12 +216,18 @@ export default function InvestorList() {
               ) : null}
             </div>
             <a href={investor.web} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
-              <div className="service-cta">{t("cta")}</div>
+              <div className={styles.investors_item_cta}>{t("cta")}</div>
             </a>
           </div>
         ))}
       </div>
-      {hasMore ? null : (
+      {hasMore ? 
+        (
+          <button className={styles.investors_load_more_button} onClick={fetchData}>
+            {t("load-more")}
+          </button>
+        )
+      : (
         <p
           style={{
             marginTop: "50px",
@@ -182,9 +239,7 @@ export default function InvestorList() {
           {t("end")}
         </p>
       )}
-      <button className="service-load-more-button" onClick={fetchData}>
-        {t("load-more")}
-      </button>
+
     </>
   );
 }

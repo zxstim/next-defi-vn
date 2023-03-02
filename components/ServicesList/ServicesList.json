@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Lennard",
-    "servicetype": "Blockchain marketing & consultancy",
+    "servicetype": "Marketing",
     "tag": "marketing",
     "desc": "Contact me for web3 user acquisition or crypto consultancy",
     "web": "https://oddin.ai/",
@@ -128,7 +128,7 @@
   {
     "id": 8,
     "name": "MWAY",
-    "servicetype": "marketing agency",
+    "servicetype": "Development Studio",
     "tag": "tech",
     "desc": "Our software enables people to have an easy and safe everyday life.",
     "web": "https://mway.io/",
@@ -146,7 +146,7 @@
   {
     "id": 9,
     "name": "Blockscape",
-    "servicetype": "staking",
+    "servicetype": "Staking service",
     "tag": "staking",
     "desc": "Staking for institutional and private investors. Blockscape offers world class staking and crypto-solutions for institutional investors.",
     "web": "https://blockscape.network/",
@@ -159,6 +159,24 @@
     "youtube": false,
     "discord": "https://discord.com/invite/F7MsbeaHtb",
     "github": "https://github.com/BlockscapeNetwork",
+    "tiktok": false
+  },
+  {
+    "id": 10,
+    "name": "Troi Oi",
+    "servicetype": "Marketing Agency",
+    "tag": "marketing",
+    "desc": "Unlock your growth potential with an AI marketing strategy tailored for your business.",
+    "web": "https://troioi.io/",
+    "telegram": "https://t.me/petrathach",
+    "email": false,
+    "twitter": false,
+    "linkedin": "https://www.linkedin.com/company/troi-oi/",
+    "facebook": "https://web.facebook.com/troioi.io/",
+    "instagram": false,
+    "youtube": false,
+    "discord": false,
+    "github": false,
     "tiktok": false
   }
 ]

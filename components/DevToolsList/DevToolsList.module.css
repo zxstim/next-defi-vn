@@ -64,15 +64,15 @@
   gap: 8px;
 }
 
-.devtools_item_cta {
+.devtools_item_cta_learn_more {
   background-color: whitesmoke;
   border: 2px solid #1a1a1a;
   color: #1a1a1a;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100%;
   font-size: 14px;
   text-align: center;
+  width: 100%;
 }
 
 .devtools_item_title {
@@ -105,11 +105,18 @@
   gap: 4px;
 }
 
+.devtools_item_tech_badge_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .devtools_item_chain {
-  background-color: #e0e0e0;
+  background-color: #ffc900;
   padding: 4px 8px;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
   text-transform: uppercase;
   width: fit-content;

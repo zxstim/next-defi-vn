@@ -6235,5 +6235,26 @@
         "reddit": false,
         "crunchbase": false,
         "angelco": false
+    },
+    {
+        "id": "301",
+        "name": "Block Crafters Capital",
+        "tags": ["VC", "Seed"],
+        "desc": "BLOCK CRAFTERS CAPITAL(“BCC”) is a Singapore based venture fund focusing on blockchain and cryptocurrency. Since 2018, we have been supporting founders building open finance infrastructure and web 3.0 built upon blockchain technology.",
+        "web": "https://blockcrafters.capital/",
+        "telegram": false,
+        "twitter": false,
+        "email": "mailto:hello@blockcrafters.capital",
+        "linkedin": false,
+        "facebook": false,
+        "instagram": false,
+        "youtube": false,
+        "discord": false,
+        "github": false,
+        "tiktok": false,
+        "medium": false,
+        "reddit": false,
+        "crunchbase": false,
+        "angelco": false
     }
 ]

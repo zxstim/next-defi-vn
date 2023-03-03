@@ -34,6 +34,21 @@ export default function InvestorList() {
     setIndex(index + 20);
   };
 
+  // a function to filter out investor based on search query
+  const searchInvestors = (event) => {
+    if (event.target.value === "") {
+      setInvestors(investorList.slice(0, index));
+      setLatestInvestorList(investorList)
+      return;
+    }
+    let filteredInvestorsList = [];
+    filteredInvestorsList = investorList.filter(
+      investor => investor.name.toLowerCase().includes(event.target.value.toLowerCase()) === true
+    );
+    setLatestInvestorList(filteredInvestorsList)
+    setInvestors(filteredInvestorsList.slice(0, index));
+  };
+
 
   // a function to use drop down menu to filter services by tag
   const filterInvestorsDropdown = (event) => {
@@ -53,11 +68,15 @@ export default function InvestorList() {
 
   return (
     <>
-      <label>{t("investor-filter")}</label>
-      <select className={styles.investors_filter_select} name="investors" id="investors" onChange={filterInvestorsDropdown}>
-        <option value="">All</option>
-        {investorCategories.map((category, index) => (<option key={index} value={category}>{category}</option>))}
-      </select>
+      <div className={styles.investors_filter_container}>
+        <label>{t("investor-filter")}</label>
+        <select className={styles.investors_filter_select} name="investors" id="investors" onChange={filterInvestorsDropdown}>
+          <option value="">All</option>
+          {investorCategories.map((category, index) => (<option key={index} value={category}>{category}</option>))}
+        </select>
+        <label>{t("investor-filter")}</label>
+        <input className={styles.investors_filter_search} placeholder="🔎 Search investor" onChange={event => searchInvestors(event)}/>
+      </div>
       <div className={styles.investors_list_container}>
         {investors.map((investor) => (
           <div key={investor.id} className={styles.investors_item}>

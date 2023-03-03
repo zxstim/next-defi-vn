@@ -88,16 +88,34 @@
 .investors_filter_select {
   border: 2px solid var(--color-fg-default);
   color: var(--color-fg-default);
-  margin: 8px 0px 16px 8px;
+  margin: 8px 0px 16px 0px;
   padding: 4px 4px 4px 4px;
   box-shadow: 3px 3px black;
   font-size: 16px;
   text-transform: capitalize;
+  width: 210px;
+}
+
+.investors_filter_search {
+  border: 2px solid var(--color-fg-default) !important;
+  color: var(--color-fg-default);
+  margin: 8px 0px 16px 0px;
+  padding: 4px 4px 4px 4px;
+  box-shadow: 3px 3px black;
+  font-size: 16px;
+  text-transform: capitalize;
+  width: 200px !important;
+}
+
+input.investors_filter_search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(170, 170, 170);
+  opacity: 1; /* Firefox */
 }
 
 .investors_filter_container {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
+

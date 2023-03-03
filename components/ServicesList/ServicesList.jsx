@@ -4,11 +4,24 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import servicesList from "./ServicesList.json";
+import styles from "./ServicesList.module.css";
 
 export default function ServicesList() {
   const [index, setIndex] = useState(20);
   const [services, setServices] = useState(servicesList.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' })).slice(0, index).slice(0, index));
+  const [serviceCategories, setServiceCategories] = useState(() => {
+    let serviceTags = [];
+    servicesList.forEach((service) => {
+      service.tags.forEach((tag) => {
+        if (!serviceTags.includes(tag)) {
+          serviceTags.push(tag);
+        }
+      });
+    });
+    return serviceTags;
+  });
   const [hasMore, setHasMore] = useState(true);
+  
   const router = useRouter();
   const { t } = useTranslation("services");
   const fetchData = () => {
@@ -20,6 +33,20 @@ export default function ServicesList() {
     setIndex(index + 20);
   };
 
+  // a function to filter out service based on search query
+  const searchServices = (event) => {
+    if (event.target.value === "") {
+      setServices(servicesList.slice(0, index));
+      return;
+    }
+    let filteredServicesList = [];
+    filteredServicesList = servicesList.filter(
+      service => service.name.toLowerCase().includes(event.target.value.toLowerCase()) === true
+    );
+    setServices(filteredServicesList.slice(0, index));
+  };
+  
+
   // a function to use drop down menu to filter services by tag
   const filterServicesDropdown = (event) => {
     let filteredServicesList = [];
@@ -29,17 +56,31 @@ export default function ServicesList() {
     setServices(filteredServicesList.slice(0, index));
   };
 
+
   return (
     <>
-      <div className="service-box">
+      <div className={styles.services_filter_container}>
+        <label>Services filter</label>
+        <select className={styles.services_filter_select} name="services" id="services" onChange={filterServicesDropdown}>
+          <option value="">All</option>
+          {serviceCategories.map((category, index) => (<option key={index} value={category}>{category}</option>))}
+        </select>
+        <label>Search for service</label>
+        <input className={styles.services_filter_search} placeholder="🔎 Search service" onChange={event => searchServices(event)}/>
+      </div>
+      <div className={styles.services_list_container}>
         {services.map((service) => (
-          <div key={service.id} className="service-item">
-            <div href={service.web} className="service-brand-name">
-              {service.name}
-            </div>
-            <div className="service-desc">{service.desc}</div>
-            <div className="service-guide">
-              <div className="service-badge">{service.tag}</div>
+          <div key={service.id} className={styles.services_item}>
+            <div className={styles.services_item_name}>{service.name}</div>
+            <div className={styles.services_item_desc}>{service.desc}</div>
+            <div className={styles.investors_item_guide}>
+              <div>
+                {service.tags ? (
+                service.tags.map((tag) => (
+                  <div key={tag} className={styles.services_item_tags}>{tag}</div>
+                ))
+              ) : null}              
+              </div>
             </div>
             <div
               style={{
@@ -134,16 +175,14 @@ export default function ServicesList() {
                 </span>
               ) : null}
             </div>
-            <Link href={service.web}>
-              <a style={{ textDecoration: "none", color: "#000000" }}>
-                <div className="service-cta">{t("cta")}</div>
-              </a>
-            </Link>
+            <a href={service.web} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
+              <div className={styles.services_item_cta}>{t("cta")}</div>
+            </a>
           </div>
         ))}
       </div>
       {hasMore 
-        ? <button className="service-load-more-button" onClick={fetchData}>
+        ? <button className={styles.services_load_more_button} onClick={fetchData}>
             {t("load-more")}
           </button> 
         : (

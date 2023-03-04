@@ -2,6 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { ethers } from "ethers";
+import { createClient, configureChains, mainnet } from '@wagmi/core'
+import { publicProvider } from '@wagmi/core/providers/public'
+import {
+    useAccount,
+    useConnect,
+    useDisconnect,
+    useEnsAvatar,
+    useEnsName,
+  } from 'wagmi'
+  import { fetchEnsAddress } from 'wagmi/actions'
+
 
 export default function WalletManagement() {
     const [wallet, setWallet] = useState(null);
@@ -9,6 +20,34 @@ export default function WalletManagement() {
     const [privateKey, setPrivateKey] = useState(null);
     const [showWalletModal, setShowWalletModal] = useState(false);
     const [showWalletLoaded, setShowWalletLoaded] = useState(false);
+    const [query, setQuery] = useState("");
+    const [ensResolvedAddress, setEnsResolvedAddress] = useState("");
+    const { address, connector, isConnected } = useAccount()
+    const { data: ensAvatar } = useEnsAvatar({ address })
+    const { data: ensName } = useEnsName({ address })
+    const { connect, connectors, error, isLoading, pendingConnector } =
+        useConnect()
+    const { disconnect } = useDisconnect()
+
+    if (isConnected) {
+        return (
+          <div>
+            <img src={ensAvatar} alt="ENS Avatar" />
+            <div>{ensName ? `${ensName} (${address})` : address}</div>
+            <div>Connected to {connector.name}</div>
+            <button onClick={disconnect}>Disconnect</button>
+          </div>
+        )
+      }
+    
+    // function to return the address of an ENS name (e.g. 'awkweb.eth')
+    async function getEnsAddress(query) {
+      const ensAddress = await fetchEnsAddress({
+        name: query,
+      })
+      setEnsResolvedAddress(ensAddress)
+    }
+    
 
     // function to create a wallet and save to localStorage
     function createWallet() {
@@ -96,6 +135,32 @@ export default function WalletManagement() {
             }
             <h3>If you want to delete the wallet, click the button below 👇</h3>
             <button onClick={deleteWallet}>Delete wallet</button>
+            <div>
+                {connectors.map((connector) => (
+                    <button
+                    disabled={!connector.ready}
+                    key={connector.id}
+                    onClick={() => connect({ connector })}
+                    >
+                    {connector.name}
+                    {!connector.ready && ' (unsupported)'}
+                    {isLoading &&
+                        connector.id === pendingConnector?.id &&
+                        ' (connecting)'}
+                    </button>
+                ))}
+            
+                {error && <div>{error.message}</div>}
+            </div>
+            <input type="text" onChange={event => setQuery(event.target.value)}/>
+            <button onClick={() => getEnsAddress(query)}>Click for address</button>
+            {
+                ensResolvedAddress ? (
+                    <div>
+                        <div>{`Address: ${ensResolvedAddress}`}</div>
+                    </div>
+                ) : null
+            }
         </div>
     )
 

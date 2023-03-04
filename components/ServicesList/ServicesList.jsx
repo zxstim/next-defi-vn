@@ -20,6 +20,7 @@ export default function ServicesList() {
     });
     return serviceTags;
   });
+  const [latestServicesList, setLatestServicesList] = useState(servicesList)
   const [hasMore, setHasMore] = useState(true);
   
   const router = useRouter();
@@ -49,12 +50,17 @@ export default function ServicesList() {
 
   // a function to use drop down menu to filter services by tag
   const filterServicesDropdown = (event) => {
+    if (event.target.value === "") {
+      setServices(servicesList.slice(0, index));
+      return;
+    }
     let filteredServicesList = [];
     filteredServicesList = servicesList.filter(
-      (service) => service.tag === event.target.value
+      service => service.tags.includes(event.target.value) === true
     );
     setServices(filteredServicesList.slice(0, index));
   };
+  
 
 
   return (

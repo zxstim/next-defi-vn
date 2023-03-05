@@ -18,7 +18,7 @@ import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 
 const { chains, provider, webSocketProvider } = configureChains(
   [mainnet],
-  [alchemyProvider({ apiKey: 'VsOXbm56RftTxpvHceyQCNyCDcZoTzRg' })],
+  [publicProvider()],
 )
 // Set up client
 const client = createClient({

@@ -5905,7 +5905,7 @@
         "name": "5 BLOCKS CAPITAL",
         "tags": ["VC", "Seed"],
         "desc": false,
-        "web": false,
+        "web": "https://5blockscapital.com/",
         "telegram": false,
         "twitter": false,
         "email": "mailto:info@5blockscapital.com",

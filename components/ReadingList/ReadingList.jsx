@@ -60,7 +60,7 @@ export default function ReadingList() {
             return new Date(b.timestamp) - new Date(a.timestamp);
           })
           .map((article) => (
-            <Link key={article.id} href={article.url}>
+            <Link key={article.id} href={article.url} rel="noopener noreferrer" target="_blank">
               <div className={styles.article_item_container}>
                 <div className={styles.article_image_container}>
                   <Image

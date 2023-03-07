@@ -1,3 +1,4 @@
+// import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
@@ -10,6 +11,31 @@ import ReadingList from "../components/ReadingList/ReadingList";
 
 export default function Reading(props) {
   const { t } = useTranslation("reading");
+
+  // const query = `
+  // {
+  //   user(username: "victoristocrat") {
+  //     publication {
+  //       posts {
+  //         title
+  //         brief
+  //         slug
+  //         cuid
+  //       }
+  //     }
+  //   }
+  // }`;
+  // async function getData() {
+  //   const response = await fetch("https://api.hashnode.com", {
+  //     method: "post",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify({ query: query })
+  //   });
+  //   const body = await response.json();
+  //   console.log(body)
+  // }
 
   return (
     <>

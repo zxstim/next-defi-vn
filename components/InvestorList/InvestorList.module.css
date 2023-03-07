@@ -9,6 +9,10 @@
   margin: 5px 5px 5px 0px;
   padding: 10px 14px 14px 10px;
   box-shadow: 3px 3px black;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .investors_item_desc {
@@ -31,6 +35,17 @@
   margin-bottom: 5px;
 }
 
+.investors_item_socials_cta_container {
+  margin-top: auto;
+  margin-bottom: 4px;
+}
+
+.investors_item_socials {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
 .investors_item_cta {
   background-color: whitesmoke;
   border: 2px solid #1a1a1a;
@@ -40,7 +55,7 @@
   width: 100%;
   font-size: 14px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .investors_item_name {
@@ -54,15 +69,22 @@
   text-overflow: ellipsis;
 }
 
+.investors_item_tags_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 16px;
+}
+
 .investors_item_tags {
   background-color: #ffc900;
-  margin: 2px 4px 2px 2px;
   padding: 4px 8px;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
   text-transform: uppercase;
-  display: inline-block;
+  width: fit-content;
 }
 
 .investors_load_more_button {

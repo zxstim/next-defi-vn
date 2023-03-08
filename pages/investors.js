@@ -3,7 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../components/UpButton/UpButton";
+import FloatingButton from "../components/FloatingButton/FloatingButton"
 import AppFooter from "../components/AppFooter/AppFooter";
 import InvestorList from "../components/InvestorList/InvestorList";
 
@@ -60,7 +60,7 @@ export default function Investors(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <UpButton />
+          <FloatingButton />
           <h2>{t("subtitle")}</h2>
           <InvestorList />
           <br />

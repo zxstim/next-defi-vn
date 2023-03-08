@@ -1,0 +1,47 @@
+.menu_button {
+    position: fixed;
+    font-size: 14px;
+    bottom: 20px;
+    right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    text-align: center;
+    -webkit-appearance: menulist-button;
+    -moz-appearance: menulist-button;
+    appearance: menulist-button;
+    border: 2px solid #1a1a1a;
+    z-index: 1;
+}
+
+.refresh_button {
+    position: fixed;
+    font-size: 14px;
+    bottom: 70px;
+    right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    text-align: center;
+    -webkit-appearance: menulist-button;
+    -moz-appearance: menulist-button;
+    appearance: menulist-button;
+    border: 2px solid #1a1a1a;
+    z-index: 1;
+}
+
+.up_button {
+    position: fixed;
+    font-size: 14px;
+    bottom: 120px;
+    right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    text-align: center;
+    -webkit-appearance: menulist-button;
+    -moz-appearance: menulist-button;
+    appearance: menulist-button;
+    border: 2px solid #1a1a1a;
+    z-index: 2;
+}

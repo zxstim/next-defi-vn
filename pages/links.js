@@ -71,19 +71,34 @@ export default function Links(props) {
                 Website
               </div>
             </Link>
-            <a className={styles.anchor_tag} href="https://twitter.com/0xStim">
+            <a className={styles.anchor_tag} href="https://twitter.com/defidotvn">
               <div className={styles.links_button}>
                 Twitter
               </div>
             </a>
-            <a className={styles.anchor_tag} href="https://t.me/zxstim">
+            <a className={styles.anchor_tag} href="https://youtube.com/@0xstim">
+              <div className={styles.links_button}>
+                Youtube
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://t.me/defivnspace">
               <div className={styles.links_button}>
                 Telegram
               </div>
             </a>
-            <a className={styles.anchor_tag} href="https://www.facebook.com/0xstim/">
+            <a className={styles.anchor_tag} href="https://www.facebook.com/defidotvn">
               <div className={styles.links_button}>
                 Facebook
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://www.tiktok.com/@defidotvn?_t=8aUsxVuNkF0&_r=1">
+              <div className={styles.links_button}>
+                TikTok
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://mailchi.mp/8a12db9cbf17/join-the-defi-revolution">
+              <div className={styles.links_button}>
+                Newsletter
               </div>
             </a>
           </div>

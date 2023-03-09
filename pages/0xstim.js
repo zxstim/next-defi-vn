@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
+import styles from '../styles/0xstim.module.css'
 
 export default function ZxStim(props) {
   const { t } = useTranslation("zxstim");
@@ -53,7 +54,6 @@ export default function ZxStim(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <UpButton />
           <h2>README.md</h2>
           {/* center the below image */}
           <div style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}>
@@ -64,17 +64,34 @@ export default function ZxStim(props) {
               height={200}
             />
           </div>
-          <p>
-            👋 Hi, I’m 0xStim. I’m a fullstack developer in Python,
-            Javascript and Solidity. Currently reading up a lot on Go and Rust
-            for high performance systems. I'm a supporter of DeFi, hence the creation of Defi.vn.
-          </p>
-
-          {/* <div className="stim-info-container">
-            <div className="stim-info">test 1</div>
-            <div className="stim-info">test 2</div>
-            <div className="stim-info">test 3</div>
-          </div> */}
+          <div className={styles.links_container}>
+            <h3 className={styles.description}>Builder of <a href="https://defi.vn">Defi.vn</a> and <a href="https://gmgn.app">GmGn.app</a></h3>
+            <Link className={styles.anchor_tag} href="/">
+              <div className={styles.links_button}>
+                Defi.vn
+              </div>
+            </Link>
+            <a className={styles.anchor_tag} href="https://gmgn.app">
+              <div className={styles.links_button}>
+                GmGn wallet
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://twitter.com/0xStim">
+              <div className={styles.links_button}>
+                Twitter @0xStim
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://t.me/zxstim">
+              <div className={styles.links_button}>
+                Telegram @zxstim
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://www.facebook.com/0xstim/">
+              <div className={styles.links_button}>
+                Facebook @0xStim
+              </div>
+            </a>
+          </div>
           <br />
           <hr />
           <AppFooter />

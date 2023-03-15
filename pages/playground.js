@@ -5,6 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import WalletManagement from "../components/PlaygroundToys/WalletManagement/WalletManagement";
+import EnsCheck from "../components/PlaygroundToys/WalletManagement/EnsCheck";
 import AppFooter from "../components/AppFooter/AppFooter";
 import { WagmiConfig, createClient, configureChains, mainnet } from 'wagmi'
  
@@ -109,6 +110,7 @@ export default function Playground(props) {
             <UpButton />
             <h2>{t("subtitle")}</h2>
             <WalletManagement />
+            <EnsCheck />
             <br />
             <hr />
             <AppFooter />

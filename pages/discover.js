@@ -64,6 +64,11 @@ export default function Discover(props) {
           <h2>{t("subtitle")}</h2>
           <UpButton />
           <div className="nav-menu-grid">
+            <Link href="/discover/all-discoveries">
+              <a style={{ textDecoration: "none" }}>
+                <h3 className="nav-menu-button">{t("title3")}</h3>
+              </a>
+            </Link>
             <Link href="/discover/wallets">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">{t("title1")}</h3>

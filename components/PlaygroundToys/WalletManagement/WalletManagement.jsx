@@ -11,7 +11,9 @@ import {
     useEnsAvatar,
     useEnsName,
   } from 'wagmi'
-  import { fetchEnsAddress } from 'wagmi/actions'
+import { fetchEnsAddress } from 'wagmi/actions'
+import { useEnsResolver } from 'wagmi'
+import styles from "./WalletManagement.module.css";
 
 
 export default function WalletManagement() {
@@ -25,28 +27,33 @@ export default function WalletManagement() {
     const { address, connector, isConnected } = useAccount()
     const { data: ensAvatar } = useEnsAvatar({ address })
     const { data: ensName } = useEnsName({ address })
-    const { connect, connectors, error, isLoading, pendingConnector } =
-        useConnect()
+    const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
     const { disconnect } = useDisconnect()
+
 
     if (isConnected) {
         return (
-          <div>
-            <img src={ensAvatar} alt="ENS Avatar" />
-            <div>{ensName ? `${ensName} (${address})` : address}</div>
-            <div>Connected to {connector.name}</div>
-            <button onClick={disconnect}>Disconnect</button>
+          <div className={styles.connected_container}>
+            <img src={ensAvatar ? ensAvatar : "../../defi.svg"} 
+              width={50}
+              height={50}
+              alt="ENS Avatar" />
+            <div className={styles.address_box}>{ensName ? `${ensName} (${address})` : address}</div>
+            <div className={styles.success_message}>Connected to {connector.name}</div>
+            <button className={styles.action_button} onClick={disconnect}>Disconnect</button>
           </div>
         )
       }
     
     // function to return the address of an ENS name (e.g. 'awkweb.eth')
-    async function getEnsAddress(query) {
-      const ensAddress = await fetchEnsAddress({
-        name: query,
-      })
-      setEnsResolvedAddress(ensAddress)
-    }
+    // async function getEnsAddress(query) {
+    //     let promise = new Promise((resolve, reject) => {
+    //         const ensAddress = await fetchEnsAddress({
+    //             name: query,
+    //           })
+    //         setEnsResolvedAddress(ensAddress)
+    //     });
+    // }
     
 
     // function to create a wallet and save to localStorage
@@ -112,9 +119,9 @@ export default function WalletManagement() {
     return (
         <div>
             <h3>Create a wallet with the button below 👇</h3>
-            <button onClick={createWallet}>Create wallet</button>
+            <button className={styles.action_button} onClick={createWallet}>Create wallet</button>
             <h3>If you had created a wallet but exited, you can load the wallet with the button below 👇</h3>
-            <button onClick={loadWallet}>Load wallet</button>
+            <button className={styles.action_button} onClick={loadWallet}>Load wallet</button>
             {showWalletLoaded ? 
                 (
                     <div>
@@ -126,18 +133,20 @@ export default function WalletManagement() {
             {showWalletModal ? 
                 (    
                     <div>
-                        <button onClick={closeWalletModal}>Hide wallet</button>
+                        <button className={styles.action_button} onClick={closeWalletModal}>Hide wallet</button>
                         <div>{`Address: ${wallet}`}</div>
                         <div>{`Mnemonic: ${mnemonic}`}</div>
                         <div>{`Private Key: ${privateKey}`}</div>
                     </div>
-                ) : <button onClick={showWallet}>Show wallet</button>
+                ) : <button className={styles.action_button} onClick={showWallet}>Show wallet</button>
             }
             <h3>If you want to delete the wallet, click the button below 👇</h3>
-            <button onClick={deleteWallet}>Delete wallet</button>
-            <div>
+            <button className={styles.action_button} onClick={deleteWallet}>Delete wallet</button>
+            <h3>You can connect to the below popular wallet options 👇</h3>
+            <div className={styles.connect_container}>
                 {connectors.map((connector) => (
                     <button
+                    className={styles.action_button}
                     disabled={!connector.ready}
                     key={connector.id}
                     onClick={() => connect({ connector })}
@@ -150,17 +159,17 @@ export default function WalletManagement() {
                     </button>
                 ))}
             
-                {error && <div>{error.message}</div>}
+                {error && <div className={styles.error_message}>{error.message}</div>}
             </div>
-            <input type="text" onChange={event => setQuery(event.target.value)}/>
-            <button onClick={() => getEnsAddress(query)}>Click for address</button>
+            {/* <input type="text" onChange={event => setQuery(event.target.value)}/>
+            <LoadingButton onClick={async () => getEnsAddress(query)}>Click for address</LoadingButton>
             {
                 ensResolvedAddress ? (
                     <div>
                         <div>{`Address: ${ensResolvedAddress}`}</div>
                     </div>
                 ) : null
-            }
+            } */}
         </div>
     )
 

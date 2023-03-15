@@ -4,7 +4,6 @@ import Image from "next/image";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 import styles from '../styles/0xstim.module.css'
 
@@ -27,16 +26,21 @@ export default function ZxStim(props) {
           `}
       </Script>
       <Head>
-        <title>Information about 0xStim | Thông tin về 0xStim - DeFi.vn</title>
+        <title>Contact me 0xStim | Liên hệ mình 0xStim - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
-        <meta name="description" content="Learn more about 0xStim, DeFi.vn lead builder. See the website progress, what's next, how can you help." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="DeFi.vn - Information about 0xStim | Thông tin về 0xStim" key="ogtitle" />
-        <meta property="og:description" content="Learn more about 0xStim, DeFi.vn lead builder. See the website progress, what's next, how can you help." key="ogdesc" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://defi.vn/0xstim" key="ogurl" />
-        <meta property="og:site_name" content="DeFi.vn | DeFi Vietnam Hub" key="ogsitename" />
+        <meta property="og:title" content="Contact me 0xStim | Liên hệ mình 0xStim - DeFi.vn" />
+        <meta property="og:description" content="Get to know me 0xStim, DeFi.vn lead builder. Book your meeting with me here!" />
+        <meta property="og:url" content="https://defi.vn/0xstim" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/04875cae-074a-46c0-bdc4-b69470999000/defi" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="defi.vn" />
+        <meta property="twitter:url" content="https://www.defi.vn/0xstim" />
+        <meta name="twitter:title" content="Contact me 0xStim | Liên hệ mình 0xStim - DeFi.vn" />
+        <meta name="twitter:description" content="Get to know me 0xStim, DeFi.vn lead builder. Book your meeting with me here!" />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/04875cae-074a-46c0-bdc4-b69470999000/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
@@ -89,6 +93,31 @@ export default function ZxStim(props) {
             <a className={styles.anchor_tag} href="https://www.facebook.com/0xstim/">
               <div className={styles.links_button}>
                 Facebook @0xStim
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://calendly.com/0xstim/30min">
+              <div className={styles.links_button}>
+                Schedule a time to talk
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://github.com/0xstim">
+              <div className={styles.links_button}>
+                GitHub @0xstim
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="http://discord.com/users/615423002598703106">
+              <div className={styles.links_button}>
+                Discord @0xStim#4710
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="https://www.tiktok.com/@0xstim?_t=8aYhMV2KudF&_r=1">
+              <div className={styles.links_button}>
+                TikTok @0xStim
+              </div>
+            </a>
+            <a className={styles.anchor_tag} href="mailto:zxstim@gmail.com">
+              <div className={styles.links_button}>
+                zxstim@gmail.com
               </div>
             </a>
           </div>

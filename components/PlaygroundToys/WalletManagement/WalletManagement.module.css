@@ -1,0 +1,63 @@
+.action_button {
+    background-color: whitesmoke;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    padding: 4px 8px 4px 8px;
+    width: 150px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+    box-shadow: 3px 3px #1a1a1a;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.action_button:hover {
+    background-color: #ffc900;
+}
+
+.action_button:active {
+    box-shadow: 0px 0px #1a1a1a;
+    transform: translate(3px, 3px);
+}
+
+.connect_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.error_message {
+    color: rgb(95, 33, 32);
+    font-size: 14px;
+    background-color: rgb(253, 237, 237);
+    padding: 8px 16px 8px 16px;
+    width: fit-content;
+}
+
+.success_message {
+    color: rgb(30, 70, 32);
+    font-size: 14px;
+    background-color: rgb(237, 247, 237);
+    padding: 8px 16px 8px 16px;
+    width: fit-content;
+}
+
+.connected_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.address_box {
+    background-color: whitesmoke;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    padding: 4px 8px 4px 8px;
+    width: 350px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}

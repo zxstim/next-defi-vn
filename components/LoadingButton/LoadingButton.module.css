@@ -1,0 +1,48 @@
+.button {
+    color: rgb(255 255 255);
+    line-height: 1.25rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(14 165 233);
+    cursor: pointer;
+    border-radius: 9999px;
+    border: 0 solid #e5e7eb;
+    overflow: hidden;
+  
+    display: flex;
+    align-items: center;
+    position: relative;
+  
+    -webkit-appearance: button;
+    background-image: none;
+    text-transform: none;
+  }
+  
+  .button:hover {
+    background-color: rgb(3 105 161);
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  .button #loading {
+    color: white;
+    animation: spinner 1s cubic-bezier(0.6, 0, 0.4, 1) infinite;
+  }
+  
+  .button .loading__circle--one {
+    opacity: 25%;
+  }
+  .button .loading__circle--two {
+    opacity: 75%;
+  }

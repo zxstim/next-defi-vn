@@ -101,6 +101,11 @@ export default function Links(props) {
                 Newsletter
               </div>
             </a>
+            <a className={styles.anchor_tag} href="https://defivn.substack.com">
+              <div className={styles.links_button}>
+                Substack
+              </div>
+            </a>
           </div>
         </div>
       </div>

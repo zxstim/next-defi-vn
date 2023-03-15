@@ -6,6 +6,7 @@ import { useTranslation } from "next-i18next";
 import ForDevelopers from "../components/HomePage/ForDevelopers/ForDevelopers";
 import ForEveryone from "../components/HomePage/ForEveryone/ForEveryone";
 import ForProjects from "../components/HomePage/ForProjects/ForProjects";
+import LoginButton from "../components/Login/LoginButton";
 // import Explainer from "../components/HomePage/Explainer/Explainer";
 import AppFooter from "../components/AppFooter/AppFooter";
 
@@ -62,6 +63,7 @@ export default function Home(props) {
               </a>
             </Link>
           </div>
+          <LoginButton />
           <ForDevelopers />
           <ForProjects />
           <ForEveryone />

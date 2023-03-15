@@ -2,43 +2,18 @@
 
 Created by [@0xstim](https://github.com/0xstim) at [Defi.vn](https://defi.vn)
 
-# Why open source?
+# Why go to Defi.vn?
 
-To provide a list of all development resources and educational content available so everyone can equip themselves with knowledge for their Web3 journey [#WAGMI](https://twitter.com/0xStim)
+To provide a list of all development resources and educational contents available so everyone can equip themselves with knowledge for their Web3 journey [#WAGMI](https://twitter.com/0xStim)
 
-# How to build with [Next.js](https://nextjs.org/)
+# How to contact me 0xStim?
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Go to this [link](https://defi.vn/0xstim)
 
-## Getting Started
+# How to support Defi.vn?
 
-First, run the development server:
+You can easily help support [Defi.vn](https://www.defi.vn) by telling your friends about the project, go to this [link](https://defi.vn/links) and like/follow all of the social pages there, invite your friends to join the [Defi.vn](https://www.defi.vn) commmunity.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# How does Defi.vn make money?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+At the moment, [Defi.vn](https://www.defi.vn) is being funded entirely by myself.

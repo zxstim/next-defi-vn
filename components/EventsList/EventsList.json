@@ -1496,5 +1496,19 @@
         "telegram": false,
         "organizerweb": false,
         "email": false
+    },
+    {
+        "id": "108",
+        "name": "Namfungible",
+        "organizer": false,
+        "start": "2023-04-01",
+        "end": "2023-04-01",
+        "location": "Ho Chi Minh City, Vietnam",
+        "registration": "https://namfungible.com/",
+        "category": "Conference",
+        "price": false,
+        "telegram": false,
+        "organizerweb": false,
+        "email": false
     }
 ]

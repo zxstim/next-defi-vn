@@ -24,10 +24,9 @@ export default function AppFooter() {
 
   return (
     <>
-      <h3>
+      {/* <h3>
         {t("footer")}
-        <a href="https://t.me/zxstim">@zxstim</a>
-      </h3>
+      </h3> */}
       <Link href="/0xstim">
         <div style={socialButtonStim}>
           <Image

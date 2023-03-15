@@ -34,7 +34,6 @@ export default function EnsCheck() {
           value={ensName}
           onChange={handleEnsNameChange}
         />
-        <button className={styles.action_button} onClick={handleEnsNameResolve}>Resolve</button>
       </div>
       {isLoading ? <div className={styles.warning_message}>Fetching resolver…</div> : isError ? <div className={styles.error_message}>Error fetching resolver</div> : <div className={styles.success_message}>Address: {JSON.stringify(data)}</div>}
       {/* <div>

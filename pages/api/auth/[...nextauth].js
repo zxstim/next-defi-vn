@@ -3,7 +3,7 @@ import EmailProvider from "next-auth/providers/email"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import prisma from "../../../lib/prismadb.ts"
 
-export default NextAuth({
+export const authOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     EmailProvider({
@@ -17,4 +17,6 @@ export default NextAuth({
     logo: "https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/8d6a2d48-99bc-485c-4afc-239196f02200/defi", // Absolute URL to image
     buttonText: "" // Hex color code
   }
-})
+}
+
+export default NextAuth(authOptions)

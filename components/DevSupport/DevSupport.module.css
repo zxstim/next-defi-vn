@@ -1,0 +1,40 @@
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #21aeca;
+}
+
+.accordion_title:hover {
+  background-color: #3ab4cc;
+}
+
+.accordion_title,
+.accordion_content {
+  padding: 1rem;
+}
+
+.accordion_content {
+  background-color: #39b9d2;
+}
+
+.telegram_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    box-shadow: 3px 3px #1a1a1a;
+    cursor: pointer;
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+    font-size: 16px;
+    width: fit-content;
+    gap: 8px;
+}

@@ -85,6 +85,7 @@
 	gap: 4px;
 	margin: 8px 0px 8px 0px;
 	align-items: baseline;
+  margin-bottom: 16px;
 }
 
 .timestamp {

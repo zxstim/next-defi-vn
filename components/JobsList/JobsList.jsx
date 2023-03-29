@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "./JobsList.module.css";
 import timeAgo from "../../utils/formatTimeAgoEn";
+import ReadMore from '../ReadMore/ReadMore'
 
 // create a component to show a job list
 export default function JobsList({ jobs }) {
@@ -11,7 +12,7 @@ export default function JobsList({ jobs }) {
   return (
     <div className={styles.jobs_list_container}>
       {jobs.map((job) => (
-        <div id={job.id} className={styles.job_container}>
+        <div key={job.id} className={styles.job_container}>
           <div className={styles.job_title}>{job.job_title}</div>
           <a href={job.company_website} target="_blank"className={styles.job_company_name}>
             {job.company_name}
@@ -31,12 +32,12 @@ export default function JobsList({ jobs }) {
               <div className={styles.job_salary_range}></div>
             </div>
             {/* <div className={styles.job_tags_container}> */}
-              {job.tags.map((tag) => (
-                <div className={styles.job_tags}>{tag}</div>
+              {job.tags.map((tag, index) => (
+                <div key={index} className={styles.job_tags}>{tag}</div>
               ))}
             {/* </div> */}
           </div>
-
+          <ReadMore children={job.description} />
           <a className={styles.job_cta} href={job.apply_here}>Apply here</a>
           <div className={styles.timestamp}>{`Created at: ${timeAgo(
             new Date(job.created_at)

@@ -1,0 +1,9 @@
+.text {
+  display: inline;
+  width: 100%;
+}
+
+.read_or_hide {
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}

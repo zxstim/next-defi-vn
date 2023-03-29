@@ -74,6 +74,7 @@ export default function WalletsPage(props) {
 
 // This gets called on every request
 export async function getStaticProps({ locale }) {
+
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "wallets"])),

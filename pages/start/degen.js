@@ -5,10 +5,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import StartPath from "../../components/StartPath/StartPath";
+import DegenPath from "../../components/StartPath/DegenPath/DegenPath";
 
 export default function Degen(props) {
-  const { t } = useTranslation("start");
+  const { t } = useTranslation("degen");
   return (
     <>
       <Script
@@ -45,21 +45,23 @@ export default function Degen(props) {
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/start" locale="en">
+            <Link href="/start/degen" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/start" locale="vi">
+            <Link href="/start/degen" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>
-          <Link href="/">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/start">{t("prev")}</Link>
+          </div>
           <UpButton />
-          <h2>{t("subtitle")}</h2>
-          Work in progress
+          <DegenPath />
           <br />
           <hr />
           <AppFooter />
@@ -72,7 +74,7 @@ export default function Degen(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "start"])),
+      ...(await serverSideTranslations(locale, ["common", "degen"])),
       // Will be passed to the page component as props
     },
   };

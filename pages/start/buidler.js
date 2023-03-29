@@ -5,9 +5,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
+import BuidlerPath from "../../components/StartPath/BuidlerPath/BuidlerPath";
 
 export default function Buidler(props) {
-  const { t } = useTranslation("start");
+  const { t } = useTranslation("buidler");
   return (
     <>
       <Script
@@ -55,10 +56,12 @@ export default function Buidler(props) {
               </a>
             </Link>
           </div>
-          <Link href="/">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/start">{t("prev")}</Link>
+          </div>
           <UpButton />
-          <h2>{t("subtitle")}</h2>
-          Work in progress
+          <BuidlerPath />
           <br />
           <hr />
           <AppFooter />
@@ -71,7 +74,7 @@ export default function Buidler(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "start"])),
+      ...(await serverSideTranslations(locale, ["common", "buidler"])),
       // Will be passed to the page component as props
     },
   };

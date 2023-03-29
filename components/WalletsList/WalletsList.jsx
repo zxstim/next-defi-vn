@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import walletslist from "./WalletsList.json";
 import styles from "./WalletsList.module.css";
+// import useSWR from 'swr'
 
 export default function WalletsList() {
   const [index, setIndex] = useState(20);
@@ -74,6 +75,9 @@ export default function WalletsList() {
     setWallets(filteredWalletsList.slice(0, index));
   };
 
+  // const { walletslist, error, isLoading } = useSWR('/api/lists/wallets', fetcher)
+  // if (error) return <div>An error occured.</div>
+  // if (isLoading) return <div>Loading ...</div>
 
   return (
     <>
@@ -97,7 +101,7 @@ export default function WalletsList() {
         {wallets.map((wallet) => (
           <div key={wallet.id} className={styles.wallets_item}>
             <div className={styles.wallets_item_info}>
-              <div href={wallet.web} className={styles.wallets_item_title}>
+              <div href={wallet.website} className={styles.wallets_item_title}>
                 {wallet.name}
               </div>
               <div className={styles.wallets_item_tech_container}>
@@ -111,7 +115,7 @@ export default function WalletsList() {
                   }
                 </div>
               </div>
-              <div className={styles.wallets_item_desc}>{wallet.desc}</div>
+              <div className={styles.wallets_item_desc}>{wallet.description}</div>
               <div className={styles.wallets_item_chains_container}>
                 <div className={styles.wallets_item_chains_label}>Chains</div>
                 <div className={styles.wallets_item_badge_container}>
@@ -211,7 +215,7 @@ export default function WalletsList() {
                   </span>
                 ) : null}
               </div>
-              <Link href={wallet.web}>
+              <Link href={wallet.website}>
                 <a style={{ textDecoration: "none", color: "#000000" }}>
                   <div className={styles.wallets_item_cta}>{t("cta")}</div>
                 </a>

@@ -8,7 +8,7 @@ import AppFooter from "../../components/AppFooter/AppFooter";
 import HodlerPath from "../../components/StartPath/HodlerPath/HodlerPath";
 
 export default function Hodler(props) {
-  const { t } = useTranslation("start");
+  const { t } = useTranslation("hodler");
   return (
     <>
       <Script
@@ -56,9 +56,11 @@ export default function Hodler(props) {
               </a>
             </Link>
           </div>
-          <Link href="/">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/start">{t("prev")}</Link>
+          </div>
           <UpButton />
-          <h2>{t("subtitle")}</h2>
           <HodlerPath />
           <br />
           <hr />
@@ -72,7 +74,7 @@ export default function Hodler(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "start"])),
+      ...(await serverSideTranslations(locale, ["common", "hodler"])),
       // Will be passed to the page component as props
     },
   };

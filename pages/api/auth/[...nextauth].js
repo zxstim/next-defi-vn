@@ -1,15 +1,29 @@
-import NextAuth from "next-auth"
-import EmailProvider from "next-auth/providers/email"
-import { PrismaAdapter } from "@next-auth/prisma-adapter"
-import prisma from "../../../lib/prismadb.ts"
+import NextAuth from "next-auth";
+import EmailProvider from "next-auth/providers/email";
+import GoogleProvider from "next-auth/providers/google";
+import GitHubProvider from "next-auth/providers/github";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import prisma from "../../../lib/prismadb.ts";
 
 export const authOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     EmailProvider({
-        server: `smtp://${process.env.EMAIL_SERVER_USER}:${process.env.EMAIL_SERVER_PASSWORD}@${process.env.EMAIL_SERVER_HOST}`,
-        from: process.env.EMAIL_FROM,
+      id: "email",
+      server: process.env.EMAIL_SERVER,
+      from: process.env.EMAIL_FROM,
     }),
+    GoogleProvider({
+      id: "google",
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      allowDangerousEmailAccountLinking: true
+    }),
+    GitHubProvider({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+      allowDangerousEmailAccountLinking: true
+    })
   ],
   theme: {
     colorScheme: "light", // "auto" | "dark" | "light"

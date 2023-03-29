@@ -5,6 +5,7 @@ import "nprogress/nprogress.css";
 import Router from 'next/router';
 import { SessionProvider } from "next-auth/react"
 
+
 NProgress.configure({
   minimum: 0.3,
   easing: 'ease',

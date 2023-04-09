@@ -1,49 +1,38 @@
 import { useState, useEffect } from "react";
 // import jobs from "./Jobs.json";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import styles from "./JobsList.module.css";
 import timeAgo from "../../utils/formatTimeAgoEn";
-import ReadMore from '../ReadMore/ReadMore'
+import ReadMore from "../ReadMore/ReadMore";
+import convertUnicode from "../../utils/convertUnicode";
 
 // create a component to show a job list
 export default function JobsList({ jobs }) {
-  const router = useRouter();
+  const { t } = useTranslation("jobs");
+
+  // function to replace dash between words with space
+  function replaceDashWithSpace(string) {
+    return string.replace(/-/g, " ");
+  }
 
   return (
     <div className={styles.jobs_list_container}>
       {jobs.map((job) => (
         <div key={job.id} className={styles.job_container}>
-          <div className={styles.job_title}>{job.job_title}</div>
-          <a href={job.company_website} target="_blank"className={styles.job_company_name}>
-            {job.company_name}
+          <div className={styles.job_title}>{job.title}</div>
+          <a href={job.company_website} target="_blank" className={styles.job_company_name}>
+            {job.company}
           </a>
           <div className={styles.job_information_container}>
-            <div className={styles.job_location}>📍{job.job_location}</div>
-            <div className={styles.job_salary_range_container}>
-              <div
-                className={styles.job_salary_range}
-              >{`${new Intl.NumberFormat(`${router.locale}`, {
-                style: "currency",
-                currency: `${job.salary_currency}`,
-              }).format(job.salary_lower_bound)} - ${new Intl.NumberFormat(
-                `${router.locale}`,
-                { style: "currency", currency: `${job.salary_currency}` }
-              ).format(job.salary_upper_bound)}`}</div>
-              <div className={styles.job_salary_range}></div>
-            </div>
-            {/* <div className={styles.job_tags_container}> */}
-              {job.tags.map((tag, index) => (
-                <div key={index} className={styles.job_tags}>{tag}</div>
-              ))}
-            {/* </div> */}
+            <div className={styles.job_location}>📍{job.location}</div>
+            {job.tags.map((tag, index) => (
+              <div key={index} className={styles.job_tags}>{replaceDashWithSpace(tag)}</div>
+            ))}
           </div>
-          <ReadMore children={job.description} />
-          <a className={styles.job_cta} href={job.apply_here}>Apply here</a>
-          <div className={styles.timestamp}>{`Created at: ${timeAgo(
-            new Date(job.created_at)
-          )}`}</div>
-          <div className={styles.timestamp}>{`Updated at: ${timeAgo(
-            new Date(job.updated_at)
+          <a className={styles.job_cta} href={job.apply_url}>{t("apply")}</a>
+          <div className={styles.timestamp}>{`🗓️ ${timeAgo(
+            new Date(job.date)
           )}`}</div>
         </div>
       ))}

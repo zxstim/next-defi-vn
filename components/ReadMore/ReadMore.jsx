@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./ReadMore.module.css";
+import parse, { domToReact } from 'html-react-parser';
+
 
 export default function ReadMore({ children }) {
   const text = children;
@@ -8,12 +10,23 @@ export default function ReadMore({ children }) {
     setIsReadMore(!isReadMore);
   };
 
+  const options = {
+    replace: domNode => {
+      if (domNode.name === 'p') {
+        return <div className={styles.text}>{domNode.children[0].data}</div>;
+      }
+      else if (domNode.name === 'div') {
+        return <div className={styles.text}>{domNode.children[0].data}</div>;
+      }
+    }
+  };
+
   return (
-    <p className={styles.text}>
-      {isReadMore ? text.slice(0, 150) : text}
+    <div className={styles.text}>
+      {isReadMore ? parse(text.slice(0, 150)) : parse(text)}
       <span onClick={toggleReadMore} className={styles.read_or_hide}>
         {isReadMore ? "...read more" : text.length < 150 ? null : " show less"}
       </span>
-    </p>
+    </div>
   );
 };

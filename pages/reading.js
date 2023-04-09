@@ -7,35 +7,11 @@ import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 import ReadingList from "../components/ReadingList/ReadingList";
+import { fetchStrapiAPI } from "../lib/api";
 
 
-export default function Reading(props) {
+export default function Reading({articles}) {
   const { t } = useTranslation("reading");
-
-  // const query = `
-  // {
-  //   user(username: "victoristocrat") {
-  //     publication {
-  //       posts {
-  //         title
-  //         brief
-  //         slug
-  //         cuid
-  //       }
-  //     }
-  //   }
-  // }`;
-  // async function getData() {
-  //   const response = await fetch("https://api.hashnode.com", {
-  //     method: "post",
-  //     headers: {
-  //       "Content-Type": "application/json"
-  //     },
-  //     body: JSON.stringify({ query: query })
-  //   });
-  //   const body = await response.json();
-  //   console.log(body)
-  // }
 
   return (
     <>
@@ -90,7 +66,7 @@ export default function Reading(props) {
           <Link href="/">{t("back")}</Link>
           <h2>{t("subtitle")}</h2>
           <UpButton />
-          <ReadingList />
+          <ReadingList articles={articles} />
           <br />
           <hr />
           <AppFooter />
@@ -101,11 +77,19 @@ export default function Reading(props) {
 }
 
 
-export async function getStaticProps({ locale }) {
-    return {
-      props: {
-        ...(await serverSideTranslations(locale, ["common", "reading"])),
-        // Will be passed to the page component as props
-      },
-    };
-  }
+export async function getStaticProps(context) {
+
+  // const articles = await fetch("https://strapi.defi.vn/api/articles?populate[0]=image&populate[1]=categories&populate[2]=author").then((res) =>
+  //   res.json()
+  // );
+
+  const articlesRes = await fetchStrapiAPI("/articles", { populate: ["image", "categories", "author"] })
+
+  return {
+    props: {
+      articles: articlesRes.data,
+      ...(await serverSideTranslations(context.locale, ["common", "reading"])),
+      // Will be passed to the page component as props
+    },
+  };
+}

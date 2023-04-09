@@ -28,7 +28,7 @@ export default function JobsListPage({jobs}) {
       <Head>
         <title>Find your Web3 jobs | Tìm công việc Web3 - DeFi.vn</title>
         <meta name="description" content="Explore our job board with thousands of Web3 jobs in various roles and locations including remote options."/>
-        <meta charSet="utf-8" />
+        <meta charset="UTF-8" />
         <link rel="icon" href="../defi.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:url" content="https://www.defi.vn/jobs" />
@@ -69,14 +69,14 @@ export default function JobsListPage({jobs}) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const prisma = new PrismaClient()
-  const jobs = await prisma.lists_job.findMany()
-
+export async function getStaticProps(context) {
+  const jobs = await fetch(process.env.WEB3_CAREERS_API).then((res) => res.json());
+  
   return {
     props : { 
-      jobs : JSON.parse(JSON.stringify(jobs)),
+      jobs : jobs[2],
       ...(await serverSideTranslations(context.locale, ["common", "jobs"]))
-     }
+     },
+     revalidate: 3600,
   }
 }

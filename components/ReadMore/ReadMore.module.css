@@ -1,6 +1,7 @@
 .text {
-  display: inline;
+  display: inline !important;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .read_or_hide {

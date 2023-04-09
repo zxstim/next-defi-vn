@@ -4,7 +4,7 @@ import Script from "next/script";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import formatArticleTimeStampEn from "../../utils/formatArticleTimeStampEn";
-import formatArticleTimeStampVi from "../../utils/formatArticleTimeStampvi";
+import formatArticleTimeStampVi from "../../utils/formatArticleTimeStampVi";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";

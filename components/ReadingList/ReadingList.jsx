@@ -41,7 +41,7 @@ export default function ReadingList({ articles }) {
                 {article.attributes.author.data.attributes.name}
               </div>
               <div className={styles.reading_timestamp}>
-                {formatTimeStamp(article.attributes.publishedAt)}
+                {formatTimeStamp(article.attributes.updatedAt)}
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
+import AlertMessage from "../components/AlertMessage/AlertMessage";
 
 export default function Buidl(props) {
   const { t } = useTranslation("buidl");
@@ -72,6 +73,7 @@ export default function Buidl(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           <h2>{t("subtitle1")}</h2>
+          <AlertMessage type="neutral" headline="✏️ Note" message="This is a work in progress!"/>
           <div className="nav-menu-grid"
           >
             <Link href="/buidl/ethereum">
@@ -87,6 +89,11 @@ export default function Buidl(props) {
             <Link href="/buidl/arbitrum">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">Arbitrum</h3>
+              </a>
+            </Link>
+            <Link href="/buidl/base">
+              <a style={{ textDecoration: "none" }}>
+                <h3 className="nav-menu-button">Base</h3>
               </a>
             </Link>
             <Link href="/buidl/starknet">

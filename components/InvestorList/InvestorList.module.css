@@ -1,3 +1,9 @@
+.layout_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .investors_list_container {
   display: grid;
   gap: 15px 15px;

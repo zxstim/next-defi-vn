@@ -1,0 +1,51 @@
+/* components/Pagination.module.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .pagination a {
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+
+  .active_page {
+    padding: 6px 12px;
+    background-color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .pagination a:hover {
+    background-color: #ffc900;
+  }
+  
+  .pagination a.active {
+    background-color: #0070f3;
+    color: #ffffff;
+    border-color: #0070f3;
+    cursor: default;
+  }
+  
+  /* .pagination a.disabled {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #ccc;
+    cursor: default;
+  } */
+  
+  .ellipsis {
+    display: inline-block;
+    padding: 6px 12px;
+  }
+  

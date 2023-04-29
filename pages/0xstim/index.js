@@ -4,8 +4,8 @@ import Image from "next/image";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import AppFooter from "../components/AppFooter/AppFooter";
-import styles from '../styles/0xstim.module.css'
+import AppFooter from "../../components/AppFooter/AppFooter";
+import styles from '../../styles/0xstim.module.css'
 
 export default function ZxStim(props) {
   const { t } = useTranslation("zxstim");
@@ -80,6 +80,11 @@ export default function ZxStim(props) {
                 GmGn wallet
               </div>
             </a>
+            {/* <Link className={styles.anchor_tag} href="/0xstim/profile">
+              <div className={styles.links_button}>
+                Profile
+              </div>
+            </Link> */}
             <a className={styles.anchor_tag} href="https://twitter.com/0xStim">
               <div className={styles.links_button}>
                 Twitter @0xStim

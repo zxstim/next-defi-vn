@@ -3,11 +3,12 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import FloatingButton from "../components/FloatingButton/FloatingButton"
-import AppFooter from "../components/AppFooter/AppFooter";
-import InvestorList from "../components/InvestorList/InvestorList";
+import FloatingButton from "../../components/FloatingButton/FloatingButton"
+import AppFooter from "../../components/AppFooter/AppFooter";
+import InvestorList from "../../components/InvestorList/InvestorList";
+import { fetchStrapiAPI } from "../../lib/api";
 
-export default function Investors(props) {
+export default function Investors({ investors, investorCategories }) {
   const { t } = useTranslation("investors");
   return (
     <>
@@ -62,7 +63,7 @@ export default function Investors(props) {
           <Link href="/">{t("back")}</Link>
           <FloatingButton />
           <h2>{t("subtitle")}</h2>
-          <InvestorList />
+          <InvestorList investorList={investors} investorsCategories={investorCategories}/>
           <br />
           <hr />
           <AppFooter />
@@ -72,10 +73,23 @@ export default function Investors(props) {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps(context) {
+
+  const investorCategoriesRes = await fetchStrapiAPI("/investor-categories")
+
+  const investorsRes = await fetchStrapiAPI("/investors", { 
+    populate: ["investor_categories"], 
+    pagination: {
+      page: 1,
+      pageSize: 100,
+    }
+  })
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "investors"])),
+      investors: investorsRes.data,
+      investorCategories: investorCategoriesRes.data,
+      ...(await serverSideTranslations(context.locale, ["common", "investors"])),
       // Will be passed to the page component as props
     },
   };

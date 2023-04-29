@@ -12,6 +12,14 @@ const { i18n } = require('./next-i18next.config');
 // }
 
 module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: "/investors",
+        destination: "/investors/1"
+      },
+    ]
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {

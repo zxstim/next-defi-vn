@@ -5,49 +5,49 @@
         "desc": "A blockchain is a decentralized, distributed, and oftentimes public, digital ledger consisting of records called blocks that is used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks. Visit the following resources to learn more:",
         "resources": [
             {
-                "id": 1,
+                "id": 2,
                 "name": "Introduction to Blockchain",
                 "url": "https://www.blockchain.education/blockchain101/blockchain"
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Blockchain Explained",
                 "url": "https://www.investopedia.com/terms/b/blockchain.asp"
             },
             {
-                "id": 3,
+                "id": 4,
                 "name": "How does a blockchain work?",
                 "url": "https://youtu.be/SSo_EIwHSd4"
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "What Is a Blockchain? | Blockchain Basics for Developers",
                 "url": "https://youtu.be/4ff9esY_4aU"
             }
         ],
         "subtitles": [
             {
-                "id": 1,
+                "id": 6,
                 "title": "What is Blockchain?",
                 "desc": "A blockchain is a decentralized, distributed, and oftentimes public, digital ledger consisting of records called blocks that is used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 7,
                         "name": "Introduction to Blockchain",
                         "url": "https://www.blockchain.education/blockchain101/blockchain"
                     },
                     {
-                        "id": 2,
+                        "id": 8,
                         "name": "Blockchain Explained",
                         "url": "https://www.investopedia.com/terms/b/blockchain.asp"
                     },
                     {
-                        "id": 3,
+                        "id": 9,
                         "name": "How does a blockchain work?",
                         "url": "https://youtu.be/SSo_EIwHSd4"
                     },
                     {
-                        "id": 4,
+                        "id": 10,
                         "name": "What Is a Blockchain? | Blockchain Basics for Developers",
                         "url": "https://youtu.be/4ff9esY_4aU"
                     }
@@ -55,17 +55,17 @@
                 "subsubtitles": false
             },
             {
-                "id": 2,
+                "id": 11,
                 "title": "Decentralization",
                 "desc": "In blockchain, decentralization refers to the transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network. Decentralized networks strive to reduce the level of trust that participants must place in one another, and deter their ability to exert authority or control over one another in ways that degrade the functionality of the network. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 12,
                         "name": "What is decentralization?",
                         "url": "https://aws.amazon.com/blockchain/decentralization-in-blockchain/"
                     },
                     {
-                        "id": 2,
+                        "id": 13,
                         "name": "What is Decentralization in Blockchain?",
                         "url": "https://www.blockchain-council.org/blockchain/what-is-decentralization-in-blockchain/"
                     }
@@ -73,27 +73,27 @@
                 "subsubtitles": false
             },
             {
-                "id": 3,
+                "id": 14,
                 "title": "Why it matters",
                 "desc": "The nature of blockchain allows for trustless systems to be built on top of it. Users don’t rely on a centralized group of people, such as a bank, to make decisions and allow transactions to flow through. Because the system is decentralized, users know that transactions will never be denied for non-custodial reasons. This decentralization enables use-cases that were previously impossible, such as parametric insurance, decentralized finance, and decentralized organizations (DAOs), among a few. This allows developers to build products that provide immediate value without having to go through a bureaucratic process of applications, approvals, and general red tape. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 15,
                         "name": "Why Blockchain?",
                         "url": "https://www.blockchain.education/blockchain101/blockchain"
                     },
                     {
-                        "id": 2,
+                        "id": 16,
                         "name": "What Is The Blockchain And Why Does It Matter?",
                         "url": "https://www.forbes.com/sites/theyec/2020/05/18/what-is-the-blockchain-and-why-does-it-matter/"
                     },
                     {
-                        "id": 3,
+                        "id": 17,
                         "name": "Web3/Crypto: Why Bother?",
                         "url": "https://continuations.com/post/671863718643105792/web3crypto-why-bother"
                     },
                     {
-                        "id": 4,
+                        "id": 18,
                         "name": "Why is Blockchain Important and Why Does it Matter",
                         "url": "https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important"
                     }
@@ -101,27 +101,27 @@
                 "subsubtitles": false
             },
             {
-                "id": 4,
+                "id": 19,
                 "title": "Blockchain Structure",
                 "desc": "The blockchain gets its name from its underlying structure. The blockchain is organized as a series of “blocks” that are “chained” together. Understanding blockchain security requires understanding how the blockchain is put together. This requires knowing what the blocks and chains of blockchain are and why they are designed the way that they are. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 20,
                         "name": "Blockchain Architecture Basics: Components, Structure, Benefits & Creation",
                         "url": "https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture"
                     },
                     {
-                        "id": 2,
+                        "id": 21,
                         "name": "Blockchain Architecture 101: Components, Structure, and Benefits",
                         "url": "https://komodoplatform.com/en/academy/blockchain-architecture-101/"
                     },
                     {
-                        "id": 3,
+                        "id": 22,
                         "name": "Blockchain structure",
                         "url": "https://resources.infosecinstitute.com/topic/blockchain-structure/"
                     },
                     {
-                        "id": 4,
+                        "id": 23,
                         "name": "Blockchain Basics | Coursera",
                         "url": "https://www.coursera.org/lecture/blockchain-basics/blockchain-structure-5rj9Z"
                     }
@@ -129,27 +129,27 @@
                 "subsubtitles": false
             },
             {
-                "id": 5,
+                "id": 24,
                 "title": "Basic Blockchain Operations",
                 "desc": "Operations in a decentralized networks are the responsibility of the peer participants and their respective computational nodes. These are specific for each type of blockchain. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 25,
                         "name": "Blockchain Basics: Structure, Operations, and the Bitcoin Blockchain",
                         "url": "https://www.mlq.ai/blockchain-basics/"
                     },
                     {
-                        "id": 2,
+                        "id": 26,
                         "name": "Bitcoin blockchain transactions | Bitcoin Developer",
                         "url": "https://developer.bitcoin.org/reference/transactions.html"
                     },
                     {
-                        "id": 3,
+                        "id": 27,
                         "name": "Ethereum blockchain transactions | ethereum.org",
                         "url": "https://ethereum.org/en/developers/docs/transactions/"
                     },
                     {
-                        "id": 4,
+                        "id": 28,
                         "name": "Blockchain Basics | Coursera",
                         "url": "https://www.coursera.org/lecture/blockchain-basics/basic-operations-OxILB"
                     }
@@ -157,27 +157,27 @@
                 "subsubtitles": false
             },
             {
-                "id": 6,
+                "id": 29,
                 "title": "Applications and Uses",
                 "desc": "Blockchain applications go far beyond cryptocurrency and bitcoin. With its ability to create more transparency and fairness while also saving businesses time and money, the technology is impacting a variety of sectors in ways that range from how contracts are enforced to making government work more efficiently. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 30,
                         "name": "Blockchain Use Cases and Applications by Industry",
                         "url": "https://consensys.net/blockchain-use-cases/"
                     },
                     {
-                        "id": 2,
+                        "id": 31,
                         "name": "Top 10 Real-World Applications Of Blockchain Technology",
                         "url": "https://www.blockchain-council.org/blockchain/top-10-real-world-applications-of-blockchain-technology/"
                     },
                     {
-                        "id": 3,
+                        "id": 32,
                         "name": "Ethereum blockchain transactions | ethereum.org",
                         "url": "https://ethereum.org/en/developers/docs/transactions/"
                     },
                     {
-                        "id": 4,
+                        "id": 33,
                         "name": "E34 Blockchain Applications and Real-World Use Cases Disrupting the Status Quo",
                         "url": "https://builtin.com/blockchain/blockchain-applications"
                     }
@@ -187,49 +187,49 @@
         ]
     },
     {
-        "id": 2,
+        "id": 34,
         "title": "Blockchain general knowledge",
         "desc": "Visit the following resources to learn more:",
         "resources": [
             {
-                "id": 1,
+                "id": 35,
                 "name": "The Complete Course On Understanding Blockchain Technology",
                 "url": "https://www.udemy.com/course/understanding-blockchain-technology/"
             },
             {
-                "id": 2,
+                "id": 36,
                 "name": "Blockchain Technology Explained",
                 "url": "https://youtu.be/qOVAbKKSH10"
             }
         ],
         "subtitles": [
             {
-                "id": 1,
+                "id": 37,
                 "title": "Cryptography",
                 "desc": "Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial behavior. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 38,
                         "name": "Cryptography",
                         "url": "https://en.wikipedia.org/wiki/Cryptography"
                     },
                     {
-                        "id": 2,
+                        "id": 39,
                         "name": "What is Cryptography",
                         "url": "https://www.synopsys.com/glossary/what-is-cryptography.html"
                     },
                     {
-                        "id": 3,
+                        "id": 40,
                         "name": "Asymmetric Encryption - Simply explained",
                         "url": "https://youtu.be/AQDCe585Lnc"
                     },
                     {
-                        "id": 4,
+                        "id": 41,
                         "name": "What is Cryptography?",
                         "url": "https://www.youtube.com/watch?v=6_Cxj5WKpIw"
                     },
                     {
-                        "id": 5,
+                        "id": 42,
                         "name": "Learn Cryptography",
                         "url": "https://www.youtube.com/watch?v=trHox1bN5es"
                     }
@@ -237,22 +237,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 2,
+                "id": 43,
                 "title": "Consensus protocols",
                 "desc": "Consensus for blockchain is a procedure in which the peers of a Blockchain network reach agreement about the present state of the data in the network. Through this, consensus algorithms establish reliability and trust in the Blockchain network. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 44,
                         "name": "Consensus Mechanisms in Blockchain: A Beginner’s Guide",
                         "url": "https://crypto.com/university/consensus-mechanisms-in-blockchain"
                     },
                     {
-                        "id": 2,
+                        "id": 45,
                         "name": "Consensus Mechanisms",
                         "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/"
                     },
                     {
-                        "id": 3,
+                        "id": 46,
                         "name": "What Is a Consensus Mechanism?",
                         "url": "https://www.coindesk.com/learn/what-is-a-consensus-mechanism/"
                     }
@@ -260,22 +260,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 3,
+                "id": 47,
                 "title": "Storage",
                 "desc": "Unlike a centralized server operated by a single company or organization, decentralized storage systems consist of a peer-to-peer network of user-operators who hold a portion of the overall data, creating a resilient file storage sharing system. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 48,
                         "name": "Blockchain Storage",
                         "url": "https://www.techtarget.com/searchstorage/definition/blockchain-storage"
                     },
                     {
-                        "id": 2,
+                        "id": 49,
                         "name": "Decentralized Storage",
                         "url": "https://ethereum.org/en/developers/docs/storage/"
                     },
                     {
-                        "id": 3,
+                        "id": 50,
                         "name": "How IPFS works",
                         "url": "https://docs.ipfs.tech/concepts/how-ipfs-works/"
                     }
@@ -283,22 +283,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 4,
+                "id": 51,
                 "title": "Mining and incentive models",
                 "desc": "Mining is the process of adding transaction details to the Blockchain, like sender address, hash value, etc. The Blockchain contains all the history of the transactions that have taken place in the past for record purposes and it is stored in such a manner that, it can’t be manipulated. An Incentive is basically a reward given to a Blockchain Miner for speeding up the transactions and making correct decisions while processing the complete transaction securely. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 52,
                         "name": "Blockchain Incentives to Miners",
                         "url": "https://www.geeksforgeeks.org/blockchain-incentives-to-miners/"
                     },
                     {
-                        "id": 2,
+                        "id": 53,
                         "name": "Ethereum Consensus Mechanisms",
                         "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/"
                     },
                     {
-                        "id": 3,
+                        "id": 54,
                         "name": "Solana Staking Rewards",
                         "url": "https://docs.solana.com/implemented-proposals/staking-rewards"
                     }
@@ -306,22 +306,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 5,
+                "id": 55,
                 "title": "Decentralization vs trust",
                 "desc": "Blockchains, cryptocurrency, smart contracts, and oracles have emerged as new technologies for coordinating social and economic activities in a more secure, transparent, and accessible manner. Most importantly, these technologies are revealing the power of cryptographic guarantees—what we often call cryptographic truth—in restoring users’ trust in everyday interactions. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 56,
                         "name": "What Crypto Is Really About",
                         "url": "https://blog.chain.link/what-crypto-is-really-about/"
                     },
                     {
-                        "id": 2,
+                        "id": 57,
                         "name": "Ethereum Consensus Mechanisms",
                         "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/"
                     },
                     {
-                        "id": 3,
+                        "id": 58,
                         "name": "The Superiority of Cryptographic Truth",
                         "url": "https://youtu.be/AEtBPbmIRKQ"
                     }
@@ -329,22 +329,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 6,
+                "id": 59,
                 "title": "Blockchain forking",
                 "desc": "A fork happens whenever a community makes a change to the blockchain’s protocol, or basic set of rules. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 60,
                         "name": "Blockchain Fork",
                         "url": "https://en.wikipedia.org/wiki/Fork_(blockchain)"
                     },
                     {
-                        "id": 2,
+                        "id": 61,
                         "name": "What is a fork?",
                         "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-fork"
                     },
                     {
-                        "id": 3,
+                        "id": 62,
                         "name": "What Is a Hard Fork?",
                         "url": "https://www.investopedia.com/terms/h/hard-fork.asp"
                     }
@@ -352,22 +352,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 7,
+                "id": 63,
                 "title": "Cryptocurrencies",
                 "desc": "A cryptocurrency, crypto-currency, or crypto is a digital currency designed to work as a medium of exchange through a blockchain, which is not reliant on any central authority, such as a government or bank, to uphold or maintain it. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 64,
                         "name": "What Is Cryptocurrency?",
                         "url": "https://www.investopedia.com/terms/c/cryptocurrency.asp"
                     },
                     {
-                        "id": 2,
+                        "id": 65,
                         "name": "Cryptocurrency: What It Is and How It Works",
                         "url": "https://www.nerdwallet.com/article/investing/cryptocurrency"
                     },
                     {
-                        "id": 3,
+                        "id": 66,
                         "name": "How Cryptocurrency actually works.",
                         "url": "https://youtu.be/rYQgy8QDEBI"
                     }
@@ -393,22 +393,22 @@
                 "subsubtitles": false
             },
             {
-                "id": 9,
+                "id": 67,
                 "title": "Blockchain interoperability",
                 "desc": "The concept of “blockchain interoperability” refers to the ability of different blockchain networks to exchange and leverage data between one another and to move unique types of digital assets between the networks’ respective blockchains. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 68,
                         "name": "Cross-Chain Interoperability: What it Means for Blockchain",
                         "url": "https://www.gemini.com/cryptopedia/why-is-interoperability-important-for-blockchain"
                     },
                     {
-                        "id": 2,
+                        "id": 69,
                         "name": "Blockchain Interoperability : Why Is Cross Chain Technology Important?",
                         "url": "https://101blockchains.com/blockchain-interoperability/"
                     },
                     {
-                        "id": 3,
+                        "id": 70,
                         "name": "Blockchain Interoperability – Understanding Cross-Chain Technology",
                         "url": "https://www.blockchain-council.org/blockchain/blockchain-interoperability/"
                     }
@@ -418,57 +418,47 @@
         ]
     },
     {
-        "id": 3,
-        "title": "Ethereum",
-        "desc": "Ethereum is a technology for building apps and organizations, holding assets, transacting and communicating without being controlled by a central authority. There is no need to hand over all your personal details to use Ethereum - you keep control of your own data and what is being shared. Ethereum has its own cryptocurrency, Ether, which is used to pay for certain activities on the Ethereum network. Visit the following resources to learn more:",
+        "id": 71,
+        "title": "Klaytn",
+        "desc": "Klaytn is an open source public blockchain designed for tomorrow’s on-chain world. Visit the following resources to learn more:",
         "resources": [
             {
-                "id": 1,
-                "name": "What is Ethereum?",
-                "url": "https://ethereum.org/en/what-is-ethereum/"
+                "id": 72,
+                "name": "What is Klaytn?",
+                "url": "https://docs.klaytn.foundation/content/klaytn"
             },
             {
-                "id": 2,
-                "name": "What Is Ethereum and How Does It Work?",
-                "url": "https://www.investopedia.com/terms/e/ethereum.asp"
+                "id": 73,
+                "name": "Why Klaytn?",
+                "url": "https://docs.klaytn.foundation/content/klaytn/why-klaytn"
             }
         ],
         "subtitles": [
             {
-                "id": 1,
-                "title": "Introduction to Ether",
-                "desc": "Ether (ETH) is the cryptocurrency used for many things on the Ethereum network. Fundamentally, it is the only acceptable form of payment for transaction fees, and after The Merge, ether is required to validate and propose blocks on Mainnet. Ether is also used as a primary form of collateral in the DeFi lending markets, as a unit of account in NFT marketplaces, as payment earned for performing services or selling real-world goods, and more. Visit the following resources to learn more:",
+                "id": 74,
+                "title": "Introduction to KLAY",
+                "desc": "KLAY is the main internal transferable cryptocurrency of Klaytn and is used to pay transaction fees when creating or executing smart contracts or when transferring KLAY. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
-                        "name": "What is Ether (ETH)?",
-                        "url": "https://ethereum.org/en/eth/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "What is Ether (ETH)?",
-                        "url": "https://www.investopedia.com/terms/e/ethereum.asp"
+                        "id": 75,
+                        "name": "Klaytn native coin - KLAY",
+                        "url": "https://docs.klaytn.foundation/content/klaytn/design/klaytn-native-coin-klay"
                     }
                 ],
                 "subsubtitles": false
             },
             {
-                "id": 2,
-                "title": "Understanding Ethereum Accounts",
-                "desc": "An Ethereum account is an entity with an ether (ETH) balance that can send transactions on Ethereum. Accounts can be user-controlled or deployed as smart contracts. Visit the following resources to learn more:",
+                "id": 76,
+                "title": "Understanding Klaytn Accounts",
+                "desc": "An account in Klaytn is a data structure containing information about a person's balance or a smart contract. Klaytn's state is the collection of all its accounts' states - that is, the past and current state of all data stored across Klaytn's accounts. When a transaction is executed on a Klaytn node, the state of Klaytn consequently changes across all its nodes. The state should be the same across all nodes in the Klaytn network if they have processed the same blocks in the same order. State information of each account is associated with a 20-byte address, which is used to identify each account. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
-                        "name": "Ethereum Accounts - Ethereum Foundation?",
-                        "url": "https://ethereum.org/en/developers/docs/accounts/"
+                        "id": 77,
+                        "name": "What are Klaytn Accounts?",
+                        "url": "https://docs.klaytn.foundation/content/klaytn/design/accounts"
                     },
                     {
-                        "id": 2,
-                        "name": "Understanding Ethereum Accounts",
-                        "url": "https://info.etherscan.com/understanding-ethereum-accounts/"
-                    },
-                    {
-                        "id": 3,
+                        "id": 78,
                         "name": "Comparing Bitcoin & Ethereum: UTXO vs Account Based Transaction Models?",
                         "url": "https://blockonomi.com/utxo-vs-account-based-transaction-models/"
                     }
@@ -476,40 +466,30 @@
                 "subsubtitles": false
             },
             {
-                "id": 3,
+                "id": 79,
                 "title": "Transactions",
-                "desc": "Transactions are cryptographically signed instructions from accounts. An account will initiate a transaction to update the state of the Ethereum network. The simplest transaction is transferring ETH from one account to another. Visit the following resources to learn more:",
+                "desc": "A transaction in a blockchain platform is a message sent between nodes that changes the state of the blockchain. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
-                        "name": "Transactions - Ethereum Foundation",
-                        "url": "https://ethereum.org/en/developers/docs/transactions/"
-                    },
-                    {
-                        "id": 2,
-                        "name": "What are Ethereum Transactions?",
-                        "url": "https://www.quicknode.com/guides/ethereum-development/what-are-ethereum-transactions"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Ethereum Transaction - CoinMarketCap",
-                        "url": "https://coinmarketcap.com/alexandria/glossary/ethereum-transaction"
+                        "id": 80,
+                        "name": "Transactions - Klaytn Foundation",
+                        "url": "https://docs.klaytn.foundation/content/klaytn/design/transactions"
                     }
                 ],
                 "subsubtitles": false
             },
             {
-                "id": 4,
-                "title": "Ethereum Virtual Machine (EVM)",
+                "id": 83,
+                "title": "Klaytn Virtual Machine (KVM)",
                 "desc": "The EVM’s physical instantiation can’t be described in the same way that one might point to a cloud or an ocean wave, but it does exist as one single entity maintained by thousands of connected computers running an Ethereum client. The Ethereum protocol itself exists solely for the purpose of keeping the continuous, uninterrupted, and immutable operation of this special state machine. It's the environment in which all Ethereum accounts and smart contracts live. At any given block in the chain, Ethereum has one and only one 'canonical' state, and the EVM is what defines the rules for computing a new valid state from block to block. Visit the following resources to learn more:",
                 "resources": [
                     {
-                        "id": 1,
+                        "id": 84,
                         "name": "Ethereum Virtual Machine (EVM) - Ethereum Foundation",
                         "url": "https://ethereum.org/vi/developers/docs/evm/"
                     },
                     {
-                        "id": 2,
+                        "id": 85,
                         "name": "What Is an Ethereum Virtual Machine (EVM)? - CoinMarketCap",
                         "url": "https://coinmarketcap.com/alexandria/glossary/ethereum-virtual-machine-evm"
                     },

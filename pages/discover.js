@@ -6,6 +6,7 @@ import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
 import AppFooter from "../components/AppFooter/AppFooter";
 import DiscoverList from "../components/DiscoverList/DiscoverList";
+import AlertMessage from "../components/AlertMessage/AlertMessage";
 import axios from "axios";
 
 export default function Discover(props) {
@@ -84,7 +85,7 @@ export default function Discover(props) {
           <br />
           <br />
           <br />
-          <blockquote>{t("disclosure")}</blockquote>
+          <AlertMessage type="info" message={t("disclosure")} headline={t("note")} />
           <hr />
           <AppFooter />
         </div>

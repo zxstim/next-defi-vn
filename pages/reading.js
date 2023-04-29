@@ -79,11 +79,7 @@ export default function Reading({articles}) {
 
 export async function getStaticProps(context) {
 
-  // const articles = await fetch("https://strapi.defi.vn/api/articles?populate[0]=image&populate[1]=categories&populate[2]=author").then((res) =>
-  //   res.json()
-  // );
-
-  const articlesRes = await fetchStrapiAPI("/articles", { populate: ["image", "categories", "author"] })
+  const articlesRes = await fetchStrapiAPI("/articles", { fields: ["title", "slug", "updatedAt", "createdAt", "publishedAt"], populate: ["image", "categories", "author"] })
 
   return {
     props: {

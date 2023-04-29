@@ -7,8 +7,9 @@ import ForDevelopers from "../components/HomePage/ForDevelopers/ForDevelopers";
 import ForEveryone from "../components/HomePage/ForEveryone/ForEveryone";
 import ForProjects from "../components/HomePage/ForProjects/ForProjects";
 import LoginButton from "../components/Login/LoginButton";
-// import Explainer from "../components/HomePage/Explainer/Explainer";
+import SingleAnnouncement from "../components/Announcements/SingleAnnouncement";
 import AppFooter from "../components/AppFooter/AppFooter";
+import { fetchStrapiAPI } from "../lib/api";
 
 export default function Home(props) {
   const { t } = useTranslation("common");
@@ -51,6 +52,7 @@ export default function Home(props) {
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div className="subtitle">{t("subtitle")}</div>
+          {/* <SingleAnnouncement announcement={props.announcements}/> */}
           <div style={{ display: "flex" }}>
             <Link href="/" locale="en">
               <a style={{ textDecoration: "none" }}>
@@ -63,7 +65,6 @@ export default function Home(props) {
               </a>
             </Link>
           </div>
-          <LoginButton />
           <ForDevelopers />
           <ForProjects />
           <ForEveryone />
@@ -78,8 +79,12 @@ export default function Home(props) {
 }
 
 export async function getStaticProps({ locale }) {
+  
+  // const announcementsRes = await fetchStrapiAPI("/announcements", { populate: ["image"] })
+
   return {
     props: {
+      // announcements: announcementsRes.data,
       ...(await serverSideTranslations(locale, ["common"])),
       // Will be passed to the page component as props
     },

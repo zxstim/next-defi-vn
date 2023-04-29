@@ -26,7 +26,9 @@ export default function JobsList({ jobs }) {
           </a>
           <div className={styles.job_information_container}>
             <div className={styles.job_location}>📍{job.location}</div>
-            {job.tags.map((tag, index) => (
+            {typeof job.tags === "string" ?
+              <div className={styles.job_tags}>{replaceDashWithSpace(job.tags)}</div>
+              : job.tags.map((tag, index) => (
               <div key={index} className={styles.job_tags}>{replaceDashWithSpace(tag)}</div>
             ))}
           </div>

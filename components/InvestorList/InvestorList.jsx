@@ -8,64 +8,64 @@ import PaginatedList from "../PaginatedList/PaginatedList";
 import styles from "./InvestorList.module.css";
 
 export default function InvestorList({ investorList, pagination, investorsCategories }) {
-  const [investorCategories, setInvestorCategories] = useState(() => {
-    let investorTags = [];
-    investorsCategories.map((investorsCategory) => {
-      investorTags.push(investorsCategory.attributes.name)
-    })
-    return investorTags;
-  });
-  const [latestInvestorList, setLatestInvestorList] = useState(investorList)
-  const [investors, setInvestors] = useState(investorList.sort((a, b) => a.attributes.name.localeCompare(b.attributes.name, 'en', { sensitivity: 'base' })));
+  // const [investorCategories, setInvestorCategories] = useState(() => {
+  //   let investorTags = [];
+  //   investorsCategories.map((investorsCategory) => {
+  //     investorTags.push(investorsCategory.attributes.name)
+  //   })
+  //   return investorTags;
+  // });
+  // const [latestInvestorList, setLatestInvestorList] = useState(investorList)
+  // const [investors, setInvestors] = useState(investorList.sort((a, b) => a.attributes.name.localeCompare(b.attributes.name, 'en', { sensitivity: 'base' })));
   const router = useRouter();
   const { t } = useTranslation("investors");
 
-  // a function to return the current page from the url
-  const getPaginatedParams = () => {
-    let currentPage = "";
-    if (router.locale === "en") {
-      currentPage = `${router.asPath}`;
-    } else {
-      currentPage = `${router.locale}${router.asPath}`;
-    }
-    return currentPage;
-  };
+  // // a function to return the current page from the url
+  // const getPaginatedParams = () => {
+  //   let currentPage = "";
+  //   if (router.locale === "en") {
+  //     currentPage = `${router.asPath}`;
+  //   } else {
+  //     currentPage = `${router.locale}${router.asPath}`;
+  //   }
+  //   return currentPage;
+  // };
 
-  // a function to filter out investor based on search query
-  const searchInvestors = (event) => {
-    if (event.target.value === "") {
-      setInvestors(investorList.slice(0, index));
-      setLatestInvestorList(investorList)
-      return;
-    }
-    let filteredInvestorsList = [];
-    filteredInvestorsList = investorList.filter(
-      investor => investor.name.toLowerCase().includes(event.target.value.toLowerCase()) === true
-    );
-    setLatestInvestorList(filteredInvestorsList)
-    setInvestors(filteredInvestorsList.slice(0, index));
-  };
+  // // a function to filter out investor based on search query
+  // const searchInvestors = (event) => {
+  //   if (event.target.value === "") {
+  //     setInvestors(investorList.slice(0, index));
+  //     setLatestInvestorList(investorList)
+  //     return;
+  //   }
+  //   let filteredInvestorsList = [];
+  //   filteredInvestorsList = investorList.filter(
+  //     investor => investor.name.toLowerCase().includes(event.target.value.toLowerCase()) === true
+  //   );
+  //   setLatestInvestorList(filteredInvestorsList)
+  //   setInvestors(filteredInvestorsList.slice(0, index));
+  // };
 
 
-  // a function to use drop down menu to filter services by tag
-  const filterInvestorsDropdown = (event) => {
-    if (event.target.value === "") {
-      // setInvestors(investorList.slice(0, index));
-      setLatestInvestorList(investorList)
-      return;
-    }
-    let filteredInvestorsList = [];
-    filteredInvestorsList = investorList.filter(
-      investor => investor.tags.includes(event.target.value) === true
-    );
-    setLatestInvestorList(filteredInvestorsList)
-    setInvestors(filteredInvestorsList.slice(0, index));
-  };
+  // // a function to use drop down menu to filter services by tag
+  // const filterInvestorsDropdown = (event) => {
+  //   if (event.target.value === "") {
+  //     // setInvestors(investorList.slice(0, index));
+  //     setLatestInvestorList(investorList)
+  //     return;
+  //   }
+  //   let filteredInvestorsList = [];
+  //   filteredInvestorsList = investorList.filter(
+  //     investor => investor.tags.includes(event.target.value) === true
+  //   );
+  //   setLatestInvestorList(filteredInvestorsList)
+  //   setInvestors(filteredInvestorsList.slice(0, index));
+  // };
 
 
   return (
     <>
-      <div className={styles.investors_filter_container}>
+      {/* <div className={styles.investors_filter_container}>
         <label>{t("investor-filter")}</label>
         <select className={styles.investors_filter_select} name="investors" id="investors" onChange={filterInvestorsDropdown}>
           <option value="">All</option>
@@ -73,7 +73,7 @@ export default function InvestorList({ investorList, pagination, investorsCatego
         </select>
         <label>{t("investor-filter")}</label>
         <input className={styles.investors_filter_search} placeholder="🔎 Search investor" onChange={event => searchInvestors(event)}/>
-      </div>
+      </div> */}
       <div className={styles.layout_container}>
         <PaginatedList
           currentPage={pagination.page}
@@ -82,7 +82,7 @@ export default function InvestorList({ investorList, pagination, investorsCatego
           indexPagePath="investors"
         />
         <div className={styles.investors_list_container}>
-          {investors.map((investor) => (
+          {investorList.sort((a, b) => a.attributes.name.localeCompare(b.attributes.name, 'en', { sensitivity: 'base' })).map((investor) => (
             <div key={investor.id} className={styles.investors_item}>
               <div className={styles.investors_item_name}>
                 {investor.attributes.name}

@@ -102,7 +102,6 @@ export async function getStaticPaths({ locales }) {
 export async function getStaticProps({ params, ...context }) {
 
   const investorCategoriesRes = await fetchStrapiAPI("/investor-categories")
-
   const investorsRes = await fetchStrapiAPI("/investors", { 
     populate: ["investor_categories"], 
     pagination: {

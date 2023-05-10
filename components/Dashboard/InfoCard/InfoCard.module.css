@@ -1,0 +1,13 @@
+.info_card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 350px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}

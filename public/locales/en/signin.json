@@ -1,0 +1,7 @@
+{
+    "title": "Sign in",
+    "method1": "Sign in with Biometric",
+    "method2": "Sign in with Google",
+    "method3": "Sign in with GitHub",
+    "separator": "Or"
+}

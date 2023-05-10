@@ -2,17 +2,10 @@
     "title": "🛎️ Services",
     "back": "🏠 Go back to home",
     "subtitle": "Services list",
-    "hackathons-list": "Hackathons List",
-    "table1": "Name",
-    "table2": "Type",
-    "table3": "Description",
-    "table4": "Contact",
-    "page": "Page ",
-    "gt-page": "| Go to page:",
-    "show": "Show",
-    "of": "of",
-    "cta": "Learn more",
-    "load": "⏳ Loading...",
-    "end": "You've reached the end! 👋",
-    "load-more": "Load more"
+    "title1": "🔒 Audit",
+    "title2": "📣 Marketing",
+    "title3": "🔍 Analytics",
+    "title4": "🛡️ Custody",
+    "disclosure": "Appearance on this list is not an endorsement from Defi.vn. Please do your own research before investing or using any of the projects above.",
+    "note": "👀 Note"
 }

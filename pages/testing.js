@@ -7,7 +7,6 @@ import ForDevelopers from "../components/HomePage/ForDevelopers/ForDevelopers";
 import ForEveryone from "../components/HomePage/ForEveryone/ForEveryone";
 import ForProjects from "../components/HomePage/ForProjects/ForProjects";
 import ForYou from "../components/HomePage/ForYou/ForYou";
-import LoginButton from "../components/Login/LoginButton";
 import SingleAnnouncement from "../components/Announcements/SingleAnnouncement";
 import AppFooter from "../components/AppFooter/AppFooter";
 import { fetchStrapiAPI } from "../lib/api";

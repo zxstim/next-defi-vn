@@ -18,6 +18,14 @@ module.exports = {
         source: "/investors",
         destination: "/investors/1"
       },
+      {
+        source: "/discover/wallets",
+        destination: "/discover/wallets/1"
+      },
+      {
+        source: "/discover/communities",
+        destination: "/discover/communities/1"
+      },
     ]
   },
   reactStrictMode: true,

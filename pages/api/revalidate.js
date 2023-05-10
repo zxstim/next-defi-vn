@@ -9,6 +9,8 @@ export default async function handler(req, res) {
       // e.g. for "/blog/[slug]" this should be "/blog/post-1"
       if (req.body.model === 'article') {
         await Promise.all([res.revalidate(`/reading/${req.body.entry.slug}`), res.revalidate('/reading')])
+      } else {
+        await res.revalidate(req.body.path)
       }
       return res.json({ revalidated: true })
     } catch (err) {

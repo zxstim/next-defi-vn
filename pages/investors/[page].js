@@ -75,7 +75,7 @@ export default function Investors({ investors, pagination, investorCategories })
 
 export async function getStaticPaths({ locales }) {
   // Get total number of posts from API.
-  const totalPages = await fetchStrapiAPI("/investors", { 
+  const totalPages = await fetchStrapiAPI("/investors", {
     populate: ["investor_categories"], 
     pagination: {
       page: 1,
@@ -103,11 +103,13 @@ export async function getStaticProps({ params, ...context }) {
 
   const investorCategoriesRes = await fetchStrapiAPI("/investor-categories")
   const investorsRes = await fetchStrapiAPI("/investors", { 
+		fields: ["name", "social"], 
     populate: ["investor_categories"], 
     pagination: {
       page: Number(params.page),
       pageSize: 100,
-    }
+    },
+		sort: "name:asc"
   })
 
   return {

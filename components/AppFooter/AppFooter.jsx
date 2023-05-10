@@ -111,6 +111,16 @@ export default function AppFooter() {
           <a>{t("contributors")}</a>
         </Link>
       </h4>
+      <h4>
+        <Link href="/privacy">
+          <a>{t("privacy")}</a>
+        </Link>
+      </h4>
+      <h4>
+        <Link href="/terms-of-service">
+          <a>{t("tos")}</a>
+        </Link>
+      </h4>
       {/* <h4>
         <Link href="/donate">
           <a>{t("donate")}</a>

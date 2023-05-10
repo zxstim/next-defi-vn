@@ -2,11 +2,11 @@
     "title": "🔑 Web3 wallets",
     "subtitle": "Wallets list",
     "back": "🏠 Go back to home",
+    "prev": "⬅️ Go back to previous page",
     "cta": "Learn more",
     "load": "⏳ Loading...",
     "end": "You've reached the end! 👋",
     "load-more": "Load more",
     "chain-filter": "Filter by Chains:",
     "tech-filter": "Filter by Type:"
-
 }

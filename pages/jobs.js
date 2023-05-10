@@ -3,7 +3,6 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { PrismaClient } from '@prisma/client'
 import JobsList from "../components/JobsList/JobsList";
 
 export default function JobsListPage({jobs}) {

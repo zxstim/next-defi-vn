@@ -3,10 +3,10 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import ForYou from "../components/HomePage/ForYou/ForYou";
 import ForDevelopers from "../components/HomePage/ForDevelopers/ForDevelopers";
 import ForEveryone from "../components/HomePage/ForEveryone/ForEveryone";
 import ForProjects from "../components/HomePage/ForProjects/ForProjects";
-import LoginButton from "../components/Login/LoginButton";
 import SingleAnnouncement from "../components/Announcements/SingleAnnouncement";
 import AppFooter from "../components/AppFooter/AppFooter";
 import { fetchStrapiAPI } from "../lib/api";
@@ -65,6 +65,7 @@ export default function Home(props) {
               </a>
             </Link>
           </div>
+          <ForYou />
           <ForDevelopers />
           <ForProjects />
           <ForEveryone />

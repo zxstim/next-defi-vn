@@ -82,14 +82,14 @@ export default function InvestorList({ investorList, pagination, investorsCatego
           indexPagePath="investors"
         />
         <div className={styles.investors_list_container}>
-          {investorList.sort((a, b) => a.attributes.name.localeCompare(b.attributes.name, 'en', { sensitivity: 'base' })).map((investor) => (
+          {investorList.map((investor) => (
             <div key={investor.id} className={styles.investors_item}>
               <div className={styles.investors_item_name}>
                 {investor.attributes.name}
               </div>
-              <div className={styles.investors_item_desc}>
+              {/* <div className={styles.investors_item_desc}>
                 {investor.attributes.description}
-              </div>
+              </div> */}
               <div className={styles.investors_item_tags_container}>
                 {investor.attributes.investor_categories.data ? (
                     investor.attributes.investor_categories.data.map((tag) => (

@@ -6,7 +6,7 @@ export default function ForYou() {
   const { t } = useTranslation("common");
 
   const buttonStyle = {
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#ffffff",
     margin: "5px 5px 5px 0px",
     padding: "15px 10px 15px 10px",
     WebkitAppearance: "none",
@@ -27,7 +27,7 @@ export default function ForYou() {
           gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
         }}
       >
-        <Link href="/base">
+        <Link href="/dashboard">
           <a style={{ textDecoration: "none" }}>
             <h3 style={buttonStyle}>{t("title30")}</h3>
           </a>

@@ -2,17 +2,10 @@
     "title": "🛎️ Dịch vụ",
     "back": "🏠 Quay về trang chủ",
     "subtitle": "Danh sách dịch vụ",
-    "hackathons-list": "Danh sách Hackathon",
-    "table1": "Tên",
-    "table2": "Phân loại",
-    "table3": "Ghi chú",
-    "table4": "Liên hệ",
-    "page": "Trang ",
-    "gt-page": "| Tới trang:",
-    "show": "Hiện",
-    "of": "trong",
-    "cta": "Tìm hiểu thêm",
-    "load": "⏳ Đang tải...",
-    "end": "Bạn đã xem hết danh sách! 👋",
-    "load-more": "Tải thêm"
+    "title1": "🔒 Thẩm định",
+    "title2": "📣 Quảng cáo",
+    "title3": "🔍 Phân tích dữ liệu",
+    "title4": "🛡️ Gửi tài sản",
+    "disclosure": "Việc xuất hiện của các dự án trên trang này không có nghĩa là chúng được đánh giá bởi Defi.vn. Bạn hãy tìm hiểu kỹ các dự án trên trước khi đầu tư hoặc sử dụng dịch vụ.",
+    "note": "👀 Ghi chú"
 }

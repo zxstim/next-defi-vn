@@ -1,0 +1,96 @@
+.signin_layout {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	gap: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+	sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.google_signin_button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #fff;
+	color: #1a1a1a;
+	border: 2px solid #1a1a1a;
+	padding: 4px 8px 4px 8px;
+	width: 320px;
+	font-size: 16px;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.github_signin_button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #fff;
+	color: #1a1a1a;
+	border: 2px solid #1a1a1a;
+	padding: 4px 8px 4px 8px;
+	width: 320px;
+	font-size: 16px;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.button_text {
+	flex-grow: 1;
+  text-align: center;
+}
+
+.webauthn_signin_button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #fff;
+	color: #1a1a1a;
+	border: 2px solid #1a1a1a;
+	padding: 4px 8px 4px 8px;
+	width: 320px;
+	font-size: 16px;
+	text-align: center;
+	padding: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+  position: relative;
+	width: 320px;
+}
+
+.separatorText {
+  font-size: 16px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex-grow: 1;
+	border-top: 2px solid #1a1a1a;
+}
+
+.separator::before {
+  margin-right: 10px;
+}
+
+.separator::after {
+  margin-left: 10px;
+}

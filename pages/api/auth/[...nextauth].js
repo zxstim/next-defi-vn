@@ -57,23 +57,23 @@ export const authOptions = {
   ],
   pages: {
     signIn: "auth/signin",
-  },
-  callbacks: {
-    async jwt({ token, account, profile }) {
-      // Persist the OAuth access_token and or the user id to the token right after signin 
-      token.profile = await prisma.user.findUnique({
-        where: {
-          id: token.sub
-        }
-      })
-      return token
-    },
-    async session({ session, token, user }) {
-      // Send properties to the client, like an access_token and user id from a provider.
-      session.user.profile = token.profile
-      return session
-    }
-  },
+  }
+  // callbacks: {
+  //   async jwt({ token, account, profile }) {
+  //     // Persist the OAuth access_token and or the user id to the token right after signin 
+  //     token.profile = await prisma.user.findUnique({
+  //       where: {
+  //         id: token.sub
+  //       }
+  //     })
+  //     return token
+  //   },
+  //   async session({ session, token, user }) {
+  //     // Send properties to the client, like an access_token and user id from a provider.
+  //     session.user.profile = token.profile
+  //     return session
+  //   }
+  // },
 }
 
 export default NextAuth(authOptions)

@@ -120,6 +120,11 @@ export default function AppFooter() {
         <Link href="/terms-of-service">
           <a>{t("tos")}</a>
         </Link>
+      </h4>      
+      <h4>
+        <Link href="https://drive.google.com/drive/folders/1l8Nmz4HE2UCjLBeR-FsmABwKaE0QOtdR">
+          <a>{t("media")}</a>
+        </Link>
       </h4>
       {/* <h4>
         <Link href="/donate">

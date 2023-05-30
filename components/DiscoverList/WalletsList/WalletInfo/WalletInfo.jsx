@@ -33,7 +33,7 @@ export default function WalletInfo({ wallet }) {
                 width={20}
                 height={20}
               />   
-                <div>Website</div>   
+                <div>{t("website")}</div>   
             </div>
           </a>
         ) : null}

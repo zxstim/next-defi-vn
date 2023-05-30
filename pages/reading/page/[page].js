@@ -4,13 +4,13 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../components/UpButton/UpButton";
-import AppFooter from "../components/AppFooter/AppFooter";
-import ReadingList from "../components/ReadingList/ReadingList";
-import { fetchStrapiAPI } from "../lib/api";
+import UpButton from "../../../components/UpButton/UpButton";
+import AppFooter from "../../../components/AppFooter/AppFooter";
+import ReadingList from "../../../components/ReadingList/ReadingList";
+import { fetchStrapiAPI } from "../../../lib/api";
 
 
-export default function Reading({articles}) {
+export default function Reading({ articles, pagination, categories }) {
   const { t } = useTranslation("reading");
 
   return (
@@ -66,7 +66,7 @@ export default function Reading({articles}) {
           <Link href="/">{t("back")}</Link>
           <h2>{t("subtitle")}</h2>
           <UpButton />
-          <ReadingList articles={articles} />
+          <ReadingList articles={articles} pagination={pagination} categories={categories}/>
           <br />
           <hr />
           <AppFooter />
@@ -76,14 +76,50 @@ export default function Reading({articles}) {
   );
 }
 
+export async function getStaticPaths({ locales }) {
+  // Get total number of posts from API.
+  const totalPages = await fetchStrapiAPI("/articles", {
+    populate: ["categories"], 
+    pagination: {
+      page: 1,
+      pageSize: 25,
+    }
+  })
+  const numberOfPages = totalPages.meta.pagination.pageCount
+ 
+  // Build paths `blog/0`, `blog/1` ...etc.
+  const paths = Array(numberOfPages)
+    .fill(0)
+    .map((_, i) => locales.map((locale) => ({
+      params: {
+        page: `${i + 1}`,
+      },
+      locale
+    }))).flat()
+  return {
+    paths,
+    fallback: false,
+  }
+}
 
-export async function getStaticProps(context) {
 
-  const articlesRes = await fetchStrapiAPI("/articles", { fields: ["title", "slug", "updatedAt", "createdAt", "publishedAt"], populate: ["image", "categories", "author"] })
+export async function getStaticProps({ params, ...context }) {
+
+  const categoriesRes = await fetchStrapiAPI("/categories")
+  const articlesRes = await fetchStrapiAPI("/articles", { 
+    fields: ["title", "slug", "updatedAt", "createdAt", "publishedAt"], 
+    populate: ["image", "categories", "author"],
+    pagination: {
+      page: Number(params.page),
+      pageSize: 25,
+    }, 
+  })
 
   return {
     props: {
       articles: articlesRes.data,
+      pagination: articlesRes.meta.pagination,
+      categories: categoriesRes.data,
       ...(await serverSideTranslations(context.locale, ["common", "reading"])),
       // Will be passed to the page component as props
     },

@@ -1,10 +1,7 @@
 {
-    "title": "🔑 Web3 wallets",
-    "subtitle": "Wallets list",
+    "title": "🧰 Dev Tools",
+    "subtitle": "Dev tools list",
     "back": "🏠 Go back to home",
-    "prev": "⬅️ Go back to previous page",
-    "category": "🧩 Categories",
-    "blockchain": "⛓️ Blockchains",
     "cta": "Learn more",
     "load": "⏳ Loading...",
     "end": "You've reached the end! 👋",

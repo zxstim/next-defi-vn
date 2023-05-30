@@ -9,6 +9,10 @@
 	sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+.back_button {
+	margin-bottom: 16px;
+}
+
 .google_signin_button {
 	display: flex;
 	flex-direction: row;

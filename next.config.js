@@ -26,6 +26,14 @@ module.exports = {
         source: "/discover/communities",
         destination: "/discover/communities/1"
       },
+      {
+        source: "/dev-guides",
+        destination: "/dev-guides/page/1"
+      },
+      {
+        source: "/reading",
+        destination: "/reading/page/1"
+      }
     ]
   },
   reactStrictMode: true,

@@ -13,28 +13,28 @@ export const authOptions = {
     strategy: "jwt",
   },
   providers: [
-    CredentialsProvider({
-      id: "webauthn",
-      name: "Biometric",
-      type: "credentials",
-      credentials: {
-        username: {
-          label: "Username", type: "text", placeholder: "jsmith"
-        }
-      },
-      async authorize(credentials, req) {
-        const user = await prisma.user.findUnique({
-          where: {
-            username: credentials.username
-          }
-        })
-        if (user) {
-          return user
-        } else {
-          return null
-        }
-      }
-    }),
+    // CredentialsProvider({
+    //   id: "webauthn",
+    //   name: "Biometric",
+    //   type: "credentials",
+    //   credentials: {
+    //     username: {
+    //       label: "Username", type: "text", placeholder: "jsmith"
+    //     }
+    //   },
+    //   async authorize(credentials, req) {
+    //     const user = await prisma.user.findUnique({
+    //       where: {
+    //         username: credentials.username
+    //       }
+    //     })
+    //     if (user) {
+    //       return user
+    //     } else {
+    //       return null
+    //     }
+    //   }
+    // }),
     // EmailProvider({
     //   id: "email",
     //   server: process.env.EMAIL_SERVER,

@@ -62,7 +62,6 @@ export default function BuyCrypto(props) {
             </Link>
           </div>
           <Link href="/">{t("back")}</Link>
-          <h2>{t("subtitle")}</h2>
           <RampProviders />
           <UpButton />
           <br />

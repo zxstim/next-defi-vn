@@ -19,7 +19,7 @@ export default function PaginatedList({ currentPage, totalItems, totalPages, ind
             <a>{page}</a>
           </Link>
         ) : (page === currentPage) ? (
-          <div className={styles.active_page}>{page}</div>
+          <div key={index} className={styles.active_page}>{page}</div>
         ) : (page === "...") ? (
           <div key={index}>{page}</div>
         ) : (

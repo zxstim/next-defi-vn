@@ -29,7 +29,7 @@ export default function Wallets({ wallets, pagination, walletCategories }) {
       <Head>
         <title>How to use Web3 Wallets | Học cách dùng Ví Web3 - DeFi.vn</title>
         <meta charSet="utf-8" />
-        <link rel="icon" href="../defi.svg" />
+        <link rel="icon" href="../../defi.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="How to use Web3 Wallets | Học cách dùng Ví Web3 - DeFi.vn" />
         <meta property="og:description" content="Learn everything about web3 wallets, including setup guide, security practices, what can you use the wallets for and many more topics." />
@@ -58,7 +58,12 @@ export default function Wallets({ wallets, pagination, walletCategories }) {
               </a>
             </Link>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <div style={{ 
+            display: "flex", 
+            flexDirection: "column", 
+            gap: "10px",  
+            width: "fit-content"
+            }}>
             <Link href="/">{t("back")}</Link>
             <Link href="/discover">{t("prev")}</Link>
           </div>
@@ -74,42 +79,60 @@ export default function Wallets({ wallets, pagination, walletCategories }) {
   );
 }
 
-export async function getStaticPaths({ locales }) {
-  // Get total number of posts from API.
-  const totalPages = await fetchStrapiAPI("/wallets", {
-    populate: ["wallet_categories"], 
-    pagination: {
-      page: 1,
-      pageSize: 100,
-    }
-  })
-  const numberOfPages = totalPages.meta.pagination.pageCount
+// export async function getStaticPaths({ locales }) {
+//   // Get total number of posts from API.
+//   const totalPages = await fetchStrapiAPI("/wallets", {
+//     populate: ["wallet_categories"], 
+//     pagination: {
+//       page: 1,
+//       pageSize: 100,
+//     }
+//   })
+//   const numberOfPages = totalPages.meta.pagination.pageCount
  
-  // Build paths `blog/0`, `blog/1` ...etc.
-  const paths = Array(numberOfPages)
-    .fill(0)
-    .map((_, i) => locales.map((locale) => ({
-      params: {
-        page: `${i + 1}`,
+//   // Build paths `blog/0`, `blog/1` ...etc.
+//   const paths = Array(numberOfPages)
+//     .fill(0)
+//     .map((_, i) => locales.map((locale) => ({
+//       params: {
+//         page: `${i + 1}`,
+//       },
+//       locale
+//     }))).flat()
+//   return {
+//     paths,
+//     fallback: false,
+//   }
+// }
+
+export async function getServerSideProps(context) {
+
+  const walletCategoriesRes = await fetchStrapiAPI("/wallet-categories", {
+    locale: "all",
+    sort: "name:asc",
+  })
+  const walletsRes = await fetchStrapiAPI("/wallets", {
+    fields: [
+      "name", 
+      "social", 
+      "updatedAt", 
+      "slug", 
+      "locale"
+    ],   
+    populate: {
+      wallet_categories: {
+        fields: ["name", "slug", "locale"],
+      }, 
+      blockchains: {
+        fields: ["name", "slug", "locale"],
       },
-      locale
-    }))).flat()
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params, ...context }) {
-
-  const walletCategoriesRes = await fetchStrapiAPI("/wallet-categories")
-  const walletsRes = await fetchStrapiAPI("/wallets", {  
-    populate: ["wallet_categories", "blockchains"], 
+    },
+    locale: "all", 
     pagination: {
-      page: Number(params.page),
+      page: context.query.page,
       pageSize: 100,
     },
-	sort: "name:asc"
+	  sort: "name:asc",
   })
 
   return {

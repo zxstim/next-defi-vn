@@ -15,7 +15,7 @@ import { useTranslation } from "next-i18next";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import { fetchStrapiAPI } from "../../lib/api";
 
-export default function Article({ article }) {
+export default function DevArticle({ article }) {
   const { t } = useTranslation("reading");
   const router = useRouter();
   
@@ -96,12 +96,12 @@ export default function Article({ article }) {
                   🗓️ {router.locale === "en" ? formatArticleTimeStampEn(article.attributes.updatedAt) : formatArticleTimeStampVi(article.attributes.updatedAt)}
                 </div>
                 <div style={{ display: "flex", marginBottom: "10px" }}>
-                    <Link href={`/reading/${article.attributes.slug}`} locale="en">
+                    <Link href={`/dev-guides/${article.attributes.slug}`} locale="en">
                     <a style={{ textDecoration: "none" }}>
                         <p className="i18n-button">🇬🇧</p>
                     </a>
                     </Link>
-                    <Link href={`/reading/${article.attributes.slug}`} locale="vi">
+                    <Link href={`/dev-guides/${article.attributes.slug}`} locale="vi">
                     <a style={{ textDecoration: "none" }}>
                         <p className="i18n-button">🇻🇳</p>
                     </a>
@@ -109,7 +109,7 @@ export default function Article({ article }) {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                     <Link href="/">{t("back")}</Link>
-                    <Link href="/reading">{t("prev")}</Link>
+                    <Link href="/dev-guides">{t("prev")}</Link>
                 </div>
                 <ReactMarkdown
                 children={article.attributes.content}
@@ -144,7 +144,7 @@ export default function Article({ article }) {
 }
 
 export async function getStaticPaths({ locales }) {
-  const articlesRes = await fetchStrapiAPI("/articles", { fields: ["slug"] });
+  const articlesRes = await fetchStrapiAPI("/dev-articles", { fields: ["slug"] });
 
   return {
     paths: articlesRes.data.map((article) => locales.map((locale) => ({
@@ -153,16 +153,16 @@ export async function getStaticPaths({ locales }) {
       },
       locale
     }))).flat(),
-    fallback: 'blocking',
+    fallback: false,
   };
 }
 
 export async function getStaticProps({ params, ...context }) {
-  const articlesRes = await fetchStrapiAPI("/articles", {
+  const articlesRes = await fetchStrapiAPI("/dev-articles", {
     filters: {
       slug: params.slug,
     },
-    populate: ["image", "categories", "author"],
+    populate: ["image", "dev_categories", "author"],
   });
 
   return {

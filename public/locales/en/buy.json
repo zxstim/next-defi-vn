@@ -1,5 +1,9 @@
 {
     "title": "💰 Buy crypto",
     "back": "🏠 Go back to home",
-    "subtitle": "Providers"
+    "subtitle1": "Recommended",
+    "subtitle2": "Providers",
+    "buy": "Buy Crypto",
+    "sell": "Sell Crypto",
+    "info": "ℹ️ Learn more"
 }

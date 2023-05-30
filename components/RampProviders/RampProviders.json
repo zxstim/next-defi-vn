@@ -2,8 +2,7 @@
     {
         "id": 3,
         "name": "Poko",
-        "tag": false,
-        "desc": "High success rate in Asia and Latin America. Supports various payment methods.",
+        "tags": ["Asia", "Latin America", "100+ countries", "On-ramp Aggregator", "Direct Checkout"],
         "referLink": "https://www.pokoapp.xyz/onramp-aggregator",
         "logo": "/poko-logo.svg"
     }

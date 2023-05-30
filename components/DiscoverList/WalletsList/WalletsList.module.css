@@ -63,6 +63,45 @@
   margin-top: 16px;
 }
 
+/* .wallets_cta_box {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.wallets_item_learn_more {
+  background-color: whitesmoke;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  width: 150px;
+  text-align: center;
+}
+
+.wallets_item_web {
+  background-color: whitesmoke;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  width: auto;
+  text-align: center;
+} */
+
+.cta_learn_more {
+  background-color: whitesmoke;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
 .wallets_social_container {
   display: flex;
   flex-direction: row;
@@ -75,8 +114,8 @@
   color: #1a1a1a;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100%;
   font-size: 14px;
+  width: 100%;
   text-align: center;
 }
 

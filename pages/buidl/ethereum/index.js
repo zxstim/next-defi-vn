@@ -3,9 +3,8 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../../components/UpButton/UpButton";
-import AppFooter from "../../components/AppFooter/AppFooter";
-import Ethereum from "../../components/Buidl/Ethereum/Ethereum";
+// import UpButton from "../../../components/UpButton/UpButton";
+import AppFooter from "../../../components/AppFooter/AppFooter";
 
 export default function BuidlEthereum(props) {
   const { t } = useTranslation("ethereum");
@@ -57,9 +56,7 @@ export default function BuidlEthereum(props) {
             <Link href="/">{t("back")}</Link>
             <Link href="/buidl">{t("prev")}</Link>
           </div>
-          <UpButton />
-          <h2>👇 Start from here!</h2>
-          <Ethereum />
+          <h2>Complete Wiki about Ethereum and all resources</h2>
           {/* <div id="oddin-tag" style={{width: "0", height: "0"}}></div>
           <Script src={'//dev-web.oddin.ai/api/Campaign/otag.js?oid=74cc4707&h=1&cb=' + Date.now()}/> */}
           <br />

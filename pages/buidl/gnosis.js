@@ -5,7 +5,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import Gnosis from "../../components/Buidl/Gnosis/Gnosis";
+// import Gnosis from "../../components/Buidl/Gnosis/Gnosis";
+import WorkInProgress from "../../components/WorkInProgress/WorkInProgress";
 
 export default function BuidlGnosis(props) {
   const { t } = useTranslation("gnosis");
@@ -58,7 +59,7 @@ export default function BuidlGnosis(props) {
           </div>
           <UpButton />
           <h2>👇 Start from here!</h2>
-          <Gnosis />
+          <WorkInProgress />
           <br />
           <hr />
           <AppFooter />

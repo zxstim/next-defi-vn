@@ -5,7 +5,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../../components/UpButton/UpButton";
 import AppFooter from "../../components/AppFooter/AppFooter";
-import Ethereum from "../../components/Buidl/Ethereum/Ethereum";
+// import Ethereum from "../../components/Buidl/Ethereum/Ethereum";
+import WorkInProgress from "../../components/WorkInProgress/WorkInProgress";
 
 export default function BuidlPolygon(props) {
   const { t } = useTranslation("ethereum");
@@ -41,20 +42,23 @@ export default function BuidlPolygon(props) {
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/en/buidl/ethereum" locale="en">
+            <Link href="/buidl/polygon" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/buidl/ethereum" locale="vi">
+            <Link href="/buidl/polygon" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
             </Link>
           </div>
-          <Link href="/buidl">{t("back")}</Link>
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/buidl">{t("prev")}</Link>
+          </div>
           <UpButton />
-          <Ethereum />
+          <WorkInProgress />
           <br />
           <hr />
           <AppFooter />

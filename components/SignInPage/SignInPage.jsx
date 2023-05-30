@@ -22,7 +22,10 @@ export default function SignInPage({ providers, csrfToken }) {
           </a>
         </Link>
       </div>
-      <div>
+      <div className={styles.back_button}>
+        <Link href="/">{t("back")}</Link>
+      </div>
+      {/* <div>
         <button
           className={styles.webauthn_signin_button}
           onClick={() => signIn("webauthn", { username: "demo" })}
@@ -38,7 +41,7 @@ export default function SignInPage({ providers, csrfToken }) {
       </div>
       <div className={styles.separator}>
         <span className={styles.separatorText}>{t("separator")}</span>
-      </div>
+      </div> */}
       <div>
         <button
           className={styles.google_signin_button}

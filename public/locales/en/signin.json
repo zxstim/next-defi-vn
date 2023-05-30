@@ -1,5 +1,6 @@
 {
     "title": "Sign in",
+    "back": "🏠 Go back to home",
     "method1": "Sign in with Biometric",
     "method2": "Sign in with Google",
     "method3": "Sign in with GitHub",

@@ -120,17 +120,20 @@ export async function getServerSideProps(context) {
       "locale"
     ],   
     populate: {
+      logo: "*",
       wallet_categories: {
         fields: ["name", "slug", "locale"],
+        sort: ["name:asc"],
       }, 
       blockchains: {
         fields: ["name", "slug", "locale"],
+        sort: ["name:asc"],
       },
     },
     locale: "all", 
     pagination: {
       page: context.query.page,
-      pageSize: 100,
+      pageSize: 50,
     },
 	  sort: "name:asc",
   })

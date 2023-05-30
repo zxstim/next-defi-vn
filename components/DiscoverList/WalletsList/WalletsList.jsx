@@ -41,8 +41,16 @@ export default function WalletsList({ wallets, pagination, walletCategories }) {
             router.locale === "en" && wallet.attributes.locale === "en" ?
             <div key={wallet.id} className={styles.wallets_item}>
               <div className={styles.wallets_item_info}>
-                <div className={styles.wallets_item_title}>
-                  {wallet.attributes.name}
+                <div className={styles.image_name_container}>
+                  <Image 
+                    src={wallet.attributes.logo.data.attributes.formats.thumbnail.url}
+                    alt={wallet.attributes.logo.alternativeText}
+                    width={40}
+                    height={40}
+                  />
+                  <div className={styles.wallets_item_title}>
+                    {wallet.attributes.name}
+                  </div>
                 </div>
                 <div className={styles.wallets_item_tech_badge_container}>
                   {wallet.attributes.wallet_categories.data.map((tag) => (
@@ -52,17 +60,6 @@ export default function WalletsList({ wallets, pagination, walletCategories }) {
                     ))
                   }
                 </div>
-                {/* <div className={styles.wallets_item_chains_container}>
-                  <div className={styles.wallets_item_chains_label}>Chains</div>
-                  <div className={styles.wallets_item_badge_container}>
-                    {wallet.attributes.blockchains.data.map((blockchain) => (
-                      <div key={blockchain} className={styles.wallets_item_chain}>
-                          {blockchain.attributes.name}
-                      </div>
-                      ))
-                    }
-                  </div>
-                </div> */}
               </div>
               <div className={styles.wallets_cta_container}>
                 <div className={styles.wallets_social_container}>
@@ -177,17 +174,6 @@ export default function WalletsList({ wallets, pagination, walletCategories }) {
                   {wallet.attributes.name}
                 </div>
               <div className={styles.wallets_item_tech_badge_container}>
-                {/* {wallet.attributes.wallet_categories.data.map((tag) => (
-                  router.locale === "en" && tag.attributes.locale === "en" ? 
-                  <div key={tag.id} className={styles.wallets_item_tech}>
-                    {tag.attributes.name}
-                  </div> : 
-                  router.locale === "vi" && tag.attributes.locale === "vi" ?
-                  <div key={tag.id} className={styles.wallets_item_tech}>
-                    {tag.attributes.name}
-                  </div> : null
-                  ))
-                } */}
                 {wallet.attributes.wallet_categories.data.map((tag) => (
                   <div key={tag.id} className={styles.wallets_item_tech}>
                     {tag.attributes.name}
@@ -195,17 +181,6 @@ export default function WalletsList({ wallets, pagination, walletCategories }) {
                   ))
                 }
               </div>
-              {/* <div className={styles.wallets_item_chains_container}>
-                <div className={styles.wallets_item_chains_label}>Chains</div>
-                <div className={styles.wallets_item_badge_container}>
-                  {wallet.attributes.blockchains.data.map((blockchain) => (
-                    <div key={blockchain} className={styles.wallets_item_chain}>
-                        {blockchain.attributes.name}
-                    </div>
-                    ))
-                  }
-                </div>
-              </div> */}
             </div>
             <div className={styles.wallets_cta_container}>
               <div className={styles.wallets_social_container}>

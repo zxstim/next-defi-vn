@@ -130,7 +130,6 @@ export async function getServerSideProps(context) {
     },
     locale: "all"
   });
-  console.log(walletsRes.data)
 
   return {
     props: { 

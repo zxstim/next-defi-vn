@@ -44,5 +44,30 @@
 .social_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 8px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.anchor_tag {
+  text-decoration: none;
+}
+
+.anchor_tag:hover {
+  text-decoration: none;
+}
+
+.social_tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a !important;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  width: fit-content;
 }

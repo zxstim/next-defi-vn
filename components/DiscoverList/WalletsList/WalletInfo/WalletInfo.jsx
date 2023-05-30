@@ -17,113 +17,116 @@ export default function WalletInfo({ wallet }) {
   const { t } = useTranslation("wallets");
   const router = useRouter();
 
-  console.log(wallet);
-
   return (
     <>
       <div className={styles.datetime_info}>
-        🗓️ {formatArticleTimeStampEn(wallet[0].attributes.updatedAt)}
-      </div> 
-      {/* <div>
-        {wallet[0].attributes.description}
-      </div> */}
+        🗓️ {router.locale === "en" ? formatArticleTimeStampEn(wallet[0].attributes.updatedAt) : formatArticleTimeStampVi(wallet[0].attributes.updatedAt)}
+      </div>
       <h2>{t("social")}</h2>
       <div className={styles.social_container}>
         {wallet[0].attributes.social.web ? (
-          <div>
-            <a href={wallet[0].attributes.social.web}>
+          <a href={wallet[0].attributes.social.web} className={styles.anchor_tag}>
+            <div className={styles.social_tag}>
               <Image
                 src="/icons8-website.svg"
                 alt="Web icon"
-                width={30}
-                height={30}
-              />
-            </a>
-          </div>
+                width={20}
+                height={20}
+              />   
+                <div>Website</div>   
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.telegram ? (
-          <div>
-            <a href={wallet[0].attributes.social.telegram}>
+          <a href={wallet[0].attributes.social.telegram} className={styles.anchor_tag}>
+            <div className={styles.social_tag}>
               <Image
                 src="/icons8-telegram.svg"
                 alt="Telegram icon"
-                width={30}
-                height={30}
+                width={20}
+                height={20}
               />
-            </a>
-          </div>
+              <div>Telegram</div>
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.twitter ? (
-          <div>
-            <a href={wallet[0].attributes.social.twitter}>
+          <a href={wallet[0].attributes.social.twitter} className={styles.anchor_tag}>
+            <div className={styles.social_tag}>  
               <Image
                 src="/icons8-twitter.svg"
                 alt="Twitter icon"
-                width={30}
-                height={30}
+                width={20}
+                height={20}
               />
-            </a>
-          </div>
+              <div>Twitter</div>
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.discord ? (
-          <div>
-            <a href={wallet[0].attributes.social.discord}>
+          <a href={wallet[0].attributes.social.discord} className={styles.anchor_tag}>
+            <div className={styles.social_tag}>   
               <Image
                 src="/icons8-discord.svg"
                 alt="Discord icon"
-                width={30}
-                height={30}
+                width={20}
+                height={20}
               />
-            </a>
-          </div>
+              <div>Discord</div>
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.facebook ? (
-          <div>
-            <a href={wallet[0].attributes.social.facebook}>
+          <a href={wallet[0].attributes.social.facebook} className={styles.anchor_tag}>
+            <div className={styles.social_tag}>   
               <Image
                 src="/icons8-facebook.svg"
                 alt="Email icon"
-                width={30}
-                height={30}
+                width={20}
+                height={20}
               />
-            </a>
-          </div>
+              <div>Facebook</div>
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.linkedin ? (
-          <div>
-            <a href={wallet[0].attributes.social.linkedin}>
+          <a href={wallet[0].attributes.social.linkedin} className={styles.anchor_tag}>
+            <div className={styles.social_tag}> 
               <Image
                 src="/icons8-linkedin.svg"
                 alt="Linkedin icon"
-                width={30}
-                height={30}
+                width={20}
+                height={20}
               />
-            </a>
-          </div>
+              <div>LinkedIn</div>
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.youtube ? (
-          <div>
-            <a href={wallet[0].attributes.social.youtube}>
+          <a href={wallet[0].attributes.social.youtube}>
+            <div className={styles.social_tag}>
               <Image
                 src="/icons8-youtube.svg"
-                alt="Linkedin icon"
-                width={30}
-                height={30}
+                alt="Youtube icon"
+                width={20}
+                height={20}
               />
-            </a>
-          </div>
+              <div>YouTube</div>
+            </div>
+          </a>
         ) : null}
         {wallet[0].attributes.social.email ? (
-          <span>
-            <a href={wallet[0].attributes.social.email}>
+          <a href={wallet[0].attributes.social.email}>
+            <div className={styles.social_tag}>
               <Image
                 src="/icons8-circled-envelope.svg"
                 alt="Email icon"
-                width={32}
-                height={32}
+                width={22}
+                height={22}
               />
-            </a>
-          </span>
+              <div>Email</div>
+            </div>
+          </a>
         ) : null}
       </div>
       <h2>{t("category")}</h2>

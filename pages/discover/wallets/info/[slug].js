@@ -74,12 +74,12 @@ export default function WalletInfoPage({ wallet }) {
             >{wallet[0].attributes.name}</h1>
           </div>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href={`/discover/wallets/info/${wallet[0].attributes.slug}`} locale="en">
+            <Link href={`/discover/wallets/info/${wallet[0].attributes.slug.split("-")[0]}`} locale="en">
             <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
             </a>
             </Link>
-            <Link href={`/discover/wallets/info/${wallet[0].attributes.slug}-vi`} locale="vi">
+            <Link href={`/discover/wallets/info/${wallet[0].attributes.slug.split("-")[0]}-vi`} locale="vi">
             <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
             </a>

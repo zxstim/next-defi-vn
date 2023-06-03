@@ -5,11 +5,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import FloatingButton from "../../../components/FloatingButton/FloatingButton"
 import AppFooter from "../../../components/AppFooter/AppFooter";
-import WalletsList from "../../../components/DiscoverList/WalletsList/WalletsList";
+import BlockchainsList from "../../../components/DiscoverList/BlockchainsList/BlockchainsList";
 import { fetchStrapiAPI } from "../../../lib/api";
 
-export default function Wallets({ wallets, pagination, walletCategories }) {
-  const { t } = useTranslation("wallets");
+export default function Blockchains({ blockchains, pagination, blockchainCategories }) {
+  const { t } = useTranslation("blockchains");
   return (
     <>
       <Script
@@ -69,7 +69,7 @@ export default function Wallets({ wallets, pagination, walletCategories }) {
           </div>
           <FloatingButton />
           <h2>{t("subtitle")}</h2>
-          <WalletsList wallets={wallets} pagination={pagination} walletCategories={walletCategories}/>
+          <BlockchainsList blockchains={blockchains} pagination={pagination} blockchainCategories={blockchainCategories}/>
           <br />
           <hr />
           <AppFooter />
@@ -107,11 +107,11 @@ export default function Wallets({ wallets, pagination, walletCategories }) {
 
 export async function getServerSideProps(context) {
 
-  const walletCategoriesRes = await fetchStrapiAPI("/wallet-categories", {
+  const blockchainCategoriesRes = await fetchStrapiAPI("/blockchain-categories", {
     locale: "all",
     sort: "name:asc",
   })
-  const walletsRes = await fetchStrapiAPI("/wallets", {
+  const blockchainsRes = await fetchStrapiAPI("/blockchains", {
     fields: [
       "name", 
       "social", 
@@ -121,7 +121,7 @@ export async function getServerSideProps(context) {
     ],   
     populate: {
       logo: "*",
-      wallet_categories: {
+      blockchain_categories: {
         fields: ["name", "slug", "locale"],
         sort: ["name:asc"],
       }, 
@@ -140,10 +140,10 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      wallets: walletsRes.data,
-      pagination: walletsRes.meta.pagination,
-      walletCategories: walletCategoriesRes.data,
-      ...(await serverSideTranslations(context.locale, ["common", "wallets"])),
+      blockchains: blockchainsRes.data,
+      pagination: blockchainsRes.meta.pagination,
+      blockchainCategories: blockchainCategoriesRes.data,
+      ...(await serverSideTranslations(context.locale, ["common", "blockchains"])),
       // Will be passed to the page component as props
     },
   };

@@ -19,6 +19,10 @@ module.exports = {
         destination: "/investors/1"
       },
       {
+        source: "/discover/blockchains",
+        destination: "/discover/blockchains/1"
+      },
+      {
         source: "/discover/wallets",
         destination: "/discover/wallets/1"
       },

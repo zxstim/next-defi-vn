@@ -10,7 +10,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { github } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-import styles from "./blockchainInfo.module.css";
+import styles from "./BlockchainInfo.module.css";
 // import useSWR from 'swr'
 
 export default function BlockchainInfo({ blockchain }) {

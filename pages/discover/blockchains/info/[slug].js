@@ -56,17 +56,18 @@ export default function BlockchainInfoPage({ blockchain }) {
             gap: "16px",
             alignItems: "center"
           }}>
-            <div style={{
-              width: "80px",
-              height: "80px",
-            }}>
-              <Image 
-                src={blockchain[0].attributes.logo.data.attributes.formats.thumbnail.url}
-                alt={blockchain[0].attributes.logo.alternativeText}
-                width={80}
-                height={80}
-              />
-            </div>
+            {blockchain[0].attributes.logo.data.attributes.formats.thumbnail.url ? 
+              <div style={{
+                width: "80px",
+                height: "80px",
+              }}>
+                <Image 
+                  src={blockchain[0].attributes.logo.data.attributes.formats.thumbnail.url}
+                  alt={blockchain[0].attributes.logo.alternativeText}
+                  width={80}
+                  height={80}
+                />
+              </div> : null}
             <h1
               style={{
                 width: "100%",

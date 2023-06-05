@@ -4,12 +4,12 @@ import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
-import DevSupport from "../components/DevSupport/DevSupport";
+import BuildStation from "../components/BuildStation/BuildStation";
 import AppFooter from "../components/AppFooter/AppFooter";
 
 
-export default function DevSupportPage(props) {
-  const { t } = useTranslation("dev-support");
+export default function BuildStationPage(props) {
+  const { t } = useTranslation("build-station");
 
   return (
     <>
@@ -48,12 +48,12 @@ export default function DevSupportPage(props) {
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/dev-support" locale="en">
+            <Link href="/build-station" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/dev-support" locale="vi">
+            <Link href="/build-station" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
@@ -62,7 +62,7 @@ export default function DevSupportPage(props) {
           <Link href="/">{t("back")}</Link>
           <UpButton />
           {/* <h2>{t("subtitle")}</h2> */}
-          <DevSupport />
+          <BuildStation />
           <br />
           <hr />
           <AppFooter />
@@ -76,7 +76,7 @@ export default function DevSupportPage(props) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "dev-support"])),
+      ...(await serverSideTranslations(locale, ["common", "build-station"])),
       // Will be passed to the page component as props
     },
   };

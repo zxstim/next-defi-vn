@@ -1,11 +1,11 @@
 import { useTranslation } from "next-i18next";
-import styles from "./DevSupport.module.css";
+import styles from "./BuildStation.module.css";
 import Image from "next/image";
 import Accordion from "../Accordion/Accordion";
 
 
-export default function DevSupport() {
-    const { t } = useTranslation("dev-support");
+export default function BuildStation() {
+    const { t } = useTranslation("build-station");
     // write an accordion component below
     const cohosts = [
         {

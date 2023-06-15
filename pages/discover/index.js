@@ -74,28 +74,28 @@ export default function Discover(props) {
                 <h3 className="nav-menu-button">{t("title1")}</h3>
               </a>
             </Link>
-            <Link href="/discover/defi">
+            <Link href="/discover/defi-projects">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">{t("title7")}</h3>
               </a>
             </Link>
 
-            <Link href="/discover/nft">
+            <Link href="/discover/nft-projects">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">{t("title4")}</h3>
               </a>
             </Link>
-            <Link href="/discover/metaverse">
+            <Link href="/discover/metaverses">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">{t("title6")}</h3>
               </a>
             </Link>
-            <Link href="/discover/gamefi">
+            <Link href="/discover/gamefi-projects">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">{t("title5")}</h3>
               </a>
             </Link>
-            <Link href="/discover/portfolio-tools">
+            <Link href="/discover/portfolio-projects">
               <a style={{ textDecoration: "none" }}>
                 <h3 className="nav-menu-button">{t("title3")}</h3>
               </a>

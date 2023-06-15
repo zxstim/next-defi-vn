@@ -1,6 +1,7 @@
 {
-    "title": "☎️ BUILD Station",
+    "title": "☎️ BUIDL Station",
     "back": "🏠 Quay về trang chủ",
+    "prev": "⬅️ Quay về trang trước",
     "heading1": "Sự kiện này là gì?",
     "paragraph1": "Bạn có phải là một lập trình viên mới hay có kinh nghiệm tìm kiếm một cộng đồng hỗ trợ để tăng kỹ năng và kiến thức của mình? Hãy tham gia sự kiện hỗ trợ cho lập trình viên hàng tuần của chúng tôi!",
     "heading2": "Các bạn hỗ trợ gì?",
@@ -16,7 +17,10 @@
     "pros5": "Bootstrap marketing",
     "content5": "Chúng tôi hiểu rằng việc tiếp thị một dự án có thể đáng sợ, đặc biệt khi bạn mới bắt đầu. Đó là lí do tại sao chúng tôi có các chuyên gia tiếp thị có sẵn để tư vấn cho bạn về cách tạo ra các dự án của mình và có được sự quan tâm và khởi động thành công.",
     "heading3": "Sự kiện bắt đầu khi nào?",
-    "paragraph3": "10:00AM GMT+7 vào thứ 6 hằng tuần. Tham gia kênh Telegram dưới đây để nhận thông báo khi sự kiện bắt đầu.",
+    "paragraph3": "9:30 AM GMT+7 vào thứ 6 hằng tuần. Tham gia kênh Telegram dưới đây để nhận thông báo khi sự kiện bắt đầu.",
     "cohosts": "Co-Hosts",
-    "contributors": "Những người đóng góp"
+    "contributors": "Những người đóng góp",
+    "past-events": "Sự kiện trước đó",
+    "view": "Xem thêm",
+    "related-events": "Sự kiện liên quan"
 }

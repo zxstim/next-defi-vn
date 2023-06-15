@@ -1,0 +1,35 @@
+.past_events_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px 15px;
+}
+.past_event_container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border: 2px solid #1a1a1a;
+  box-shadow: 3px 3px #1a1a1a;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 12px;
+  color: #1a1a1a;
+}

@@ -1,6 +1,7 @@
 {
     "title": "🌟 Khám phá",
     "back": "🏠 Quay về trang chủ",
+    "prev": "⬅️ Quay về trang trước",
     "subtitle": "Danh mục khám phá",
     "title1": "🔑 Ví Web3",
     "title2": "🌏 Cộng đồng",
@@ -10,10 +11,15 @@
     "title6": "🏰 Metaverse",
     "title7": "💎 DeFi",
     "title8": "⛓️ Blockchain",
+    "social": "🔗 Đường dẫn chính thức",
+    "category": "🧩 Danh mục",
+    "blockchain": "⛓️ Các Blockchain",
+    "content": "📝 Nội dung",
     "cta": "Tìm hiểu thêm",
     "load": "⏳ Đang tải...",
     "end": "Bạn đã xem hết danh sách! 👋",
     "load-more": "Tải thêm",
     "disclosure": "Việc xuất hiện của các dự án trên trang này không có nghĩa là chúng được đánh giá bởi Defi.vn. Bạn hãy tìm hiểu kỹ các dự án trên trước khi đầu tư hoặc sử dụng dịch vụ.",
-    "note": "👀 Lưu ý"
+    "note": "👀 Lưu ý",
+    "subtitle1": "Danh sách dự án DeFi"
 }

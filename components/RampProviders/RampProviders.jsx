@@ -203,31 +203,39 @@ export default function BuyCryptoProviders() {
       <h2>{t("subtitle2")}</h2>
       <div className={styles.providers_container}>
         {rampProviders.map((provider) => (
-          <a
-            key={provider.id}
-            href={provider.referLink}
-            target="_blank"
-            style={{ textDecoration: "none" }}
-          >
-            <div className={styles.provider_box}>
-              <div className={styles.provider_intro}>
-                <Image
-                  style={{ marginTop: "0px" }}
-                  src={provider.logo}
-                  alt={provider.name}
-                  width={40}
-                  height={40}
-                />
-                <div className="buy-item-name">{provider.name}</div>
-              </div>
-              <div className={styles.provider_tags_container}>
-                {provider.tags ? (
-                  provider.tags.map((tag) => (
-                    <div className={styles.provider_tag}>{tag}</div>
-                ))) : null}
-              </div>
+          <div className={styles.provider_box}>
+            <div className={styles.provider_intro}>
+              <Image
+                style={{ marginTop: "0px" }}
+                src={provider.logo}
+                alt={provider.name}
+                width={40}
+                height={40}
+              />
+              <div className="buy-item-name">{provider.name}</div>
             </div>
-          </a>
+            <div className={styles.provider_tags_container}>
+              {provider.tags ? (
+                provider.tags.map((tag) => (
+                  <div className={styles.provider_tag}>{tag}</div>
+              ))) : null}
+            </div>
+            <a
+              key={provider.id}
+              href={provider.referLink}
+              target="_blank"
+              className={styles.provider_buy_button}
+            >
+              {t("buy")}
+            </a>
+            <Link 
+              href={provider.infoLink}
+            >
+              <a className={styles.provider_info_button}>
+                {t("info")}
+              </a>
+            </Link>
+          </div>
         ))}
       </div>
     </>

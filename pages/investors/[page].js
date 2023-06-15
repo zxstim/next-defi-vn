@@ -73,41 +73,21 @@ export default function Investors({ investors, pagination, investorCategories })
   );
 }
 
-export async function getStaticPaths({ locales }) {
-  // Get total number of posts from API.
-  const totalPages = await fetchStrapiAPI("/investors", {
-    populate: ["investor_categories"], 
-    pagination: {
-      page: 1,
-      pageSize: 100,
-    }
-  })
-  const numberOfPages = totalPages.meta.pagination.pageCount
- 
-  // Build paths `blog/0`, `blog/1` ...etc.
-  const paths = Array(numberOfPages)
-    .fill(0)
-    .map((_, i) => locales.map((locale) => ({
-      params: {
-        page: `${i + 1}`,
-      },
-      locale
-    }))).flat()
-  return {
-    paths,
-    fallback: false,
-  }
-}
 
-export async function getStaticProps({ params, ...context }) {
+export async function getServerSideProps(context) {
 
   const investorCategoriesRes = await fetchStrapiAPI("/investor-categories")
   const investorsRes = await fetchStrapiAPI("/investors", { 
-		fields: ["name", "social"], 
-    populate: ["investor_categories"], 
+		fields: [
+      "name", 
+      "social"
+    ], 
+    populate: [
+      "investor_categories"
+    ], 
     pagination: {
-      page: Number(params.page),
-      pageSize: 100,
+      page: context.query.page,
+      pageSize: 60,
     },
 		sort: "name:asc"
   })

@@ -1,6 +1,7 @@
 {
     "title": "🌟 Discover",
     "back": "🏠 Go back to home",
+    "prev": "⬅️ Go back to previous page",
     "subtitle": "Discover collections",
     "title1": "🔑 Web3 Wallets",
     "title2": "🌏 Communities",
@@ -10,10 +11,15 @@
     "title6": "🏰 Metaverse",
     "title7": "💎 DeFi",
     "title8": "⛓️ Blockchains",
+    "social": "🔗 Official links",
+    "category": "🧩 Categories",
+    "blockchain": "⛓️ Blockchains",
+    "content": "📝 About",
     "cta": "Learn more",
     "load": "⏳ Loading...",
     "end": "You've reached the end! 👋",
     "load-more": "Load more",
     "disclosure": "Appearance on this list is not an endorsement from Defi.vn. Please do your own research before investing or using any of the projects above.",
-    "note": "👀 Note"
+    "note": "👀 Note",
+    "subtitle1": "DeFi projects list"
 }

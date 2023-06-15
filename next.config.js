@@ -27,6 +27,10 @@ module.exports = {
         destination: "/discover/wallets/1"
       },
       {
+        source: "/discover/defi-projects",
+        destination: "/discover/defi-projects/1"
+      },
+      {
         source: "/discover/communities",
         destination: "/discover/communities/1"
       },

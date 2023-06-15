@@ -170,8 +170,16 @@ export default function WalletsList({ wallets, pagination, walletCategories }) {
             router.locale === "vi" && wallet.attributes.locale === "vi" ?
             <div key={wallet.id} className={styles.wallets_item}>
               <div className={styles.wallets_item_info}>
-                <div className={styles.wallets_item_title}>
-                  {wallet.attributes.name}
+                <div className={styles.image_name_container}>
+                  <Image 
+                    src={wallet.attributes.logo.data.attributes.formats.thumbnail.url}
+                    alt={wallet.attributes.logo.alternativeText}
+                    width={40}
+                    height={40}
+                  />
+                  <div className={styles.wallets_item_title}>
+                    {wallet.attributes.name}
+                  </div>
                 </div>
               <div className={styles.wallets_item_tech_badge_container}>
                 {wallet.attributes.wallet_categories.data.map((tag) => (

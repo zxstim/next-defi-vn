@@ -1,11 +1,11 @@
 import { useTranslation } from "next-i18next";
-import styles from "./BuildStation.module.css";
+import styles from "./BuidlStation.module.css";
 import Image from "next/image";
 import Accordion from "../Accordion/Accordion";
 
 
-export default function BuildStation() {
-    const { t } = useTranslation("build-station");
+export default function BuidlStation() {
+    const { t } = useTranslation("buidl-station");
     // write an accordion component below
     const cohosts = [
         {
@@ -45,7 +45,9 @@ export default function BuildStation() {
             <h3>{t("pros5")}</h3>
             <p>{t("content5")}</p>
             <h2>{t("heading3")}</h2>
-            <p>{t("paragraph3")}</p>        
+            <p>{t("paragraph3")}</p>
+            <p>{t("paragraph4")}</p>   
+            <p>{t("paragraph5")}</p>           
             <a style={{ textDecoration: "none", width: "fit-content" }} href="https://t.me/defivnspace">
                 <div className={styles.telegram_button}>
                     <Image

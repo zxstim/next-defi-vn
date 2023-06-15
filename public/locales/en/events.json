@@ -1,10 +1,15 @@
 {
     "title": "🎟️ Events",
     "back": "🏠 Go back to home",
+    "prev": "⬅️ Go back to previous page",
     "events-list": "Events List",
     "register": "Register",
     "date-filter": "Date filter:",
     "month-filter": "Month filter:",
     "location-filter": "Location filter:",
-    "reset": "Reset"
+    "reset": "Reset",
+    "general": "ℹ️ General information",
+    "categories": "🧩 Categories",
+    "content": "📝 About",
+    "album": "📷 Photos"
 }

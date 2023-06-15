@@ -17,6 +17,7 @@
   margin-top: 0px !important;
   position: relative;
   box-shadow: 3px 3px black;
+  justify-content: space-between;
 }
 
 .provider_intro {
@@ -35,7 +36,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4px;
-  margin: 8px 0px 8px 0px;
 }
 
 .provider_tag {
@@ -48,6 +48,10 @@
   font-weight: bold;
   text-transform: capitalize;
   width: fit-content;
+}
+
+.provider_info_button {
+  margin-top: 8px;
 }
 
 .buy_item_desc {
@@ -161,4 +165,17 @@
 
 .unlimit_info_button {
   margin-top: 16px;
+}
+
+.provider_buy_button {
+  background-color: #ffc900 !important;
+  color: #1a1a1a !important;
+  padding: 8px 32px;
+  border: 2px solid #1a1a1a;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: fit-content;
+  text-decoration: none;
 }

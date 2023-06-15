@@ -3,9 +3,9 @@ import Link from "next/link";
 import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import UpButton from "../components/UpButton/UpButton";
-import AppFooter from "../components/AppFooter/AppFooter";
-import EventsList from "../components/EventsList/EventsList";
+import UpButton from "../../components/UpButton/UpButton";
+import AppFooter from "../../components/AppFooter/AppFooter";
+import EventsList from "../../components/EventsList/EventsList";
 
 export default function Events(props) {
   const { t } = useTranslation("events");

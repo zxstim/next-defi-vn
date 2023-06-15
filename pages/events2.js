@@ -4,13 +4,11 @@ import Script from "next/script";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import UpButton from "../components/UpButton/UpButton";
-import BuildStation from "../components/BuildStation/BuildStation";
 import AppFooter from "../components/AppFooter/AppFooter";
+import EventsList from "../components/EventsList/EventsList";
 
-
-export default function BuildStationPage(props) {
-  const { t } = useTranslation("build-station");
-
+export default function Events2(props) {
+  const { t } = useTranslation("events");
   return (
     <>
       <Script
@@ -28,32 +26,34 @@ export default function BuildStationPage(props) {
           `}
       </Script>
       <Head>
-        <title>Join our Developer Support event | Tham gia sự kiện hỗ trợ Dev của chúng tôi - DeFi.vn</title>
+        <title>Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="../defi.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Join our Developer Support event | Tham gia sự kiện hỗ trợ Dev của chúng tôi - DeFi.vn" />
-        <meta property="og:description" content="Are you an aspiring or experienced developer looking for a supportive community to boost your skills and knowledge? Join our developer support event!" />
-        <meta property="og:url" content="https://defi.vn/dev-support" />
+        <meta name="description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
+        <meta property="og:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta property="og:url" content="https://defi.vn/events" />
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/7ddd605f-f108-49fe-3f45-66fe10475000/defi" />
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/855f74a3-487f-470e-a86c-36bdc9f85a00/defi" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="defi.vn" />
-        <meta property="twitter:url" content="https://www.defi.vn/dev-support" />
-        <meta name="twitter:title" content="Join our Developer Support event | Tham gia sự kiện hỗ trợ Dev của chúng tôi - DeFi.vn" />
-        <meta name="twitter:description" content="Are you an aspiring or experienced developer looking for a supportive community to boost your skills and knowledge? Join our developer support event!" />
-        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/7ddd605f-f108-49fe-3f45-66fe10475000/defi" />
+        <meta property="twitter:url" content="https://www.defi.vn/events" />
+        <meta name="twitter:title" content="Find your crypto events | Tìm sự kiện crypto yêu thích - DeFi.vn" />
+        <meta name="twitter:description" content="Check out a global list of crypto events around the world, find out about the dates, locations and how to register." />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/855f74a3-487f-470e-a86c-36bdc9f85a00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
           <h1 id="top">{t("title")}</h1>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href="/build-station" locale="en">
+            <Link href="/events" locale="en">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
               </a>
             </Link>
-            <Link href="/build-station" locale="vi">
+            <Link href="/events" locale="vi">
               <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
               </a>
@@ -61,8 +61,8 @@ export default function BuildStationPage(props) {
           </div>
           <Link href="/">{t("back")}</Link>
           <UpButton />
-          {/* <h2>{t("subtitle")}</h2> */}
-          <BuildStation />
+          <h2>{t("events-list")}</h2>
+          <EventsList />
           <br />
           <hr />
           <AppFooter />
@@ -72,11 +72,10 @@ export default function BuildStationPage(props) {
   );
 }
 
-// This gets called on every request
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "build-station"])),
+      ...(await serverSideTranslations(locale, ["common", "events"])),
       // Will be passed to the page component as props
     },
   };

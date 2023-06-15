@@ -1,6 +1,7 @@
 {
-    "title": "☎️ BUILD Station",
+    "title": "☎️ BUIDL Station",
     "back": "🏠 Go back to home",
+    "prev": "⬅️ Go back to previous page",
     "heading1": "What is this?",
     "paragraph1": "Are you an aspiring or experienced developer looking for a supportive community to boost your skills and knowledge? Join our weekly developer support event!",
     "heading2": "What kind of support?",
@@ -16,7 +17,12 @@
     "pros5": "Bootstrap marketing",
     "content5": "We understand that marketing a project can be daunting, especially when you're starting. That's why we have marketing experts available to advise you on how to bootstrap your projects and get the visibility they need to launch successfully.",
     "heading3": "When is it?",
-    "paragraph3": "Every Friday starting at 10:00AM GMT+7. Join the Telegram group to get notified with the event details when we go live.",
+    "paragraph3": "Every Friday starting at 9:30 AM GMT+7.",
+    "paragraph4": "Cafe'in, Empire City - Linden Residences, 05 Đ. Trần Bạch Đằng, Thành Phố, Thủ Đức, Thành phố Hồ Chí Minh 70000",
+    "paragraph5": "Join the Telegram group to get notified with the event details when we go live.",
     "cohosts": "Co-Hosts",
-    "contributors": "Contributors"
+    "contributors": "Contributors",
+    "past-events": "Past Events",
+    "view": "See more",
+    "related-events": "Related Events"
 }

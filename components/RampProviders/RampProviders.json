@@ -1,9 +1,18 @@
 [
     {
+        "id": 1,
+        "name": "OnRamp",
+        "tags": ["India", "Turkey", "300+ tokens"],
+        "referLink": "https://onramp.money/app/?appId=1&redirectUrl=https://www.defi.vn",
+        "logo": "/on-ramp-logo.png",
+        "infoLink": "/discover/ramp/info/onramp-money"
+    },
+    {
         "id": 3,
         "name": "Poko",
         "tags": ["Asia", "Latin America", "100+ countries", "On-ramp Aggregator", "Direct Checkout"],
         "referLink": "https://www.pokoapp.xyz/onramp-aggregator",
-        "logo": "/poko-logo.svg"
+        "logo": "/poko-logo.svg",
+        "infoLink": "/discover/ramp/info/pokoapp"
     }
 ]

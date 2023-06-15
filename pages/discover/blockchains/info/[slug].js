@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import constructSlug from "../../../../utils/constructSlug";
 import formatArticleTimeStampEn from "../../../../utils/formatArticleTimeStampEn";
 import formatArticleTimeStampVi from "../../../../utils/formatArticleTimeStampVi";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -75,12 +76,12 @@ export default function BlockchainInfoPage({ blockchain }) {
             >{blockchain[0].attributes.name}</h1>
           </div>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href={`/discover/blockchains/info/${blockchain[0].attributes.slug.split("-")[0]}`} locale="en">
+            <Link href={`/discover/blockchains/info/${constructSlug(blockchain[0].attributes.slug).slugEn}`} locale="en">
             <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
             </a>
             </Link>
-            <Link href={`/discover/blockchains/info/${blockchain[0].attributes.slug.split("-")[0]}-vi`} locale="vi">
+            <Link href={`/discover/blockchains/info/${constructSlug(blockchain[0].attributes.slug).slugVi}`} locale="vi">
             <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
             </a>

@@ -1,10 +1,15 @@
 {
     "title": "🎟️ Sự kiện",
     "back": "🏠 Quay về trang chủ",
+    "prev": "⬅️ Quay về trang trước",
     "events-list": "Danh sách sự kiện",
     "register": "Đăng ký",
     "date-filter": "Lọc ngày tháng:",
     "month-filter": "Lọc tháng:",
     "location-filter": "Lọc địa điểm:",
-    "reset": "Xoá"
+    "reset": "Xoá",
+    "general": "ℹ️ Thông tin chung",
+    "categories": "🧩 Danh mục",
+    "content": "📝 Nội dung",
+    "album": "📷 Hình ảnh"
 }

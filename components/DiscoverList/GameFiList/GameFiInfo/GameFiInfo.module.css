@@ -27,7 +27,6 @@
   font-weight: bold;
   text-transform: capitalize;
   width: fit-content;
-  box-shadow: 2px 2px #1a1a1a;
 }
 
 .datetime_info {
@@ -71,56 +70,4 @@
   font-size: 16px;
   text-transform: capitalize;
   width: fit-content;
-}
-
-.ann_container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.ann_layout {
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  justify-content: left;
-  margin-bottom: 16px;
-  gap: 16px;
-  padding: 8px;
-  border-bottom: 1px solid whitesmoke;
-}
-
-.ann_text {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-}
-
-.pfp {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.member_tab {
-  background-color: #dff362;
-  padding: 4px 8px;
-  border-radius: 5px;
-  border: 2px solid #1a1a1a;
-  text-transform: capitalize;
-  width: fit-content;
-  font-weight: bold;
-}
-
-.investor_tab {
-  /* background-color: #ffdc02; */
-  background-color: #54fa80;
-  padding: 4px 8px;
-  border-radius: 5px;
-  border: 2px solid #1a1a1a;
-  text-transform: capitalize;
-  width: fit-content;
-  font-weight: bold;
 }

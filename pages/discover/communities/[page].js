@@ -35,13 +35,13 @@ export default function Communities({ communities, pagination, communityCategori
         <meta property="og:description" content="Find out about many global communities, what they discuss about and notable figures in the crypto industry." />
         <meta property="og:url" content="https://defi.vn/communities" />
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/889ce4ec-83c8-428a-d3b7-b94960b03100/defi" />
+        <meta property="og:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/917efcc6-7c1c-493f-7d64-eb7e85cd2c00/defi" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="defi.vn" />
         <meta property="twitter:url" content="https://www.defi.vn/communities" />
         <meta name="twitter:title" content="Find your communities | Tìm cộng đồng của bạn - DeFi.vn" />
         <meta name="twitter:description" content="Find out about many global communities, what they discuss about and notable figures in the crypto industry." />
-        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/889ce4ec-83c8-428a-d3b7-b94960b03100/defi" />
+        <meta name="twitter:image" content="https://imagedelivery.net/V8LKJG1wA8wvjWYrCdF9Bw/917efcc6-7c1c-493f-7d64-eb7e85cd2c00/defi" />
       </Head>
       <div className="App">
         <div className="markdown-body">
@@ -58,7 +58,15 @@ export default function Communities({ communities, pagination, communityCategori
               </a>
             </Link>
           </div>
-          <Link href="/">{t("back")}</Link>
+          <div style={{ 
+            display: "flex", 
+            flexDirection: "column", 
+            gap: "10px",  
+            width: "fit-content"
+            }}>
+            <Link href="/">{t("back")}</Link>
+            <Link href="/discover">{t("prev")}</Link>
+          </div>
           <FloatingButton />
           <h2>{t("subtitle")}</h2>
           <CommunitiesList communities={communities} pagination={pagination} communityCategories={communityCategories}/>
@@ -71,42 +79,34 @@ export default function Communities({ communities, pagination, communityCategori
   );
 }
 
-export async function getStaticPaths({ locales }) {
-  // Get total number of posts from API.
-  const totalPages = await fetchStrapiAPI("/communities", {
-    populate: ["community_categories"], 
-    pagination: {
-      page: 1,
-      pageSize: 100,
-    }
+
+export async function getServerSideProps(context) {
+
+  const communityCategoriesRes = await fetchStrapiAPI("/community-categories", {
+    locale: "all",
+    sort: "name:asc",
   })
-  const numberOfPages = totalPages.meta.pagination.pageCount
- 
-  // Build paths `blog/0`, `blog/1` ...etc.
-  const paths = Array(numberOfPages)
-    .fill(0)
-    .map((_, i) => locales.map((locale) => ({
-      params: {
-        page: `${i + 1}`,
-      },
-      locale
-    }))).flat()
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params, ...context }) {
-
-  const communityCategoriesRes = await fetchStrapiAPI("/community-categories")
-  const communitiesRes = await fetchStrapiAPI("/communities", {  
-    populate: ["community_categories"], 
-    pagination: {
-      page: Number(params.page),
-      pageSize: 100,
+  const communitiesRes = await fetchStrapiAPI("/communities", {
+    fields: [
+      "name", 
+      "social", 
+      "updatedAt", 
+      "slug", 
+      "locale"
+    ],   
+    populate: {
+      logo: "*",
+      community_categories: {
+        fields: ["name", "slug", "locale"],
+        sort: ["name:asc"],
+      }
     },
-	sort: "name:asc"
+    locale: "all", 
+    pagination: {
+      page: context.query.page,
+      pageSize: 60,
+    },
+	  sort: "name:asc",
   })
 
   return {

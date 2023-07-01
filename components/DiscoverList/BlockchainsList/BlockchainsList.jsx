@@ -171,8 +171,17 @@ export default function BlockchainsList({ blockchains, pagination, blockchainCat
             router.locale === "vi" && blockchain.attributes.locale === "vi" ?
             <div key={blockchain.id} className={styles.blockchains_item}>
               <div className={styles.blockchains_item_info}>
-                <div className={styles.blockchains_item_title}>
-                  {blockchain.attributes.name}
+                <div className={styles.image_name_container}>
+                  {blockchain.attributes.logo.data.attributes.formats.thumbnail.url ?
+                    <Image 
+                      src={blockchain.attributes.logo.data.attributes.formats.thumbnail.url}
+                      alt={blockchain.attributes.logo.alternativeText}
+                      width={40}
+                      height={40}
+                    /> : null}
+                  <div className={styles.blockchains_item_title}>
+                    {blockchain.attributes.name}
+                  </div>
                 </div>
               <div className={styles.blockchains_item_tech_badge_container}>
                 {blockchain.attributes.blockchain_categories.data.map((tag) => (

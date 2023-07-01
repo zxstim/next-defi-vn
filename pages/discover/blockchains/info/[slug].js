@@ -4,8 +4,6 @@ import Script from "next/script";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import constructSlug from "../../../../utils/constructSlug";
-import formatArticleTimeStampEn from "../../../../utils/formatArticleTimeStampEn";
-import formatArticleTimeStampVi from "../../../../utils/formatArticleTimeStampVi";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { fetchStrapiAPI } from "../../../../lib/api";
@@ -39,12 +37,12 @@ export default function BlockchainInfoPage({ blockchain }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={`${blockchain[0].attributes.name} - DeFi.vn`} />
         <meta property="og:description" content={`Learn about ${blockchain[0].attributes.name}`} />
-        <meta property="og:url" content={`https://www.defi.vn/${blockchain[0].attributes.locale}/discover/wallet${blockchain[0].attributes.slug}`} />
+        <meta property="og:url" content={`https://www.defi.vn/${blockchain[0].attributes.locale}/discover/blockchains${blockchain[0].attributes.slug}`} />
         <meta property="og:type" content="website"/>
         <meta property="og:image" content={blockchain[0].attributes.logo.data.attributes.formats.thumbnail.url} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="defi.vn" />
-        <meta property="twitter:url" content={`https://www.defi.vn/${blockchain[0].attributes.locale}/discover/wallet${blockchain[0].attributes.slug}`} />
+        <meta property="twitter:url" content={`https://www.defi.vn/${blockchain[0].attributes.locale}/discover/blockchains${blockchain[0].attributes.slug}`} />
         <meta name="twitter:title" content={`${blockchain[0].attributes.name} - DeFi.vn`} />
         <meta name="twitter:description" content={`Learn about ${blockchain[0].attributes.name}`} />
         <meta name="twitter:image" content={blockchain[0].attributes.logo.data.attributes.formats.thumbnail.url} />

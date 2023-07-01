@@ -126,7 +126,21 @@ export default function EventInfo({ event }) {
         /> 
       : null}
       <h2>{t("album")}</h2>
-      
+      <div className={styles.images_container}> 
+        {event[0].attributes.images.data ? 
+          event[0].attributes.images.data.map((image) => (
+            <div key={image.id}>
+              <Image
+                src={image.attributes.formats.small.url}
+                alt={image.attributes.formats.small.name}
+                width={image.attributes.formats.small.width}
+                height={image.attributes.formats.small.height}
+              />
+            </div>
+          ))
+        : null
+        }
+      </div>
     </div>
   )
 }

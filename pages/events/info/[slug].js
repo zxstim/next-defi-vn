@@ -100,6 +100,7 @@ export async function getServerSideProps(context) {
     },
     populate: {
       banner: "*",
+      images: "*",
       event_categories: {
         fields: ["name", "slug", "locale"],
       },

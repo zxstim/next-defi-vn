@@ -4,16 +4,14 @@ import Script from "next/script";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import constructSlug from "../../../../utils/constructSlug";
-import formatArticleTimeStampEn from "../../../../utils/formatArticleTimeStampEn";
-import formatArticleTimeStampVi from "../../../../utils/formatArticleTimeStampVi";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { fetchStrapiAPI } from "../../../../lib/api";
 import AppFooter from "../../../../components/AppFooter/AppFooter";
-import WalletInfo from "../../../../components/DiscoverList/WalletsList/WalletInfo/WalletInfo";
+import CommunityInfo from "../../../../components/DiscoverList/CommunitiesList/CommunityInfo/CommunityInfo";
 
-export default function WalletInfoPage({ wallet }) {
-  const { t } = useTranslation("wallets");
+export default function CommunityInfoPage({ community }) {
+  const { t } = useTranslation("communities");
   const router = useRouter();
 
   return (
@@ -33,21 +31,21 @@ export default function WalletInfoPage({ wallet }) {
           `}
       </Script>
       <Head>
-        <title>{`${wallet[0].attributes.name} - DeFi.vn`}</title>
+        <title>{`${community[0].attributes.name} - DeFi.vn`}</title>
         <meta charSet="utf-8" />
-        <link rel="icon" href={wallet[0].attributes.logo.data.attributes.formats.thumbnail.url} />
+        <link rel="icon" href={community[0].attributes.logo.data.attributes.formats.thumbnail.url} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content={`${wallet[0].attributes.name} - DeFi.vn`} />
-        <meta property="og:description" content={`Learn about ${wallet[0].attributes.name}`} />
-        <meta property="og:url" content={`https://www.defi.vn/${wallet[0].attributes.locale}/discover/wallets/info/${wallet[0].attributes.slug}`} />
+        <meta property="og:title" content={`${community[0].attributes.name} - DeFi.vn`} />
+        <meta property="og:description" content={`Learn about ${community[0].attributes.name}`} />
+        <meta property="og:url" content={`https://www.defi.vn/${community[0].attributes.locale}/discover/communities${community[0].attributes.slug}`} />
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content={wallet[0].attributes.logo.data.attributes.formats.thumbnail.url} />
+        <meta property="og:image" content={community[0].attributes.logo.data.attributes.formats.thumbnail.url} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="defi.vn" />
-        <meta property="twitter:url" content={`https://www.defi.vn/${wallet[0].attributes.locale}/discover/wallets/info/${wallet[0].attributes.slug}`} />
-        <meta name="twitter:title" content={`${wallet[0].attributes.name} - DeFi.vn`} />
-        <meta name="twitter:description" content={`Learn about ${wallet[0].attributes.name}`} />
-        <meta name="twitter:image" content={wallet[0].attributes.logo.data.attributes.formats.thumbnail.url} />
+        <meta property="twitter:url" content={`https://www.defi.vn/${community[0].attributes.locale}/discover/communities${community[0].attributes.slug}`} />
+        <meta name="twitter:title" content={`${community[0].attributes.name} - DeFi.vn`} />
+        <meta name="twitter:description" content={`Learn about ${community[0].attributes.name}`} />
+        <meta name="twitter:image" content={community[0].attributes.logo.data.attributes.formats.thumbnail.url} />
       </Head>
       <div className="App">
         <div className="markdown-body">
@@ -57,30 +55,31 @@ export default function WalletInfoPage({ wallet }) {
             gap: "16px",
             alignItems: "center"
           }}>
-            <div style={{
-              width: "80px",
-              height: "80px",
-            }}>
-              <Image 
-                src={wallet[0].attributes.logo.data.attributes.formats.thumbnail.url}
-                alt={wallet[0].attributes.logo.alternativeText}
-                width={80}
-                height={80}
-              />
-            </div>
+            {community[0].attributes.logo.data.attributes.formats.thumbnail.url ? 
+              <div style={{
+                width: "80px",
+                height: "80px",
+              }}>
+                <Image 
+                  src={community[0].attributes.logo.data.attributes.formats.thumbnail.url}
+                  alt={community[0].attributes.logo.alternativeText}
+                  width={80}
+                  height={80}
+                />
+              </div> : null}
             <h1
               style={{
                 width: "100%",
               }}
-            >{wallet[0].attributes.name}</h1>
+            >{community[0].attributes.name}</h1>
           </div>
           <div style={{ display: "flex", marginBottom: "10px" }}>
-            <Link href={`/discover/wallets/info/${constructSlug(wallet[0].attributes.slug).slugEn}`} locale="en">
+            <Link href={`/discover/communities/info/${constructSlug(community[0].attributes.slug).slugEn}`} locale="en">
             <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇬🇧</p>
             </a>
             </Link>
-            <Link href={`/discover/wallets/info/${constructSlug(wallet[0].attributes.slug).slugVi}`} locale="vi">
+            <Link href={`/discover/communities/info/${constructSlug(community[0].attributes.slug).slugVi}`} locale="vi">
             <a style={{ textDecoration: "none" }}>
                 <p className="i18n-button">🇻🇳</p>
             </a>
@@ -88,9 +87,9 @@ export default function WalletInfoPage({ wallet }) {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px", width: "fit-content" }}>
               <Link href="/">{t("back")}</Link>
-              <Link href="/discover/wallets">{t("prev")}</Link>
+              <Link href="/discover/communities">{t("prev")}</Link>
           </div>
-          <WalletInfo wallet={wallet}/>
+          <CommunityInfo community={community}/>
           <br />
           <hr />
           <AppFooter />
@@ -114,7 +113,7 @@ export async function getServerSideProps(context) {
   // }
   const { slug } = context.query
 
-  const walletsRes = await fetchStrapiAPI("/wallets", {
+  const communityRes = await fetchStrapiAPI("/communities", {
     filters: {
       slug: {
         $eq: slug,
@@ -122,20 +121,8 @@ export async function getServerSideProps(context) {
     },
     populate: {
       logo: "*",
-      wallet_categories: {
+      community_categories: {
         fields: ["name", "slug", "locale"],
-      }, 
-      blockchains: {
-        fields: ["name", "slug", "locale"],
-      },
-      investors: {
-        fields: ["name", "slug", "locale"],
-      },
-      individuals: {
-        fields: ["name", "slug", "locale"],
-      },
-      announcements: {
-        fields: ["message", "publishedAt", "locale"],
       }
     },
     locale: "all"
@@ -143,8 +130,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: { 
-        wallet: walletsRes.data,
-        ...(await serverSideTranslations(context.locale, ["common", "wallets"])) 
+        community: communityRes.data,
+        ...(await serverSideTranslations(context.locale, ["common", "communities"])) 
     },
   };
 }

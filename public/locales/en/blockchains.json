@@ -12,5 +12,9 @@
   "end": "You've reached the end! 👋",
   "load-more": "Load more",
   "chain-filter": "Filter by Chains:",
-  "tech-filter": "Filter by Type:"
+  "tech-filter": "Filter by Type:",
+  "content": "📝 About",
+  "team": "💼 Team",
+  "investors": "🏦 Investors",
+  "announcements": "📬 Announcements"
 }

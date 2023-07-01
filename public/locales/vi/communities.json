@@ -1,9 +1,20 @@
 {
     "title": "🌏 Cộng đồng",
-    "back": "🏠 Quay về trang chủ",
     "subtitle": "Danh sách cộng đồng",
+    "back": "🏠 Quay về trang chủ",
+    "prev": "⬅️ Quay về trang trước",
+    "social": "🔗 Đường dẫn chính thức",
+    "category": "🧩 Danh mục",
+    "blockchain": "⛓️ Các Blockchain",
+    "website": "Trang web",
     "cta": "Tìm hiểu thêm",
     "load": "⏳ Đang tải...",
     "end": "Bạn đã xem hết danh sách! 👋",
-    "load-more": "Tải thêm"
+    "load-more": "Tải thêm",
+    "chain-filter": "Lọc theo Chain:",
+    "tech-filter": "Lọc theo loại ví:",
+    "content": "📝 Nội dung",
+    "team": "💼 Đội ngũ",
+    "investors": "🏦 Nhà đầu tư",
+    "announcements": "📬 Thông báo"
 }

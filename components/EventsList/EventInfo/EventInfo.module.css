@@ -97,3 +97,9 @@
   border: 2px solid #1a1a1a;
   box-shadow: 3px 3px #1a1a1a;
 }
+
+.images_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px 15px;
+}

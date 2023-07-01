@@ -13,5 +13,8 @@
     "load-more": "Load more",
     "chain-filter": "Filter by Chains:",
     "tech-filter": "Filter by Type:",
-    "content": "📝 About"
+    "content": "📝 About",
+    "team": "💼 Team",
+    "investors": "🏦 Investors",
+    "announcements": "📬 Announcements"
 }

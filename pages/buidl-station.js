@@ -114,7 +114,7 @@ export async function getServerSideProps(context) {
     },
 	  sort: "endDatetime:desc",
   })
-  console.log(eventsRes)
+
   return {
     props: {
       events: eventsRes.data,

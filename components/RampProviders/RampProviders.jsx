@@ -14,7 +14,7 @@ export default function BuyCryptoProviders() {
   const unlimit = {
     name: "Unlimit Crypto",
     logo: "/unlimit_crypto.jpg",
-    referLink: "https://onramp-sandbox.gatefi.com/?merchantId=b8fbff1f-3236-43a4-9223-82f888767fbb",
+    referLink: "https://onramp.gatefi.com/?merchantId=f23f7281-13b6-44dc-b1bf-6948ddec8287",
     tags: [
       "🌏 150+ countries",
       "🎙️ 10+ languages",
@@ -68,12 +68,12 @@ export default function BuyCryptoProviders() {
           }
           <div className={styles.unlimit_tags_container}>
             {router.locale === "en" ? (
-              unlimit.tags.map((tag) => (
-                <div className={styles.unlimit_tag}>{tag}</div>
+              unlimit.tags.map((tag, index) => (
+                <div key={index} className={styles.unlimit_tag}>{tag}</div>
             ))) :
             router.locale === "vi" ? (
-              unlimit.tags_vi.map((tag) => (
-                <div className={styles.unlimit_tag}>{tag}</div>
+              unlimit.tags_vi.map((tag, index) => (
+                <div key={index} className={styles.unlimit_tag}>{tag}</div>
             ))) : null
             }
           </div>
@@ -203,7 +203,7 @@ export default function BuyCryptoProviders() {
       <h2>{t("subtitle2")}</h2>
       <div className={styles.providers_container}>
         {rampProviders.map((provider) => (
-          <div className={styles.provider_box}>
+          <div key={provider.id} className={styles.provider_box}>
             <div className={styles.provider_intro}>
               <Image
                 style={{ marginTop: "0px" }}
@@ -216,8 +216,8 @@ export default function BuyCryptoProviders() {
             </div>
             <div className={styles.provider_tags_container}>
               {provider.tags ? (
-                provider.tags.map((tag) => (
-                  <div className={styles.provider_tag}>{tag}</div>
+                provider.tags.map((tag, index) => (
+                  <div key={index} className={styles.provider_tag}>{tag}</div>
               ))) : null}
             </div>
             <a
